@@ -1,3 +1,7 @@
+in/*
+iout/*
+sout/*
+
 # Prerequisites
 *.d
 

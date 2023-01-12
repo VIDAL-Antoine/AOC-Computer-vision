@@ -1,0 +1,11 @@
+invert.c: In function ‘main’:
+invert.c:110:27: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  110 |   fprintf(stderr, "\n%20llu; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf %%;\n",
+      |                      ~~~~~^
+      |                           |
+      |                           long long unsigned int
+      |                      %20lu
+  111 |           (sizeof(u8) * H * W * 3),
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~
+      |           |
+      |           long unsigned int

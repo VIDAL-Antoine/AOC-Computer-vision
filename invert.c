@@ -108,7 +108,7 @@ int main(int argc, char **argv)
 
   //
   fprintf(stderr, "\n%20llu; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf %%;\n",
-	  (sizeof(u8) * H * W * 3),
+	  frame_size,
 	  min,
 	  max,
 	  avg,

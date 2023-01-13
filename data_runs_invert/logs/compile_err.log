@@ -9,3 +9,109 @@ invert.c:110:27: warning: format ‘%llu’ expects argument of type ‘long lon
       |           ~~~~~~~~~~~~~~~~~~~~~~~~
       |           |
       |           long unsigned int
+invert.c: In function ‘main’:
+invert.c:110:27: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  110 |   fprintf(stderr, "\n%20llu; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf %%;\n",
+      |                      ~~~~~^
+      |                           |
+      |                           long long unsigned int
+      |                      %20lu
+  111 |    (sizeof(u8) * H * W * 3),
+      |    ~~~~~~~~~~~~~~~~~~~~~~~~
+      |    |
+      |    long unsigned int
+invert.c: In function ‘main’:
+invert.c:110:27: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  110 |   fprintf(stderr, "\n%20llu; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf %%;\n",
+      |                      ~~~~~^
+      |                           |
+      |                           long long unsigned int
+      |                      %20lu
+  111 |    (sizeof(u8) * H * W * 3),
+      |    ~~~~~~~~~~~~~~~~~~~~~~~~
+      |    |
+      |    long unsigned int
+invert.c: In function ‘main’:
+invert.c:110:27: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  110 |   fprintf(stderr, "\n%20llu; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf %%;\n",
+      |                      ~~~~~^
+      |                           |
+      |                           long long unsigned int
+      |                      %20lu
+  111 |    (sizeof(u8) * H * W * 3),
+      |    ~~~~~~~~~~~~~~~~~~~~~~~~
+      |    |
+      |    long unsigned int
+invert.c: In function ‘main’:
+invert.c:110:27: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  110 |   fprintf(stderr, "\n%20llu; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf %%;\n",
+      |                      ~~~~~^
+      |                           |
+      |                           long long unsigned int
+      |                      %20lu
+  111 |    (sizeof(u8) * H * W * 3),
+      |    ~~~~~~~~~~~~~~~~~~~~~~~~
+      |    |
+      |    long unsigned int
+invert.c: In function ‘main’:
+invert.c:110:27: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  110 |   fprintf(stderr, "\n%20llu; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf %%;\n",
+      |                      ~~~~~^
+      |                           |
+      |                           long long unsigned int
+      |                      %20lu
+  111 |    (sizeof(u8) * H * W * 3),
+      |    ~~~~~~~~~~~~~~~~~~~~~~~~
+      |    |
+      |    long unsigned int
+invert.c: In function ‘main’:
+invert.c:110:27: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  110 |   fprintf(stderr, "\n%20llu; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf %%;\n",
+      |                      ~~~~~^
+      |                           |
+      |                           long long unsigned int
+      |                      %20lu
+  111 |    (sizeof(u8) * H * W * 3),
+      |    ~~~~~~~~~~~~~~~~~~~~~~~~
+      |    |
+      |    long unsigned int
+invert.c: In function ‘main’:
+invert.c:110:27: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  110 |   fprintf(stderr, "\n%20llu; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf %%;\n",
+      |                      ~~~~~^
+      |                           |
+      |                           long long unsigned int
+      |                      %20lu
+  111 |    (sizeof(u8) * H * W * 3),
+      |    ~~~~~~~~~~~~~~~~~~~~~~~~
+      |    |
+      |    long unsigned int
+invert.c: In function ‘main’:
+invert.c:110:27: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  110 |   fprintf(stderr, "\n%20llu; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf %%;\n",
+      |                      ~~~~~^
+      |                           |
+      |                           long long unsigned int
+      |                      %20lu
+  111 |    (sizeof(u8) * H * W * 3),
+      |    ~~~~~~~~~~~~~~~~~~~~~~~~
+      |    |
+      |    long unsigned int
+gcc: error: O1: No such file or directory
+make: *** [Makefile:10: inv_baseline] Error 1
+gcc: error: O2: No such file or directory
+make: *** [Makefile:10: inv_baseline] Error 1
+gcc: error: O3: No such file or directory
+make: *** [Makefile:10: inv_baseline] Interrupt
+gcc: error: O1: No such file or directory
+make: *** [Makefile:10: inv_baseline] Error 1
+gcc: error: O2: No such file or directory
+make: *** [Makefile:10: inv_baseline] Error 1
+gcc: error: O3: No such file or directory
+make: *** [Makefile:10: inv_baseline] Error 1
+make: *** [Makefile:10: inv_baseline] Interrupt
+make: *** unknown output-sync type '=O1'.  Stop.
+make: *** unknown output-sync type '=O2'.  Stop.
+gcc: error: O1: No such file or directory
+make: *** [Makefile:10: inv_baseline] Error 1
+make: *** [Makefile:10: inv_baseline] Interrupt

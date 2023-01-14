@@ -1,0 +1,25 @@
+address;source_location;insn;indent
+0x400a96;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;MOV	-0x10(%RBP),%RAX;
+0x400a9a;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;IMUL	-0x40(%RBP),%RAX;
+0x400a9f;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;MOV	%RAX,%RDX;
+0x400aa2;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;MOV	-0x18(%RBP),%RAX;
+0x400aa6;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;ADD	%RAX,%RDX;
+0x400aa9;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;MOV	-0x28(%RBP),%RAX;
+0x400aad;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;ADD	%RDX,%RAX;
+0x400ab0;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;MOVZX	(%RAX),%EAX;
+0x400ab3;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;MOVZX	%AL,%EDX;
+0x400ab6;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;MOV	-0x10(%RBP),%RAX;
+0x400aba;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;IMUL	-0x40(%RBP),%RAX;
+0x400abf;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;MOV	%RAX,%RCX;
+0x400ac2;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;MOV	-0x18(%RBP),%RAX;
+0x400ac6;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;ADD	%RCX,%RAX;
+0x400ac9;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;LEA	(,%RAX,4),%RCX;
+0x400ad1;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;MOV	-0x30(%RBP),%RAX;
+0x400ad5;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;ADD	%RCX,%RAX;
+0x400ad8;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;MOV	(%RAX),%EAX;
+0x400ada;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;IMUL	%EDX,%EAX;
+0x400add;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:56;ADD	%EAX,-0x4(%RBP);
+0x400ae0;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:55;ADDQ	$0x1,-0x18(%RBP);
+0x400ae5;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:55;MOV	-0x18(%RBP),%RAX;
+0x400ae9;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:55;CMP	-0x40(%RBP),%RAX;
+0x400aed;/home/antvidal/AOC/AOC-Computer-vision/sobel.c:55;JB	400a96 <convolve_baseline+0x2f>;

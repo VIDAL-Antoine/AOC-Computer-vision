@@ -1,0 +1,7 @@
+function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;cats;
+11;sobel;convolve_baseline;sobel.c:51-59;70.92;44.99;;;;;;"100,0,0,0,0,0,0,0,0,0";
+12;sobel;sobel_baseline;sobel.c:63-86;19.31;12.25;;;;;;"100,0,0,0,0,0,0,0,0,0";
+154;libm-2.17.so;__sqrt;;6.41;4.07;;;;;;"0,0,0,100,0,0,0,0,0,0";
+9;sobel;grayscale_weighted;sobel.c:17-31;3.34;2.12;;;;;;"100,0,0,0,0,0,0,0,0,0";
+-1;kernel;unknown_kernel_region;;0.02;0.01;;;;;;"0,0,0,0,100,0,0,0,0,0";
+468;libc-2.17.so;_IO_vfprintf;;0.01;0;;;;;;"0,0,0,0,0,0,100,0,0,0";

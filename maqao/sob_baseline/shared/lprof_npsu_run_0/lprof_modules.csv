@@ -1,0 +1,5 @@
+name;time_p;time_s;cpi_ratio;
+/home/antvidal/AOC/AOC-Computer-vision/maqao/sob_baseline/binaries/sobel;93.57;59.36;;
+/usr/lib64/libm-2.17.so;6.41;4.07;;
+kernel;0.02;0.01;;
+/usr/lib64/libc-2.17.so;0.01;0;;

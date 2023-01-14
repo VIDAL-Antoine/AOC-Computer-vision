@@ -1,0 +1,8 @@
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm

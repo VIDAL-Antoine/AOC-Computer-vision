@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en-US"><head><title>OV - sobel - Loop 0 - sobel</title>
+<html translate="no" lang="en-US"><head><title>OV - sobel - Loop 0 - sobel</title>
 <meta charset="utf-8" />
+<meta name="google" content="notranslate" />
 <link rel="stylesheet" type="text/css" media="screen" href="../css/ui.jqgrid.css" />
 <link rel="stylesheet" type="text/css" href="../css/themes/redmond_custom/jquery-ui.css" />
 <link rel="stylesheet" type="text/css" href="../css/themes/redmond_custom/jquery.jqplot.min.css" />
@@ -82,7 +83,7 @@ addLoadEvent(function(){
 });
 </script>
 </head><body>
-<div id="page_title"><img alt="MAQAO" id="maqao_logo" src="../images/MAQAO_small_logo.png"/><ul id="maqao_menu"><li ><a  href="../index.html">Global</a><ul><li ><a  href="../config.html">Configurations</a></li><li ><a  href="../log.html">Logs</a></li></ul></li><li ><a  href="../application.html">Application</a></li><li ><a  href="../fcts_and_loops.html">Functions</a></li><li ><a  href="../loops_index.html">Loops</a></li><li ><a class="_current_page _first_menu_level" href="../loops/sobel_0.html">Loop 0</a></li><li ><a  href="../topology.html">Topology</a></li></ul>
+<div id="page_title"><img alt="MAQAO" id="maqao_logo" src="../images/MAQAO_small_logo.png"/><ul id="maqao_menu"><li ><a  href="../index.html">Global</a><ul><li ><a  href="../config.html">Configurations</a></li><li ><a  href="../env.html">Environment Variables</a></li><li ><a  href="../outputs.html">Outputs</a></li><li ><a  href="../log.html">Logs</a></li></ul></li><li ><a  href="../application.html">Application</a></li><li ><a  href="../fcts_and_loops.html">Functions</a></li><li ><a  href="../loops_index.html">Loops</a></li><li ><a class="_current_page _first_menu_level" href="../loops/sobel_0.html">Loop 0</a></li><li ><a  href="../topology.html">Topology</a></li></ul>
 <span><img alt="options" id="menu_options_icon" src="../images/gear_20.png"  onclick="__open_options ()"/></span>
 </div>
 <script>
@@ -130,16 +131,16 @@ if (obj) {
   }
 }
 </script>
-<div id="main_section_div" data-run="1" data-ldbal="regular" data-path="0" data-maxpath="1" data-bucket="0" data-maxbucket="0" data-variants=',"Original":true' >
+<div id="main_section_div" data-run="1" data-ldbal="regular" data-path="0" data-maxpath="1" data-bucket="0" data-maxbucket="0" data-variants='"Original":true' >
 <!-- ========================== Summary about the loop ========================== -->
   <table id="object_summary" style="width:100%;border: 1px solid var(--table_border);border-radius:5px;color:var(--header_font);background:var(--header_background);margin-bottom:15px;">
     <tr>
-      <th><button class="tooltip-maqao-button" onclick="window.location.href='sobel_3.html';" title="" tooltip_id="0" >Prev</button></th>
+      <th><button class="tooltip-maqao-button" onclick="window.location.href='sobel_4.html';" title="" tooltip_id="0" >Prev</button></th>
       <th>Loop Id: 0</th>
       <th>Module: sobel</th>
       <th>Source: sobel.c:20-29</th>
-      <th>Coverage: 3.29%</th>
-      <th><button class="tooltip-maqao-button" title="" tooltip_id="1" style="cursor: not-allowed;">No Next</button></th>
+      <th>Coverage: 4.22%</th>
+      <th><button class="tooltip-maqao-button" onclick="window.location.href='sobel_3.html';" title="" tooltip_id="1" >Next</button></th>
     </tr>
   </table>
   <div class="drag-container" id="main_section_content">
@@ -205,65 +206,65 @@ if (obj) {
 <div class="panelcontent" id="OV_panel_asm"><div>
   <div id="enable_groups_button" class="tooltip-maqao" title="" tooltip_id="4" data-groups="off" onclick="enable_groups (this);">Show groups analysis</div>
   <table style="width:100%;" id="table_asm">
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="5"><pre>0x400901 MOV	-0x18(%RBP),%RDX    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="6"><pre>0x400905 MOV	-0x8(%RBP),%RAX    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x400909 ADD	%RDX,%RAX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="background-color:#d9ffb3;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="7"><pre>0x40090c MOVZX	(%RAX),%EAX    [4]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x40090f MOVZX	%AL,%EAX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x400912 PXOR	%XMM0,%XMM0</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x400916 CVTSI2SS	%EAX,%XMM0</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x40091a PXOR	%XMM1,%XMM1</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x40091e CVTSS2SD	%XMM0,%XMM1</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="background-color:#ffb366;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="8"><pre>0x400922 MOVSD	0xc46(%RIP),%XMM0    [2]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x40092a MULSD	%XMM0,%XMM1</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="9"><pre>0x40092e MOV	-0x8(%RBP),%RAX    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x400932 LEA	0x1(%RAX),%RDX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="10"><pre>0x400936 MOV	-0x18(%RBP),%RAX    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x40093a ADD	%RDX,%RAX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="11"><pre>0x40093d MOVZX	(%RAX),%EAX    [1]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x400940 MOVZX	%AL,%EAX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x400943 PXOR	%XMM0,%XMM0</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x400947 CVTSI2SS	%EAX,%XMM0</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x40094b PXOR	%XMM2,%XMM2</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x40094f CVTSS2SD	%XMM0,%XMM2</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="background-color:#ffb366;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="12"><pre>0x400953 MOVSD	0xc1d(%RIP),%XMM0    [2]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x40095b MULSD	%XMM2,%XMM0</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x40095f ADDSD	%XMM0,%XMM1</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="13"><pre>0x400963 MOV	-0x8(%RBP),%RAX    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x400967 LEA	0x2(%RAX),%RDX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="14"><pre>0x40096b MOV	-0x18(%RBP),%RAX    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x40096f ADD	%RDX,%RAX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="15"><pre>0x400972 MOVZX	(%RAX),%EAX    [1]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x400975 MOVZX	%AL,%EAX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x400978 PXOR	%XMM0,%XMM0</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x40097c CVTSI2SS	%EAX,%XMM0</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x400980 PXOR	%XMM2,%XMM2</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x400984 CVTSS2SD	%XMM0,%XMM2</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="background-color:#ffb366;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="16"><pre>0x400988 MOVSD	0xbf0(%RIP),%XMM0    [2]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x400990 MULSD	%XMM2,%XMM0</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x400994 ADDSD	%XMM1,%XMM0</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="word-break:break-all;" ><pre>0x400998 CVTSD2SS	%XMM0,%XMM0</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25"><td class="panel_asm_25" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="17"><pre>0x40099c MOVSS	%XMM0,-0xc(%RBP)    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="27"><td class="panel_asm_27" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="18"><pre>0x4009a1 MOV	-0x18(%RBP),%RDX    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="27"><td class="panel_asm_27" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="19"><pre>0x4009a5 MOV	-0x8(%RBP),%RAX    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="27"><td class="panel_asm_27" style="word-break:break-all;" ><pre>0x4009a9 ADD	%RDX,%RAX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="27"><td class="panel_asm_27" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="20"><pre>0x4009ac CVTTSS2SI	-0xc(%RBP),%EDX    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="27"><td class="panel_asm_27" style="background-color:#d9ffb3;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="21"><pre>0x4009b1 MOV	%DL,(%RAX)    [4]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="28"><td class="panel_asm_28" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="22"><pre>0x4009b3 MOV	-0x8(%RBP),%RAX    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="28"><td class="panel_asm_28" style="word-break:break-all;" ><pre>0x4009b7 LEA	0x1(%RAX),%RDX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="28"><td class="panel_asm_28" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="23"><pre>0x4009bb MOV	-0x18(%RBP),%RAX    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="28"><td class="panel_asm_28" style="word-break:break-all;" ><pre>0x4009bf ADD	%RDX,%RAX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="28"><td class="panel_asm_28" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="24"><pre>0x4009c2 CVTTSS2SI	-0xc(%RBP),%EDX    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="28"><td class="panel_asm_28" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="25"><pre>0x4009c7 MOV	%DL,(%RAX)    [1]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="29"><td class="panel_asm_29" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="26"><pre>0x4009c9 MOV	-0x8(%RBP),%RAX    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="29"><td class="panel_asm_29" style="word-break:break-all;" ><pre>0x4009cd LEA	0x2(%RAX),%RDX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="29"><td class="panel_asm_29" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="27"><pre>0x4009d1 MOV	-0x18(%RBP),%RAX    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="29"><td class="panel_asm_29" style="word-break:break-all;" ><pre>0x4009d5 ADD	%RDX,%RAX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="29"><td class="panel_asm_29" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="28"><pre>0x4009d8 CVTTSS2SI	-0xc(%RBP),%EDX    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="29"><td class="panel_asm_29" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="29"><pre>0x4009dd MOV	%DL,(%RAX)    [1]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="20"><td class="panel_asm_20" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="30"><pre>0x4009df ADDQ	$0x3,-0x8(%RBP)    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="20"><td class="panel_asm_20" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="31"><pre>0x4009e4 CMPQ	$0x2a2fff,-0x8(%RBP)    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="20"><td class="panel_asm_20" style="word-break:break-all;" ><pre>0x4009ec JBE	400901</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="5"><pre>0x1363 MOV	-0x18(%RBP),%RDX    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="6"><pre>0x1367 MOV	-0x8(%RBP),%RAX    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x136b ADD	%RDX,%RAX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="background-color:#d9ffb3;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="7"><pre>0x136e MOVZX	(%RAX),%EAX    [4]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x1371 MOVZX	%AL,%EAX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x1374 PXOR	%XMM0,%XMM0</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x1378 CVTSI2SS	%EAX,%XMM0</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x137c PXOR	%XMM1,%XMM1</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x1380 CVTSS2SD	%XMM0,%XMM1</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="background-color:#ffb366;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="8"><pre>0x1384 MOVSD	0x1d44(%RIP),%XMM0    [2]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x138c MULSD	%XMM0,%XMM1</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="9"><pre>0x1390 MOV	-0x8(%RBP),%RAX    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x1394 LEA	0x1(%RAX),%RDX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="10"><pre>0x1398 MOV	-0x18(%RBP),%RAX    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x139c ADD	%RDX,%RAX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="11"><pre>0x139f MOVZX	(%RAX),%EAX    [1]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13a2 MOVZX	%AL,%EAX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13a5 PXOR	%XMM0,%XMM0</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13a9 CVTSI2SS	%EAX,%XMM0</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13ad PXOR	%XMM2,%XMM2</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13b1 CVTSS2SD	%XMM0,%XMM2</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="background-color:#ffb366;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="12"><pre>0x13b5 MOVSD	0x1d1b(%RIP),%XMM0    [2]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13bd MULSD	%XMM2,%XMM0</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13c1 ADDSD	%XMM0,%XMM1</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="13"><pre>0x13c5 MOV	-0x8(%RBP),%RAX    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13c9 LEA	0x2(%RAX),%RDX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="14"><pre>0x13cd MOV	-0x18(%RBP),%RAX    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13d1 ADD	%RDX,%RAX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="15"><pre>0x13d4 MOVZX	(%RAX),%EAX    [1]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13d7 MOVZX	%AL,%EAX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13da PXOR	%XMM0,%XMM0</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13de CVTSI2SS	%EAX,%XMM0</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13e2 PXOR	%XMM2,%XMM2</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13e6 CVTSS2SD	%XMM0,%XMM2</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="background-color:#ffb366;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="16"><pre>0x13ea MOVSD	0x1cee(%RIP),%XMM0    [2]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13f2 MULSD	%XMM2,%XMM0</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13f6 ADDSD	%XMM1,%XMM0</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="word-break:break-all;"><pre>0x13fa CVTSD2SS	%XMM0,%XMM0</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="25" onclick="asm_on_click_line('#panel_src_line_25')"><td class="panel_asm_25" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="17"><pre>0x13fe MOVSS	%XMM0,-0xc(%RBP)    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="27" onclick="asm_on_click_line('#panel_src_line_27')"><td class="panel_asm_27" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="18"><pre>0x1403 MOV	-0x18(%RBP),%RDX    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="27" onclick="asm_on_click_line('#panel_src_line_27')"><td class="panel_asm_27" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="19"><pre>0x1407 MOV	-0x8(%RBP),%RAX    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="27" onclick="asm_on_click_line('#panel_src_line_27')"><td class="panel_asm_27" style="word-break:break-all;"><pre>0x140b ADD	%RDX,%RAX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="27" onclick="asm_on_click_line('#panel_src_line_27')"><td class="panel_asm_27" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="20"><pre>0x140e CVTTSS2SI	-0xc(%RBP),%EDX    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="27" onclick="asm_on_click_line('#panel_src_line_27')"><td class="panel_asm_27" style="background-color:#d9ffb3;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="21"><pre>0x1413 MOV	%DL,(%RAX)    [4]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="28" onclick="asm_on_click_line('#panel_src_line_28')"><td class="panel_asm_28" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="22"><pre>0x1415 MOV	-0x8(%RBP),%RAX    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="28" onclick="asm_on_click_line('#panel_src_line_28')"><td class="panel_asm_28" style="word-break:break-all;"><pre>0x1419 LEA	0x1(%RAX),%RDX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="28" onclick="asm_on_click_line('#panel_src_line_28')"><td class="panel_asm_28" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="23"><pre>0x141d MOV	-0x18(%RBP),%RAX    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="28" onclick="asm_on_click_line('#panel_src_line_28')"><td class="panel_asm_28" style="word-break:break-all;"><pre>0x1421 ADD	%RDX,%RAX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="28" onclick="asm_on_click_line('#panel_src_line_28')"><td class="panel_asm_28" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="24"><pre>0x1424 CVTTSS2SI	-0xc(%RBP),%EDX    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="28" onclick="asm_on_click_line('#panel_src_line_28')"><td class="panel_asm_28" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="25"><pre>0x1429 MOV	%DL,(%RAX)    [1]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="29" onclick="asm_on_click_line('#panel_src_line_29')"><td class="panel_asm_29" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="26"><pre>0x142b MOV	-0x8(%RBP),%RAX    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="29" onclick="asm_on_click_line('#panel_src_line_29')"><td class="panel_asm_29" style="word-break:break-all;"><pre>0x142f LEA	0x2(%RAX),%RDX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="29" onclick="asm_on_click_line('#panel_src_line_29')"><td class="panel_asm_29" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="27"><pre>0x1433 MOV	-0x18(%RBP),%RAX    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="29" onclick="asm_on_click_line('#panel_src_line_29')"><td class="panel_asm_29" style="word-break:break-all;"><pre>0x1437 ADD	%RDX,%RAX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="29" onclick="asm_on_click_line('#panel_src_line_29')"><td class="panel_asm_29" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="28"><pre>0x143a CVTTSS2SI	-0xc(%RBP),%EDX    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="29" onclick="asm_on_click_line('#panel_src_line_29')"><td class="panel_asm_29" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="29"><pre>0x143f MOV	%DL,(%RAX)    [1]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="20" onclick="asm_on_click_line('#panel_src_line_20')"><td class="panel_asm_20" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="30"><pre>0x1441 ADDQ	$0x3,-0x8(%RBP)    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="20" onclick="asm_on_click_line('#panel_src_line_20')"><td class="panel_asm_20" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="31"><pre>0x1446 CMPQ	$0x2a2fff,-0x8(%RBP)    [3]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="20" onclick="asm_on_click_line('#panel_src_line_20')"><td class="panel_asm_20" style="word-break:break-all;"><pre>0x144e JBE	1363</pre></td></tr>
   </table>
   <script>
 function panel_asm_onmouseover_tr (obj) {
@@ -279,6 +280,9 @@ function panel_asm_onmouseout_tr (obj) {
     src = src[0];
     src.style.background = "";
   }
+}
+function asm_on_click_line (target) {
+  window.location = target;
 }
 function asm_onresize () {
 }
@@ -347,23 +351,26 @@ for (var i = 0, row; row = table_asm.rows[i]; i++) {
 #table_asm td:hover {
   border-left-color: var(--table_border);
 }
+#table_asm tr {
+  cursor: pointer;
+}
   </style>
 </div></div>
 <div class="panelcontent" id="OV_panel_src">
   <table id="panel_src_table_src" style="width:100%;">
-<tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil"><td><pre>/home/antvidal/AOC/AOC-Computer-vision/sobel.c: 20 - 29</pre></td></tr>
-<tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil"><td><pre>--------------------------------------------------------------------------------</pre></td></tr>
-<tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil"><td><pre></pre></td></tr>
-<tr class="panel_src_20" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="20"><td><pre>20:   for (u64 i = 0; i &lt; H * W * 3; i += 3)</pre></td></tr>
-<tr class="panel_src_21" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="21"><td><pre>21:     {</pre></td></tr>
-<tr class="panel_src_22" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="22"><td><pre>22:       //Convert RGB color values into grayscale for each pixel using color weights</pre></td></tr>
-<tr class="panel_src_23" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="23"><td><pre>23:       //Other possible weights: 0.59, 0.30, 0.11</pre></td></tr>
-<tr class="panel_src_24" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="24"><td><pre>24:       //Principle: mix different quantities of R, G, B to create a variant of gray</pre></td></tr>
-<tr class="panel_src_25" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="25"><td><pre>25:       gray = ((float)frame[i] * 0.299) + ((float)frame[i + 1] * 0.587) + ((float)frame[i + 2] * 0.114);</pre></td></tr>
-<tr class="panel_src_26" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="26"><td><pre>26:       </pre></td></tr>
-<tr class="panel_src_27" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="27"><td><pre>27:       frame[i]     = gray;</pre></td></tr>
-<tr class="panel_src_28" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="28"><td><pre>28:       frame[i + 1] = gray;</pre></td></tr>
-<tr class="panel_src_29" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="29"><td><pre>29:       frame[i + 2] = gray;</pre></td></tr>
+<tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil" id="panel_src_line_nil"><td><pre>/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c: 20 - 29</pre></td></tr>
+<tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil" id="panel_src_line_nil"><td><pre>--------------------------------------------------------------------------------</pre></td></tr>
+<tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil" id="panel_src_line_nil"><td><pre></pre></td></tr>
+<tr class="panel_src_20" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="20" id="panel_src_line_20"><td><pre>20:   for (u64 i = 0; i &lt; H * W * 3; i += 3)</pre></td></tr>
+<tr class="panel_src_21" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="21" id="panel_src_line_21"><td><pre>21:     {</pre></td></tr>
+<tr class="panel_src_22" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="22" id="panel_src_line_22"><td><pre>22:       //Convert RGB color values into grayscale for each pixel using color weights</pre></td></tr>
+<tr class="panel_src_23" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="23" id="panel_src_line_23"><td><pre>23:       //Other possible weights: 0.59, 0.30, 0.11</pre></td></tr>
+<tr class="panel_src_24" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="24" id="panel_src_line_24"><td><pre>24:       //Principle: mix different quantities of R, G, B to create a variant of gray</pre></td></tr>
+<tr class="panel_src_25" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="25" id="panel_src_line_25"><td><pre>25:       gray = ((float)frame[i] * 0.299) + ((float)frame[i + 1] * 0.587) + ((float)frame[i + 2] * 0.114);</pre></td></tr>
+<tr class="panel_src_26" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="26" id="panel_src_line_26"><td><pre>26:       </pre></td></tr>
+<tr class="panel_src_27" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="27" id="panel_src_line_27"><td><pre>27:       frame[i]     = gray;</pre></td></tr>
+<tr class="panel_src_28" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="28" id="panel_src_line_28"><td><pre>28:       frame[i + 1] = gray;</pre></td></tr>
+<tr class="panel_src_29" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="29" id="panel_src_line_29"><td><pre>29:       frame[i + 2] = gray;</pre></td></tr>
   </table>
   <script>
 function panel_src_onmouseover_tr (obj) {
@@ -426,9 +433,9 @@ function src_loadhelp (divId) {
   </style>
 </div>
 <div class="panelcontent" id="OV_panel_callchains">
-<div class="_div_table"><table id="_treed_table_3" class="_treed_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="34">Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="35">Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="36">Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="37">Module</th></tr>
-<tr id="_tr_3_1" ><td id="_tr_3_1-1"  data-_i="1" data-_j="1"  class=" _left"  style="width:20%;" ><span onclick="_click_treed(this)" style="margin-right:5px;margin-left:0px;cursor:pointer;" >&#x25BA;</span>100.00<span onclick="_click_expand(this)" class="span_expand">&#43;</span></td><td id="_tr_3_1-2"  data-_i="1" data-_j="2"  style="width:30%;" >main</td><td id="_tr_3_1-3"  data-_i="1" data-_j="3"  title="" tooltip_id="38" class=" tooltip-maqao"  style="width:30%;" >sobel.c:123</td><td id="_tr_3_1-4"  data-_i="1" data-_j="4"  class=" _centered"  style="width:20%;" >sobel</td></tr>
-<tr class="_treed_hidden _tr_3_1"  id="_tr_3_1_1" ><td id="_tr_3_1_1-1"  data-_i="2" data-_j="1"  class=" _left"  style="width:20%;" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_3_1_1-2"  data-_i="2" data-_j="2"  style="width:30%;" >__libc_start_main</td><td id="_tr_3_1_1-3"  data-_i="2" data-_j="3"  title="" tooltip_id="39" class=" tooltip-maqao"  style="width:30%;" ></td><td id="_tr_3_1_1-4"  data-_i="2" data-_j="4"  class=" _centered"  style="width:20%;" >libc-2.17.so</td></tr>
+<div class="_div_table" ><table id="_treed_table_0" class="_treed_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="34">Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="35">Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="36">Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="37">Module</th></tr>
+<tr id="_tr_0_1" ><td id="_tr_0_1-1"  data-_i="1" data-_j="1"  class=" _left"  style="width:20%;" ><span onclick="_click_treed(this)" style="margin-right:5px;margin-left:0px;cursor:pointer;" >&#x25BA;</span>100.00<span onclick="_click_expand(this)" class="span_expand">&#43;</span></td><td id="_tr_0_1-2"  data-_i="1" data-_j="2"  style="width:30%;" >main</td><td id="_tr_0_1-3"  data-_i="1" data-_j="3"  title="" tooltip_id="38" class=" tooltip-maqao"  style="width:30%;" >sobel.c:162</td><td id="_tr_0_1-4"  data-_i="1" data-_j="4"  class=" _centered"  style="width:20%;" >sobel</td></tr>
+<tr class="_treed_hidden _tr_0_1"  id="_tr_0_1_1" ><td id="_tr_0_1_1-1"  data-_i="2" data-_j="1"  class=" _left"  style="width:20%;" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_0_1_1-2"  data-_i="2" data-_j="2"  style="width:30%;" >__libc_init_first</td><td id="_tr_0_1_1-3"  data-_i="2" data-_j="3"  title="" tooltip_id="39" class=" tooltip-maqao"  style="width:30%;" ></td><td id="_tr_0_1_1-4"  data-_i="2" data-_j="4"  class=" _centered"  style="width:20%;" >libc.so.6</td></tr>
 </table></div>
   <script>
 function src_onresize () {
@@ -460,10 +467,10 @@ function src_loadhelp (divId) {
       <td style="width:40%;" />
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_24" style="height:500px" ></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_0" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_25" style="height:500px" ></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_1" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
   <script>
@@ -473,31 +480,31 @@ function set_ldbal_input () {
   document.getElementById ("main_section_div").dataset.ldbal = selector_type.value;
   document.getElementById ("main_section_div").dataset.run = selector_run.value;
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_24").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_24").getBoundingClientRect().width);
-  document.getElementById("chart_cat_25").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_25").getBoundingClientRect().width);
+  document.getElementById("chart_cat_0").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_0").getBoundingClientRect().width);
+  document.getElementById("chart_cat_1").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_1").getBoundingClientRect().width);
   // According to selectors, draw both charts
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['romeologin1.ro18.urca_658_658'];
-    var data = [{value: 3.29}];
+    var ordinals = ['vidal-NBLK-WAX9X_6909_6909'];
+    var data = [{value: 4.22, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
-    var heightgl = 400;
-    var heightin = 420;
+    var heightgl = 480;
+    var heightin = 495;
     let margin = {
       top:    10,
       right:  30,
-      bottom: 20,
+      bottom: 30,
       left:   50
     },
     width = widthgl - margin.left - margin.right,
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_24')
+    const svg = d3.select('#chart_cat_0')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -513,7 +520,7 @@ function set_ldbal_input () {
     let y = d3.scaleLinear().range([height, 0])
     let color = d3.scaleOrdinal(d3.schemeCategory10)
     let xScale = x.domain([-1, ordinals.length])
-    let yScale = y.domain([0, d3.max(data, function(d){return d.value})])
+    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
     let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
     svg.append('rect')
       .attr('class', 'zoom-panel')
@@ -550,25 +557,28 @@ function set_ldbal_input () {
       .attr("dy", "1em")
       .style("text-anchor", "middle")
       .style("fill", "var(--font)")
-      .text("Coverage");
+      .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_24')
+      .attr('id', 'zoom_chart_0')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_24_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_0_'+i;})
       .attr('x', function(d, i){
-        return xScale(i) - xBand.bandwidth()*0.9/2
+        return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
       .attr('y', function(d, i){
-        return yScale(d.value)
+        return yScale(d.value + d.offset)
       })
       .attr('width', xBand.bandwidth()*0.9)
       .attr('height', function(d){
         return height - yScale(d.value)
+      })
+      .style("fill", function(d){
+        return d.color
       })
     let defs = svg.append('defs')
       defs.append('clipPath')
@@ -598,30 +608,30 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_24_0").click( function () {
-    window.open("../topo/run_0_romeologin1.ro18.urca_658_658.html");
+  $("#zoom_chart_0_0").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_6909_6909.html");
   });
   }
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['romeologin1.ro18.urca_658_658'];
-    var data = [{value: 2.09}];
+    var ordinals = ['vidal-NBLK-WAX9X_6909_6909'];
+    var data = [{value: 3.5, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
-    var heightgl = 400;
-    var heightin = 420;
+    var heightgl = 480;
+    var heightin = 495;
     let margin = {
       top:    10,
       right:  30,
-      bottom: 20,
+      bottom: 30,
       left:   50
     },
     width = widthgl - margin.left - margin.right,
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_25')
+    const svg = d3.select('#chart_cat_1')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -637,7 +647,7 @@ function set_ldbal_input () {
     let y = d3.scaleLinear().range([height, 0])
     let color = d3.scaleOrdinal(d3.schemeCategory10)
     let xScale = x.domain([-1, ordinals.length])
-    let yScale = y.domain([0, d3.max(data, function(d){return d.value})])
+    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
     let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
     svg.append('rect')
       .attr('class', 'zoom-panel')
@@ -674,25 +684,28 @@ function set_ldbal_input () {
       .attr("dy", "1em")
       .style("text-anchor", "middle")
       .style("fill", "var(--font)")
-      .text("Time");
+      .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_25')
+      .attr('id', 'zoom_chart_1')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_25_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_1_'+i;})
       .attr('x', function(d, i){
-        return xScale(i) - xBand.bandwidth()*0.9/2
+        return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
       .attr('y', function(d, i){
-        return yScale(d.value)
+        return yScale(d.value + d.offset)
       })
       .attr('width', xBand.bandwidth()*0.9)
       .attr('height', function(d){
         return height - yScale(d.value)
+      })
+      .style("fill", function(d){
+        return d.color
       })
     let defs = svg.append('defs')
       defs.append('clipPath')
@@ -722,30 +735,30 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_25_0").click( function () {
-    window.open("../topo/run_0_romeologin1.ro18.urca_658_658.html");
+  $("#zoom_chart_1_0").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_6909_6909.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['romeologin1.ro18.urca_658_658'];
-    var data = [{value: 3.29}];
+    var ordinals = ['vidal-NBLK-WAX9X_6909_6909'];
+    var data = [{value: 4.22, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
-    var heightgl = 400;
-    var heightin = 420;
+    var heightgl = 480;
+    var heightin = 495;
     let margin = {
       top:    10,
       right:  30,
-      bottom: 20,
+      bottom: 30,
       left:   50
     },
     width = widthgl - margin.left - margin.right,
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_24')
+    const svg = d3.select('#chart_cat_0')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -761,7 +774,7 @@ function set_ldbal_input () {
     let y = d3.scaleLinear().range([height, 0])
     let color = d3.scaleOrdinal(d3.schemeCategory10)
     let xScale = x.domain([-1, ordinals.length])
-    let yScale = y.domain([0, d3.max(data, function(d){return d.value})])
+    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
     let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
     svg.append('rect')
       .attr('class', 'zoom-panel')
@@ -798,25 +811,28 @@ function set_ldbal_input () {
       .attr("dy", "1em")
       .style("text-anchor", "middle")
       .style("fill", "var(--font)")
-      .text("Coverage");
+      .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_24')
+      .attr('id', 'zoom_chart_0')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_24_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_0_'+i;})
       .attr('x', function(d, i){
-        return xScale(i) - xBand.bandwidth()*0.9/2
+        return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
       .attr('y', function(d, i){
-        return yScale(d.value)
+        return yScale(d.value + d.offset)
       })
       .attr('width', xBand.bandwidth()*0.9)
       .attr('height', function(d){
         return height - yScale(d.value)
+      })
+      .style("fill", function(d){
+        return d.color
       })
     let defs = svg.append('defs')
       defs.append('clipPath')
@@ -846,30 +862,30 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_24_0").click( function () {
-    window.open("../topo/run_0_romeologin1.ro18.urca_658_658.html");
+  $("#zoom_chart_0_0").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_6909_6909.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['romeologin1.ro18.urca_658_658'];
-    var data = [{value: 2.09}];
+    var ordinals = ['vidal-NBLK-WAX9X_6909_6909'];
+    var data = [{value: 3.5, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
-    var heightgl = 400;
-    var heightin = 420;
+    var heightgl = 480;
+    var heightin = 495;
     let margin = {
       top:    10,
       right:  30,
-      bottom: 20,
+      bottom: 30,
       left:   50
     },
     width = widthgl - margin.left - margin.right,
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_25')
+    const svg = d3.select('#chart_cat_1')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -885,7 +901,7 @@ function set_ldbal_input () {
     let y = d3.scaleLinear().range([height, 0])
     let color = d3.scaleOrdinal(d3.schemeCategory10)
     let xScale = x.domain([-1, ordinals.length])
-    let yScale = y.domain([0, d3.max(data, function(d){return d.value})])
+    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
     let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
     svg.append('rect')
       .attr('class', 'zoom-panel')
@@ -922,25 +938,28 @@ function set_ldbal_input () {
       .attr("dy", "1em")
       .style("text-anchor", "middle")
       .style("fill", "var(--font)")
-      .text("Time");
+      .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_25')
+      .attr('id', 'zoom_chart_1')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_25_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_1_'+i;})
       .attr('x', function(d, i){
-        return xScale(i) - xBand.bandwidth()*0.9/2
+        return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
       .attr('y', function(d, i){
-        return yScale(d.value)
+        return yScale(d.value + d.offset)
       })
       .attr('width', xBand.bandwidth()*0.9)
       .attr('height', function(d){
         return height - yScale(d.value)
+      })
+      .style("fill", function(d){
+        return d.color
       })
     let defs = svg.append('defs')
       defs.append('clipPath')
@@ -970,30 +989,30 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_25_0").click( function () {
-    window.open("../topo/run_0_romeologin1.ro18.urca_658_658.html");
+  $("#zoom_chart_1_0").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_6909_6909.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['romeologin1.ro18.urca_658_658'];
-    var data = [{value: 3.29}];
+    var ordinals = ['vidal-NBLK-WAX9X_6909_6909'];
+    var data = [{value: 4.22, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
-    var heightgl = 400;
-    var heightin = 420;
+    var heightgl = 480;
+    var heightin = 495;
     let margin = {
       top:    10,
       right:  30,
-      bottom: 20,
+      bottom: 30,
       left:   50
     },
     width = widthgl - margin.left - margin.right,
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_24')
+    const svg = d3.select('#chart_cat_0')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1009,7 +1028,7 @@ function set_ldbal_input () {
     let y = d3.scaleLinear().range([height, 0])
     let color = d3.scaleOrdinal(d3.schemeCategory10)
     let xScale = x.domain([-1, ordinals.length])
-    let yScale = y.domain([0, d3.max(data, function(d){return d.value})])
+    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
     let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
     svg.append('rect')
       .attr('class', 'zoom-panel')
@@ -1046,25 +1065,28 @@ function set_ldbal_input () {
       .attr("dy", "1em")
       .style("text-anchor", "middle")
       .style("fill", "var(--font)")
-      .text("Coverage");
+      .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_24')
+      .attr('id', 'zoom_chart_0')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_24_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_0_'+i;})
       .attr('x', function(d, i){
-        return xScale(i) - xBand.bandwidth()*0.9/2
+        return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
       .attr('y', function(d, i){
-        return yScale(d.value)
+        return yScale(d.value + d.offset)
       })
       .attr('width', xBand.bandwidth()*0.9)
       .attr('height', function(d){
         return height - yScale(d.value)
+      })
+      .style("fill", function(d){
+        return d.color
       })
     let defs = svg.append('defs')
       defs.append('clipPath')
@@ -1094,30 +1116,30 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_24_0").click( function () {
-    window.open("../topo/run_0_romeologin1.ro18.urca_658_658.html");
+  $("#zoom_chart_0_0").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_6909_6909.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['romeologin1.ro18.urca_658_658'];
-    var data = [{value: 2.09}];
+    var ordinals = ['vidal-NBLK-WAX9X_6909_6909'];
+    var data = [{value: 3.5, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
-    var heightgl = 400;
-    var heightin = 420;
+    var heightgl = 480;
+    var heightin = 495;
     let margin = {
       top:    10,
       right:  30,
-      bottom: 20,
+      bottom: 30,
       left:   50
     },
     width = widthgl - margin.left - margin.right,
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_25')
+    const svg = d3.select('#chart_cat_1')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1133,7 +1155,7 @@ function set_ldbal_input () {
     let y = d3.scaleLinear().range([height, 0])
     let color = d3.scaleOrdinal(d3.schemeCategory10)
     let xScale = x.domain([-1, ordinals.length])
-    let yScale = y.domain([0, d3.max(data, function(d){return d.value})])
+    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
     let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
     svg.append('rect')
       .attr('class', 'zoom-panel')
@@ -1170,25 +1192,28 @@ function set_ldbal_input () {
       .attr("dy", "1em")
       .style("text-anchor", "middle")
       .style("fill", "var(--font)")
-      .text("Time");
+      .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_25')
+      .attr('id', 'zoom_chart_1')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_25_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_1_'+i;})
       .attr('x', function(d, i){
-        return xScale(i) - xBand.bandwidth()*0.9/2
+        return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
       .attr('y', function(d, i){
-        return yScale(d.value)
+        return yScale(d.value + d.offset)
       })
       .attr('width', xBand.bandwidth()*0.9)
       .attr('height', function(d){
         return height - yScale(d.value)
+      })
+      .style("fill", function(d){
+        return d.color
       })
     let defs = svg.append('defs')
       defs.append('clipPath')
@@ -1218,8 +1243,8 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_25_0").click( function () {
-    window.open("../topo/run_0_romeologin1.ro18.urca_658_658.html");
+  $("#zoom_chart_1_0").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_6909_6909.html");
   });
   }
 }
@@ -1252,45 +1277,43 @@ function ldbal_loadhelp (divId) {
     <div id="loop_static_path_0" style="width:100%;">
       <table style="width:100%;">
         <tr><th>Metric</th><th>Value</th></tr>
-            <tr><td>Coverage (% app. time)</td><td>3.29</td></tr>
-            <tr><td>Time (s)</td><td>2.09</td></tr>
-            <tr><td>[VPROF] Instance Count</td><td></td></tr>
-            <tr><td>[VPROF] Iteration Count (min | avg | max)</td><td></td></tr>
-            <tr><td>[VPROF] Cycles per Iteration (min | avg | max)</td><td></td></tr>
-            <tr><td>CQA speedup if no scalar integer</td><td style="background-color:#FFCC99;">1.82</td></tr>
-            <tr><td>CQA speedup if FP arith vectorized</td><td style="background-color:#FF950E;">2.54</td></tr>
-            <tr><td>CQA speedup if fully vectorized</td><td style="background-color:#FF950E;">13.30</td></tr>
+            <tr><td>CQA speedup if no scalar integer</td><td style="background-color:#FFCC99;">1.35</td></tr>
+            <tr><td>CQA speedup if FP arith vectorized</td><td style="background-color:#FFCC99;">1.35</td></tr>
+            <tr><td>CQA speedup if fully vectorized</td><td style="background-color:#FF950E;">4.00</td></tr>
             <tr><td>CQA speedup if no inter-iteration dependency</td><td>NA</td></tr>
-            <tr><td>CQA speedup if next bottleneck killed</td><td style="background-color:#FFCC99;">1.59</td></tr>
-            <tr><td>Speedup if perfectly load balanced</td><td>1</td></tr>
-            <tr><td>Bottlenecks</td><td>micro-operation queue, </td></tr>
+            <tr><td>CQA speedup if next bottleneck killed</td><td style="background-color:#FFCC99;">1.33</td></tr>
+            <tr><td>Bottlenecks</td><td>P4, P5, </td></tr>
             <tr><td>Function</td><td>grayscale_weighted</td></tr>
             <tr><td>Source</td><td>sobel.c:20-29</td></tr>
             <tr><td>Source loop unroll info</td><td>not unrolled or unrolled with no peel/tail loop</td></tr>
             <tr><td>Source loop unroll confidence level</td><td>max</td></tr>
             <tr><td>Unroll/vectorization loop type</td><td>NA</td></tr>
             <tr><td>Unroll factor</td><td>NA</td></tr>
-            <tr><td>CQA cycles</td><td>18.25</td></tr>
+            <tr><td>CQA cycles</td><td>13.50</td></tr>
             <tr><td>CQA cycles if no scalar integer</td><td>10.00</td></tr>
-            <tr><td>CQA cycles if FP arith vectorized</td><td>7.19</td></tr>
-            <tr><td>CQA cycles if fully vectorized</td><td>1.37</td></tr>
-            <tr><td>Front-end cycles</td><td style="background-color:#FFCC99;">18.25</td></tr>
-            <tr><td>P0 cycles</td><td>10.50</td></tr>
-            <tr><td>P1 cycles</td><td>10.50</td></tr>
-            <tr><td>P2 cycles</td><td>11.50</td></tr>
-            <tr><td>P3 cycles</td><td>11.50</td></tr>
-            <tr><td>P4 cycles</td><td>5.00</td></tr>
-            <tr><td>P5 cycles</td><td>10.50</td></tr>
-            <tr><td>P6 cycles</td><td>10.50</td></tr>
-            <tr><td>P7 cycles</td><td>5.00</td></tr>
-            <tr><td>DIV/SQRT cycles</td><td>0.00</td></tr>
+            <tr><td>CQA cycles if FP arith vectorized</td><td>10.00</td></tr>
+            <tr><td>CQA cycles if fully vectorized</td><td>3.38</td></tr>
+            <tr><td>Front-end cycles</td><td>10.17</td></tr>
+            <tr><td>DIV/SQRT cycles</td><td>4.50</td></tr>
+            <tr><td>P0 cycles</td><td>4.50</td></tr>
+            <tr><td>P1 cycles</td><td>4.50</td></tr>
+            <tr><td>P2 cycles</td><td>4.50</td></tr>
+            <tr><td>P3 cycles</td><td style="background-color:#FFCC99;">13.50</td></tr>
+            <tr><td>P4 cycles</td><td style="background-color:#FFCC99;">13.50</td></tr>
+            <tr><td>P5 cycles</td><td>1.50</td></tr>
+            <tr><td>P6 cycles</td><td>1.50</td></tr>
+            <tr><td>P7 cycles</td><td>6.00</td></tr>
+            <tr><td>P8 cycles</td><td>10.00</td></tr>
+            <tr><td>P9 cycles</td><td>0.00</td></tr>
             <tr><td>Inter-iter dependencies cycles</td><td>0</td></tr>
+            <tr><td>FE+BE cycles (UFS)</td><td>NA</td></tr>
+            <tr><td>Stall cycles (UFS)</td><td>NA</td></tr>
             <tr><td>Nb insns</td><td>59.00</td></tr>
-            <tr><td>Nb uops</td><td>73.00</td></tr>
+            <tr><td>Nb uops</td><td>61.00</td></tr>
             <tr><td>Nb loads</td><td>23.00</td></tr>
             <tr><td>Nb stores</td><td>5.00</td></tr>
             <tr><td>Nb stack references</td><td style="background-color:#FFCC99;">3.00</td></tr>
-            <tr><td>FLOP/cycle</td><td>0.27</td></tr>
+            <tr><td>FLOP/cycle</td><td>0.37</td></tr>
             <tr><td>Nb FLOP add-sub</td><td>2.00</td></tr>
             <tr><td>Nb FLOP mul</td><td>3.00</td></tr>
             <tr><td>Nb FLOP fma</td><td>0.00</td></tr>
@@ -1298,7 +1321,7 @@ function ldbal_loadhelp (divId) {
             <tr><td>Nb FLOP rcp</td><td>0.00</td></tr>
             <tr><td>Nb FLOP sqrt</td><td>0.00</td></tr>
             <tr><td>Nb FLOP rsqrt</td><td>0.00</td></tr>
-            <tr><td>Bytes/cycle</td><td>9.10</td></tr>
+            <tr><td>Bytes/cycle</td><td>12.30</td></tr>
             <tr><td>Bytes prefetched</td><td>0.00</td></tr>
             <tr><td>Bytes loaded</td><td>151.00</td></tr>
             <tr><td>Bytes stored</td><td>15.00</td></tr>
@@ -1315,58 +1338,56 @@ function ldbal_loadhelp (divId) {
             <tr><td>Vectorization ratio fma</td><td>NA</td></tr>
             <tr><td>Vectorization ratio div_sqrt</td><td>NA</td></tr>
             <tr><td>Vectorization ratio other</td><td style="background-color:#FF3333;">37.50</td></tr>
-            <tr><td>Vector-efficiency ratio all</td><td>12.95</td></tr>
-            <tr><td>Vector-efficiency ratio load</td><td>10.42</td></tr>
-            <tr><td>Vector-efficiency ratio store</td><td>9.38</td></tr>
-            <tr><td>Vector-efficiency ratio mul</td><td>12.50</td></tr>
-            <tr><td>Vector-efficiency ratio add_sub</td><td>12.50</td></tr>
+            <tr><td>Vector-efficiency ratio all</td><td>25.89</td></tr>
+            <tr><td>Vector-efficiency ratio load</td><td>20.83</td></tr>
+            <tr><td>Vector-efficiency ratio store</td><td>18.75</td></tr>
+            <tr><td>Vector-efficiency ratio mul</td><td>25.00</td></tr>
+            <tr><td>Vector-efficiency ratio add_sub</td><td>25.00</td></tr>
             <tr><td>Vector-efficiency ratio fma</td><td>NA</td></tr>
             <tr><td>Vector-efficiency ratio div_sqrt</td><td>NA</td></tr>
-            <tr><td>Vector-efficiency ratio other</td><td>13.67</td></tr>
+            <tr><td>Vector-efficiency ratio other</td><td>27.34</td></tr>
       </table>
     </div>
     <div id="loop_static_path_1" style="width:100%;">
       <table style="width:100%;">
         <tr><th>Metric</th><th>Value</th></tr>
-            <tr><td>Coverage (% app. time)</td><td>3.29</td></tr>
-            <tr><td>Time (s)</td><td>2.09</td></tr>
-            <tr><td>[VPROF] Instance Count</td><td></td></tr>
-            <tr><td>[VPROF] Iteration Count (min | avg | max)</td><td></td></tr>
-            <tr><td>[VPROF] Cycles per Iteration (min | avg | max)</td><td></td></tr>
-            <tr><td>CQA speedup if no scalar integer</td><td style="background-color:#FFCC99;">1.82</td></tr>
-            <tr><td>CQA speedup if FP arith vectorized</td><td style="background-color:#FF950E;">2.54</td></tr>
-            <tr><td>CQA speedup if fully vectorized</td><td style="background-color:#FF950E;">13.30</td></tr>
+            <tr><td>CQA speedup if no scalar integer</td><td style="background-color:#FFCC99;">1.35</td></tr>
+            <tr><td>CQA speedup if FP arith vectorized</td><td style="background-color:#FFCC99;">1.35</td></tr>
+            <tr><td>CQA speedup if fully vectorized</td><td style="background-color:#FF950E;">4.00</td></tr>
             <tr><td>CQA speedup if no inter-iteration dependency</td><td>NA</td></tr>
-            <tr><td>CQA speedup if next bottleneck killed</td><td style="background-color:#FFCC99;">1.59</td></tr>
-            <tr><td>Speedup if perfectly load balanced</td><td>1</td></tr>
-            <tr><td>Bottlenecks</td><td>micro-operation queue, </td></tr>
+            <tr><td>CQA speedup if next bottleneck killed</td><td style="background-color:#FFCC99;">1.33</td></tr>
+            <tr><td>Bottlenecks</td><td>P4, P5, </td></tr>
             <tr><td>Function</td><td>grayscale_weighted</td></tr>
             <tr><td>Source</td><td>sobel.c:20-29</td></tr>
             <tr><td>Source loop unroll info</td><td>not unrolled or unrolled with no peel/tail loop</td></tr>
             <tr><td>Source loop unroll confidence level</td><td>max</td></tr>
             <tr><td>Unroll/vectorization loop type</td><td>NA</td></tr>
             <tr><td>Unroll factor</td><td>NA</td></tr>
-            <tr><td>CQA cycles</td><td>18.25</td></tr>
+            <tr><td>CQA cycles</td><td>13.50</td></tr>
             <tr><td>CQA cycles if no scalar integer</td><td>10.00</td></tr>
-            <tr><td>CQA cycles if FP arith vectorized</td><td>7.19</td></tr>
-            <tr><td>CQA cycles if fully vectorized</td><td>1.37</td></tr>
-            <tr><td>Front-end cycles</td><td style="background-color:#FFCC99;">18.25</td></tr>
-            <tr><td>P0 cycles</td><td>10.50</td></tr>
-            <tr><td>P1 cycles</td><td>10.50</td></tr>
-            <tr><td>P2 cycles</td><td>11.50</td></tr>
-            <tr><td>P3 cycles</td><td>11.50</td></tr>
-            <tr><td>P4 cycles</td><td>5.00</td></tr>
-            <tr><td>P5 cycles</td><td>10.50</td></tr>
-            <tr><td>P6 cycles</td><td>10.50</td></tr>
-            <tr><td>P7 cycles</td><td>5.00</td></tr>
-            <tr><td>DIV/SQRT cycles</td><td>0.00</td></tr>
+            <tr><td>CQA cycles if FP arith vectorized</td><td>10.00</td></tr>
+            <tr><td>CQA cycles if fully vectorized</td><td>3.38</td></tr>
+            <tr><td>Front-end cycles</td><td>10.17</td></tr>
+            <tr><td>DIV/SQRT cycles</td><td>4.50</td></tr>
+            <tr><td>P0 cycles</td><td>4.50</td></tr>
+            <tr><td>P1 cycles</td><td>4.50</td></tr>
+            <tr><td>P2 cycles</td><td>4.50</td></tr>
+            <tr><td>P3 cycles</td><td style="background-color:#FFCC99;">13.50</td></tr>
+            <tr><td>P4 cycles</td><td style="background-color:#FFCC99;">13.50</td></tr>
+            <tr><td>P5 cycles</td><td>1.50</td></tr>
+            <tr><td>P6 cycles</td><td>1.50</td></tr>
+            <tr><td>P7 cycles</td><td>6.00</td></tr>
+            <tr><td>P8 cycles</td><td>10.00</td></tr>
+            <tr><td>P9 cycles</td><td>0.00</td></tr>
             <tr><td>Inter-iter dependencies cycles</td><td>0</td></tr>
+            <tr><td>FE+BE cycles (UFS)</td><td>NA</td></tr>
+            <tr><td>Stall cycles (UFS)</td><td>NA</td></tr>
             <tr><td>Nb insns</td><td>59.00</td></tr>
-            <tr><td>Nb uops</td><td>73.00</td></tr>
+            <tr><td>Nb uops</td><td>61.00</td></tr>
             <tr><td>Nb loads</td><td>23.00</td></tr>
             <tr><td>Nb stores</td><td>5.00</td></tr>
             <tr><td>Nb stack references</td><td style="background-color:#FFCC99;">3.00</td></tr>
-            <tr><td>FLOP/cycle</td><td>0.27</td></tr>
+            <tr><td>FLOP/cycle</td><td>0.37</td></tr>
             <tr><td>Nb FLOP add-sub</td><td>2.00</td></tr>
             <tr><td>Nb FLOP mul</td><td>3.00</td></tr>
             <tr><td>Nb FLOP fma</td><td>0.00</td></tr>
@@ -1374,7 +1395,7 @@ function ldbal_loadhelp (divId) {
             <tr><td>Nb FLOP rcp</td><td>0.00</td></tr>
             <tr><td>Nb FLOP sqrt</td><td>0.00</td></tr>
             <tr><td>Nb FLOP rsqrt</td><td>0.00</td></tr>
-            <tr><td>Bytes/cycle</td><td>9.10</td></tr>
+            <tr><td>Bytes/cycle</td><td>12.30</td></tr>
             <tr><td>Bytes prefetched</td><td>0.00</td></tr>
             <tr><td>Bytes loaded</td><td>151.00</td></tr>
             <tr><td>Bytes stored</td><td>15.00</td></tr>
@@ -1391,14 +1412,14 @@ function ldbal_loadhelp (divId) {
             <tr><td>Vectorization ratio fma</td><td>NA</td></tr>
             <tr><td>Vectorization ratio div_sqrt</td><td>NA</td></tr>
             <tr><td>Vectorization ratio other</td><td style="background-color:#FF3333;">37.50</td></tr>
-            <tr><td>Vector-efficiency ratio all</td><td>12.95</td></tr>
-            <tr><td>Vector-efficiency ratio load</td><td>10.42</td></tr>
-            <tr><td>Vector-efficiency ratio store</td><td>9.38</td></tr>
-            <tr><td>Vector-efficiency ratio mul</td><td>12.50</td></tr>
-            <tr><td>Vector-efficiency ratio add_sub</td><td>12.50</td></tr>
+            <tr><td>Vector-efficiency ratio all</td><td>25.89</td></tr>
+            <tr><td>Vector-efficiency ratio load</td><td>20.83</td></tr>
+            <tr><td>Vector-efficiency ratio store</td><td>18.75</td></tr>
+            <tr><td>Vector-efficiency ratio mul</td><td>25.00</td></tr>
+            <tr><td>Vector-efficiency ratio add_sub</td><td>25.00</td></tr>
             <tr><td>Vector-efficiency ratio fma</td><td>NA</td></tr>
             <tr><td>Vector-efficiency ratio div_sqrt</td><td>NA</td></tr>
-            <tr><td>Vector-efficiency ratio other</td><td>13.67</td></tr>
+            <tr><td>Vector-efficiency ratio other</td><td>27.34</td></tr>
       </table>
     </div>
   </div>
@@ -1438,31 +1459,30 @@ function cqa_adv_loadhelp (divId) {
       </div>
       <div style="padding-left:10px;margin-bottom: 10px;">
         <table>
-          <tr><td class="_td_shift_20">Coverage</td><td>3.29 %</td></tr>
           <tr><td class="_td_shift_20">Function</td><td><a href="../functions/sobel_9.html">grayscale_weighted</a></td></tr>
           <tr><td class="_td_shift_20">Source file and lines</td><td>sobel.c:20-29</td></tr>
         <tr><td class="_td_shift_20">Module</td><td>sobel</td></tr>
         </table>
-The loop is defined in /home/antvidal/AOC/AOC-Computer-vision/sobel.c:20-29.<br /><br />The related source loop is not unrolled or unrolled with no peel/tail loop.<br />      </div><div class="_tab_box">
+The loop is defined in /home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:20-29.<br /><br />The related source loop is not unrolled or unrolled with no peel/tail loop.<br />      </div><div class="_tab_box">
   <div class="_tab_header">
     <ul>
-      <li class="_tab_header_li selected_tab" data-tab="tab8-1" onclick="change_tab (this, 'tab8-')">gain</li>
-      <li class="_tab_header_li " data-tab="tab8-2" onclick="change_tab (this, 'tab8-')">potential</li>
-      <li class="_tab_header_li " data-tab="tab8-3" onclick="change_tab (this, 'tab8-')">hint</li>
-      <li class="_tab_header_li " data-tab="tab8-4" onclick="change_tab (this, 'tab8-')">expert</li>
+      <li class="_tab_header_li selected_tab" data-tab="tab0-1" onclick="change_tab (this, 'tab0-')">gain</li>
+      <li class="_tab_header_li " data-tab="tab0-2" onclick="change_tab (this, 'tab0-')">potential</li>
+      <li class="_tab_header_li " data-tab="tab0-3" onclick="change_tab (this, 'tab0-')">hint</li>
+      <li class="_tab_header_li " data-tab="tab0-4" onclick="change_tab (this, 'tab0-')">expert</li>
     </ul>
   </div>
   <div class="_tab_content">
-  <div id="tab8-1">
+  <div id="tab0-1">
 <div class="_fixed_box" ><h3 class="_header">Code clean check</h3>
 <div class="_content">Detected a slowdown caused by scalar integer instructions (typically used for address computation).
-By removing them, you can lower the cost of an iteration from 18.25 to 10.00 cycles (1.82x speedup).
+By removing them, you can lower the cost of an iteration from 13.50 to 10.00 cycles (1.35x speedup).
 <div class="_fixed_box" ><h3 class="_header">Workaround</h3>
 <div class="_content"><ul><li>Try to reorganize arrays of structures to structures of arrays</li><li>Consider to permute loops (see vectorization gain report)</li></ul>
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Vectorization</h3>
 <div class="_content">Your loop is probably not vectorized.
-Only 12% of vector register length is used (average across all SSE/AVX instructions).
-By vectorizing your loop, you can lower the cost of an iteration from 18.25 to 1.37 cycles (13.30x speedup).
+Only 25% of vector register length is used (average across all SSE/AVX instructions).
+By vectorizing your loop, you can lower the cost of an iteration from 13.50 to 3.37 cycles (4.00x speedup).
 <div class="_fixed_box" ><h3 class="_header">Details</h3>
 <div class="_content">Store and arithmetical SSE/AVX instructions are used in scalar version (process only one data element in vector registers).
 Since your execution units are vector units, only a vectorized loop can use their full power.
@@ -1470,31 +1490,35 @@ Since your execution units are vector units, only a vectorized loop can use thei
 </div></div><div class="_fixed_box" ><h3 class="_header">Workaround</h3>
 <div class="_content"><ul><li>Try another compiler or update/tune your current one:
 <ul><li>recompile with ftree-vectorize (included in O3) to enable loop vectorization and with fassociative-math (included in Ofast or ffast-math) to extend vectorization to FP reductions.</li></ul></li><li>Remove inter-iterations dependences from your loop and make it unit-stride:
-<ul><li>If your arrays have 2 or more dimensions, check whether elements are accessed contiguously and, otherwise, try to permute loops accordingly:
-C storage order is row-major: for(i) for(j) a[j][i] = b[j][i]; (slow, non stride 1) =&gt; for(i) for(j) a[i][j] = b[i][j]; (fast, stride 1)</li><li>If your loop streams arrays of structures (AoS), try to use structures of arrays instead (SoA):
-for(i) a[i].x = b[i].x; (slow, non stride 1) =&gt; for(i) a.x[i] = b.x[i]; (fast, stride 1)</li></ul></li></ul>
+<ul><li>If your arrays have 2 or more dimensions, check whether elements are accessed contiguously and, otherwise, try to permute loops accordingly</li><li>If your loop streams arrays of structures (AoS), try to use structures of arrays instead (SoA)</li></ul></li></ul>
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Execution units bottlenecks</h3>
-<div class="_content">Found no such bottlenecks but see expert reports for more complex bottlenecks.
-</div></div></div>
-  <div id="tab8-2">
+<div class="_content">Performance is limited by:
+<ul><li>reading data from caches/RAM (load units are a bottleneck)</li><li>writing data to caches/RAM (the store unit is a bottleneck)</li></ul>
+By removing all these bottlenecks, you can lower the cost of an iteration from 13.50 to 10.17 cycles (1.33x speedup).
+
+<div class="_fixed_box" ><h3 class="_header">Workaround</h3>
+<div class="_content"><ul><li>Read less array elements</li><li>Write less array elements</li><li>Provide more information to your compiler:
+<ul><li>hardcode the bounds of the corresponding 'for' loop</li></ul></li></ul>
+</div></div></div></div></div>
+  <div id="tab0-2">
 <div class="_fixed_box" ><h3 class="_header">FMA</h3>
 <div class="_content">Presence of both ADD/SUB and MUL operations.
 <div class="_fixed_box" ><h3 class="_header">Workaround</h3>
-<div class="_content"><ul><li>Recompile with march=skylake-avx512.
-CQA target is Skylake_SP (Intel(R) Xeon(R) Skylake SP) but specialization flags are -march=x86-64</li><li>Try to change order in which elements are evaluated (using parentheses) in arithmetic expressions containing both ADD/SUB and MUL operations to enable your compiler to generate FMA instructions wherever possible.
+<div class="_content"><ul><li>Recompile with march=znver1.
+CQA target is AMD_fam17h_mod18h (1st generation Athlon and Ryzen 3 low-power APUs based on the Zen microarchitecture) but specialization flags are -march=x86-64</li><li>Try to change order in which elements are evaluated (using parentheses) in arithmetic expressions containing both ADD/SUB and MUL operations to enable your compiler to generate FMA instructions wherever possible.
 For instance a + b*c is a valid FMA (MUL then ADD).
 However (a+b)* c cannot be translated into an FMA (ADD then MUL).</li></ul>
 </div></div></div></div></div>
-  <div id="tab8-3">
+  <div id="tab0-3">
 <div class="_fixed_box" ><h3 class="_header">Complex instructions</h3>
 <div class="_content">Detected COMPLEX INSTRUCTIONS.
 
 <div class="_fixed_box" ><h3 class="_header">Details</h3>
 <div class="_content">These instructions generate more than one micro-operation and only one of them can be decoded during a cycle and the extra micro-operations increase pressure on execution units.
-<ul><li>ADD: 1 occurrences</li><li>CVTSD2SS: 1 occurrences</li><li>CVTSI2SS: 3 occurrences</li><li>CVTSS2SD: 3 occurrences</li><li>CVTTSS2SI: 3 occurrences</li></ul>
+<ul><li>CVTSI2SS: 3 occurrences</li><li>CVTTSS2SI: 3 occurrences</li></ul>
 </div></div><div class="_fixed_box" ><h3 class="_header">Workaround</h3>
-<div class="_content">Recompile with march=skylake-avx512.
-CQA target is Skylake_SP (Intel(R) Xeon(R) Skylake SP) but specialization flags are -march=x86-64
+<div class="_content">Recompile with march=znver1.
+CQA target is AMD_fam17h_mod18h (1st generation Athlon and Ryzen 3 low-power APUs based on the Zen microarchitecture) but specialization flags are -march=x86-64
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Slow data structures access</h3>
 <div class="_content">Detected data structures (typically arrays) that cannot be efficiently read/written
 <div class="_fixed_box" ><h3 class="_header">Details</h3>
@@ -1507,7 +1531,7 @@ CQA target is Skylake_SP (Intel(R) Xeon(R) Skylake SP) but specialization flags 
 <div class="_fixed_box" ><h3 class="_header">Details</h3>
 <div class="_content"><ul><li>CVTSD2SS (FP64 to FP32, scalar): 1 occurrences</li><li>CVTSI2SS (INT32/64 to FP32, scalar): 3 occurrences</li><li>CVTSS2SD (FP32 to FP64, scalar): 3 occurrences</li><li>CVTTSS2SI (FP32 to INT32/64, scalar): 3 occurrences</li></ul>
 </div></div><div class="_fixed_box" ><h3 class="_header">Workaround</h3>
-<div class="_content">Avoid mixing data with different types. In particular, check if the type of constants is the same as array elements. Use double instead of single precision only when/where needed by numerical stability and avoid mixing precision. In C/C++, FP constants are double precision by default and must be suffixed by 'f' to make them single precision.
+<div class="_content">Avoid mixing data with different types. In particular, check if the type of constants is the same as array elements. Use double instead of single precision only when/where needed by numerical stability and avoid mixing precision.
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Type of elements and instruction set</h3>
 <div class="_content">5 SSE or AVX instructions are processing arithmetic or math operations on double precision FP elements in scalar mode (one at a time).
 
@@ -1522,18 +1546,18 @@ The binary loop is storing 15 bytes (1 double precision FP elements).
 <div class="_fixed_box" ><h3 class="_header">Workaround</h3>
 <div class="_content">Unroll your loop if trip count is significantly higher than target unroll factor and if some data references are common to consecutive iterations. This can be done manually. Or by recompiling with -funroll-loops and/or -floop-unroll-and-jam.
 </div></div></div></div></div>
-  <div id="tab8-4">
+  <div id="tab0-4">
 <div class="_fixed_box" ><h3 class="_header">General properties</h3>
-<div class="_content"><table><tr><td>nb instructions</td><td>59</td></tr><tr><td>nb uops</td><td>73</td></tr><tr><td>loop length</td><td>241</td></tr><tr><td>used x86 registers</td><td>3</td></tr><tr><td>used mmx registers</td><td>0</td></tr><tr><td>used xmm registers</td><td>3</td></tr><tr><td>used ymm registers</td><td>0</td></tr><tr><td>used zmm registers</td><td>0</td></tr><tr><td>nb stack references</td><td>3</td></tr><tr><td>ADD-SUB / MUL ratio</td><td>0.67</td></tr></table>
+<div class="_content"><table><tr><td>nb instructions</td><td>59</td></tr><tr><td>nb uops</td><td>61</td></tr><tr><td>loop length</td><td>241</td></tr><tr><td>used x86 registers</td><td>3</td></tr><tr><td>used mmx registers</td><td>0</td></tr><tr><td>used xmm registers</td><td>3</td></tr><tr><td>used ymm registers</td><td>0</td></tr><tr><td>used zmm registers</td><td>0</td></tr><tr><td>nb stack references</td><td>3</td></tr><tr><td>ADD-SUB / MUL ratio</td><td>0.67</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end</h3>
 <div class="_content">MACRO FUSION NOT POSSIBLE
 FIT IN UOP CACHE
-<table><tr><td>micro-operation queue</td><td>18.25 cycles</td></tr><tr><td>front end</td><td>18.25 cycles</td></tr></table>
+<table><tr><td>micro-operation queue</td><td>10.17 cycles</td></tr><tr><td>front end</td><td>10.17 cycles</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Back-end</h3>
-<div class="_content"><table><tr><th>      </th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th></tr><tr><td>uops</td><td>10.50</td><td>10.50</td><td>11.50</td><td>11.50</td><td>5.00</td><td>10.50</td><td>10.50</td><td>5.00</td></tr><tr><td>cycles</td><td>10.50</td><td>10.50</td><td>11.50</td><td>11.50</td><td>5.00</td><td>10.50</td><td>10.50</td><td>5.00</td></tr></table>
-<table><tr><td>Cycles executing div or sqrt instructions</td><td>NA</td></tr><tr><td>Longest recurrence chain latency (RecMII)</td><td>0.00</td></tr></table>
+<div class="_content"><table><tr><th>      </th><th>ALU0</th><th>ALU1</th><th>ALU2</th><th>ALU3</th><th>AGU0</th><th>AGU1</th><th>FP0</th><th>FP1</th><th>FP2</th><th>FP3</th></tr><tr><td>uops</td><td>4.50</td><td>4.50</td><td>4.50</td><td>4.50</td><td>13.50</td><td>13.50</td><td>1.50</td><td>1.50</td><td>6.00</td><td>10.00</td></tr><tr><td>cycles</td><td>4.50</td><td>4.50</td><td>4.50</td><td>4.50</td><td>13.50</td><td>13.50</td><td>1.50</td><td>1.50</td><td>6.00</td><td>10.00</td></tr></table>
+<table><tr><td>Cycles executing div or sqrt instructions</td><td>NA</td></tr><tr><td>Cycles loading/storing data</td><td>11.50</td></tr><tr><td>Longest recurrence chain latency (RecMII)</td><td>0.00</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Cycles summary</h3>
-<div class="_content"><table><tr><td>Front-end</td><td>18.25</td></tr><tr><td>Dispatch</td><td>11.50</td></tr><tr><td>Data deps.</td><td>0.00</td></tr><tr><td>Overall L1</td><td>18.25</td></tr></table>
+<div class="_content"><table><tr><td>Front-end</td><td>10.17</td></tr><tr><td>Dispatch</td><td>13.50</td></tr><tr><td>Data deps.</td><td>0.00</td></tr><tr><td>Overall L1</td><td>13.50</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Vectorization ratios</h3>
 <div class="_content">INT
 <table><tr><td>all</td><td>50%</td></tr><tr><td>load</td><td>0%</td></tr><tr><td>store</td><td>0%</td></tr><tr><td>mul</td><td>NA (no mul vectorizable/vectorized instructions)</td></tr><tr><td>add-sub</td><td>NA (no add-sub vectorizable/vectorized instructions)</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>66%</td></tr></table>FP
@@ -1541,52 +1565,48 @@ FIT IN UOP CACHE
 <table><tr><td>all</td><td>21%</td></tr><tr><td>load</td><td>0%</td></tr><tr><td>store</td><td>0%</td></tr><tr><td>mul</td><td>0%</td></tr><tr><td>add-sub</td><td>0%</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>37%</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Vector efficiency ratios</h3>
 <div class="_content">INT
-<table><tr><td>all</td><td>17%</td></tr><tr><td>load</td><td>12%</td></tr><tr><td>store</td><td>12%</td></tr><tr><td>mul</td><td>NA (no mul vectorizable/vectorized instructions)</td></tr><tr><td>add-sub</td><td>NA (no add-sub vectorizable/vectorized instructions)</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>18%</td></tr></table>FP
-<table><tr><td>all</td><td>9%</td></tr><tr><td>load</td><td>9%</td></tr><tr><td>store</td><td>6%</td></tr><tr><td>mul</td><td>12%</td></tr><tr><td>add-sub</td><td>12%</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>7%</td></tr></table>INT+FP
-<table><tr><td>all</td><td>12%</td></tr><tr><td>load</td><td>10%</td></tr><tr><td>store</td><td>9%</td></tr><tr><td>mul</td><td>12%</td></tr><tr><td>add-sub</td><td>12%</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>13%</td></tr></table>
+<table><tr><td>all</td><td>34%</td></tr><tr><td>load</td><td>25%</td></tr><tr><td>store</td><td>25%</td></tr><tr><td>mul</td><td>NA (no mul vectorizable/vectorized instructions)</td></tr><tr><td>add-sub</td><td>NA (no add-sub vectorizable/vectorized instructions)</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>37%</td></tr></table>FP
+<table><tr><td>all</td><td>19%</td></tr><tr><td>load</td><td>18%</td></tr><tr><td>store</td><td>12%</td></tr><tr><td>mul</td><td>25%</td></tr><tr><td>add-sub</td><td>25%</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>14%</td></tr></table>INT+FP
+<table><tr><td>all</td><td>25%</td></tr><tr><td>load</td><td>20%</td></tr><tr><td>store</td><td>18%</td></tr><tr><td>mul</td><td>25%</td></tr><tr><td>add-sub</td><td>25%</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>27%</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Cycles and memory resources usage</h3>
-<div class="_content">Assuming all data fit into the L1 cache, each iteration of the binary loop takes 18.25 cycles. At this rate:
-<ul><li>6% of peak load performance is reached (8.27 out of 128.00 bytes loaded per cycle (GB/s @ 1GHz))</li><li>1% of peak store performance is reached (0.82 out of 64.00 bytes stored per cycle (GB/s @ 1GHz))</li></ul>
+<div class="_content">Assuming all data fit into the L1 cache, each iteration of the binary loop takes 13.50 cycles. At this rate:
+<ul><li>34% of peak load performance is reached (11.19 out of 32.00 bytes loaded per cycle (GB/s @ 1GHz))</li><li>6% of peak store performance is reached (1.11 out of 16.00 bytes stored per cycle (GB/s @ 1GHz))</li></ul>
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end bottlenecks</h3>
-<div class="_content">Performance is limited by instruction throughput (loading/decoding program instructions to execution core) (front-end is a bottleneck).
-
-By removing all these bottlenecks, you can lower the cost of an iteration from 18.25 to 11.50 cycles (1.59x speedup).
-
+<div class="_content">Found no such bottlenecks.
 </div></div><div class="_fixed_box" ><h3 class="_header">ASM code</h3>
-<div class="_content">In the binary file, the address of the loop is: 4009e4
+<div class="_content">In the binary file, the address of the loop is: 1446
 
-<table><tr><th>Instruction</th><th>Nb FU</th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RDX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVZX (%RAX),%EAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVZX %AL,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %EAX,%XMM0</td><td>2</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM1,%XMM1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSS2SD %XMM0,%XMM1</td><td>2</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>5</td><td>2</td></tr><tr><td style='word-break:break-all;'>MOVSD 0xc46(%RIP),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULSD %XMM0,%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x1(%RAX),%RDX</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVZX (%RAX),%EAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVZX %AL,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %EAX,%XMM0</td><td>2</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM2,%XMM2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSS2SD %XMM0,%XMM2</td><td>2</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>5</td><td>2</td></tr><tr><td style='word-break:break-all;'>MOVSD 0xc1d(%RIP),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULSD %XMM2,%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADDSD %XMM0,%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x2(%RAX),%RDX</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVZX (%RAX),%EAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVZX %AL,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %EAX,%XMM0</td><td>2</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM2,%XMM2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSS2SD %XMM0,%XMM2</td><td>2</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>5</td><td>2</td></tr><tr><td style='word-break:break-all;'>MOVSD 0xbf0(%RIP),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULSD %XMM2,%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADDSD %XMM1,%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>CVTSD2SS %XMM0,%XMM0</td><td>2</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>5</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOVSS %XMM0,-0xc(%RBP)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RDX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTTSS2SI -0xc(%RBP),%EDX</td><td>3</td><td>1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV %DL,(%RAX)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x1(%RAX),%RDX</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTTSS2SI -0xc(%RBP),%EDX</td><td>3</td><td>1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV %DL,(%RAX)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x2(%RAX),%RDX</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTTSS2SI -0xc(%RBP),%EDX</td><td>3</td><td>1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV %DL,(%RAX)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>ADDQ $0x3,-0x8(%RBP)</td><td>2</td><td>0.50</td><td>0.50</td><td>0.83</td><td>0.83</td><td>1</td><td>0.50</td><td>0.50</td><td>0.33</td><td>5</td><td>1</td></tr><tr><td style='word-break:break-all;'>CMPQ $0x2a2fff,-0x8(%RBP)</td><td>1</td><td>0.25</td><td>0.25</td><td>0.50</td><td>0.50</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>JBE 400901 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td></tr></table>
+<table><tr><th>Instruction</th><th>Nb FU</th><th>ALU0</th><th>ALU1</th><th>ALU2</th><th>ALU3</th><th>AGU0</th><th>AGU1</th><th>FP0</th><th>FP1</th><th>FP2</th><th>FP3</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RDX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVZX (%RAX),%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVZX %AL,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %EAX,%XMM0</td><td>2</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM1,%XMM1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSS2SD %XMM0,%XMM1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOVSD 0x1d44(%RIP),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULSD %XMM0,%XMM1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x1(%RAX),%RDX</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVZX (%RAX),%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVZX %AL,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %EAX,%XMM0</td><td>2</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM2,%XMM2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSS2SD %XMM0,%XMM2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOVSD 0x1d1b(%RIP),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULSD %XMM2,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADDSD %XMM0,%XMM1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x2(%RAX),%RDX</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVZX (%RAX),%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVZX %AL,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %EAX,%XMM0</td><td>2</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM2,%XMM2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSS2SD %XMM0,%XMM2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOVSD 0x1cee(%RIP),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULSD %XMM2,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADDSD %XMM1,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>CVTSD2SS %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOVSS %XMM0,-0xc(%RBP)</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RDX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTTSS2SI -0xc(%RBP),%EDX</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>1</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV %DL,(%RAX)</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x1(%RAX),%RDX</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTTSS2SI -0xc(%RBP),%EDX</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>1</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV %DL,(%RAX)</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x2(%RAX),%RDX</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTTSS2SI -0xc(%RBP),%EDX</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>1</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV %DL,(%RAX)</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>ADDQ $0x3,-0x8(%RBP)</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr><tr><td style='word-break:break-all;'>CMPQ $0x2a2fff,-0x8(%RBP)</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>JBE 1363 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr></table>
 </div></div></div>
 </div></div>
     </div>
     <div id="loop_cqa_path_1">
       <div style="padding-left:10px;margin-bottom: 10px;">
         <table>
-          <tr><td class="_td_shift_20">Coverage</td><td>3.29 %</td></tr>
           <tr><td class="_td_shift_20">Function</td><td><a href="../functions/sobel_9.html">grayscale_weighted</a></td></tr>
           <tr><td class="_td_shift_20">Source file and lines</td><td>sobel.c:20-29</td></tr>
         <tr><td class="_td_shift_20">Module</td><td>sobel</td></tr>
         </table>
-The loop is defined in /home/antvidal/AOC/AOC-Computer-vision/sobel.c:20-29.<br /><br />The related source loop is not unrolled or unrolled with no peel/tail loop.<br />      </div><div class="_tab_box">
+The loop is defined in /home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:20-29.<br /><br />The related source loop is not unrolled or unrolled with no peel/tail loop.<br />      </div><div class="_tab_box">
   <div class="_tab_header">
     <ul>
-      <li class="_tab_header_li selected_tab" data-tab="tab9-1" onclick="change_tab (this, 'tab9-')">gain</li>
-      <li class="_tab_header_li " data-tab="tab9-2" onclick="change_tab (this, 'tab9-')">potential</li>
-      <li class="_tab_header_li " data-tab="tab9-3" onclick="change_tab (this, 'tab9-')">hint</li>
-      <li class="_tab_header_li " data-tab="tab9-4" onclick="change_tab (this, 'tab9-')">expert</li>
+      <li class="_tab_header_li selected_tab" data-tab="tab1-1" onclick="change_tab (this, 'tab1-')">gain</li>
+      <li class="_tab_header_li " data-tab="tab1-2" onclick="change_tab (this, 'tab1-')">potential</li>
+      <li class="_tab_header_li " data-tab="tab1-3" onclick="change_tab (this, 'tab1-')">hint</li>
+      <li class="_tab_header_li " data-tab="tab1-4" onclick="change_tab (this, 'tab1-')">expert</li>
     </ul>
   </div>
   <div class="_tab_content">
-  <div id="tab9-1">
+  <div id="tab1-1">
 <div class="_fixed_box" ><h3 class="_header">Code clean check</h3>
 <div class="_content">Detected a slowdown caused by scalar integer instructions (typically used for address computation).
-By removing them, you can lower the cost of an iteration from 18.25 to 10.00 cycles (1.82x speedup).
+By removing them, you can lower the cost of an iteration from 13.50 to 10.00 cycles (1.35x speedup).
 <div class="_fixed_box" ><h3 class="_header">Workaround</h3>
 <div class="_content"><ul><li>Try to reorganize arrays of structures to structures of arrays</li><li>Consider to permute loops (see vectorization gain report)</li></ul>
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Vectorization</h3>
 <div class="_content">Your loop is probably not vectorized.
-Only 12% of vector register length is used (average across all SSE/AVX instructions).
-By vectorizing your loop, you can lower the cost of an iteration from 18.25 to 1.37 cycles (13.30x speedup).
+Only 25% of vector register length is used (average across all SSE/AVX instructions).
+By vectorizing your loop, you can lower the cost of an iteration from 13.50 to 3.37 cycles (4.00x speedup).
 <div class="_fixed_box" ><h3 class="_header">Details</h3>
 <div class="_content">Store and arithmetical SSE/AVX instructions are used in scalar version (process only one data element in vector registers).
 Since your execution units are vector units, only a vectorized loop can use their full power.
@@ -1594,31 +1614,35 @@ Since your execution units are vector units, only a vectorized loop can use thei
 </div></div><div class="_fixed_box" ><h3 class="_header">Workaround</h3>
 <div class="_content"><ul><li>Try another compiler or update/tune your current one:
 <ul><li>recompile with ftree-vectorize (included in O3) to enable loop vectorization and with fassociative-math (included in Ofast or ffast-math) to extend vectorization to FP reductions.</li></ul></li><li>Remove inter-iterations dependences from your loop and make it unit-stride:
-<ul><li>If your arrays have 2 or more dimensions, check whether elements are accessed contiguously and, otherwise, try to permute loops accordingly:
-C storage order is row-major: for(i) for(j) a[j][i] = b[j][i]; (slow, non stride 1) =&gt; for(i) for(j) a[i][j] = b[i][j]; (fast, stride 1)</li><li>If your loop streams arrays of structures (AoS), try to use structures of arrays instead (SoA):
-for(i) a[i].x = b[i].x; (slow, non stride 1) =&gt; for(i) a.x[i] = b.x[i]; (fast, stride 1)</li></ul></li></ul>
+<ul><li>If your arrays have 2 or more dimensions, check whether elements are accessed contiguously and, otherwise, try to permute loops accordingly</li><li>If your loop streams arrays of structures (AoS), try to use structures of arrays instead (SoA)</li></ul></li></ul>
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Execution units bottlenecks</h3>
-<div class="_content">Found no such bottlenecks but see expert reports for more complex bottlenecks.
-</div></div></div>
-  <div id="tab9-2">
+<div class="_content">Performance is limited by:
+<ul><li>reading data from caches/RAM (load units are a bottleneck)</li><li>writing data to caches/RAM (the store unit is a bottleneck)</li></ul>
+By removing all these bottlenecks, you can lower the cost of an iteration from 13.50 to 10.17 cycles (1.33x speedup).
+
+<div class="_fixed_box" ><h3 class="_header">Workaround</h3>
+<div class="_content"><ul><li>Read less array elements</li><li>Write less array elements</li><li>Provide more information to your compiler:
+<ul><li>hardcode the bounds of the corresponding 'for' loop</li></ul></li></ul>
+</div></div></div></div></div>
+  <div id="tab1-2">
 <div class="_fixed_box" ><h3 class="_header">FMA</h3>
 <div class="_content">Presence of both ADD/SUB and MUL operations.
 <div class="_fixed_box" ><h3 class="_header">Workaround</h3>
-<div class="_content"><ul><li>Recompile with march=skylake-avx512.
-CQA target is Skylake_SP (Intel(R) Xeon(R) Skylake SP) but specialization flags are -march=x86-64</li><li>Try to change order in which elements are evaluated (using parentheses) in arithmetic expressions containing both ADD/SUB and MUL operations to enable your compiler to generate FMA instructions wherever possible.
+<div class="_content"><ul><li>Recompile with march=znver1.
+CQA target is AMD_fam17h_mod18h (1st generation Athlon and Ryzen 3 low-power APUs based on the Zen microarchitecture) but specialization flags are -march=x86-64</li><li>Try to change order in which elements are evaluated (using parentheses) in arithmetic expressions containing both ADD/SUB and MUL operations to enable your compiler to generate FMA instructions wherever possible.
 For instance a + b*c is a valid FMA (MUL then ADD).
 However (a+b)* c cannot be translated into an FMA (ADD then MUL).</li></ul>
 </div></div></div></div></div>
-  <div id="tab9-3">
+  <div id="tab1-3">
 <div class="_fixed_box" ><h3 class="_header">Complex instructions</h3>
 <div class="_content">Detected COMPLEX INSTRUCTIONS.
 
 <div class="_fixed_box" ><h3 class="_header">Details</h3>
 <div class="_content">These instructions generate more than one micro-operation and only one of them can be decoded during a cycle and the extra micro-operations increase pressure on execution units.
-<ul><li>ADD: 1 occurrences</li><li>CVTSD2SS: 1 occurrences</li><li>CVTSI2SS: 3 occurrences</li><li>CVTSS2SD: 3 occurrences</li><li>CVTTSS2SI: 3 occurrences</li></ul>
+<ul><li>CVTSI2SS: 3 occurrences</li><li>CVTTSS2SI: 3 occurrences</li></ul>
 </div></div><div class="_fixed_box" ><h3 class="_header">Workaround</h3>
-<div class="_content">Recompile with march=skylake-avx512.
-CQA target is Skylake_SP (Intel(R) Xeon(R) Skylake SP) but specialization flags are -march=x86-64
+<div class="_content">Recompile with march=znver1.
+CQA target is AMD_fam17h_mod18h (1st generation Athlon and Ryzen 3 low-power APUs based on the Zen microarchitecture) but specialization flags are -march=x86-64
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Slow data structures access</h3>
 <div class="_content">Detected data structures (typically arrays) that cannot be efficiently read/written
 <div class="_fixed_box" ><h3 class="_header">Details</h3>
@@ -1631,7 +1655,7 @@ CQA target is Skylake_SP (Intel(R) Xeon(R) Skylake SP) but specialization flags 
 <div class="_fixed_box" ><h3 class="_header">Details</h3>
 <div class="_content"><ul><li>CVTSD2SS (FP64 to FP32, scalar): 1 occurrences</li><li>CVTSI2SS (INT32/64 to FP32, scalar): 3 occurrences</li><li>CVTSS2SD (FP32 to FP64, scalar): 3 occurrences</li><li>CVTTSS2SI (FP32 to INT32/64, scalar): 3 occurrences</li></ul>
 </div></div><div class="_fixed_box" ><h3 class="_header">Workaround</h3>
-<div class="_content">Avoid mixing data with different types. In particular, check if the type of constants is the same as array elements. Use double instead of single precision only when/where needed by numerical stability and avoid mixing precision. In C/C++, FP constants are double precision by default and must be suffixed by 'f' to make them single precision.
+<div class="_content">Avoid mixing data with different types. In particular, check if the type of constants is the same as array elements. Use double instead of single precision only when/where needed by numerical stability and avoid mixing precision.
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Type of elements and instruction set</h3>
 <div class="_content">5 SSE or AVX instructions are processing arithmetic or math operations on double precision FP elements in scalar mode (one at a time).
 
@@ -1646,18 +1670,18 @@ The binary loop is storing 15 bytes (1 double precision FP elements).
 <div class="_fixed_box" ><h3 class="_header">Workaround</h3>
 <div class="_content">Unroll your loop if trip count is significantly higher than target unroll factor and if some data references are common to consecutive iterations. This can be done manually. Or by recompiling with -funroll-loops and/or -floop-unroll-and-jam.
 </div></div></div></div></div>
-  <div id="tab9-4">
+  <div id="tab1-4">
 <div class="_fixed_box" ><h3 class="_header">General properties</h3>
-<div class="_content"><table><tr><td>nb instructions</td><td>59</td></tr><tr><td>nb uops</td><td>73</td></tr><tr><td>loop length</td><td>241</td></tr><tr><td>used x86 registers</td><td>3</td></tr><tr><td>used mmx registers</td><td>0</td></tr><tr><td>used xmm registers</td><td>3</td></tr><tr><td>used ymm registers</td><td>0</td></tr><tr><td>used zmm registers</td><td>0</td></tr><tr><td>nb stack references</td><td>3</td></tr><tr><td>ADD-SUB / MUL ratio</td><td>0.67</td></tr></table>
+<div class="_content"><table><tr><td>nb instructions</td><td>59</td></tr><tr><td>nb uops</td><td>61</td></tr><tr><td>loop length</td><td>241</td></tr><tr><td>used x86 registers</td><td>3</td></tr><tr><td>used mmx registers</td><td>0</td></tr><tr><td>used xmm registers</td><td>3</td></tr><tr><td>used ymm registers</td><td>0</td></tr><tr><td>used zmm registers</td><td>0</td></tr><tr><td>nb stack references</td><td>3</td></tr><tr><td>ADD-SUB / MUL ratio</td><td>0.67</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end</h3>
 <div class="_content">MACRO FUSION NOT POSSIBLE
 FIT IN UOP CACHE
-<table><tr><td>micro-operation queue</td><td>18.25 cycles</td></tr><tr><td>front end</td><td>18.25 cycles</td></tr></table>
+<table><tr><td>micro-operation queue</td><td>10.17 cycles</td></tr><tr><td>front end</td><td>10.17 cycles</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Back-end</h3>
-<div class="_content"><table><tr><th>      </th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th></tr><tr><td>uops</td><td>10.50</td><td>10.50</td><td>11.50</td><td>11.50</td><td>5.00</td><td>10.50</td><td>10.50</td><td>5.00</td></tr><tr><td>cycles</td><td>10.50</td><td>10.50</td><td>11.50</td><td>11.50</td><td>5.00</td><td>10.50</td><td>10.50</td><td>5.00</td></tr></table>
-<table><tr><td>Cycles executing div or sqrt instructions</td><td>NA</td></tr><tr><td>Longest recurrence chain latency (RecMII)</td><td>0.00</td></tr></table>
+<div class="_content"><table><tr><th>      </th><th>ALU0</th><th>ALU1</th><th>ALU2</th><th>ALU3</th><th>AGU0</th><th>AGU1</th><th>FP0</th><th>FP1</th><th>FP2</th><th>FP3</th></tr><tr><td>uops</td><td>4.50</td><td>4.50</td><td>4.50</td><td>4.50</td><td>13.50</td><td>13.50</td><td>1.50</td><td>1.50</td><td>6.00</td><td>10.00</td></tr><tr><td>cycles</td><td>4.50</td><td>4.50</td><td>4.50</td><td>4.50</td><td>13.50</td><td>13.50</td><td>1.50</td><td>1.50</td><td>6.00</td><td>10.00</td></tr></table>
+<table><tr><td>Cycles executing div or sqrt instructions</td><td>NA</td></tr><tr><td>Cycles loading/storing data</td><td>11.50</td></tr><tr><td>Longest recurrence chain latency (RecMII)</td><td>0.00</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Cycles summary</h3>
-<div class="_content"><table><tr><td>Front-end</td><td>18.25</td></tr><tr><td>Dispatch</td><td>11.50</td></tr><tr><td>Data deps.</td><td>0.00</td></tr><tr><td>Overall L1</td><td>18.25</td></tr></table>
+<div class="_content"><table><tr><td>Front-end</td><td>10.17</td></tr><tr><td>Dispatch</td><td>13.50</td></tr><tr><td>Data deps.</td><td>0.00</td></tr><tr><td>Overall L1</td><td>13.50</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Vectorization ratios</h3>
 <div class="_content">INT
 <table><tr><td>all</td><td>50%</td></tr><tr><td>load</td><td>0%</td></tr><tr><td>store</td><td>0%</td></tr><tr><td>mul</td><td>NA (no mul vectorizable/vectorized instructions)</td></tr><tr><td>add-sub</td><td>NA (no add-sub vectorizable/vectorized instructions)</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>66%</td></tr></table>FP
@@ -1665,21 +1689,18 @@ FIT IN UOP CACHE
 <table><tr><td>all</td><td>21%</td></tr><tr><td>load</td><td>0%</td></tr><tr><td>store</td><td>0%</td></tr><tr><td>mul</td><td>0%</td></tr><tr><td>add-sub</td><td>0%</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>37%</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Vector efficiency ratios</h3>
 <div class="_content">INT
-<table><tr><td>all</td><td>17%</td></tr><tr><td>load</td><td>12%</td></tr><tr><td>store</td><td>12%</td></tr><tr><td>mul</td><td>NA (no mul vectorizable/vectorized instructions)</td></tr><tr><td>add-sub</td><td>NA (no add-sub vectorizable/vectorized instructions)</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>18%</td></tr></table>FP
-<table><tr><td>all</td><td>9%</td></tr><tr><td>load</td><td>9%</td></tr><tr><td>store</td><td>6%</td></tr><tr><td>mul</td><td>12%</td></tr><tr><td>add-sub</td><td>12%</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>7%</td></tr></table>INT+FP
-<table><tr><td>all</td><td>12%</td></tr><tr><td>load</td><td>10%</td></tr><tr><td>store</td><td>9%</td></tr><tr><td>mul</td><td>12%</td></tr><tr><td>add-sub</td><td>12%</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>13%</td></tr></table>
+<table><tr><td>all</td><td>34%</td></tr><tr><td>load</td><td>25%</td></tr><tr><td>store</td><td>25%</td></tr><tr><td>mul</td><td>NA (no mul vectorizable/vectorized instructions)</td></tr><tr><td>add-sub</td><td>NA (no add-sub vectorizable/vectorized instructions)</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>37%</td></tr></table>FP
+<table><tr><td>all</td><td>19%</td></tr><tr><td>load</td><td>18%</td></tr><tr><td>store</td><td>12%</td></tr><tr><td>mul</td><td>25%</td></tr><tr><td>add-sub</td><td>25%</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>14%</td></tr></table>INT+FP
+<table><tr><td>all</td><td>25%</td></tr><tr><td>load</td><td>20%</td></tr><tr><td>store</td><td>18%</td></tr><tr><td>mul</td><td>25%</td></tr><tr><td>add-sub</td><td>25%</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>27%</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Cycles and memory resources usage</h3>
-<div class="_content">Assuming all data fit into the L1 cache, each iteration of the binary loop takes 18.25 cycles. At this rate:
-<ul><li>6% of peak load performance is reached (8.27 out of 128.00 bytes loaded per cycle (GB/s @ 1GHz))</li><li>1% of peak store performance is reached (0.82 out of 64.00 bytes stored per cycle (GB/s @ 1GHz))</li></ul>
+<div class="_content">Assuming all data fit into the L1 cache, each iteration of the binary loop takes 13.50 cycles. At this rate:
+<ul><li>34% of peak load performance is reached (11.19 out of 32.00 bytes loaded per cycle (GB/s @ 1GHz))</li><li>6% of peak store performance is reached (1.11 out of 16.00 bytes stored per cycle (GB/s @ 1GHz))</li></ul>
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end bottlenecks</h3>
-<div class="_content">Performance is limited by instruction throughput (loading/decoding program instructions to execution core) (front-end is a bottleneck).
-
-By removing all these bottlenecks, you can lower the cost of an iteration from 18.25 to 11.50 cycles (1.59x speedup).
-
+<div class="_content">Found no such bottlenecks.
 </div></div><div class="_fixed_box" ><h3 class="_header">ASM code</h3>
-<div class="_content">In the binary file, the address of the loop is: 4009e4
+<div class="_content">In the binary file, the address of the loop is: 1446
 
-<table><tr><th>Instruction</th><th>Nb FU</th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RDX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVZX (%RAX),%EAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVZX %AL,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %EAX,%XMM0</td><td>2</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM1,%XMM1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSS2SD %XMM0,%XMM1</td><td>2</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>5</td><td>2</td></tr><tr><td style='word-break:break-all;'>MOVSD 0xc46(%RIP),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULSD %XMM0,%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x1(%RAX),%RDX</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVZX (%RAX),%EAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVZX %AL,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %EAX,%XMM0</td><td>2</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM2,%XMM2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSS2SD %XMM0,%XMM2</td><td>2</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>5</td><td>2</td></tr><tr><td style='word-break:break-all;'>MOVSD 0xc1d(%RIP),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULSD %XMM2,%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADDSD %XMM0,%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x2(%RAX),%RDX</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVZX (%RAX),%EAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVZX %AL,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %EAX,%XMM0</td><td>2</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM2,%XMM2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSS2SD %XMM0,%XMM2</td><td>2</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>5</td><td>2</td></tr><tr><td style='word-break:break-all;'>MOVSD 0xbf0(%RIP),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULSD %XMM2,%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADDSD %XMM1,%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>CVTSD2SS %XMM0,%XMM0</td><td>2</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>5</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOVSS %XMM0,-0xc(%RBP)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RDX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTTSS2SI -0xc(%RBP),%EDX</td><td>3</td><td>1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV %DL,(%RAX)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x1(%RAX),%RDX</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTTSS2SI -0xc(%RBP),%EDX</td><td>3</td><td>1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV %DL,(%RAX)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x2(%RAX),%RDX</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTTSS2SI -0xc(%RBP),%EDX</td><td>3</td><td>1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV %DL,(%RAX)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>ADDQ $0x3,-0x8(%RBP)</td><td>2</td><td>0.50</td><td>0.50</td><td>0.83</td><td>0.83</td><td>1</td><td>0.50</td><td>0.50</td><td>0.33</td><td>5</td><td>1</td></tr><tr><td style='word-break:break-all;'>CMPQ $0x2a2fff,-0x8(%RBP)</td><td>1</td><td>0.25</td><td>0.25</td><td>0.50</td><td>0.50</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>JBE 400901 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td></tr></table>
+<table><tr><th>Instruction</th><th>Nb FU</th><th>ALU0</th><th>ALU1</th><th>ALU2</th><th>ALU3</th><th>AGU0</th><th>AGU1</th><th>FP0</th><th>FP1</th><th>FP2</th><th>FP3</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RDX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVZX (%RAX),%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVZX %AL,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %EAX,%XMM0</td><td>2</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM1,%XMM1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSS2SD %XMM0,%XMM1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOVSD 0x1d44(%RIP),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULSD %XMM0,%XMM1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x1(%RAX),%RDX</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVZX (%RAX),%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVZX %AL,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %EAX,%XMM0</td><td>2</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM2,%XMM2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSS2SD %XMM0,%XMM2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOVSD 0x1d1b(%RIP),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULSD %XMM2,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADDSD %XMM0,%XMM1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x2(%RAX),%RDX</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVZX (%RAX),%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVZX %AL,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %EAX,%XMM0</td><td>2</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>7</td><td>1</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM2,%XMM2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSS2SD %XMM0,%XMM2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOVSD 0x1cee(%RIP),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULSD %XMM2,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADDSD %XMM1,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>CVTSD2SS %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOVSS %XMM0,-0xc(%RBP)</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RDX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTTSS2SI -0xc(%RBP),%EDX</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>1</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV %DL,(%RAX)</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x1(%RAX),%RDX</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTTSS2SI -0xc(%RBP),%EDX</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>1</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV %DL,(%RAX)</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV -0x8(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>LEA 0x2(%RAX),%RDX</td></tr><tr><td style='word-break:break-all;'>MOV -0x18(%RBP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD %RDX,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTTSS2SI -0xc(%RBP),%EDX</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>1</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>MOV %DL,(%RAX)</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>1</td></tr><tr><td style='word-break:break-all;'>ADDQ $0x3,-0x8(%RBP)</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr><tr><td style='word-break:break-all;'>CMPQ $0x2a2fff,-0x8(%RBP)</td><td>1</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.25</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>JBE 1363 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr></table>
 </div></div></div>
 </div></div>
     </div>
@@ -2061,45 +2082,45 @@ addLoadEvent(function(){
     </div>
   </div>
 </div><script>
-var tooltips_texts = ['Go to previous loop: 3',
-'No next loop',
+var tooltips_texts = ['Go to previous loop: 4',
+'Go to next loop: 3',
 'Open on a new tab',
 'Open on a new tab',
 'Check the box to display the group analysis. A group is a set of instructions accessing to the same memory area',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 2&lt;br&gt;Pattern: LS&lt;br&gt;Span: 1&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 2&lt;br&gt;Accessed memory without overlapping: 1&lt;br&gt;Accessed memory reused: 1&lt;br&gt;',
-'Size: 3&lt;br&gt;Pattern: LLL&lt;br&gt;Span: 94&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 24&lt;br&gt;Accessed memory without overlapping: 24&lt;br&gt;Accessed memory reused: 0&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 4&lt;br&gt;Pattern: LLSS&lt;br&gt;Span: 1&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 2&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 4&lt;br&gt;Accessed memory without overlapping: 1&lt;br&gt;Accessed memory reused: 3&lt;br&gt;',
-'Size: 3&lt;br&gt;Pattern: LLL&lt;br&gt;Span: 94&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 24&lt;br&gt;Accessed memory without overlapping: 24&lt;br&gt;Accessed memory reused: 0&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 4&lt;br&gt;Pattern: LLSS&lt;br&gt;Span: 1&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 2&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 4&lt;br&gt;Accessed memory without overlapping: 1&lt;br&gt;Accessed memory reused: 3&lt;br&gt;',
-'Size: 3&lt;br&gt;Pattern: LLL&lt;br&gt;Span: 94&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 24&lt;br&gt;Accessed memory without overlapping: 24&lt;br&gt;Accessed memory reused: 0&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 2&lt;br&gt;Pattern: LS&lt;br&gt;Span: 1&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 2&lt;br&gt;Accessed memory without overlapping: 1&lt;br&gt;Accessed memory reused: 1&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 4&lt;br&gt;Pattern: LLSS&lt;br&gt;Span: 1&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 2&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 4&lt;br&gt;Accessed memory without overlapping: 1&lt;br&gt;Accessed memory reused: 3&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 4&lt;br&gt;Pattern: LLSS&lt;br&gt;Span: 1&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 2&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 4&lt;br&gt;Accessed memory without overlapping: 1&lt;br&gt;Accessed memory reused: 3&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
-'Size: 18&lt;br&gt;Pattern: LLLLLLLSLLLLLLLLLS&lt;br&gt;Span: 24&lt;br&gt;Head: 0&lt;br&gt;Unroll factor: 1&lt;br&gt;Stride status: Not mono block loop&lt;br&gt;Stride: 0&lt;br&gt;Accessed memory status: Success&lt;br&gt;Accessed memory: 128&lt;br&gt;Accessed memory without overlapping: 20&lt;br&gt;Accessed memory reused: 108&lt;br&gt;',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 2<br>Pattern: LS<br>Span: 1<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 2<br>Accessed memory without overlapping: 1<br>Accessed memory reused: 1<br>',
+'Size: 3<br>Pattern: LLL<br>Span: 94<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 24<br>Accessed memory without overlapping: 24<br>Accessed memory reused: 0<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 4<br>Pattern: LLSS<br>Span: 1<br>Head: 0<br>Unroll factor: 2<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 4<br>Accessed memory without overlapping: 1<br>Accessed memory reused: 3<br>',
+'Size: 3<br>Pattern: LLL<br>Span: 94<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 24<br>Accessed memory without overlapping: 24<br>Accessed memory reused: 0<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 4<br>Pattern: LLSS<br>Span: 1<br>Head: 0<br>Unroll factor: 2<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 4<br>Accessed memory without overlapping: 1<br>Accessed memory reused: 3<br>',
+'Size: 3<br>Pattern: LLL<br>Span: 94<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 24<br>Accessed memory without overlapping: 24<br>Accessed memory reused: 0<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 2<br>Pattern: LS<br>Span: 1<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 2<br>Accessed memory without overlapping: 1<br>Accessed memory reused: 1<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 4<br>Pattern: LLSS<br>Span: 1<br>Head: 0<br>Unroll factor: 2<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 4<br>Accessed memory without overlapping: 1<br>Accessed memory reused: 3<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 4<br>Pattern: LLSS<br>Span: 1<br>Head: 0<br>Unroll factor: 2<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 4<br>Accessed memory without overlapping: 1<br>Accessed memory reused: 3<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
+'Size: 18<br>Pattern: LLLLLLLSLLLLLLLLLS<br>Span: 24<br>Head: 0<br>Unroll factor: 1<br>Stride status: Not mono block loop<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 128<br>Accessed memory without overlapping: 20<br>Accessed memory reused: 108<br>',
 'Assembly code of the object (loop / function).<br/>It is analyzed using MAQAO core',
 'Source code of the loop.<br/>It is extracted using MAQAO core.',
 'Coverage of the callchain',
 'Name of the function',
 'Location of the function source code',
 'Name of the module (binary file) that contains the function',
-'/home/antvidal/AOC/AOC-Computer-vision/sobel.c:123',
+'/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:162',
 '',
 'Callchains extracted using LPROF.',
 'Load distribution analysis of the loop.<br/>It is generated using LPROF results.',

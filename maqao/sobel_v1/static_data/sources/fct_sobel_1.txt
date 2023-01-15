@@ -1,0 +1,97 @@
+/usr/include/x86_64-linux-gnu/bits/stdio2.h: 105 - 293
+--------------------------------------------------------------------------------
+
+105:   return __fprintf_chk (__stream, __USE_FORTIFY_LEVEL - 1, __fmt,
+[...]
+112:   return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+[...]
+293:     return __fread_alias (__ptr, __size, __n, __stream);
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h: 45 - 54
+--------------------------------------------------------------------------------
+
+45:   if (posix_memalign (&__ptr, __alignment, __size) == 0)
+46:     return __ptr;
+47:   else
+48:     return NULL;
+[...]
+54:   free (__ptr);
+/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/rdtsc.h: 9 - 11
+--------------------------------------------------------------------------------
+
+9:   __asm__ volatile ("rdtsc" : "=a" (a), "=d" (d));
+10: 
+11:   return (d << 32) | a;
+/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c: 20 - 231
+--------------------------------------------------------------------------------
+
+20:   for (u64 i = 0; i < H * W * 3; i += 3)
+21:     {
+22:       //Convert RGB color values into grayscale for each pixel using color weights
+23:       //Other possible weights: 0.59, 0.30, 0.11
+24:       //Principle: mix different quantities of R, G, B to create a variant of gray
+25:       gray = ((float)frame[i] * 0.299) + ((float)frame[i + 1] * 0.587) + ((float)frame[i + 2] * 0.114);
+26:       
+27:       frame[i]     = gray;
+[...]
+129: {
+130:   //
+131:   if (argc < 3)
+132:     return printf("Usage: %s [raw input file] [raw output file]\n", argv[0]), 1;
+133:   
+134:   //
+135:   u64 size = sizeof(u8) * H * W * 3;
+136:   u64 cycles[MAX_SAMPLES], cycles_a, cycles_b;
+137:   u64 nb_bytes = 1, frame_count = 0, samples_count = 0;
+[...]
+144:   FILE *fpi = fopen(argv[1], "rb"); 
+145:   FILE *fpo = fopen(argv[2], "wb");
+146: 
+147:   //
+148:   if (!fpi)
+149:     return printf("Error: cannot open file '%s'\n", argv[1]), 2;
+150:   
+151:   //
+152:   if (!fpo)
+153:     return printf("Error: cannot open file '%s'\n", argv[2]), 2;
+154:   
+155:   //Read & process video frames
+156:   while ((nb_bytes = fread(cframe, sizeof(u8), H * W * 3, fpi)))
+[...]
+169:       sobel_v1(cframe, oframe, 100.0);
+[...]
+176:       u64 elapsed = (cycles_a - cycles_b);
+177: 
+178:       //
+179:       if (samples_count < MAX_SAMPLES)
+180: 	cycles[samples_count++] = elapsed;
+181:       
+182:       //frame number; size in Bytes; elapsed cycles; bytes per cycle
+183:       fprintf(stdout, "%20llu; %20llu; %20llu; %15.3lf\n", frame_count, nb_bytes, elapsed, (f64)(nb_bytes) / (f64)elapsed);
+184:       
+185:       // Write this frame to the output pipe
+186:       fwrite(oframe, sizeof(u8), H * W * 3, fpo);
+187: 
+188:       //
+189:       frame_count++;
+190:     }
+191: 
+192:   //
+193:   sort(cycles, samples_count);
+[...]
+199:   mea = mean(cycles, samples_count);
+200:   
+201:   //
+202:   dev = stddev(cycles, samples_count);
+203: 
+204:   //
+205:   min = cycles[0];
+206:   max = cycles[samples_count - 1];
+207:   avg = (min + max) / 2.0;
+[...]
+220: 	  (dev * 100.0 / mea));
+[...]
+227:   fclose(fpi);
+228:   fclose(fpo);
+229: 
+230:   return  0;
+231: }

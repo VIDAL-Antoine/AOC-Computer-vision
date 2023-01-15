@@ -1,4 +1,4 @@
-/home/antvidal/AOC/AOC-Computer-vision/sobel.c: 17 - 31
+/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c: 17 - 31
 --------------------------------------------------------------------------------
 
 17: {

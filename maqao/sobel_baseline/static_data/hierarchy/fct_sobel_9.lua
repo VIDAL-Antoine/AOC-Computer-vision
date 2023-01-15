@@ -4,7 +4,7 @@ __fct = {
       src = "sobel.c:20-29",
       src_regions = {
         {
-          path = "/home/antvidal/AOC/AOC-Computer-vision/sobel.c",
+          path = "/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c",
           regions = {
             {20, 29},
           },

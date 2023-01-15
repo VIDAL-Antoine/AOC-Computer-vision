@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en-US"><head><title>OV - sobel - Global</title>
+<html translate="no" lang="en-US"><head><title>OV - sobel - Global</title>
 <meta charset="utf-8" />
+<meta name="google" content="notranslate" />
 <link rel="stylesheet" type="text/css" media="screen" href="css/ui.jqgrid.css" />
 <link rel="stylesheet" type="text/css" href="css/themes/redmond_custom/jquery-ui.css" />
 <link rel="stylesheet" type="text/css" href="css/themes/redmond_custom/jquery.jqplot.min.css" />
@@ -82,7 +83,7 @@ addLoadEvent(function(){
 });
 </script>
 </head><body>
-<div id="page_title"><img alt="MAQAO" id="maqao_logo" src="images/MAQAO_small_logo.png"/><ul id="maqao_menu"><li ><a class="_current_page _first_menu_level" href="index.html">Global</a><ul><li ><a  href="config.html">Configurations</a></li><li ><a  href="log.html">Logs</a></li></ul></li><li ><a  href="application.html">Application</a></li><li ><a  href="fcts_and_loops.html">Functions</a></li><li ><a  href="loops_index.html">Loops</a></li><li ><a  href="topology.html">Topology</a></li></ul>
+<div id="page_title"><img alt="MAQAO" id="maqao_logo" src="images/MAQAO_small_logo.png"/><ul id="maqao_menu"><li ><a class="_current_page _first_menu_level" href="index.html">Global</a><ul><li ><a  href="config.html">Configurations</a></li><li ><a  href="env.html">Environment Variables</a></li><li ><a  href="outputs.html">Outputs</a></li><li ><a  href="log.html">Logs</a></li></ul></li><li ><a  href="application.html">Application</a></li><li ><a  href="fcts_and_loops.html">Functions</a></li><li ><a  href="loops_index.html">Loops</a></li><li ><a  href="topology.html">Topology</a></li></ul>
 <span><img alt="options" id="menu_options_icon" src="images/gear_20.png" onclick="__open_options ()"/></span>
 </div>
 <script>
@@ -130,68 +131,76 @@ if (obj) {
   }
 }
 </script>
-<h3 style="background-color: var(--header_background);color: var(--header_font);margin: 0px;padding: 5px 0px 5px 10px;border: 1px solid var(--table_border);border-radius: 5px;" class="_header">sobel - 2023-01-15 18:31:42 - MAQAO 2.15.3</h3>
+<h3 style="background-color: var(--header_background);color: var(--header_font);margin: 0px;padding: 5px 0px 5px 10px;border: 1px solid var(--table_border);border-radius: 5px;" class="_header">sobel - 2023-01-15 21:05:35 - MAQAO 2.16.0</h3>
 <p>Help is available by moving the cursor above any <img src="images/help_icon_20.png" style="vertical-align: middle;background-color:var(--fixed_box_header_background);"></img> symbol or by checking <a href="https://maqao.exascale-computing.eu/documentation.html">MAQAO website</a>.</p>
 <div style="width: 100%; display: table;"><div style="display: table-row"><div class="_fixed_box" style="display:table-cell;width:40%;"><h3 class="_header">Global Metrics<span class="tooltip-maqao-button help-maqao" title="" tooltip_id="0"></span></h3><div class="_content"><table id="_tab_global_metrics">
-<tr ><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="1">Total Time (s)</span></td><td>65.03</td></tr>
-<tr class="_table_i_odd"><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="2">Profiled Time (s)</span></td><td style="background-color:#66cc00;">65.03</td></tr>
-<tr  class="border_left_hover " style="cursor: pointer;" onclick="set_chart(73);"><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="3">Time in analyzed loops (%)</span></td><td>90.3</td></tr>
-<tr  class="border_left_hover _table_i_odd" style="cursor: pointer;" onclick="set_chart(74);"><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="4">Time in analyzed innermost loops (%)</span></td><td>86.3</td></tr>
-<tr  class="border_left_hover " style="cursor: pointer;" onclick="set_chart(75);"><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="5">Time in user code (%)</span></td><td>93.4</td></tr>
-<tr class="_table_i_odd"><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="6">Compilation Options</span></td><td style="background-color:#FF3333;"><strong>sobel</strong>:  -O2, -O3 or -Ofast is missing. <br></td></tr>
-<tr  class="border_left_hover " style="cursor: pointer;" onclick="set_chart(76);"><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="7">Perfect Flow Complexity</span></td><td style="background-color:#66cc00;">1.00</td></tr>
-<tr class="_table_i_odd"><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="8">Array Access Efficiency (%)</span></td><td style="background-color:#FFCC99;">70.1</td></tr>
+<tr ><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="1">Total Time (s)</span></td><td>363.08</td></tr>
+<tr class="_table_i_odd"><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="2">Profiled Time (s)</span></td><td style="background-color:#FFCC99;">4.94</td></tr>
+<tr  class="border_left_hover " style="cursor: pointer;" onclick="set_chart(57);"><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="3">Time in analyzed loops (%)</span></td><td>99.8</td></tr>
+<tr  class="border_left_hover _table_i_odd" style="cursor: pointer;" onclick="set_chart(58);"><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="4">Time in analyzed innermost loops (%)</span></td><td>99.8</td></tr>
+<tr  class="border_left_hover " style="cursor: pointer;" onclick="set_chart(59);"><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="5">Time in user code (%)</span></td><td>99.8</td></tr>
+<tr  class="border_left_hover _table_i_odd" style="cursor: pointer;" onclick="set_chart(60);"><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="6">Compilation Options Score (%)</span></td><td style="background-color:#66cc00;">100</td></tr>
+<tr  class="border_left_hover " style="cursor: pointer;" onclick="set_chart(61);"><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="7">Perfect Flow Complexity</span></td><td style="background-color:#66cc00;">1.00</td></tr>
+<tr class="_table_i_odd"><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="8">Array Access Efficiency (%)</span></td><td style="background-color:#66cc00;">97.0</td></tr>
 <tr ><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="9">Perfect OpenMP + MPI + Pthread</span></td><td style="background-color:#66cc00;">1.00</td></tr>
 <tr class="_table_i_odd"><td colspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="10">Perfect OpenMP + MPI + Pthread + Perfect Load Distribution</span></td><td style="background-color:#66cc00;">1.00</td></tr>
-<tbody style="cursor: pointer;"><tr onclick="set_chart(77);"><td rowspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="11">No Scalar Integer</span></td><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="12">Potential Speedup</span></td><td style="background-color:#FFCC99;">1.11</td></tr><tr onclick="set_chart(77);"><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="13">Nb Loops to get 80%</span></td><td style="background-color:#FFCC99;">1</td></tr></tbody>
-<tbody style="cursor: pointer;"><tr class="_table_i_odd" onclick="set_chart(78);"><td rowspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="14">FP Vectorised</span></td><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="15">Potential Speedup</span></td><td style="background-color:#66cc00;">1.04</td></tr><tr class="_table_i_odd" onclick="set_chart(78);"><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="16">Nb Loops to get 80%</span></td><td style="background-color:#66cc00;">1</td></tr></tbody>
-<tbody style="cursor: pointer;"><tr onclick="set_chart(79);"><td rowspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="17">Fully Vectorised</span></td><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="18">Potential Speedup</span></td><td style="background-color:#FF950E;">6.19</td></tr><tr onclick="set_chart(79);"><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="19">Nb Loops to get 80%</span></td><td style="background-color:#FF950E;">4</td></tr></tbody>
-<tbody style="cursor: pointer;"><tr class="_table_i_odd" onclick="set_chart(80);"><td rowspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="20">FP Arithmetic Only</span></td><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="21">Potential Speedup</span></td><td style="background-color:#FFCC99;">1.11</td></tr><tr class="_table_i_odd" onclick="set_chart(80);"><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="22">Nb Loops to get 80%</span></td><td style="background-color:#FFCC99;">1</td></tr></tbody>
+<tbody style="cursor: pointer;"><tr onclick="set_chart(62);"><td rowspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="11">No Scalar Integer</span></td><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="12">Potential Speedup</span></td><td style="background-color:#66cc00;">1.00</td></tr><tr onclick="set_chart(62);"><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="13">Nb Loops to get 80%</span></td><td style="background-color:#66cc00;">1</td></tr></tbody>
+<tbody style="cursor: pointer;"><tr class="_table_i_odd" onclick="set_chart(63);"><td rowspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="14">FP Vectorised</span></td><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="15">Potential Speedup</span></td><td style="background-color:#66cc00;">1.00</td></tr><tr class="_table_i_odd" onclick="set_chart(63);"><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="16">Nb Loops to get 80%</span></td><td style="background-color:#66cc00;">1</td></tr></tbody>
+<tbody style="cursor: pointer;"><tr onclick="set_chart(64);"><td rowspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="17">Fully Vectorised</span></td><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="18">Potential Speedup</span></td><td style="background-color:#FFCC99;">1.18</td></tr><tr onclick="set_chart(64);"><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="19">Nb Loops to get 80%</span></td><td style="background-color:#FFCC99;">1</td></tr></tbody>
+<tbody style="cursor: pointer;"><tr class="_table_i_odd" onclick="set_chart(65);"><td rowspan="2" class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="20">FP Arithmetic Only</span></td><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="21">Potential Speedup</span></td><td style="background-color:#FFCC99;">1.34</td></tr><tr class="_table_i_odd" onclick="set_chart(65);"><td class="_td_shift_20"><span class="tooltip-maqao" title="" tooltip_id="22">Nb Loops to get 80%</span></td><td style="background-color:#FFCC99;">1</td></tr></tbody>
 </table></div></div><div style="width:5px;display:table-cell;"></div>
-<div id="chart_72_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">CQA Potential Speedups Summary</h3><div class="_content">
-<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:hidden; overflow-y:hidden;"><div id="chart_cat_72" style="height:400px;margin-top:20px;" ></div></div>
+<div id="chart_56_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">CQA Potential Speedups Summary</h3><div class="_content">
+<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:hidden; overflow-y:hidden;"><div id="chart_cat_56" style="height:400px;margin-top:20px;" ></div></div>
 <script class="code" >
 </script></div></div>
-<div id="chart_73_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Loop Based Profile<span onclick="set_chart(72);" class="return_button tooltip-maqao" title="" tooltip_id="23">&#9166;</span></h3><div class="_content">
-<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_73" style="height:400px;margin-top:20px;" ></div></div>
+<div id="chart_57_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Loop Based Profile<span onclick="set_chart(56);" class="return_button tooltip-maqao" title="" tooltip_id="23">&#9166;</span></h3><div class="_content">
+<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_57" style="height:400px;margin-top:20px;" ></div></div>
 <script class="code" >
 </script></div></div>
-<div id="chart_74_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Innermost Loop Based Profile<span onclick="set_chart(72);" class="return_button tooltip-maqao" title="" tooltip_id="24">&#9166;</span></h3><div class="_content">
-<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_74" style="height:400px;margin-top:20px;" ></div></div>
+<div id="chart_58_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Innermost Loop Based Profile<span onclick="set_chart(56);" class="return_button tooltip-maqao" title="" tooltip_id="24">&#9166;</span></h3><div class="_content">
+<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_58" style="height:400px;margin-top:20px;" ></div></div>
 <script class="code" >
 </script></div></div>
-<div id="chart_75_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Application Categorization<span onclick="set_chart(72);" class="return_button tooltip-maqao" title="" tooltip_id="25">&#9166;</span></h3><div class="_content">
-      <div id="chart_cat_75" style="height:400px; margin: 0 auto; overflow-x:auto; overflow-y:hidden;"></div>
+<div id="chart_59_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Application Categorization<span onclick="set_chart(56);" class="return_button tooltip-maqao" title="" tooltip_id="25">&#9166;</span></h3><div class="_content">
+      <div id="chart_cat_59" style="height:400px; margin: 0 auto; overflow-x:auto; overflow-y:hidden;"></div>
       <script class="code" >
       </script></div></div>
-<div id="chart_76_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Loop Path Count Profile<span onclick="set_chart(72);" class="return_button tooltip-maqao" title="" tooltip_id="26">&#9166;</span></h3><div class="_content">
-<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_76" style="height:400px;margin-top:20px;" ></div></div>
+<div id="chart_60_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Compilation Options<span onclick="set_chart(56);" class="return_button tooltip-maqao" title="" tooltip_id="25">&#9166;</span></h3><div class="_content">
+<div class="_div_table" ><div style="overflow:auto;">
+<table id="_treed_table_11" class="_treed_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="26">Source Object</th><th class="_freezed_row  tooltip-maqao">Issue</th></tr>
+<tr id="_tr_11_1" ><td id="_tr_11_1-1"  data-_i="1" data-_j="1"  class=" _left"  style="word-break:break-all;" ><span onclick="_click_treed(this)" style="margin-right:5px;margin-left:0px;cursor:pointer;" >&#x25BC;</span>sobel<span onclick="_click_expand(this)" class="span_expand">&#8211;</span></td><td id="_tr_11_1-2"  data-_i="1" data-_j="2"  style="word-break:break-all;" ></td></tr>
+<tr class="_tr_11_1"  id="_tr_11_1_1" ><td id="_tr_11_1_1-1"  data-_i="2" data-_j="1"  class=" _left"  style="word-break:break-all;" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span>sobel.c</td><td id="_tr_11_1_1-2"  data-_i="2" data-_j="2"  style="word-break:break-all;" ></td></tr>
+</table></div>
+</div>
+</div></div>
+<div id="chart_61_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Loop Path Count Profile<span onclick="set_chart(56);" class="return_button tooltip-maqao" title="" tooltip_id="27">&#9166;</span></h3><div class="_content">
+<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_61" style="height:400px;margin-top:20px;" ></div></div>
 <script class="code" >
 </script></div></div>
-<div id="chart_77_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Cumulated Speedup If No Scalar Integer<span onclick="set_chart(72);" class="return_button tooltip-maqao" title="" tooltip_id="27">&#9166;</span></h3><div class="_content">
-<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:hidden; overflow-y:hidden;"><div id="chart_cat_77" style="height:400px;margin-top:20px;" ></div></div>
+<div id="chart_62_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Cumulated Speedup If No Scalar Integer<span onclick="set_chart(56);" class="return_button tooltip-maqao" title="" tooltip_id="28">&#9166;</span></h3><div class="_content">
+<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:hidden; overflow-y:hidden;"><div id="chart_cat_62" style="height:400px;margin-top:20px;" ></div></div>
 <script class="code" >
 </script></div></div>
-<div id="chart_78_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Cumulated Speedup If FP Vectorized<span onclick="set_chart(72);" class="return_button tooltip-maqao" title="" tooltip_id="28">&#9166;</span></h3><div class="_content">
-<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:hidden; overflow-y:hidden;"><div id="chart_cat_78" style="height:400px;margin-top:20px;" ></div></div>
+<div id="chart_63_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Cumulated Speedup If FP Vectorized<span onclick="set_chart(56);" class="return_button tooltip-maqao" title="" tooltip_id="29">&#9166;</span></h3><div class="_content">
+<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:hidden; overflow-y:hidden;"><div id="chart_cat_63" style="height:400px;margin-top:20px;" ></div></div>
 <script class="code" >
 </script></div></div>
-<div id="chart_79_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Cumulated Speedup If Fully Vectorized<span onclick="set_chart(72);" class="return_button tooltip-maqao" title="" tooltip_id="29">&#9166;</span></h3><div class="_content">
-<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:hidden; overflow-y:hidden;"><div id="chart_cat_79" style="height:400px;margin-top:20px;" ></div></div>
+<div id="chart_64_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Cumulated Speedup If Fully Vectorized<span onclick="set_chart(56);" class="return_button tooltip-maqao" title="" tooltip_id="30">&#9166;</span></h3><div class="_content">
+<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:hidden; overflow-y:hidden;"><div id="chart_cat_64" style="height:400px;margin-top:20px;" ></div></div>
 <script class="code" >
 </script></div></div>
-<div id="chart_80_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Cumulated Speedup If FP Arithmetic Only<span onclick="set_chart(72);" class="return_button tooltip-maqao" title="" tooltip_id="30">&#9166;</span></h3><div class="_content">
-<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:hidden; overflow-y:hidden;"><div id="chart_cat_80" style="height:400px;margin-top:20px;" ></div></div>
+<div id="chart_65_fixed" class="_fixed_box" style="width:100%;"><h3 class="_header">Cumulated Speedup If FP Arithmetic Only<span onclick="set_chart(56);" class="return_button tooltip-maqao" title="" tooltip_id="31">&#9166;</span></h3><div class="_content">
+<div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:hidden; overflow-y:hidden;"><div id="chart_cat_65" style="height:400px;margin-top:20px;" ></div></div>
 <script class="code" >
 </script></div></div>
 <script>
 function display_charts (id) {
-if (id == 72) {
-  document.getElementById('chart_cat_72').innerHTML = '';
+if (id == 56) {
+  document.getElementById('chart_cat_56').innerHTML = '';
   $(document).ready(function(){
-  var plot72_data = [[1,1.1089,1.1089,1.1089,],[1,1,1.0408,1.0408,],[2.4248,3.8626,5.0517,6.1896,],[1,1.1089,1.1089,1.1089,],];
-  var plot72_ticks = ['1','2','3','4',];
-  var plot72 = jQuery.jqplot ('chart_cat_72', plot72_data, {
+  var plot56_data = [[1,1,1,],[1,1,1.0026,],[1,1.1781,1.1816,],[1,1.3424,1.3424,],];
+  var plot56_ticks = ['1','2','3',];
+  var plot56 = jQuery.jqplot ('chart_cat_56', plot56_data, {
     seriesDefaults: {
       renderer: jQuery.jqplot.BarRenderer,
       rendererOptions: {
@@ -203,7 +212,7 @@ if (id == 72) {
     axes: {
       xaxis: {
         renderer: $.jqplot.CategoryAxisRenderer,
-        ticks: plot72_ticks,
+        ticks: plot56_ticks,
         label: 'Number of loops',
         labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
       },
@@ -220,7 +229,7 @@ if (id == 72) {
     },
     highlighter: {
       tooltipContentEditor: function (str, seriesIndex, pointIndex) {
-        return plot72_ticks[pointIndex]+' - '+plot72_data[seriesIndex][pointIndex];
+        return plot56_ticks[pointIndex]+' - '+plot56_data[seriesIndex][pointIndex];
       },
       show: true,
       showTooltip: true,
@@ -242,12 +251,12 @@ if (id == 72) {
   });
 });
 }
-if (id == 73) {
-  document.getElementById('chart_cat_73').innerHTML = '';
+if (id == 57) {
+  document.getElementById('chart_cat_57').innerHTML = '';
   $(document).ready(function(){
-  var plot73_data = [[79.74,6.6,0,0,0,0,0,0,],[0,0,0,0,0,0,0,0,],[0,0,3.97,0,0,0,0,0,],[79.74,86.34,86.34,86.34,86.34,86.34,86.34,86.34,],[0,0,0,0,0,0,0,0,],[0,0,3.97,3.97,3.97,3.97,3.97,3.97,],[79.74,86.34,90.31,90.31,90.31,90.31,90.31,90.31,],];
-  var plot73_ticks = ['> 8%','4% to 8%','2% to 4%','1% to 2%','0.5% to 1%','0.25% to 0.5%','0.125% to 0.25%','< 0.125%',];
-  var plot73 = jQuery.jqplot ('chart_cat_73', plot73_data, {
+  var plot57_data = [[99.29,0,0,0,0.51,0,0,0,],[0,0,0,0,0,0,0,0,],[0,0,0,0,0,0,0,0,],[99.29,99.29,99.29,99.29,99.8,99.8,99.8,99.8,],[0,0,0,0,0,0,0,0,],[0,0,0,0,0,0,0,0,],[99.29,99.29,99.29,99.29,99.8,99.8,99.8,99.8,],];
+  var plot57_ticks = ['> 8%','4% to 8%','2% to 4%','1% to 2%','0.5% to 1%','0.25% to 0.5%','0.125% to 0.25%','< 0.125%',];
+  var plot57 = jQuery.jqplot ('chart_cat_57', plot57_data, {
     seriesDefaults: {
       renderer: jQuery.jqplot.BarRenderer,
       rendererOptions: {
@@ -259,7 +268,7 @@ if (id == 73) {
     axes: {
       xaxis: {
         renderer: $.jqplot.CategoryAxisRenderer,
-        ticks: plot73_ticks,
+        ticks: plot57_ticks,
         label: 'Coverage Range',
         labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
       },
@@ -278,7 +287,7 @@ if (id == 73) {
     },
     highlighter: {
       tooltipContentEditor: function (str, seriesIndex, pointIndex) {
-        return plot73_ticks[pointIndex]+' - '+plot73_data[seriesIndex][pointIndex];
+        return plot57_ticks[pointIndex]+' - '+plot57_data[seriesIndex][pointIndex];
       },
       show: true,
       showTooltip: true,
@@ -300,12 +309,12 @@ if (id == 73) {
   });
 });
 }
-if (id == 74) {
-  document.getElementById('chart_cat_74').innerHTML = '';
+if (id == 58) {
+  document.getElementById('chart_cat_58').innerHTML = '';
   $(document).ready(function(){
-  var plot74_data = [[2,1,0,0,0,0,0,0,],[79.74,6.6,0,0,0,0,0,0,],[79.74,86.34,86.34,86.34,86.34,86.34,86.34,86.34,],];
-  var plot74_ticks = ['> 8%','4% to 8%','2% to 4%','1% to 2%','0.5% to 1%','0.25% to 0.5%','0.125% to 0.25%','< 0.125%',];
-  var plot74 = jQuery.jqplot ('chart_cat_74', plot74_data, {
+  var plot58_data = [[2,0,0,0,1,0,0,0,],[99.29,0,0,0,0.51,0,0,0,],[99.29,99.29,99.29,99.29,99.8,99.8,99.8,99.8,],];
+  var plot58_ticks = ['> 8%','4% to 8%','2% to 4%','1% to 2%','0.5% to 1%','0.25% to 0.5%','0.125% to 0.25%','< 0.125%',];
+  var plot58 = jQuery.jqplot ('chart_cat_58', plot58_data, {
     seriesDefaults: {
       renderer: jQuery.jqplot.BarRenderer,
       rendererOptions: {
@@ -317,7 +326,7 @@ if (id == 74) {
     axes: {
       xaxis: {
         renderer: $.jqplot.CategoryAxisRenderer,
-        ticks: plot74_ticks,
+        ticks: plot58_ticks,
         label: 'Coverage Range',
         labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
       },
@@ -336,7 +345,7 @@ if (id == 74) {
     },
     highlighter: {
       tooltipContentEditor: function (str, seriesIndex, pointIndex) {
-        return plot74_ticks[pointIndex]+' - '+plot74_data[seriesIndex][pointIndex];
+        return plot58_ticks[pointIndex]+' - '+plot58_data[seriesIndex][pointIndex];
       },
       show: true,
       showTooltip: true,
@@ -358,14 +367,14 @@ if (id == 74) {
   });
 });
 }
-if (id == 75) {
-  document.getElementById('chart_cat_75').innerHTML = '';
+if (id == 59) {
+  document.getElementById('chart_cat_59').innerHTML = '';
         $(document).ready(function(){
           var data = [
-            ['Binary',93.36],['MPI',0],['OMP',0],['Math',6.63],['System',0.01],['Pthread',0],['IO',0],['String',0],['Memory',0],['Others',0],
+            ['Binary',99.8],['MPI',0],['OMP',0],['Math',0],['System',0.1],['Pthread',0],['IO',0.1],['String',0],['Memory',0],['Others',0],
           ];
           var __background_color = getComputedStyle(document.body).getPropertyValue('--background');
-          var plot75 = jQuery.jqplot ('chart_cat_75', [data],
+          var plot59 = jQuery.jqplot ('chart_cat_59', [data],
                       {
                         grid: {
                           drawBorder: false,
@@ -383,22 +392,25 @@ if (id == 75) {
                         legend: { show:true, location: 'e' }
                       }
           );
-          $("#chart_cat_75").bind('jqplotDataHighlight', function(ev, seriesIndex, pointIndex, data) {
+          $("#chart_cat_59").bind('jqplotDataHighlight', function(ev, seriesIndex, pointIndex, data) {
             var $this = $(this);
             $this.attr('title', data[0] + ": " + data[1]);
           });
-          $("#chart_cat_75").bind('jqplotDataUnhighlight', function(ev, seriesIndex, pointIndex, data) {
+          $("#chart_cat_59").bind('jqplotDataUnhighlight', function(ev, seriesIndex, pointIndex, data) {
             var $this = $(this);
             $this.attr('title',"");
           });
         });
 }
-if (id == 76) {
-  document.getElementById('chart_cat_76').innerHTML = '';
+if (id == 60) {
+  document.getElementById('chart_cat_60').innerHTML = '';
+}
+if (id == 61) {
+  document.getElementById('chart_cat_61').innerHTML = '';
   $(document).ready(function(){
-  var plot76_data = [[2,1,0,0,0,0,0,0,0,],[69.88,16.46,0,0,0,0,0,0,0,],[69.88,86.34,86.34,86.34,86.34,86.34,86.34,86.34,86.34,],];
-  var plot76_ticks = ['1','2','3 to 4','5 to 8','9 to 16','17 to 32','33 to 64','> 64','unknown',];
-  var plot76 = jQuery.jqplot ('chart_cat_76', plot76_data, {
+  var plot61_data = [[2,1,0,0,0,0,0,0,0,],[99.29,0.51,0,0,0,0,0,0,0,],[99.29,99.8,99.8,99.8,99.8,99.8,99.8,99.8,99.8,],];
+  var plot61_ticks = ['1','2','3 to 4','5 to 8','9 to 16','17 to 32','33 to 64','> 64','unknown',];
+  var plot61 = jQuery.jqplot ('chart_cat_61', plot61_data, {
     seriesDefaults: {
       renderer: jQuery.jqplot.BarRenderer,
       rendererOptions: {
@@ -410,7 +422,7 @@ if (id == 76) {
     axes: {
       xaxis: {
         renderer: $.jqplot.CategoryAxisRenderer,
-        ticks: plot76_ticks,
+        ticks: plot61_ticks,
         label: 'Path Count',
         labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
       },
@@ -429,7 +441,7 @@ if (id == 76) {
     },
     highlighter: {
       tooltipContentEditor: function (str, seriesIndex, pointIndex) {
-        return plot76_ticks[pointIndex]+' - '+plot76_data[seriesIndex][pointIndex];
+        return plot61_ticks[pointIndex]+' - '+plot61_data[seriesIndex][pointIndex];
       },
       show: true,
       showTooltip: true,
@@ -450,15 +462,15 @@ if (id == 76) {
     series: [{label:'Number of Loops', yaxis:'yaxis', },{label:'Coverage over Range (%)', yaxis:'y2axis', },{label:'Cumulated Coverage (%)', renderer: $.jqplot.LineRenderer, yaxis:'y2axis', },],
   });
 });
-  var d = document.getElementById('chart_cat_76').parentNode;  d.onclick = function () {window.open("expert_summary.html?view=paths");};
+  var d = document.getElementById('chart_cat_61').parentNode;  d.onclick = function () {window.open("expert_summary.html?view=paths");};
   d.classList.add ('_link_table');
 }
-if (id == 77) {
-  document.getElementById('chart_cat_77').innerHTML = '';
+if (id == 62) {
+  document.getElementById('chart_cat_62').innerHTML = '';
   $(document).ready(function(){
-  var plot77_data = [[1.1089,1.1089,1.1089,1.1089,],];
-  var plot77_ticks = ['sobel_8','sobel_0','sobel_6','sobel_7',];
-  var plot77 = jQuery.jqplot ('chart_cat_77', plot77_data, {
+  var plot62_data = [[1,1,1,],];
+  var plot62_ticks = ['sobel_9','sobel_1','sobel_10',];
+  var plot62 = jQuery.jqplot ('chart_cat_62', plot62_data, {
     seriesDefaults: {
       renderer: jQuery.jqplot.BarRenderer,
       rendererOptions: {
@@ -470,7 +482,7 @@ if (id == 77) {
     axes: {
       xaxis: {
         renderer: $.jqplot.CategoryAxisRenderer,
-        ticks: plot77_ticks,
+        ticks: plot62_ticks,
         label: 'Loop identifiers',
         labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
       },
@@ -487,7 +499,7 @@ if (id == 77) {
     },
     highlighter: {
       tooltipContentEditor: function (str, seriesIndex, pointIndex) {
-        return plot77_ticks[pointIndex]+' - '+plot77_data[seriesIndex][pointIndex];
+        return plot62_ticks[pointIndex]+' - '+plot62_data[seriesIndex][pointIndex];
       },
       show: true,
       showTooltip: true,
@@ -502,19 +514,19 @@ if (id == 77) {
     series: [{label:'Cumulated Speedup If No Scalar Integer', renderer: $.jqplot.LineRenderer, yaxis:'yaxis', },],
   });
 });
-$("#chart_cat_77").bind("jqplotDataClick",
+$("#chart_cat_62").bind("jqplotDataClick",
   function (ev, seriesIndex, pointIndex, data) {
-    var s = ["sobel_8","sobel_0","sobel_6","sobel_7",];
+    var s = ["sobel_9","sobel_1","sobel_10",];
     window.open("./loops/"+s[pointIndex]+".html");
   }
 );
 }
-if (id == 78) {
-  document.getElementById('chart_cat_78').innerHTML = '';
+if (id == 63) {
+  document.getElementById('chart_cat_63').innerHTML = '';
   $(document).ready(function(){
-  var plot78_data = [[1.0408,1.0408,1.0408,1.0408,],];
-  var plot78_ticks = ['sobel_0','sobel_6','sobel_8','sobel_7',];
-  var plot78 = jQuery.jqplot ('chart_cat_78', plot78_data, {
+  var plot63_data = [[1.0026,1.0026,1.0026,],];
+  var plot63_ticks = ['sobel_10','sobel_1','sobel_9',];
+  var plot63 = jQuery.jqplot ('chart_cat_63', plot63_data, {
     seriesDefaults: {
       renderer: jQuery.jqplot.BarRenderer,
       rendererOptions: {
@@ -526,7 +538,7 @@ if (id == 78) {
     axes: {
       xaxis: {
         renderer: $.jqplot.CategoryAxisRenderer,
-        ticks: plot78_ticks,
+        ticks: plot63_ticks,
         label: 'Loop identifiers',
         labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
       },
@@ -543,7 +555,7 @@ if (id == 78) {
     },
     highlighter: {
       tooltipContentEditor: function (str, seriesIndex, pointIndex) {
-        return plot78_ticks[pointIndex]+' - '+plot78_data[seriesIndex][pointIndex];
+        return plot63_ticks[pointIndex]+' - '+plot63_data[seriesIndex][pointIndex];
       },
       show: true,
       showTooltip: true,
@@ -558,19 +570,19 @@ if (id == 78) {
     series: [{label:'Cumulated Speedup If FP Arith Vectorized', renderer: $.jqplot.LineRenderer, yaxis:'yaxis', },],
   });
 });
-$("#chart_cat_78").bind("jqplotDataClick",
+$("#chart_cat_63").bind("jqplotDataClick",
   function (ev, seriesIndex, pointIndex, data) {
-    var s = ["sobel_0","sobel_6","sobel_8","sobel_7",];
+    var s = ["sobel_10","sobel_1","sobel_9",];
     window.open("./loops/"+s[pointIndex]+".html");
   }
 );
 }
-if (id == 79) {
-  document.getElementById('chart_cat_79').innerHTML = '';
+if (id == 64) {
+  document.getElementById('chart_cat_64').innerHTML = '';
   $(document).ready(function(){
-  var plot79_data = [[2.4248,3.8626,5.0517,6.1896,],];
-  var plot79_ticks = ['sobel_6','sobel_8','sobel_0','sobel_7',];
-  var plot79 = jQuery.jqplot ('chart_cat_79', plot79_data, {
+  var plot64_data = [[1.1781,1.1816,1.1816,],];
+  var plot64_ticks = ['sobel_1','sobel_10','sobel_9',];
+  var plot64 = jQuery.jqplot ('chart_cat_64', plot64_data, {
     seriesDefaults: {
       renderer: jQuery.jqplot.BarRenderer,
       rendererOptions: {
@@ -582,7 +594,7 @@ if (id == 79) {
     axes: {
       xaxis: {
         renderer: $.jqplot.CategoryAxisRenderer,
-        ticks: plot79_ticks,
+        ticks: plot64_ticks,
         label: 'Loop identifiers',
         labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
       },
@@ -599,7 +611,7 @@ if (id == 79) {
     },
     highlighter: {
       tooltipContentEditor: function (str, seriesIndex, pointIndex) {
-        return plot79_ticks[pointIndex]+' - '+plot79_data[seriesIndex][pointIndex];
+        return plot64_ticks[pointIndex]+' - '+plot64_data[seriesIndex][pointIndex];
       },
       show: true,
       showTooltip: true,
@@ -614,19 +626,19 @@ if (id == 79) {
     series: [{label:'Cumulated Speedup If Fully Vectorized', renderer: $.jqplot.LineRenderer, yaxis:'yaxis', },],
   });
 });
-$("#chart_cat_79").bind("jqplotDataClick",
+$("#chart_cat_64").bind("jqplotDataClick",
   function (ev, seriesIndex, pointIndex, data) {
-    var s = ["sobel_6","sobel_8","sobel_0","sobel_7",];
+    var s = ["sobel_1","sobel_10","sobel_9",];
     window.open("./loops/"+s[pointIndex]+".html");
   }
 );
 }
-if (id == 80) {
-  document.getElementById('chart_cat_80').innerHTML = '';
+if (id == 65) {
+  document.getElementById('chart_cat_65').innerHTML = '';
   $(document).ready(function(){
-  var plot80_data = [[1.1089,1.1089,1.1089,1.1089,],];
-  var plot80_ticks = ['sobel_8','sobel_0','sobel_6','sobel_7',];
-  var plot80 = jQuery.jqplot ('chart_cat_80', plot80_data, {
+  var plot65_data = [[1.3424,1.3424,1.3424,],];
+  var plot65_ticks = ['sobel_1','sobel_9','sobel_10',];
+  var plot65 = jQuery.jqplot ('chart_cat_65', plot65_data, {
     seriesDefaults: {
       renderer: jQuery.jqplot.BarRenderer,
       rendererOptions: {
@@ -638,7 +650,7 @@ if (id == 80) {
     axes: {
       xaxis: {
         renderer: $.jqplot.CategoryAxisRenderer,
-        ticks: plot80_ticks,
+        ticks: plot65_ticks,
         label: 'Loop identifiers',
         labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
       },
@@ -655,7 +667,7 @@ if (id == 80) {
     },
     highlighter: {
       tooltipContentEditor: function (str, seriesIndex, pointIndex) {
-        return plot80_ticks[pointIndex]+' - '+plot80_data[seriesIndex][pointIndex];
+        return plot65_ticks[pointIndex]+' - '+plot65_data[seriesIndex][pointIndex];
       },
       show: true,
       showTooltip: true,
@@ -670,9 +682,9 @@ if (id == 80) {
     series: [{label:'Cumulated Speedup If FP Only', renderer: $.jqplot.LineRenderer, yaxis:'yaxis', },],
   });
 });
-$("#chart_cat_80").bind("jqplotDataClick",
+$("#chart_cat_65").bind("jqplotDataClick",
   function (ev, seriesIndex, pointIndex, data) {
-    var s = ["sobel_8","sobel_0","sobel_6","sobel_7",];
+    var s = ["sobel_1","sobel_9","sobel_10",];
     window.open("./loops/"+s[pointIndex]+".html");
   }
 );
@@ -680,47 +692,57 @@ $("#chart_cat_80").bind("jqplotDataClick",
 }
 </script>
 </div><div style="display: table-row;height:5px;"></div></div>
-<div style="width: 100%; display: table;"><div style="display: table-row"><div class="_fixed_box" style="width:64%;display: table-cell;"><h3 class="_header">Experiment Summary<span class="tooltip-maqao-button help-maqao" title="" tooltip_id="31"></span></h3><div class="_content"><table id="_OV_exp_summary" style="width:100%;">
+<div style="width: 100%; display: table;"><div style="display: table-row"><div class="_fixed_box" style="width:64%;display: table-cell;"><h3 class="_header">Experiment Summary<span class="tooltip-maqao-button help-maqao" title="" tooltip_id="32"></span></h3><div class="_content"><table id="_OV_exp_summary" style="width:100%;">
 <tr><td class="_td_shift_20" ><strong>Application</strong></td><td>./sobel</td><td></td><td></td></tr>
-<tr><td class="_td_shift_20"><strong>Timestamp</strong></td><td>2023-01-15 18:31:42</td>
-<td class="_td_shift_20 _td_shift_left_20"><strong>Universal Timestamp</strong></td><td>1673803902</td></tr>
+<tr><td class="_td_shift_20"><strong>Timestamp</strong></td><td>2023-01-15 21:05:35</td>
+<td class="_td_shift_20 _td_shift_left_20"><strong>Universal Timestamp</strong></td><td>1673813135</td></tr>
 <tr><td class="_td_shift_20"><strong>Number of processes observed</strong></td><td>1</td>
 <td class="_td_shift_20 _td_shift_left_20"><strong>Number of threads observed</strong></td><td>1</td></tr>
-<tr><td class="_td_shift_20"><strong>Experiment Type</strong></td><td>Sequential</td><td></td><td></td></tr>
-<tr><td class="_td_shift_20"><strong>Machine</strong></td><td>romeologin1.ro18.urca</td><td></td><td></td></tr>
-<tr><td class="_td_shift_20"><strong>Model Name</strong></td><td>Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz</td><td></td><td></td></tr>
+<tr><td class="_td_shift_20"><strong>Experiment Type</strong></td><td>OpenMP; </td><td></td><td></td></tr>
+<tr><td class="_td_shift_20"><strong>Machine</strong></td><td>vidal-NBLK-WAX9X</td><td></td><td></td></tr>
+<tr><td class="_td_shift_20"><strong>Model Name</strong></td><td>AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx</td><td></td><td></td></tr>
 <tr><td class="_td_shift_20"><strong>Architecture</strong></td><td>x86_64</td>
-<td class="_td_shift_20 _td_shift_left_20"><strong>Micro Architecture</strong></td><td>SKYLAKE</td></tr>
-<tr><td class="_td_shift_20"><strong>Cache Size</strong></td><td>19712 KB</td>
-<td class="_td_shift_20 _td_shift_left_20"><strong>Number of Cores</strong></td><td>6</td></tr>
-<tr><td class="_td_shift_20"><strong>OS Version</strong></td><td>Linux 3.10.0-1160.2.2.el7.x86_64 #1 SMP Sat Oct 17 05:06:47 UTC 2020</td><td></td><td></td></tr>
+<td class="_td_shift_20 _td_shift_left_20"><strong>Micro Architecture</strong></td><td>ZEN_V1</td></tr>
+<tr><td class="_td_shift_20"><strong>Cache Size</strong></td><td>512 KB</td>
+<td class="_td_shift_20 _td_shift_left_20"><strong>Number of Cores</strong></td><td>4</td></tr>
+<tr><td class="_td_shift_20"><strong>OS Version</strong></td><td>Linux 5.15.0-56-generic #62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022</td><td></td><td></td></tr>
 <tr><td class="_td_shift_20"><strong>Architecture used during static analysis</strong></td><td>x86_64</td>
-<td class="_td_shift_20 _td_shift_left_20"><strong>Micro Architecture used during static analysis</strong></td><td>SKYLAKE</td></tr>
-<tr><td class="_td_shift_20"><strong>Compilation Options</strong></td><td style="word-break: break-word;"><strong>sobel</strong>: GNU 10.2.0 -march=skylake-avx512 -mmmx -mno-3dnow -msse -msse2 -msse3 -mssse3 -mno-sse4a -mcx16 -msahf -mmovbe -maes -mno-sha -mpclmul -mpopcnt -mabm -mno-lwp -mfma -mno-fma4 -mno-xop -mbmi -mno-sgx -mbmi2 -mno-pconfig -mno-wbnoinvd -mno-tbm -mavx -mavx2 -msse4.2 -msse4.1 -mlzcnt -mrtm -mhle -mrdrnd -mf16c -mfsgsbase -mrdseed -mprfchw -madx -mfxsr -mxsave -mxsaveopt -mavx512f -mno-avx512er -mavx512cd -mno-avx512pf -mno-prefetchwt1 -mclflushopt -mxsavec -mxsaves -mavx512dq -mavx512bw -mavx512vl -mno-avx512ifma -mno-avx512vbmi -mno-avx5124fmaps -mno-avx5124vnniw -mclwb -mno-mwaitx -mno-clzero -mpku -mno-rdpid -mno-gfni -mno-shstk -mno-avx512vbmi2 -mno-avx512vnni -mno-vaes -mno-vpclmulqdq -mno-avx512bitalg -mno-avx512vpopcntdq -mno-movdiri -mno-movdir64b -mno-waitpkg -mno-cldemote -mno-ptwrite -mno-avx512bf16 -mno-enqcmd -mno-avx512vp2intersect --param=l1-cache-size=32 --param=l1-cache-line-size=64 --param=l2-cache-size=19712 -mtune=skylake-avx512 -g3 -funroll-loops <br></td><td></td><td></td></tr>
-</table></div></div><div style="width:5px;display:table-cell;"></div><div class="_fixed_box" style="width:35%;display: table-cell;"><h3 class="_header">Configuration Summary<span class="tooltip-maqao-button help-maqao" title="" tooltip_id="32"></span></h3><div class="_content"><table id="_OV_conf_summary" style="width:100%;">
+<td class="_td_shift_20 _td_shift_left_20"><strong>Micro Architecture used during static analysis</strong></td><td>ZEN_V1</td></tr>
+<tr><td class="_td_shift_20"><strong>Compilation Options</strong></td><td style="word-break: break-word;"><strong>sobel</strong>: GNU C17 11.3.0 -march=znver1 -mmmx -mpopcnt -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -msse4a -mno-fma4 -mno-xop -mfma -mno-avx512f -mbmi -mbmi2 -maes -mpclmul -mno-avx512vl -mno-avx512bw -mno-avx512dq -mno-avx512cd -mno-avx512er -mno-avx512pf -mno-avx512vbmi -mno-avx512ifma -mno-avx5124vnniw -mno-avx5124fmaps -mno-avx512vpopcntdq -mno-avx512vbmi2 -mno-gfni -mno-vpclmulqdq -mno-avx512vnni -mno-avx512bitalg -mno-avx512bf16 -mno-avx512vp2intersect -mno-3dnow -madx -mabm -mno-cldemote -mclflushopt -mno-clwb -mclzero -mcx16 -mno-enqcmd -mf16c -mfsgsbase -mfxsr -mno-hle -msahf -mno-lwp -mlzcnt -mmovbe -mno-movdir64b -mno-movdiri -mmwaitx -mno-pconfig -mno-pku -mno-prefetchwt1 -mprfchw -mno-ptwrite -mno-rdpid -mrdrnd -mrdseed -mno-rtm -mno-serialize -mno-sgx -msha -mno-shstk -mno-tbm -mno-tsxldtrk -mno-vaes -mno-waitpkg -mno-wbnoinvd -mxsave -mxsavec -mxsaveopt -mxsaves -mno-amx-tile -mno-amx-int8 -mno-amx-bf16 -mno-uintr -mno-hreset -mno-kl -mno-widekl -mno-avxvnni --param=l1-cache-size=32 --param=l1-cache-line-size=64 --param=l2-cache-size=512 -mtune=znver1 -g3 -Ofast -funroll-loops -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection<br></td><td></td><td></td></tr>
+</table></div></div><div style="width:5px;display:table-cell;"></div><div class="_fixed_box" style="width:35%;display: table-cell;"><h3 class="_header">Configuration Summary<span class="tooltip-maqao-button help-maqao" title="" tooltip_id="33"></span></h3><div class="_content"><table id="_OV_conf_summary" style="width:100%;">
 <tr><td class="_td_shift_20" style="width:50%;">Dataset</td><td></td></tr>
 <tr><td class="_td_shift_20" style="width:50%;">Run Command</td><td>&lt;executable&gt; in/input.raw sout/output.raw</td></tr>
+<tr><td class="_td_shift_20" style="width:50%;">Number Processes</td><td>1</td></tr>
+<tr><td class="_td_shift_20" style="width:50%;">Number Nodes</td><td>1</td></tr>
 <tr><td class="_td_shift_20" style="width:50%;">Filter</td><td>Not Used</td></tr>
 <tr><td class="_td_shift_20" style="width:50%;">Profile Start</td><td>Not Used</td></tr>
 </table></div></div></div><div style="display: table-row;height:5px;"></div></div><script class="code" >
 $(document).ready(function(){
-  var ids = [72, 73, 74, 75, 76, 77, 78, 79, 80];
-  display_charts (72);
+  var ids = [56, 57, 58, 59, 60, 61, 62, 63, 64, 65];
+  display_charts (56);
   for (var i = 0; i < ids.length; i++) {
-    document.getElementById('chart_'+ids[i]+'_fixed').style.display = 'none';
-    //document.getElementById('chart_'+ids[i]+'_fixed').style.width   = '59%';
+    var e = document.getElementById('chart_'+ids[i]+'_fixed');
+    if (e) {
+      e.style.display = 'none';
+    }
   }
-  document.getElementById('chart_72_fixed').style.display = 'table-cell';
+  document.getElementById('chart_56_fixed').style.display = 'table-cell';
 });
 function set_chart(id) {
   var ids = [
-72, 73, 74, 75, 76, 77, 78, 79, 80];
+56, 57, 58, 59, 60, 61, 62, 63, 64, 65];
   for (var i = 0; i < ids.length; i++) {
     if (id == ids[i]) {
-      document.getElementById('chart_'+ids[i]+'_fixed').style.display = 'table-cell';
+      var e = document.getElementById('chart_'+ids[i]+'_fixed');
+      if (e) {
+        e.style.display = 'table-cell';
+      }
     }
     else {
-      document.getElementById('chart_'+ids[i]+'_fixed').style.display = 'none';
+      var e = document.getElementById('chart_'+ids[i]+'_fixed');
+      if (e) {
+        e.style.display = 'none';
+      }
     }
   }
   display_charts (id);
@@ -778,9 +800,10 @@ function set_chart(id) {
 </style>
 <script>
 function _onresize () {
-  var ids = [72, 73, 74, 75, 76, 77, 78, 79, 80];
+  var ids = [56, 57, 58, 59, 60, 61, 62, 63, 64, 65];
   for (var i = 0; i < ids.length; i++) {
-    if (document.getElementById('chart_'+ids[i]+'_fixed').style.display != 'none') {
+    var e = document.getElementById('chart_'+ids[i]+'_fixed');
+    if (e && e.style.display != 'none') {
        display_charts (ids[i]);
     }
   }
@@ -805,11 +828,11 @@ window.addEventListener("resize", function() {
 </div><script>
 var tooltips_texts = ['Details some global metrics that summarize the application performance. Moving the cursor over a metric displays some help about the metric. Most of rows can be clicked to display a chart related to the analysis. On the top right of these charts, a return arrow can be clicked to display the summary chart. Metrics colors are:<ul><li><span style="background:#66cc00;">green </span> when the value is good.</li><li><span style="background:#FFCC99; width:20px;">light orange </span> when the value is good but it can be improved.</li><li><span style="background:#FF950E; width:20px;">orange </span> when the value is average and shows a potential performance issue.</li><li><span style="background:#FF3333; width:20px;">red </span> when the value is bad and shows probably a performance issue.</li></ul>',
 'Time spent by the application in seconds',
-'Application profiling duration in seconds',
-'Percentage of the application time spent in loops (excluding loops present in modules not analyzed by the profiler). It represents 58.728593 seconds.',
-'Percentage of the application time spent in innermost loops (excluding loops present in modules not analyzed by the profiler). It represents 56.146902 seconds.',
+'Application profiling duration in seconds<br><b>Too short run</b>: statistical accuracy of profiling results is average (profiled time corresponds to 988 samples)<br><b>Workaround</b>: Rerun with a longer workload and/or use sampling-rate=high/highest in lprof_params',
+'Percentage of the application time spent in loops (excluding loops present in modules not analyzed by the profiler). It represents 4.93 seconds.',
+'Percentage of the application time spent in innermost loops (excluding loops present in modules not analyzed by the profiler). It represents 4.93 seconds.',
 'Percentage of the application time spent in user code (meaning the time spent in the binary and external libraries specified in custom_categories).',
-'Basic options to use with the compiler to have good performance.',
+'Global score based on basic options to use with the compiler to have good performance.',
 'Optimistic speedup available by reducing the number of paths in loops. Having multiple paths in a loop can prevent<br/>the compiler to vectorize the code, decreasing performances. The metric provides an estimation of a global speedup that<br/>can be achieved if all loops with more than two paths were fully vectorized.<br/>Lower is better.',
 'Processor friendly data layout. Accessing contiguous data is faster.<br/>Higher is better.',
 'Optimistic speedup if OpenMP, MPI and Pthread runtimes are perfect.<br/>Lower is better.<br/>This metric presents an estimation of the speed-up at application level if the MPI/OpenMP/Pthread behaviour is perfect.<br/>speedup = MAX (time) / MAX (time without OpenMP, MPI and Pthread)',
@@ -829,6 +852,7 @@ var tooltips_texts = ['Details some global metrics that summarize the applicatio
 'Back to CQA Potential Speedups Summary',
 'Back to CQA Potential Speedups Summary',
 'Back to CQA Potential Speedups Summary',
+'Name of the source object (binary file or source file)',
 'Back to CQA Potential Speedups Summary',
 'Back to CQA Potential Speedups Summary',
 'Back to CQA Potential Speedups Summary',

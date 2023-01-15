@@ -2,6 +2,7 @@ options =
 Table:new({
 	["verbose"] = false;
 	["node_MB_files"] = 0;
+	["max_CPU_time_intervals"] = 0;
 	["sampling_rate"] = 0;
 	["calls_src_info"] = true;
 	["mmap_pages"] = 0;
@@ -10,14 +11,14 @@ Table:new({
 	["lcore-flow-all"] = false;
 	["stdin_path"] = "";
 	["disable-debug"] = false;
-	["maqao_path"] = "/apps/maqao/2.15.3//maqao";
+	["maqao_path"] = "/usr/local/bin/maqao";
 	["keep_ind_threads"] = true;
 	["may_multiprocess"] = false;
 	["max_threads"] = 0;
 	["exe_args"] = " in/input.raw sout/output.raw";
 	["keep_ext_threads"] = false;
 	["kill_signals"] = "";
-	["exe_path"] = "/home/antvidal/AOC/AOC-Computer-vision/maqao/sobel_v1/binaries/sobel";
+	["exe_path"] = "/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao/sobel_v1/binaries/sobel";
 	["libs_to_disass"] = "off";
 	["max_processes"] = 0;
 	["use_OS_timers"] = false;
@@ -30,7 +31,7 @@ Table:new({
 	["backtrace_mode"] = 1;
 	["user_guided"] = -1;
 	["evts_profiles"] = "";
-	["experiment_path"] = "/home/antvidal/AOC/AOC-Computer-vision/maqao/sobel_v1/tools/lprof_npsu_run_0";
+	["experiment_path"] = "/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao/sobel_v1/tools/lprof_npsu_run_0";
 	["ign_signals"] = "";
 	["cpu_clock_rate"] = 0;
 	["max_callchain_len"] = 20;

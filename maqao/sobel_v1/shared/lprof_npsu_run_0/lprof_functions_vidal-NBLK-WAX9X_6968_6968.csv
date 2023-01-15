@@ -1,0 +1,5 @@
+function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;cats;label_name;
+12;sobel;sobel_baseline;sobel.c:56-86;65.79;3.25;;;;;;;"100,0,0,0,0,0,0,0,0,0";sobel_baseline;
+1;sobel;main;stdio2.h:105-293,mm_malloc.h:45-54,rdtsc.h:9-11,sobel.c:20-231;34.01;1.68;;;;;;;"100,0,0,0,0,0,0,0,0,0";main;
+355;libc.so.6;psiginfo;;0.1;0;;;;;;;"0,0,0,0,100,0,0,0,0,0";psiginfo;
+312;libc.so.6;vprintf;;0.1;0;;;;;;;"0,0,0,0,0,0,100,0,0,0";vprintf;

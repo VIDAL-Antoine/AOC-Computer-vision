@@ -4,7 +4,7 @@ __fct = {
       src = "sobel.c:76-84",
       src_regions = {
         {
-          path = "/home/antvidal/AOC/AOC-Computer-vision/sobel.c",
+          path = "/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c",
           regions = {
             {76, 84},
           },
@@ -14,7 +14,7 @@ __fct = {
         src = "sobel.c:77-84",
         src_regions = {
           {
-            path = "/home/antvidal/AOC/AOC-Computer-vision/sobel.c",
+            path = "/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c",
             regions = {
               {77, 84},
             },

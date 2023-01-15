@@ -75,6 +75,7 @@ h3 {
    border-radius: 20px;
    box-shadow: 0 0 7px black;
    max-width: 600px;
+   word-break: break-word;
 }
 .ui-tooltip ._fixed_table tr:nth-child(even) {
    background-color: white;
@@ -174,6 +175,8 @@ h3 {
    margin: 0px;
    color: var(--accordion_box_header_font);
    cursor: pointer;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
 }
 
 ._accordion_box > ._header:hover {
@@ -410,21 +413,29 @@ tr:hover .span_expand{
 
 /* ********************************************************** */
 rect.zoom-panel {
-   cursor: move;
-   fill: #fff;
-   pointer-events: all;
+  cursor: move;
+  fill: #fff;
+  pointer-events: all;
 }
 .bar {
-   fill: steelblue;
+  fill: steelblue;
 }
 .bar:hover {
-   fill: orangered ;
+  fill: orangered ;
 } 
 .modebar {
-    display: none !important;
+  display: none !important;
 } 
-
-
+.zoom_legend_block {
+  white-space: nowrap;
+}
+.zoom_legend_color {
+  width:20px;
+  display: inline-block;
+  height: 18px;
+  vertical-align: top;
+  margin: 0px 5px 0px 10px;
+}
 /* ********************************************************** */
 mrmenu {
     position:absolute;

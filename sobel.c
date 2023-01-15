@@ -165,8 +165,7 @@ int main(int argc, char **argv)
       
 #if BASELINE
       sobel_baseline(cframe, oframe, 100.0);
-#endif
-#if V1
+#elif V1
       sobel_v1(cframe, oframe, 100.0);
 #endif
       

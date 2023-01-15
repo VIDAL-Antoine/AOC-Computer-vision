@@ -1098,3 +1098,549 @@ Output #0, mp4, to 'sout/output_sobel_v1.mp4':
       cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
 frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   57 fps=0.0 q=5.0 size=    2304kB time=00:00:02.24 bitrate=8425.9kbits/s speed=4.45x    frame=  120 fps=119 q=5.0 size=    4608kB time=00:00:04.76 bitrate=7930.4kbits/s speed=4.73x    frame=  186 fps=123 q=5.0 size=    6656kB time=00:00:07.40 bitrate=7368.3kbits/s speed=4.91x    frame=  251 fps=125 q=5.0 size=    9216kB time=00:00:10.00 bitrate=7549.7kbits/s speed=4.96x    frame=  316 fps=125 q=5.0 size=   11520kB time=00:00:12.60 bitrate=7489.8kbits/s speed=   5x    frame=  360 fps=126 q=5.0 Lsize=   12912kB time=00:00:14.36 bitrate=7365.7kbits/s speed=5.05x    
 video:12909kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019654%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sob_baseline.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=  78x    frame=   33 fps=0.0 q=5.0 size=    1280kB time=00:00:01.28 bitrate=8191.8kbits/s speed=2.56x    frame=   90 fps= 89 q=5.0 size=    3584kB time=00:00:03.56 bitrate=8247.1kbits/s speed=3.53x    frame=  138 fps= 91 q=5.0 size=    5376kB time=00:00:05.48 bitrate=8036.5kbits/s speed=3.62x    frame=  196 fps= 97 q=5.0 size=    6912kB time=00:00:07.80 bitrate=7259.3kbits/s speed=3.87x    frame=  254 fps=101 q=5.0 size=    9216kB time=00:00:10.12 bitrate=7460.2kbits/s speed=4.02x    frame=  313 fps=103 q=5.0 size=   11520kB time=00:00:12.48 bitrate=7561.8kbits/s speed=4.12x    frame=  349 fps= 20 q=5.0 size=   12544kB time=00:00:13.92 bitrate=7382.2kbits/s speed=0.796x    frame=  360 fps= 20 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=0.817x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=  78x    frame=    8 fps=0.0 q=5.0 size=     256kB time=00:00:00.28 bitrate=7489.0kbits/s speed=0.526x    frame=   15 fps= 14 q=5.0 size=     512kB time=00:00:00.56 bitrate=7489.4kbits/s speed=0.529x    frame=   72 fps= 46 q=5.0 size=    2816kB time=00:00:02.84 bitrate=8122.7kbits/s speed=1.82x    frame=  131 fps= 63 q=5.0 size=    5120kB time=00:00:05.20 bitrate=8065.9kbits/s speed=2.51x    frame=  189 fps= 74 q=5.0 size=    6912kB time=00:00:07.52 bitrate=7529.6kbits/s speed=2.93x    frame=  247 fps= 80 q=5.0 size=    8960kB time=00:00:09.84 bitrate=7459.4kbits/s speed= 3.2x    frame=  305 fps= 85 q=5.0 size=   11264kB time=00:00:12.16 bitrate=7588.4kbits/s speed=3.39x    frame=  360 fps= 89 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=3.54x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sob_baseline.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=  78x    frame=   49 fps=0.0 q=5.0 size=    1792kB time=00:00:01.92 bitrate=7645.7kbits/s speed= 3.8x    frame=  107 fps=106 q=5.0 size=    4096kB time=00:00:04.24 bitrate=7913.7kbits/s speed=4.19x    frame=  162 fps=107 q=5.0 size=    5888kB time=00:00:06.44 bitrate=7489.8kbits/s speed=4.26x    frame=  220 fps=109 q=5.0 size=    7936kB time=00:00:08.76 bitrate=7421.4kbits/s speed=4.34x    frame=  278 fps=110 q=5.0 size=   10240kB time=00:00:11.08 bitrate=7570.9kbits/s speed=4.39x    frame=  336 fps=111 q=5.0 size=   12032kB time=00:00:13.40 bitrate=7355.7kbits/s speed=4.43x    frame=  360 fps=111 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.43x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   50 fps=0.0 q=5.0 size=    2048kB time=00:00:01.96 bitrate=8559.6kbits/s speed=3.86x    frame=  107 fps=106 q=5.0 size=    4096kB time=00:00:04.24 bitrate=7913.7kbits/s speed=4.19x    frame=  164 fps=108 q=5.0 size=    6144kB time=00:00:06.52 bitrate=7719.5kbits/s speed=4.31x    frame=  222 fps=110 q=5.0 size=    7936kB time=00:00:08.84 bitrate=7354.2kbits/s speed=4.38x    frame=  279 fps=110 q=5.0 size=   10240kB time=00:00:11.12 bitrate=7543.7kbits/s speed= 4.4x    frame=  337 fps=111 q=5.0 size=   12288kB time=00:00:13.44 bitrate=7489.8kbits/s speed=4.43x    frame=  360 fps=111 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.43x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sob_baseline.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   49 fps=0.0 q=5.0 size=    1792kB time=00:00:01.92 bitrate=7645.7kbits/s speed=3.83x    frame=  106 fps=105 q=5.0 size=    4096kB time=00:00:04.20 bitrate=7989.1kbits/s speed=4.17x    frame=  163 fps=108 q=5.0 size=    6144kB time=00:00:06.48 bitrate=7767.2kbits/s speed=4.28x    frame=  220 fps=109 q=5.0 size=    7936kB time=00:00:08.76 bitrate=7421.4kbits/s speed=4.34x    frame=  277 fps=110 q=5.0 size=   10240kB time=00:00:11.04 bitrate=7598.4kbits/s speed=4.38x    frame=  334 fps=110 q=5.0 size=   12032kB time=00:00:13.32 bitrate=7399.8kbits/s speed= 4.4x    frame=  360 fps=110 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.39x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=  78x    frame=   49 fps=0.0 q=5.0 size=    1792kB time=00:00:01.92 bitrate=7645.7kbits/s speed=3.82x    frame=  106 fps=105 q=5.0 size=    4096kB time=00:00:04.20 bitrate=7989.1kbits/s speed=4.17x    frame=  163 fps=108 q=5.0 size=    6144kB time=00:00:06.48 bitrate=7767.2kbits/s speed=4.28x    frame=  207 fps=103 q=5.0 size=    7424kB time=00:00:08.24 bitrate=7380.7kbits/s speed=4.09x    frame=  264 fps=105 q=5.0 size=    9728kB time=00:00:10.52 bitrate=7575.2kbits/s speed=4.17x    frame=  322 fps=106 q=5.0 size=   11776kB time=00:00:12.84 bitrate=7513.1kbits/s speed=4.24x    frame=  360 fps=106 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.23x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sob_baseline.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   30 fps=0.0 q=5.0 size=    1024kB time=00:00:01.16 bitrate=7231.4kbits/s speed=2.31x    frame=   87 fps= 86 q=5.0 size=    3584kB time=00:00:03.44 bitrate=8534.8kbits/s speed=3.41x    frame=  142 fps= 94 q=5.0 size=    5376kB time=00:00:05.64 bitrate=7808.5kbits/s speed=3.72x    frame=  198 fps= 98 q=5.0 size=    7168kB time=00:00:07.88 bitrate=7451.8kbits/s speed= 3.9x    frame=  251 fps= 99 q=5.0 size=    9216kB time=00:00:10.00 bitrate=7549.7kbits/s speed=3.96x    frame=  306 fps=101 q=5.0 size=   11264kB time=00:00:12.20 bitrate=7563.5kbits/s speed=4.03x    frame=  360 fps=102 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.08x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=  78x    frame=   48 fps=0.0 q=5.0 size=    1792kB time=00:00:01.88 bitrate=7808.4kbits/s speed=3.75x    frame=  104 fps=103 q=5.0 size=    4096kB time=00:00:04.12 bitrate=8144.2kbits/s speed=4.09x    frame=  161 fps=106 q=5.0 size=    5888kB time=00:00:06.40 bitrate=7536.6kbits/s speed=4.22x    frame=  218 fps=108 q=5.0 size=    7936kB time=00:00:08.68 bitrate=7489.8kbits/s speed= 4.3x    frame=  275 fps=109 q=5.0 size=   10240kB time=00:00:10.96 bitrate=7653.8kbits/s speed=4.35x    frame=  331 fps=109 q=5.0 size=   12032kB time=00:00:13.20 bitrate=7467.1kbits/s speed=4.37x    frame=  360 fps=109 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.35x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sob_baseline.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   51 fps=0.0 q=5.0 size=    2048kB time=00:00:02.00 bitrate=8388.5kbits/s speed=3.96x    frame=  108 fps=107 q=5.0 size=    4096kB time=00:00:04.28 bitrate=7839.8kbits/s speed=4.23x    frame=  165 fps=109 q=5.0 size=    6144kB time=00:00:06.56 bitrate=7672.5kbits/s speed=4.33x    frame=  222 fps=110 q=5.0 size=    7936kB time=00:00:08.84 bitrate=7354.2kbits/s speed=4.37x    frame=  277 fps=110 q=5.0 size=   10240kB time=00:00:11.04 bitrate=7598.4kbits/s speed=4.37x    frame=  335 fps=111 q=5.0 size=   12032kB time=00:00:13.36 bitrate=7377.7kbits/s speed=4.41x    frame=  360 fps=111 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.41x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   49 fps=0.0 q=5.0 size=    1792kB time=00:00:01.92 bitrate=7645.7kbits/s speed=3.79x    frame=  105 fps=104 q=5.0 size=    4096kB time=00:00:04.16 bitrate=8065.9kbits/s speed=4.12x    frame=  162 fps=107 q=5.0 size=    5888kB time=00:00:06.44 bitrate=7489.8kbits/s speed=4.25x    frame=  217 fps=108 q=5.0 size=    7680kB time=00:00:08.64 bitrate=7281.8kbits/s speed=4.28x    frame=  270 fps=107 q=5.0 size=    9984kB time=00:00:10.76 bitrate=7601.2kbits/s speed=4.27x    frame=  324 fps=107 q=5.0 size=   11776kB time=00:00:12.92 bitrate=7466.6kbits/s speed=4.27x    frame=  360 fps=107 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.27x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sob_baseline.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   48 fps=0.0 q=5.0 size=    1792kB time=00:00:01.88 bitrate=7808.4kbits/s speed=3.75x    frame=  105 fps=104 q=5.0 size=    4096kB time=00:00:04.16 bitrate=8065.9kbits/s speed=4.13x    frame=  160 fps=105 q=5.0 size=    5888kB time=00:00:06.36 bitrate=7584.0kbits/s speed=4.19x    frame=  216 fps=107 q=5.0 size=    7680kB time=00:00:08.60 bitrate=7315.6kbits/s speed=4.26x    frame=  273 fps=108 q=5.0 size=    9984kB time=00:00:10.88 bitrate=7517.3kbits/s speed= 4.3x    frame=  330 fps=109 q=5.0 size=   12032kB time=00:00:13.16 bitrate=7489.8kbits/s speed=4.34x    frame=  360 fps=109 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.35x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=  78x    frame=   47 fps=0.0 q=5.0 size=    1792kB time=00:00:01.84 bitrate=7978.1kbits/s speed=3.67x    frame=  103 fps=103 q=5.0 size=    4096kB time=00:00:04.08 bitrate=8224.1kbits/s speed=4.07x    frame=  160 fps=106 q=5.0 size=    5888kB time=00:00:06.36 bitrate=7584.0kbits/s speed=4.21x    frame=  217 fps=108 q=5.0 size=    7680kB time=00:00:08.64 bitrate=7281.8kbits/s speed=4.28x    frame=  273 fps=108 q=5.0 size=    9984kB time=00:00:10.88 bitrate=7517.3kbits/s speed=4.32x    frame=  331 fps=110 q=5.0 size=   12032kB time=00:00:13.20 bitrate=7467.1kbits/s speed=4.37x    frame=  360 fps=110 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.37x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sob_baseline.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=  78x    frame=   50 fps=0.0 q=5.0 size=    2048kB time=00:00:01.96 bitrate=8559.6kbits/s speed=3.88x    frame=  107 fps=106 q=5.0 size=    4096kB time=00:00:04.24 bitrate=7913.7kbits/s speed=4.21x    frame=  164 fps=109 q=5.0 size=    6144kB time=00:00:06.52 bitrate=7719.5kbits/s speed=4.32x    frame=  221 fps=110 q=5.0 size=    7936kB time=00:00:08.80 bitrate=7387.7kbits/s speed=4.38x    frame=  279 fps=111 q=5.0 size=   10240kB time=00:00:11.12 bitrate=7543.7kbits/s speed=4.43x    frame=  338 fps=112 q=5.0 size=   12288kB time=00:00:13.48 bitrate=7467.6kbits/s speed=4.47x    frame=  360 fps=112 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.48x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sob_baseline.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   52 fps=0.0 q=5.0 size=    2048kB time=00:00:02.04 bitrate=8224.0kbits/s speed=4.04x    frame=  113 fps=112 q=5.0 size=    4352kB time=00:00:04.48 bitrate=7957.9kbits/s speed=4.43x    frame=  172 fps=113 q=5.0 size=    6400kB time=00:00:06.84 bitrate=7665.0kbits/s speed= 4.5x    frame=  232 fps=115 q=5.0 size=    8448kB time=00:00:09.24 bitrate=7489.8kbits/s speed=4.57x    frame=  292 fps=116 q=5.0 size=   10752kB time=00:00:11.64 bitrate=7567.0kbits/s speed=4.61x    frame=  350 fps=115 q=5.0 size=   12544kB time=00:00:13.96 bitrate=7361.0kbits/s speed= 4.6x    frame=  360 fps=115 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.59x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   39 fps=0.0 q=5.0 size=    1536kB time=00:00:01.52 bitrate=8278.0kbits/s speed=2.88x    frame=   99 fps= 96 q=5.0 size=    3840kB time=00:00:03.92 bitrate=8024.7kbits/s speed= 3.8x    frame=  159 fps=104 q=5.0 size=    5888kB time=00:00:06.32 bitrate=7632.0kbits/s speed=4.11x    frame=  219 fps=107 q=5.0 size=    7936kB time=00:00:08.72 bitrate=7455.4kbits/s speed=4.28x    frame=  278 fps=109 q=5.0 size=   10240kB time=00:00:11.08 bitrate=7570.9kbits/s speed=4.36x    frame=  338 fps=111 q=5.0 size=   12288kB time=00:00:13.48 bitrate=7467.6kbits/s speed=4.42x    frame=  360 fps=111 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.43x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sob_baseline.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=  78x    frame=   46 fps=0.0 q=5.0 size=    1792kB time=00:00:01.80 bitrate=8155.4kbits/s speed= 3.6x    frame=  102 fps=102 q=5.0 size=    4096kB time=00:00:04.04 bitrate=8305.5kbits/s speed=4.03x    frame=  160 fps=106 q=5.0 size=    5888kB time=00:00:06.36 bitrate=7584.0kbits/s speed=4.22x    frame=  219 fps=109 q=5.0 size=    7936kB time=00:00:08.72 bitrate=7455.4kbits/s speed=4.34x    frame=  279 fps=111 q=5.0 size=   10240kB time=00:00:11.12 bitrate=7543.7kbits/s speed=4.42x    frame=  340 fps=112 q=5.0 size=   12288kB time=00:00:13.56 bitrate=7423.5kbits/s speed=4.48x    frame=  360 fps=112 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.49x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   51 fps=0.0 q=5.0 size=    2048kB time=00:00:02.00 bitrate=8388.5kbits/s speed=3.95x    frame=  110 fps=109 q=5.0 size=    4352kB time=00:00:04.36 bitrate=8176.9kbits/s speed=4.31x    frame=  170 fps=112 q=5.0 size=    6144kB time=00:00:06.76 bitrate=7445.5kbits/s speed=4.46x    frame=  230 fps=114 q=5.0 size=    8192kB time=00:00:09.16 bitrate=7326.3kbits/s speed=4.53x    frame=  289 fps=115 q=5.0 size=   10752kB time=00:00:11.52 bitrate=7645.8kbits/s speed=4.57x    frame=  349 fps=115 q=5.0 size=   12544kB time=00:00:13.92 bitrate=7382.2kbits/s speed= 4.6x    frame=  360 fps=115 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.59x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sob_baseline.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   48 fps=0.0 q=5.0 size=    1792kB time=00:00:01.88 bitrate=7808.4kbits/s speed=3.71x    frame=  104 fps=103 q=5.0 size=    4096kB time=00:00:04.12 bitrate=8144.2kbits/s speed=4.07x    frame=  161 fps=106 q=5.0 size=    5888kB time=00:00:06.40 bitrate=7536.6kbits/s speed=4.21x    frame=  220 fps=109 q=5.0 size=    7936kB time=00:00:08.76 bitrate=7421.4kbits/s speed=4.34x    frame=  278 fps=110 q=5.0 size=   10240kB time=00:00:11.08 bitrate=7570.9kbits/s speed=4.39x    frame=  334 fps=110 q=5.0 size=   12032kB time=00:00:13.32 bitrate=7399.8kbits/s speed= 4.4x    frame=  360 fps=111 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.41x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   51 fps=0.0 q=5.0 size=    2048kB time=00:00:02.00 bitrate=8388.5kbits/s speed=3.98x    frame=  111 fps=110 q=5.0 size=    4352kB time=00:00:04.40 bitrate=8102.6kbits/s speed=4.35x    frame=  171 fps=113 q=5.0 size=    6400kB time=00:00:06.80 bitrate=7710.1kbits/s speed=4.49x    frame=  230 fps=114 q=5.0 size=    8192kB time=00:00:09.16 bitrate=7326.3kbits/s speed=4.55x    frame=  288 fps=114 q=5.0 size=   10496kB time=00:00:11.48 bitrate=7489.8kbits/s speed=4.56x    frame=  348 fps=115 q=5.0 size=   12544kB time=00:00:13.88 bitrate=7403.5kbits/s speed=4.59x    frame=  360 fps=115 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=4.59x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sob_baseline.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   69 fps=0.0 q=5.0 size=    2816kB time=00:00:02.72 bitrate=8481.0kbits/s speed=5.38x    frame=  151 fps=150 q=5.0 size=    5632kB time=00:00:06.00 bitrate=7689.5kbits/s speed=5.96x    frame=  230 fps=153 q=5.0 size=    8192kB time=00:00:09.16 bitrate=7326.3kbits/s speed=6.08x    frame=  309 fps=154 q=5.0 size=   11264kB time=00:00:12.32 bitrate=7489.8kbits/s speed=6.12x    frame=  360 fps=154 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=6.15x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   63 fps=0.0 q=5.0 size=    2560kB time=00:00:02.48 bitrate=8456.1kbits/s speed=4.92x    frame=  139 fps=138 q=5.0 size=    5376kB time=00:00:05.52 bitrate=7978.2kbits/s speed=5.48x    frame=  223 fps=147 q=5.0 size=    7936kB time=00:00:08.88 bitrate=7321.1kbits/s speed=5.87x    frame=  301 fps=149 q=5.0 size=   11008kB time=00:00:12.00 bitrate=7514.8kbits/s speed=5.95x    frame=  360 fps=151 q=5.0 Lsize=   12875kB time=00:00:14.36 bitrate=7344.9kbits/s speed=6.01x    
+video:12873kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019861%

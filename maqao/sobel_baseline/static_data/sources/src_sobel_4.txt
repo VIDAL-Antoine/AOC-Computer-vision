@@ -1,4 +1,4 @@
-/home/antvidal/AOC/AOC-Computer-vision/sobel.c: 77 - 84
+/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c: 77 - 84
 --------------------------------------------------------------------------------
 
 77:     for (u64 j = 0; j < ((W * 3) - 3); j++)

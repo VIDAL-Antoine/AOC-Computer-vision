@@ -45,3 +45,26 @@ gcc -DV1=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm
 gcc -DV1=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm
 gcc -DV1=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm
 gcc -DV1=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DV1=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DV1=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DV1=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DV1=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DV1=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DV1=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DV1=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DV1=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DV1=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DV1=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm
+gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DV1=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm

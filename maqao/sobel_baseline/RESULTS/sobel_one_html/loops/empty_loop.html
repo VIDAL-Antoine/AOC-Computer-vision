@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en-US"><head><title>OV - sobel - Empty Loop Report</title>
+<html translate="no" lang="en-US"><head><title>OV - sobel - Empty Loop Report</title>
 <meta charset="utf-8" />
+<meta name="google" content="notranslate" />
 <link rel="stylesheet" type="text/css" media="screen" href="../css/ui.jqgrid.css" />
 <link rel="stylesheet" type="text/css" href="../css/themes/redmond_custom/jquery-ui.css" />
 <link rel="stylesheet" type="text/css" href="../css/themes/redmond_custom/jquery.jqplot.min.css" />
@@ -82,7 +83,7 @@ addLoadEvent(function(){
 });
 </script>
 </head><body>
-<div id="page_title"><img alt="MAQAO" id="maqao_logo" src="../images/MAQAO_small_logo.png"/><ul id="maqao_menu"><li ><a  href="../index.html">Global</a><ul><li ><a  href="../config.html">Configurations</a></li><li ><a  href="../log.html">Logs</a></li></ul></li><li ><a  href="../application.html">Application</a></li><li ><a  href="../fcts_and_loops.html">Functions</a></li><li ><a  href="../loops_index.html">Loops</a></li><li ><a  href="../topology.html">Topology</a></li></ul>
+<div id="page_title"><img alt="MAQAO" id="maqao_logo" src="../images/MAQAO_small_logo.png"/><ul id="maqao_menu"><li ><a  href="../index.html">Global</a><ul><li ><a  href="../config.html">Configurations</a></li><li ><a  href="../env.html">Environment Variables</a></li><li ><a  href="../outputs.html">Outputs</a></li><li ><a  href="../log.html">Logs</a></li></ul></li><li ><a  href="../application.html">Application</a></li><li ><a  href="../fcts_and_loops.html">Functions</a></li><li ><a  href="../loops_index.html">Loops</a></li><li ><a  href="../topology.html">Topology</a></li></ul>
 <span><img alt="options" id="menu_options_icon" src="../images/gear_20.png"  onclick="__open_options ()"/></span>
 </div>
 <script>
@@ -158,6 +159,7 @@ addLoadEvent(function() {
   {
     var asm = qs.loop;
     asm     = asm.replace(/.*-%20/g, '');
+    asm     = asm.replace(/%20\[\.\.\.\]/g, '');
     var lid = qs.loop;
     lid     = lid.replace (/Loop%20/g, '');
     lid     = lid.replace (/%20.*/g, '');

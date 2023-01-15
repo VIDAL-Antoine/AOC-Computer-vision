@@ -1,0 +1,1 @@
+Linux romeologin1.ro18.urca 3.10.0-1160.2.2.el7.x86_64 #1 SMP Sat Oct 17 05:06:47 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux

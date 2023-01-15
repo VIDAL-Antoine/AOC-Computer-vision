@@ -1,0 +1,48 @@
+Machine (187GB total)
+  NUMANode L#0 (P#0 93GB)
+    Package L#0 + L3 L#0 (19MB)
+      L2 L#0 (1024KB) + L1d L#0 (32KB) + L1i L#0 (32KB) + Core L#0 + PU L#0 (P#0)
+      L2 L#1 (1024KB) + L1d L#1 (32KB) + L1i L#1 (32KB) + Core L#1 + PU L#1 (P#1)
+      L2 L#2 (1024KB) + L1d L#2 (32KB) + L1i L#2 (32KB) + Core L#2 + PU L#2 (P#2)
+      L2 L#3 (1024KB) + L1d L#3 (32KB) + L1i L#3 (32KB) + Core L#3 + PU L#3 (P#3)
+      L2 L#4 (1024KB) + L1d L#4 (32KB) + L1i L#4 (32KB) + Core L#4 + PU L#4 (P#4)
+      L2 L#5 (1024KB) + L1d L#5 (32KB) + L1i L#5 (32KB) + Core L#5 + PU L#5 (P#5)
+    HostBridge L#0
+      PCI 8086:a1d2
+      PCI 8086:2826
+        Block(Disk) L#0 "sda"
+        Block(Disk) L#1 "sdb"
+      PCIBridge
+        PCI 8086:1528
+          Net L#2 "enp1s0f0"
+        PCI 8086:1528
+          Net L#3 "enp1s0f1"
+      PCIBridge
+        PCIBridge
+          PCI 1a03:2000
+            GPU L#4 "card0"
+            GPU L#5 "controlD64"
+    HostBridge L#4
+      PCIBridge
+        PCI 10df:0720
+          Net L#6 "enp24s0f0"
+        PCI 10df:0720
+          Net L#7 "enp24s0f1"
+    HostBridge L#6
+      PCIBridge
+        PCI 10de:1e78
+          GPU L#8 "card1"
+          GPU L#9 "renderD128"
+  NUMANode L#1 (P#1 94GB)
+    Package L#1 + L3 L#1 (19MB)
+      L2 L#6 (1024KB) + L1d L#6 (32KB) + L1i L#6 (32KB) + Core L#6 + PU L#6 (P#6)
+      L2 L#7 (1024KB) + L1d L#7 (32KB) + L1i L#7 (32KB) + Core L#7 + PU L#7 (P#7)
+      L2 L#8 (1024KB) + L1d L#8 (32KB) + L1i L#8 (32KB) + Core L#8 + PU L#8 (P#8)
+      L2 L#9 (1024KB) + L1d L#9 (32KB) + L1i L#9 (32KB) + Core L#9 + PU L#9 (P#9)
+      L2 L#10 (1024KB) + L1d L#10 (32KB) + L1i L#10 (32KB) + Core L#10 + PU L#10 (P#10)
+      L2 L#11 (1024KB) + L1d L#11 (32KB) + L1i L#11 (32KB) + Core L#11 + PU L#11 (P#11)
+    HostBridge L#8
+      PCIBridge
+        PCI 10de:1e78
+          GPU L#10 "card2"
+          GPU L#11 "renderD129"

@@ -1,5 +1,0 @@
-Node;Process;Thread;System (%);Binary (%);MPI (%);Nb Cycle Events;OMP (%);Others (%);String (%);Memory (%);IO (%);Time (s);Math (%);Pthread (%);
-_ALL;_ALL;_ALL;0.02;93.57;0;12687;0;0;0;0;0.01;63.44;6.41;0;
-romeologin1.ro18.urca;_ALL;_ALL;0.02;93.57;0;12687;0;0;0;0;0.01;63.44;6.41;0;
-romeologin1.ro18.urca;42810;_ALL;0.02;93.57;0;12687;0;0;0;0;0.01;63.44;6.41;0;
-romeologin1.ro18.urca;42810;42810;0.02;93.57;0;12687;0;0;0;0;0.01;63.44;6.41;0;

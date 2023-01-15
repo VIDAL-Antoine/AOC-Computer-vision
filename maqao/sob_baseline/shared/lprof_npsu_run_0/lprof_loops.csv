@@ -1,5 +1,0 @@
-loop_id;module;function_name;function_id;source_info;level;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
-2;sobel;convolve_baseline;11;sobel.c:55-56;Innermost;62.69;39.77;39.77;39.77;39.77;0;1;
-4;sobel;sobel_baseline;12;sobel.c:77-84;Innermost;19.31;12.25;12.25;12.25;12.25;0;1;
-3;sobel;convolve_baseline;11;sobel.c:54-56;Outermost;5.19;3.29;3.29;3.29;3.29;0;1;
-0;sobel;grayscale_weighted;9;sobel.c:20-29;Single;3.34;2.12;2.12;2.12;2.12;0;1;

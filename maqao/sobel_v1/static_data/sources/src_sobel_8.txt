@@ -1,0 +1,11 @@
+/home/antvidal/AOC/AOC-Computer-vision/sobel.c: 116 - 123
+--------------------------------------------------------------------------------
+
+116:     for (u64 j = 0; j < ((W * 3) - 3); j++)
+117:       {
+118: 	gx = convolve_v1(&cframe[INDEX(i, j, W * 3)], f1, 3, 3);
+119: 	gy = convolve_v1(&cframe[INDEX(i, j, W * 3)], f2, 3, 3);
+120:       
+121: 	mag = sqrt((gx * gx) + (gy * gy));
+122: 	
+123: 	oframe[INDEX(i, j, W * 3)] = (mag > threshold) ? 255 : mag;

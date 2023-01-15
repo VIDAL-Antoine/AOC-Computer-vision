@@ -1,0 +1,1 @@
+maqao oneview --create-report=one --replace xp=./maqao/sobel_v1 executable=sobel run_command=<executable> in/input.raw sout/output.raw 

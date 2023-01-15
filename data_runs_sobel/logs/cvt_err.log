@@ -786,3 +786,315 @@ Output #0, mp4, to 'sout/output_sob_baseline.mp4':
       cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
 frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   66 fps=0.0 q=5.0 size=    2560kB time=00:00:02.60 bitrate=8065.9kbits/s speed=5.17x    frame=  135 fps=134 q=5.0 size=    5120kB time=00:00:05.36 bitrate=7825.1kbits/s speed=5.33x    frame=  207 fps=137 q=5.0 size=    7424kB time=00:00:08.24 bitrate=7380.7kbits/s speed=5.46x    frame=  275 fps=137 q=5.0 size=   10240kB time=00:00:10.96 bitrate=7653.8kbits/s speed=5.45x    frame=  347 fps=138 q=5.0 size=   12544kB time=00:00:13.84 bitrate=7424.9kbits/s speed= 5.5x    frame=  360 fps=138 q=5.0 Lsize=   12912kB time=00:00:14.36 bitrate=7365.7kbits/s speed= 5.5x    
 video:12909kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019654%
+ffmpeg version 4.4.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Spack GCC)
+  configuration: --prefix=/apps/2021/spack/0.18.1/opt/spack/linux-rhel7-skylake_avx512/gcc-10.2.0/ffmpeg-4.4.1-ar6vshqombu6dw3qwnrhwtvgxab7su3a --enable-pic --cc=/apps/2021/spack/0.18.1/lib/spack/env/gcc/gcc --cxx=/apps/2021/spack/0.18.1/lib/spack/env/gcc/g++ --disable-libxcb --disable-libxcb-shape --disable-libxcb-shm --disable-libxcb-xfixes --disable-xlib --disable-libfontconfig --disable-libfreetype --disable-libfribidi --enable-bzlib --enable-gpl --disable-libmp3lame --disable-libopenjpeg --disable-libopus --disable-libspeex --disable-libvorbis --disable-libvpx --enable-libx264 --disable-avresample --disable-nonfree --disable-openssl --enable-shared --enable-version3 --disable-libzmq --disable-libssh --disable-libwebp --disable-lzma --disable-libsnappy --disable-sdl2 --disable-libaom
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   62 fps=0.0 q=5.0 size=    2560kB time=00:00:02.44 bitrate=8594.8kbits/s speed=4.81x    frame=  127 fps=126 q=5.0 size=    4864kB time=00:00:05.04 bitrate=7905.9kbits/s speed=4.99x    frame=  195 fps=129 q=5.0 size=    6912kB time=00:00:07.76 bitrate=7296.8kbits/s speed=5.12x    frame=  260 fps=129 q=5.0 size=    9472kB time=00:00:10.36 bitrate=7489.8kbits/s speed=5.12x    frame=  326 fps=129 q=5.0 size=   11776kB time=00:00:13.00 bitrate=7420.7kbits/s speed=5.14x    frame=  360 fps=129 q=5.0 Lsize=   12912kB time=00:00:14.36 bitrate=7365.7kbits/s speed=5.16x    
+video:12909kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019654%
+ffmpeg version 4.4.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Spack GCC)
+  configuration: --prefix=/apps/2021/spack/0.18.1/opt/spack/linux-rhel7-skylake_avx512/gcc-10.2.0/ffmpeg-4.4.1-ar6vshqombu6dw3qwnrhwtvgxab7su3a --enable-pic --cc=/apps/2021/spack/0.18.1/lib/spack/env/gcc/gcc --cxx=/apps/2021/spack/0.18.1/lib/spack/env/gcc/g++ --disable-libxcb --disable-libxcb-shape --disable-libxcb-shm --disable-libxcb-xfixes --disable-xlib --disable-libfontconfig --disable-libfreetype --disable-libfribidi --enable-bzlib --enable-gpl --disable-libmp3lame --disable-libopenjpeg --disable-libopus --disable-libspeex --disable-libvorbis --disable-libvpx --enable-libx264 --disable-avresample --disable-nonfree --disable-openssl --enable-shared --enable-version3 --disable-libzmq --disable-libssh --disable-libwebp --disable-lzma --disable-libsnappy --disable-sdl2 --disable-libaom
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   59 fps=0.0 q=5.0 size=    2304kB time=00:00:02.32 bitrate=8135.4kbits/s speed=4.64x    frame=  122 fps=122 q=5.0 size=    4864kB time=00:00:04.84 bitrate=8232.6kbits/s speed=4.83x    frame=  189 fps=125 q=5.0 size=    6912kB time=00:00:07.52 bitrate=7529.6kbits/s speed=4.99x    frame=  254 fps=126 q=5.0 size=    9216kB time=00:00:10.12 bitrate=7460.2kbits/s speed=5.02x    frame=  319 fps=127 q=5.0 size=   11520kB time=00:00:12.72 bitrate=7419.2kbits/s speed=5.05x    frame=  360 fps=127 q=5.0 Lsize=   12912kB time=00:00:14.36 bitrate=7365.7kbits/s speed=5.08x    
+video:12909kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019654%
+ffmpeg version 4.4.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Spack GCC)
+  configuration: --prefix=/apps/2021/spack/0.18.1/opt/spack/linux-rhel7-skylake_avx512/gcc-10.2.0/ffmpeg-4.4.1-ar6vshqombu6dw3qwnrhwtvgxab7su3a --enable-pic --cc=/apps/2021/spack/0.18.1/lib/spack/env/gcc/gcc --cxx=/apps/2021/spack/0.18.1/lib/spack/env/gcc/g++ --disable-libxcb --disable-libxcb-shape --disable-libxcb-shm --disable-libxcb-xfixes --disable-xlib --disable-libfontconfig --disable-libfreetype --disable-libfribidi --enable-bzlib --enable-gpl --disable-libmp3lame --disable-libopenjpeg --disable-libopus --disable-libspeex --disable-libvorbis --disable-libvpx --enable-libx264 --disable-avresample --disable-nonfree --disable-openssl --enable-shared --enable-version3 --disable-libzmq --disable-libssh --disable-libwebp --disable-lzma --disable-libsnappy --disable-sdl2 --disable-libaom
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   58 fps=0.0 q=5.0 size=    2304kB time=00:00:02.28 bitrate=8278.1kbits/s speed=4.51x    frame=  119 fps=118 q=5.0 size=    4608kB time=00:00:04.72 bitrate=7997.6kbits/s speed=4.69x    frame=  183 fps=121 q=5.0 size=    6656kB time=00:00:07.28 bitrate=7489.8kbits/s speed=4.83x    frame=  248 fps=123 q=5.0 size=    8960kB time=00:00:09.88 bitrate=7429.2kbits/s speed=4.92x    frame=  313 fps=125 q=5.0 size=   11520kB time=00:00:12.48 bitrate=7561.8kbits/s speed=4.96x    frame=  360 fps=126 q=5.0 Lsize=   12912kB time=00:00:14.36 bitrate=7365.7kbits/s speed=5.02x    
+video:12909kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019654%
+ffmpeg version 4.4.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Spack GCC)
+  configuration: --prefix=/apps/2021/spack/0.18.1/opt/spack/linux-rhel7-skylake_avx512/gcc-10.2.0/ffmpeg-4.4.1-ar6vshqombu6dw3qwnrhwtvgxab7su3a --enable-pic --cc=/apps/2021/spack/0.18.1/lib/spack/env/gcc/gcc --cxx=/apps/2021/spack/0.18.1/lib/spack/env/gcc/g++ --disable-libxcb --disable-libxcb-shape --disable-libxcb-shm --disable-libxcb-xfixes --disable-xlib --disable-libfontconfig --disable-libfreetype --disable-libfribidi --enable-bzlib --enable-gpl --disable-libmp3lame --disable-libopenjpeg --disable-libopus --disable-libspeex --disable-libvorbis --disable-libvpx --enable-libx264 --disable-avresample --disable-nonfree --disable-openssl --enable-shared --enable-version3 --disable-libzmq --disable-libssh --disable-libwebp --disable-lzma --disable-libsnappy --disable-sdl2 --disable-libaom
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   62 fps=0.0 q=5.0 size=    2560kB time=00:00:02.44 bitrate=8594.8kbits/s speed=4.83x    frame=  127 fps=125 q=5.0 size=    4864kB time=00:00:05.04 bitrate=7905.9kbits/s speed=4.98x    frame=  194 fps=128 q=5.0 size=    6912kB time=00:00:07.72 bitrate=7334.6kbits/s speed= 5.1x    frame=  259 fps=128 q=5.0 size=    9472kB time=00:00:10.32 bitrate=7518.8kbits/s speed=5.11x    frame=  325 fps=129 q=5.0 size=   11776kB time=00:00:12.96 bitrate=7443.6kbits/s speed=5.13x    frame=  360 fps=129 q=5.0 Lsize=   12912kB time=00:00:14.36 bitrate=7365.7kbits/s speed=5.16x    
+video:12909kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019654%
+ffmpeg version 4.4.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Spack GCC)
+  configuration: --prefix=/apps/2021/spack/0.18.1/opt/spack/linux-rhel7-skylake_avx512/gcc-10.2.0/ffmpeg-4.4.1-ar6vshqombu6dw3qwnrhwtvgxab7su3a --enable-pic --cc=/apps/2021/spack/0.18.1/lib/spack/env/gcc/gcc --cxx=/apps/2021/spack/0.18.1/lib/spack/env/gcc/g++ --disable-libxcb --disable-libxcb-shape --disable-libxcb-shm --disable-libxcb-xfixes --disable-xlib --disable-libfontconfig --disable-libfreetype --disable-libfribidi --enable-bzlib --enable-gpl --disable-libmp3lame --disable-libopenjpeg --disable-libopus --disable-libspeex --disable-libvorbis --disable-libvpx --enable-libx264 --disable-avresample --disable-nonfree --disable-openssl --enable-shared --enable-version3 --disable-libzmq --disable-libssh --disable-libwebp --disable-lzma --disable-libsnappy --disable-sdl2 --disable-libaom
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   62 fps=0.0 q=5.0 size=    2560kB time=00:00:02.44 bitrate=8594.8kbits/s speed=4.84x    frame=  127 fps=126 q=5.0 size=    4864kB time=00:00:05.04 bitrate=7905.9kbits/s speed=   5x    frame=  194 fps=129 q=5.0 size=    6912kB time=00:00:07.72 bitrate=7334.6kbits/s speed=5.11x    frame=  259 fps=128 q=5.0 size=    9472kB time=00:00:10.32 bitrate=7518.8kbits/s speed=5.12x    frame=  325 fps=129 q=5.0 size=   11776kB time=00:00:12.96 bitrate=7443.6kbits/s speed=5.14x    frame=  360 fps=130 q=5.0 Lsize=   12912kB time=00:00:14.36 bitrate=7365.7kbits/s speed=5.17x    
+video:12909kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019654%
+ffmpeg version 4.4.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Spack GCC)
+  configuration: --prefix=/apps/2021/spack/0.18.1/opt/spack/linux-rhel7-skylake_avx512/gcc-10.2.0/ffmpeg-4.4.1-ar6vshqombu6dw3qwnrhwtvgxab7su3a --enable-pic --cc=/apps/2021/spack/0.18.1/lib/spack/env/gcc/gcc --cxx=/apps/2021/spack/0.18.1/lib/spack/env/gcc/g++ --disable-libxcb --disable-libxcb-shape --disable-libxcb-shm --disable-libxcb-xfixes --disable-xlib --disable-libfontconfig --disable-libfreetype --disable-libfribidi --enable-bzlib --enable-gpl --disable-libmp3lame --disable-libopenjpeg --disable-libopus --disable-libspeex --disable-libvorbis --disable-libvpx --enable-libx264 --disable-avresample --disable-nonfree --disable-openssl --enable-shared --enable-version3 --disable-libzmq --disable-libssh --disable-libwebp --disable-lzma --disable-libsnappy --disable-sdl2 --disable-libaom
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   58 fps=0.0 q=5.0 size=    2304kB time=00:00:02.28 bitrate=8278.1kbits/s speed=4.54x    frame=  119 fps=118 q=5.0 size=    4608kB time=00:00:04.72 bitrate=7997.6kbits/s speed=4.67x    frame=  183 fps=121 q=5.0 size=    6656kB time=00:00:07.28 bitrate=7489.8kbits/s speed= 4.8x    frame=  249 fps=123 q=5.0 size=    9216kB time=00:00:09.92 bitrate=7610.6kbits/s speed=4.91x    frame=  315 fps=125 q=5.0 size=   11520kB time=00:00:12.56 bitrate=7513.7kbits/s speed=4.97x    frame=  360 fps=126 q=5.0 Lsize=   12912kB time=00:00:14.36 bitrate=7365.7kbits/s speed=5.02x    
+video:12909kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019654%
+ffmpeg version 4.4.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Spack GCC)
+  configuration: --prefix=/apps/2021/spack/0.18.1/opt/spack/linux-rhel7-skylake_avx512/gcc-10.2.0/ffmpeg-4.4.1-ar6vshqombu6dw3qwnrhwtvgxab7su3a --enable-pic --cc=/apps/2021/spack/0.18.1/lib/spack/env/gcc/gcc --cxx=/apps/2021/spack/0.18.1/lib/spack/env/gcc/g++ --disable-libxcb --disable-libxcb-shape --disable-libxcb-shm --disable-libxcb-xfixes --disable-xlib --disable-libfontconfig --disable-libfreetype --disable-libfribidi --enable-bzlib --enable-gpl --disable-libmp3lame --disable-libopenjpeg --disable-libopus --disable-libspeex --disable-libvorbis --disable-libvpx --enable-libx264 --disable-avresample --disable-nonfree --disable-openssl --enable-shared --enable-version3 --disable-libzmq --disable-libssh --disable-libwebp --disable-lzma --disable-libsnappy --disable-sdl2 --disable-libaom
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   60 fps=0.0 q=5.0 size=    2304kB time=00:00:02.36 bitrate=7997.5kbits/s speed=4.71x    frame=  124 fps=124 q=5.0 size=    4864kB time=00:00:04.92 bitrate=8098.7kbits/s speed= 4.9x    frame=  191 fps=127 q=5.0 size=    6912kB time=00:00:07.60 bitrate=7450.4kbits/s speed=5.04x    frame=  255 fps=127 q=5.0 size=    9472kB time=00:00:10.16 bitrate=7637.2kbits/s speed=5.05x    frame=  320 fps=127 q=5.0 size=   11776kB time=00:00:12.76 bitrate=7560.2kbits/s speed=5.07x    frame=  360 fps=128 q=5.0 Lsize=   12912kB time=00:00:14.36 bitrate=7365.7kbits/s speed= 5.1x    
+video:12909kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019654%
+ffmpeg version 4.4.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Spack GCC)
+  configuration: --prefix=/apps/2021/spack/0.18.1/opt/spack/linux-rhel7-skylake_avx512/gcc-10.2.0/ffmpeg-4.4.1-ar6vshqombu6dw3qwnrhwtvgxab7su3a --enable-pic --cc=/apps/2021/spack/0.18.1/lib/spack/env/gcc/gcc --cxx=/apps/2021/spack/0.18.1/lib/spack/env/gcc/g++ --disable-libxcb --disable-libxcb-shape --disable-libxcb-shm --disable-libxcb-xfixes --disable-xlib --disable-libfontconfig --disable-libfreetype --disable-libfribidi --enable-bzlib --enable-gpl --disable-libmp3lame --disable-libopenjpeg --disable-libopus --disable-libspeex --disable-libvorbis --disable-libvpx --enable-libx264 --disable-avresample --disable-nonfree --disable-openssl --enable-shared --enable-version3 --disable-libzmq --disable-libssh --disable-libwebp --disable-lzma --disable-libsnappy --disable-sdl2 --disable-libaom
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=  78x    frame=   58 fps=0.0 q=5.0 size=    2304kB time=00:00:02.28 bitrate=8278.1kbits/s speed=4.51x    frame=  118 fps=117 q=5.0 size=    4608kB time=00:00:04.68 bitrate=8065.9kbits/s speed=4.65x    frame=  184 fps=122 q=5.0 size=    6656kB time=00:00:07.32 bitrate=7448.9kbits/s speed=4.84x    frame=  249 fps=124 q=5.0 size=    9216kB time=00:00:09.92 bitrate=7610.6kbits/s speed=4.93x    frame=  314 fps=125 q=5.0 size=   11520kB time=00:00:12.52 bitrate=7537.7kbits/s speed=4.97x    frame=  360 fps=126 q=5.0 Lsize=   12912kB time=00:00:14.36 bitrate=7365.7kbits/s speed=5.03x    
+video:12909kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019654%
+ffmpeg version 4.4.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Spack GCC)
+  configuration: --prefix=/apps/2021/spack/0.18.1/opt/spack/linux-rhel7-skylake_avx512/gcc-10.2.0/ffmpeg-4.4.1-ar6vshqombu6dw3qwnrhwtvgxab7su3a --enable-pic --cc=/apps/2021/spack/0.18.1/lib/spack/env/gcc/gcc --cxx=/apps/2021/spack/0.18.1/lib/spack/env/gcc/g++ --disable-libxcb --disable-libxcb-shape --disable-libxcb-shm --disable-libxcb-xfixes --disable-xlib --disable-libfontconfig --disable-libfreetype --disable-libfribidi --enable-bzlib --enable-gpl --disable-libmp3lame --disable-libopenjpeg --disable-libopus --disable-libspeex --disable-libvorbis --disable-libvpx --enable-libx264 --disable-avresample --disable-nonfree --disable-openssl --enable-shared --enable-version3 --disable-libzmq --disable-libssh --disable-libwebp --disable-lzma --disable-libsnappy --disable-sdl2 --disable-libaom
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   58 fps=0.0 q=5.0 size=    2304kB time=00:00:02.28 bitrate=8278.1kbits/s speed=4.52x    frame=  119 fps=118 q=5.0 size=    4608kB time=00:00:04.72 bitrate=7997.6kbits/s speed=4.69x    frame=  182 fps=121 q=5.0 size=    6656kB time=00:00:07.24 bitrate=7531.2kbits/s speed=4.81x    frame=  244 fps=121 q=5.0 size=    8960kB time=00:00:09.72 bitrate=7551.4kbits/s speed=4.84x    frame=  306 fps=122 q=5.0 size=   11264kB time=00:00:12.20 bitrate=7563.5kbits/s speed=4.86x    frame=  360 fps=124 q=5.0 Lsize=   12912kB time=00:00:14.36 bitrate=7365.7kbits/s speed=4.93x    
+video:12909kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019654%
+ffmpeg version 4.4.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Spack GCC)
+  configuration: --prefix=/apps/2021/spack/0.18.1/opt/spack/linux-rhel7-skylake_avx512/gcc-10.2.0/ffmpeg-4.4.1-ar6vshqombu6dw3qwnrhwtvgxab7su3a --enable-pic --cc=/apps/2021/spack/0.18.1/lib/spack/env/gcc/gcc --cxx=/apps/2021/spack/0.18.1/lib/spack/env/gcc/g++ --disable-libxcb --disable-libxcb-shape --disable-libxcb-shm --disable-libxcb-xfixes --disable-xlib --disable-libfontconfig --disable-libfreetype --disable-libfribidi --enable-bzlib --enable-gpl --disable-libmp3lame --disable-libopenjpeg --disable-libopus --disable-libspeex --disable-libvorbis --disable-libvpx --enable-libx264 --disable-avresample --disable-nonfree --disable-openssl --enable-shared --enable-version3 --disable-libzmq --disable-libssh --disable-libwebp --disable-lzma --disable-libsnappy --disable-sdl2 --disable-libaom
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   59 fps=0.0 q=5.0 size=    2304kB time=00:00:02.32 bitrate=8135.4kbits/s speed=4.59x    frame=  123 fps=122 q=5.0 size=    4864kB time=00:00:04.88 bitrate=8165.1kbits/s speed=4.83x    frame=  191 fps=126 q=5.0 size=    6912kB time=00:00:07.60 bitrate=7450.4kbits/s speed=5.02x    frame=  256 fps=127 q=5.0 size=    9472kB time=00:00:10.20 bitrate=7607.3kbits/s speed=5.06x    frame=  322 fps=128 q=5.0 size=   11776kB time=00:00:12.84 bitrate=7513.1kbits/s speed= 5.1x    frame=  360 fps=129 q=5.0 Lsize=   12912kB time=00:00:14.36 bitrate=7365.7kbits/s speed=5.13x    
+video:12909kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019654%
+ffmpeg version 4.4.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Spack GCC)
+  configuration: --prefix=/apps/2021/spack/0.18.1/opt/spack/linux-rhel7-skylake_avx512/gcc-10.2.0/ffmpeg-4.4.1-ar6vshqombu6dw3qwnrhwtvgxab7su3a --enable-pic --cc=/apps/2021/spack/0.18.1/lib/spack/env/gcc/gcc --cxx=/apps/2021/spack/0.18.1/lib/spack/env/gcc/g++ --disable-libxcb --disable-libxcb-shape --disable-libxcb-shm --disable-libxcb-xfixes --disable-xlib --disable-libfontconfig --disable-libfreetype --disable-libfribidi --enable-bzlib --enable-gpl --disable-libmp3lame --disable-libopenjpeg --disable-libopus --disable-libspeex --disable-libvorbis --disable-libvpx --enable-libx264 --disable-avresample --disable-nonfree --disable-openssl --enable-shared --enable-version3 --disable-libzmq --disable-libssh --disable-libwebp --disable-lzma --disable-libsnappy --disable-sdl2 --disable-libaom
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   60 fps=0.0 q=5.0 size=    2304kB time=00:00:02.36 bitrate=7997.5kbits/s speed=4.65x    frame=  125 fps=123 q=5.0 size=    4864kB time=00:00:04.96 bitrate=8033.4kbits/s speed=4.88x    frame=  192 fps=126 q=5.0 size=    6912kB time=00:00:07.64 bitrate=7411.4kbits/s speed=5.03x    frame=  256 fps=127 q=5.0 size=    9472kB time=00:00:10.20 bitrate=7607.3kbits/s speed=5.05x    frame=  320 fps=127 q=5.0 size=   11776kB time=00:00:12.76 bitrate=7560.2kbits/s speed=5.06x    frame=  360 fps=128 q=5.0 Lsize=   12912kB time=00:00:14.36 bitrate=7365.7kbits/s speed=5.09x    
+video:12909kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019654%
+ffmpeg version 4.4.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Spack GCC)
+  configuration: --prefix=/apps/2021/spack/0.18.1/opt/spack/linux-rhel7-skylake_avx512/gcc-10.2.0/ffmpeg-4.4.1-ar6vshqombu6dw3qwnrhwtvgxab7su3a --enable-pic --cc=/apps/2021/spack/0.18.1/lib/spack/env/gcc/gcc --cxx=/apps/2021/spack/0.18.1/lib/spack/env/gcc/g++ --disable-libxcb --disable-libxcb-shape --disable-libxcb-shm --disable-libxcb-xfixes --disable-xlib --disable-libfontconfig --disable-libfreetype --disable-libfribidi --enable-bzlib --enable-gpl --disable-libmp3lame --disable-libopenjpeg --disable-libopus --disable-libspeex --disable-libvorbis --disable-libvpx --enable-libx264 --disable-avresample --disable-nonfree --disable-openssl --enable-shared --enable-version3 --disable-libzmq --disable-libssh --disable-libwebp --disable-lzma --disable-libsnappy --disable-sdl2 --disable-libaom
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 552960 kb/s
+  Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720, 552960 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> mpeg4 (native))
+Output #0, mp4, to 'sout/output_sobel_v1.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 1280x720, q=2-31, 200 kb/s, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 mpeg4
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   57 fps=0.0 q=5.0 size=    2304kB time=00:00:02.24 bitrate=8425.9kbits/s speed=4.45x    frame=  120 fps=119 q=5.0 size=    4608kB time=00:00:04.76 bitrate=7930.4kbits/s speed=4.73x    frame=  186 fps=123 q=5.0 size=    6656kB time=00:00:07.40 bitrate=7368.3kbits/s speed=4.91x    frame=  251 fps=125 q=5.0 size=    9216kB time=00:00:10.00 bitrate=7549.7kbits/s speed=4.96x    frame=  316 fps=125 q=5.0 size=   11520kB time=00:00:12.60 bitrate=7489.8kbits/s speed=   5x    frame=  360 fps=126 q=5.0 Lsize=   12912kB time=00:00:14.36 bitrate=7365.7kbits/s speed=5.05x    
+video:12909kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019654%

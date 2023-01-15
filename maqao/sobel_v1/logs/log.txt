@@ -1,0 +1,7 @@
+********************************************************************************
+
+MAQAO 2.15.3 - 1fd0bcd11cd3bc425b8d57f46373b55e1ea3549e::20220204-122322 || 2022/02/04
+
+maqao oneview --create-report=one --replace xp=./maqao/sobel_v1 executable=sobel run_command=<executable> in/input.raw sout/output.raw 
+
+CMD:   /apps/maqao/2.15.3//maqao lprof  --xp="/home/antvidal/AOC/AOC-Computer-vision/maqao/sobel_v1/tools/lprof_npsu_run_0" --mpi-command=""   -- /home/antvidal/AOC/AOC-Computer-vision/maqao/sobel_v1/binaries/sobel in/input.raw sout/output.raw

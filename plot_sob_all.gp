@@ -10,15 +10,19 @@ set xlabel "Frame number"
 set multiplot layout 2,2 rowsfirst 
 
 set title "O1 compiler optimization"
-plot "O1/data/sob_baseline" w lp t "Baseline"
+plot "O1/data/sob_baseline" w lp t "Baseline" ,\
+     "O1/data/sobel_v1" w lp t "v1"
 
 set title "O2 compiler optimization"
-plot "O2/data/sob_baseline" w lp t "Baseline"
+plot "O2/data/sob_baseline" w lp t "Baseline" ,\
+     "O2/data/sobel_v1" w lp t "v1"
 
 set title "O3 compiler optimization"
-plot "O3/data/sob_baseline" w lp t "Baseline"
+plot "O3/data/sob_baseline" w lp t "Baseline" ,\
+     "O3/data/sobel_v1" w lp t "v1"
 
 set title "Ofast compiler optimization"
-plot "Ofast/data/sob_baseline" w lp t "Baseline"
+plot "Ofast/data/sob_baseline" w lp t "Baseline" ,\
+     "Ofast/data/sobel_v1" w lp t "v1"
 
 unset multiplot

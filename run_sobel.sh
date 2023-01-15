@@ -55,7 +55,8 @@ do
     cp "plot_sob.gp" $dir"/"$opt
     
     #Going through sobel code variants
-    for variant in sob_baseline 
+    #for variant in sob_baseline sobel_v1
+    for variant in sobel_v1
     do
 	#
 	echo -e "\tVariant: "$variant

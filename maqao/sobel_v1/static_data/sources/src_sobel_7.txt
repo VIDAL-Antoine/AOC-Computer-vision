@@ -1,0 +1,6 @@
+/home/antvidal/AOC/AOC-Computer-vision/sobel.c: 93 - 95
+--------------------------------------------------------------------------------
+
+93:   for (u64 i = 0; i < fh; i++)
+94:     for (u64 j = 0; j < fw; j++)
+95:       r += m[INDEX(i, j, fw)] * f[INDEX(i, j, fw)];

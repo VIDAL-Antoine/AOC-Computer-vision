@@ -14,7 +14,7 @@ else
       make sob_baseline
       maqao oneview --create-report=one --replace xp=./maqao/sobel_baseline executable=sobel run_command="<executable> in/input.raw sout/output.raw"
     else
-      make sobel_$1
+      make O="Ofast" sobel_$1
       maqao oneview --create-report=one --replace xp=./maqao/sobel_$1 executable=sobel run_command="<executable> in/input.raw sout/output.raw"
     fi
     rm sobel

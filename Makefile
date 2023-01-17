@@ -18,5 +18,11 @@ sobel_v1:
 sobel_v1_maqao:
 	$(CC) -DV1=1 $(CFLAGS) $(OFLAGS) -Ofast sobel.c common.c -o sobel -lm
 
+sobel_v2:
+	$(CC) -DV2=1 $(CFLAGS) $(OFLAGS) sobel.c common.c -o sobel -lm
+
+sobel_v2_maqao:
+	$(CC) -DV2=1 $(CFLAGS) $(OFLAGS) -Ofast sobel.c common.c -o sobel -lm
+
 clean:
 	rm -Rf *~ invert sobel

@@ -143,13 +143,13 @@ void sobel_v1(u8 *cframe, u8 *oframe, f32 threshold)
 # Regroupement en une fonction
 # Suppression des matrices f1 et f2 et de la double boucle interne
 # Utilisation de variables temporaires pour alléger les calculs
-# La racine carrée étant un goulot d'étranglement, il ne semble pas possible d'y échapper
+# La racine carrée étant un goulot d'étranglement, il ne semble pas possible d'y échapper sans devoir faire des approximations
 ######################################
 */
 
 void sobel_v2(u8 *cframe, u8 *oframe, i32 threshold)
 {
-  i32 gx, gy, cframe_tmp, mag2;
+  i32 gx, gy, cframe_tmp, mag_approx;
   u32 i_W3_j;
   
   //
@@ -182,8 +182,8 @@ void sobel_v2(u8 *cframe, u8 *oframe, i32 threshold)
       cframe_tmp *= 2;
       gy += cframe_tmp;
 
-      mag2 = (gx * gx) + (gy * gy);
-      oframe[i_W3_j] = (mag2 > threshold * threshold) ? 255 : sqrt(mag2);
+      mag_approx = abs(gx)+abs(gy);
+      oframe[i_W3_j] = (mag_approx > threshold) ? 255 : (mag_approx);
     }
   }
 }

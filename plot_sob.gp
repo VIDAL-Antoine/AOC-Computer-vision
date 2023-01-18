@@ -10,4 +10,6 @@ set xlabel "Frame number"
 set title "Comparison between different implementaions of the color inversion"
 
 plot "data/sob_baseline" w lp ,\
-     "data/sobel_v1" w lp
+     "data/sobel_v1" w lp ,\
+     "data/sobel_v2" w lp ,\
+     "data/sobel_v3" w lp

@@ -1,0 +1,5 @@
+/usr/bin/ld: /tmp/ccZOySi6.o: in function `main':
+/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216: undefined reference to `omp_set_num_threads'
+/usr/bin/ld: /home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217: undefined reference to `omp_get_num_threads'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:28: sobel_v3] Error 1

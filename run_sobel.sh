@@ -42,8 +42,7 @@ mkdir -p $dir $dir"/logs"
 cp "plot_sob_all.gp" $dir
 
 #Compiler optimizations
-#for opt in "O1" "O2" "O3" "Ofast"
-for opt in "Ofast"
+for opt in "O1" "O2" "O3" "Ofast"
 do
     #
     echo "Running with flag: "$opt
@@ -56,8 +55,7 @@ do
     cp "plot_sob.gp" $dir"/"$opt
     
     #Going through sobel code variants
-    #for variant in sob_baseline sobel_v1 sobel_v2
-    for variant in sobel_v2
+    for variant in sob_baseline sobel_v1 sobel_v2 sobel_v3
     do
 	#
 	echo -e "\tVariant: "$variant
@@ -66,7 +64,7 @@ do
 	make $variant O=$opt >> $dir"/logs/compile.log" 2>> $dir"/logs/compile_err.log"
 	
 	#Run & select run number & cycles 
-	./sobel in/input.raw sout/output.raw | cut -d';' -f1,3 > $dir"/"$opt"/data/"$variant
+	./sobel in/input.raw sout/output.raw 2> $dir/"cycles_${opt}_${variant}.dat" | cut -d';' -f1,3 > $dir"/"$opt"/data/"$variant
 	
 	#Convert raw file into mp4 video
 	./cvt_vid.sh r2v "sout/output.raw" "sout/output_"$variant".mp4" >> $dir"/logs/cvt.log" 2>> $dir"/logs/cvt_err.log"

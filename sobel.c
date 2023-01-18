@@ -52,6 +52,8 @@ void grayscale_sampled(u8 *frame)
 ######################################
 */
 
+#if BASELINE
+
 //
 i32 convolve_baseline(u8 *m, i32 *f, u64 fh, u64 fw)
 {
@@ -91,12 +93,16 @@ void sobel_baseline(u8 *cframe, u8 *oframe, f32 threshold)
       }
 }
 
+#endif
+
 /*
 ######################################
 # Version 1 : ajout de flags de compilation
 # Pas de changements au niveau du code source
 ######################################
 */
+
+#if V1
 
 //
 i32 convolve_v1(u8 *m, i32 *f, u64 fh, u64 fw)
@@ -137,6 +143,8 @@ void sobel_v1(u8 *cframe, u8 *oframe, f32 threshold)
       }
 }
 
+#endif
+
 /*
 ######################################
 # Version 2 : Optimisations au niveau du code source
@@ -146,7 +154,7 @@ void sobel_v1(u8 *cframe, u8 *oframe, f32 threshold)
 ######################################
 */
 
-#include <string.h>
+#if V2
 
 #define H3 H-3
 #define W3 W*3
@@ -172,6 +180,47 @@ void sobel_v2(u8* const cframe, u8* restrict oframe, u32 const threshold)
     }
   }
 }
+
+#endif
+
+/*
+######################################
+# Version 3 : Ajout de librairies externes
+# La librairie ajoutée est OpenMP. D'autres librairies ont été considérées (BLAS...) mais n'ont pas été retenues.
+######################################
+*/
+
+#if V3
+
+#include <omp.h>
+
+#define H3 H-3
+#define W3 W*3
+#define W3_3 W*3-3
+
+void sobel_v3(u8* const cframe, u8* restrict oframe, u32 const threshold)
+{
+  //
+  #pragma omp parallel for collapse(2)
+  for (u32 i = 0; i < H3; i++)
+  {
+    for (u32 j = 0; j < W3_3; j++)
+    {
+      u32 gx, i_W3_j, mag_approx; //gy is stored in mag_approx
+      i_W3_j = i * W3 + j;
+
+      gx = ( *(cframe + i_W3_j + 8) - *(cframe + i_W3_j) );
+      mag_approx = gx;
+      gx +=           *(cframe + i_W3_j + 2) - *(cframe + i_W3_j + 6) + 2 * ( *(cframe + i_W3_j + 5) - *(cframe + i_W3_j + 3) );
+      mag_approx += - *(cframe + i_W3_j + 2) + *(cframe + i_W3_j + 6) + 2 * ( *(cframe + i_W3_j + 7) - *(cframe + i_W3_j + 1) );
+
+      mag_approx = abs(mag_approx) + abs(gx);
+      *(oframe + i_W3_j) = (mag_approx > threshold) ? 255 : (mag_approx);
+    }
+  }
+}
+
+#endif
 
 //
 int main(int argc, char **argv)
@@ -218,6 +267,8 @@ int main(int argc, char **argv)
       sobel_v1(cframe, oframe, 100.0);
 #elif V2
       sobel_v2(cframe, oframe, 100);
+#elif V3
+      sobel_v3(cframe, oframe, 100);
 #endif
       
       //Stop

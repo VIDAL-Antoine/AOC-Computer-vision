@@ -159,3 +159,6 @@ gcc -DV4=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm -fopen
 gcc -DV4=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm -fopenmp
 gcc -DV4=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm -fopenmp
 gcc -DBASELINE=1 -g3 sobel.c common.c -o sobel -lm
+gcc -DV4=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm -fopenmp
+gcc -DV4=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm -fopenmp
+gcc -DV4=1 -g3 -march=native -funroll-loops sobel.c common.c -o sobel -lm -fopenmp

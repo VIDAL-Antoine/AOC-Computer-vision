@@ -187,3 +187,15 @@ sobel.c:357:37: warning: format ‘%lu’ expects argument of type ‘long unsig
       |                                     |             u64 {aka long long unsigned int}
       |                                     long unsigned int
       |                                   %llu
+sobel.c: In function ‘main’:
+sobel.c:294:20: error: ‘cframe’ undeclared (first use in this function)
+  294 |   nb_bytes = fread(cframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpi);
+      |                    ^~~~~~
+sobel.c:294:20: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:34: sobel_v4] Error 1
+sobel.c: In function ‘main’:
+sobel.c:294:20: error: ‘cframe’ undeclared (first use in this function)
+  294 |   nb_bytes = fread(cframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpi);
+      |                    ^~~~~~
+sobel.c:294:20: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:34: sobel_v4] Error 1

@@ -263,21 +263,6 @@ int main(int argc, char **argv)
   
   u64 cycles[MAX_SAMPLES], cycles_a, cycles_b;
   u64 nb_bytes = 1, frame_count = 0, samples_count = 0;
- 
-  //
-#if BASELINE || V1 || V2 || V3
-  u64 size = sizeof(u8) * H * W * 3;
-  u8 *cframe = _mm_malloc(size, 32);
-  u8 *oframe = _mm_malloc(size, 32);
-
-#elif V4
-  #define NB_FRAMES_VIDEO 360 //14 seconds -> 360/14 = 25 fps
-  #define SIZE_FRAME sizeof(u8)*H*W*3  //1*1280*720*3 = 2764800
-
-  u8 *cframe = _mm_malloc(SIZE_FRAME * NB_FRAMES_VIDEO, 32);
-  u8 *oframe = _mm_malloc(SIZE_FRAME * NB_FRAMES_VIDEO, 32);
-
-#endif
 
   //
   FILE *fpi = fopen(argv[1], "rb"); 
@@ -293,22 +278,26 @@ int main(int argc, char **argv)
   
   //Read & process video frames
 #if BASELINE || V1 || V2 || V3
+  u64 size = sizeof(u8) * H * W * 3; //1*1280*720*3 = 2764800
+  u8 *cframe = _mm_malloc(size, 32);
+  u8 *oframe = _mm_malloc(size, 32);
+
   while ((nb_bytes = fread(cframe, sizeof(u8), H * W * 3, fpi)))
   {
-
+      grayscale_weighted(cframe);
 #elif V4
   #include <omp.h>
 
+  #define NB_FRAMES_VIDEO 360 //14 seconds -> 360/14 = 25 fps
+  #define SIZE_FRAME sizeof(u8)*H*W*3  //1*1280*720*3 = 2764800
+
+  u8 *cframe = _mm_malloc(SIZE_FRAME * NB_FRAMES_VIDEO, 32);
+  u8 *oframe = _mm_malloc(SIZE_FRAME * NB_FRAMES_VIDEO, 32);
   nb_bytes = fread(cframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpi);
 
   #pragma omp parallel for shared(cframe, oframe, cycles, samples_count, frame_count, nb_bytes)
   for(size_t i = 0; i < NB_FRAMES_VIDEO; i++)
   {
-#endif
-
-#if BASELINE || V1 || V2 || V3
-      grayscale_weighted(cframe);
-#elif V4
       grayscale_weighted(&cframe[i * SIZE_FRAME]);
 #endif
       

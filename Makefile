@@ -30,5 +30,11 @@ sobel_v3:
 sobel_v3_maqao:
 	$(CC) -DV3=1 $(CFLAGS) $(OFLAGS) -Ofast sobel.c common.c -o sobel -lm -fopenmp
 
+sobel_v4:
+	$(CC) -DV4=1 $(CFLAGS) $(OFLAGS) sobel.c common.c -o sobel -lm -fopenmp
+
+sobel_v4_maqao:
+	$(CC) -DV4=1 $(CFLAGS) $(OFLAGS) -Ofast sobel.c common.c -o sobel -lm -fopenmp
+
 clean:
 	rm -Rf *~ invert sobel

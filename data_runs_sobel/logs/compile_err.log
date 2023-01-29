@@ -3,3 +3,187 @@
 /usr/bin/ld: /home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217: undefined reference to `omp_get_num_threads'
 collect2: error: ld returned 1 exit status
 make: *** [Makefile:28: sobel_v3] Error 1
+sobel.c: In function ‘sobel_v2’:
+sobel.c:180:42: error: ‘threshold’ undeclared (first use in this function)
+  180 |       *(oframe + i_W3_j) = (mag_approx > threshold) ? 255 : (mag_approx);
+      |                                          ^~~~~~~~~
+sobel.c:180:42: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:22: sobel_v2] Error 1
+sobel.c: In function ‘sobel_v2’:
+sobel.c:180:42: error: ‘threshold’ undeclared (first use in this function)
+  180 |       *(oframe + i_W3_j) = (mag_approx > threshold) ? 255 : (mag_approx);
+      |                                          ^~~~~~~~~
+sobel.c:180:42: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:22: sobel_v2] Error 1
+sobel.c: In function ‘main’:
+sobel.c:257:25: error: expected expression before ‘;’ token
+  257 |   for(size_t i = 0; i < ; i++)
+      |                         ^
+sobel.c:262:32: warning: passing argument 1 of ‘grayscale_weighted’ makes pointer from integer without a cast [-Wint-conversion]
+  262 |       grayscale_weighted(cframe[i]);
+      |                          ~~~~~~^~~
+      |                                |
+      |                                u8 {aka unsigned char}
+sobel.c:16:29: note: expected ‘u8 *’ {aka ‘unsigned char *’} but argument is of type ‘u8’ {aka ‘unsigned char’}
+   16 | void grayscale_weighted(u8 *frame)
+      |                         ~~~~^~~~~
+sobel.c:270:28: warning: passing argument 1 of ‘sobel_baseline’ makes pointer from integer without a cast [-Wint-conversion]
+  270 |       sobel_baseline(cframe[i], oframe[i], 100.0);
+      |                      ~~~~~~^~~
+      |                            |
+      |                            u8 {aka unsigned char}
+sobel.c:70:25: note: expected ‘u8 *’ {aka ‘unsigned char *’} but argument is of type ‘u8’ {aka ‘unsigned char’}
+   70 | void sobel_baseline(u8 *cframe, u8 *oframe, f32 threshold)
+      |                     ~~~~^~~~~~
+sobel.c:270:39: warning: passing argument 2 of ‘sobel_baseline’ makes pointer from integer without a cast [-Wint-conversion]
+  270 |       sobel_baseline(cframe[i], oframe[i], 100.0);
+      |                                 ~~~~~~^~~
+      |                                       |
+      |                                       u8 {aka unsigned char}
+sobel.c:70:37: note: expected ‘u8 *’ {aka ‘unsigned char *’} but argument is of type ‘u8’ {aka ‘unsigned char’}
+   70 | void sobel_baseline(u8 *cframe, u8 *oframe, f32 threshold)
+      |                                 ~~~~^~~~~~
+sobel.c:293:20: warning: passing argument 1 of ‘fwrite’ makes pointer from integer without a cast [-Wint-conversion]
+  293 |       fwrite(oframe[i], sizeof(u8), H * W * 3, fpo);
+      |              ~~~~~~^~~
+      |                    |
+      |                    u8 {aka unsigned char}
+In file included from sobel.c:5:
+/usr/include/stdio.h:652:46: note: expected ‘const void * restrict’ but argument is of type ‘u8’ {aka ‘unsigned char’}
+  652 | extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make: *** [Makefile:13: sob_baseline] Error 1
+sobel.c: In function ‘main’:
+sobel.c:265:33: error: ‘i’ undeclared (first use in this function); did you mean ‘i8’?
+  265 |       grayscale_weighted(cframe[i]);
+      |                                 ^
+      |                                 i8
+sobel.c:265:33: note: each undeclared identifier is reported only once for each function it appears in
+sobel.c:277:7: warning: implicit declaration of function ‘sobel_v2’; did you mean ‘sobel_v3’? [-Wimplicit-function-declaration]
+  277 |       sobel_v2(cframe[i], oframe[i]);
+      |       ^~~~~~~~
+      |       sobel_v3
+make: *** [Makefile:22: sobel_v2] Error 1
+sobel.c: In function ‘main’:
+sobel.c:265:33: error: ‘i’ undeclared (first use in this function); did you mean ‘i8’?
+  265 |       grayscale_weighted(cframe[i]);
+      |                                 ^
+      |                                 i8
+sobel.c:265:33: note: each undeclared identifier is reported only once for each function it appears in
+sobel.c:277:7: warning: implicit declaration of function ‘sobel_v2’; did you mean ‘sobel_v3’? [-Wimplicit-function-declaration]
+  277 |       sobel_v2(cframe, oframe);
+      |       ^~~~~~~~
+      |       sobel_v3
+make: *** [Makefile:22: sobel_v2] Error 1
+sobel.c: In function ‘main’:
+sobel.c:304:3: error: ‘nb_bytes_video’ undeclared (first use in this function)
+  304 |   nb_bytes_video = fread(cframe, (u64)video.st_size/NB_FRAMES_VIDEO, NB_FRAMES_VIDEO, fpi);
+      |   ^~~~~~~~~~~~~~
+sobel.c:304:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:34: sobel_v4] Error 1
+sobel.c: In function ‘main’:
+sobel.c:395:1: error: expected declaration or statement at end of input
+  395 | }
+      | ^
+make: *** [Makefile:34: sobel_v4] Error 1
+sobel.c: In function ‘sobel_v4’:
+sobel.c:247:21: error: wrong type argument to unary minus
+  247 |       mag_approx += - *(cframe + i_W3_j + 2) + *(cframe + i_W3_j + 6) + 2 * ( *(cframe + i_W3_j + 7) - *(cframe + i_W3_j + 1) );
+      |                     ^
+sobel.c:250:26: warning: assignment to ‘u8 *’ {aka ‘unsigned char *’} from ‘u32’ {aka ‘unsigned int’} makes pointer from integer without a cast [-Wint-conversion]
+  250 |       *(oframe + i_W3_j) = (mag_approx > THRESHOLD) ? 255 : (mag_approx);
+      |                          ^
+sobel.c: In function ‘main’:
+sobel.c:330:22: warning: passing argument 1 of ‘sobel_v4’ makes pointer from integer without a cast [-Wint-conversion]
+  330 |       sobel_v4(cframe[i], oframe[i]);
+      |                ~~~~~~^~~
+      |                      |
+      |                      u8 {aka unsigned char}
+sobel.c:233:26: note: expected ‘u8 ** const’ {aka ‘unsigned char ** const’} but argument is of type ‘u8’ {aka ‘unsigned char’}
+  233 | void sobel_v4(u8** const cframe, u8** restrict oframe)
+      |               ~~~~~~~~~~~^~~~~~
+sobel.c:330:33: warning: passing argument 2 of ‘sobel_v4’ makes pointer from integer without a cast [-Wint-conversion]
+  330 |       sobel_v4(cframe[i], oframe[i]);
+      |                           ~~~~~~^~~
+      |                                 |
+      |                                 u8 {aka unsigned char}
+sobel.c:233:48: note: expected ‘u8 ** restrict’ {aka ‘unsigned char ** restrict’} but argument is of type ‘u8’ {aka ‘unsigned char’}
+  233 | void sobel_v4(u8** const cframe, u8** restrict oframe)
+      |                                  ~~~~~~~~~~~~~~^~~~~~
+make: *** [Makefile:34: sobel_v4] Error 1
+sobel.c: In function ‘main’:
+sobel.c:320:32: warning: passing argument 1 of ‘grayscale_weighted’ makes pointer from integer without a cast [-Wint-conversion]
+  320 |       grayscale_weighted(cframe[i * SIZE_FRAME]);
+      |                          ~~~~~~^~~~~~~~~~~~~~~~
+      |                                |
+      |                                u8 {aka unsigned char}
+sobel.c:16:29: note: expected ‘u8 *’ {aka ‘unsigned char *’} but argument is of type ‘u8’ {aka ‘unsigned char’}
+   16 | void grayscale_weighted(u8 *frame)
+      |                         ~~~~^~~~~
+sobel.c: In function ‘main’:
+sobel.c:320:32: warning: passing argument 1 of ‘grayscale_weighted’ makes pointer from integer without a cast [-Wint-conversion]
+  320 |       grayscale_weighted(cframe[i * SIZE_FRAME]);
+      |                          ~~~~~~^~~~~~~~~~~~~~~~
+      |                                |
+      |                                u8 {aka unsigned char}
+sobel.c:16:29: note: expected ‘u8 *’ {aka ‘unsigned char *’} but argument is of type ‘u8’ {aka ‘unsigned char’}
+   16 | void grayscale_weighted(u8 *frame)
+      |                         ~~~~^~~~~
+sobel.c:338:22: warning: passing argument 1 of ‘sobel_v4’ makes pointer from integer without a cast [-Wint-conversion]
+  338 |       sobel_v4(cframe[i * SIZE_FRAME], oframe[i * SIZE_FRAME]);
+      |                ~~~~~~^~~~~~~~~~~~~~~~
+      |                      |
+      |                      u8 {aka unsigned char}
+sobel.c:233:25: note: expected ‘u8 * const’ {aka ‘unsigned char * const’} but argument is of type ‘u8’ {aka ‘unsigned char’}
+  233 | void sobel_v4(u8* const cframe, u8* restrict oframe)
+      |               ~~~~~~~~~~^~~~~~
+sobel.c:338:46: warning: passing argument 2 of ‘sobel_v4’ makes pointer from integer without a cast [-Wint-conversion]
+  338 |       sobel_v4(cframe[i * SIZE_FRAME], oframe[i * SIZE_FRAME]);
+      |                                        ~~~~~~^~~~~~~~~~~~~~~~
+      |                                              |
+      |                                              u8 {aka unsigned char}
+sobel.c:233:46: note: expected ‘u8 * restrict’ {aka ‘unsigned char * restrict’} but argument is of type ‘u8’ {aka ‘unsigned char’}
+  233 | void sobel_v4(u8* const cframe, u8* restrict oframe)
+      |                                 ~~~~~~~~~~~~~^~~~~~
+sobel.c: In function ‘main’:
+sobel.c:357:21: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  357 |     printf("cycles[%d] = %lu ", i, cycles[i]);
+      |                    ~^           ~
+      |                     |           |
+      |                     int         size_t {aka long unsigned int}
+      |                    %ld
+sobel.c:357:28: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘u64’ {aka ‘long long unsigned int’} [-Wformat=]
+  357 |     printf("cycles[%d] = %lu ", i, cycles[i]);
+      |                          ~~^       ~~~~~~~~~
+      |                            |             |
+      |                            |             u64 {aka long long unsigned int}
+      |                            long unsigned int
+      |                          %llu
+sobel.c: In function ‘main’:
+sobel.c:357:21: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  357 |     printf("cycles[%d] = %lu ", i, cycles[i]);
+      |                    ~^           ~
+      |                     |           |
+      |                     int         size_t {aka long unsigned int}
+      |                    %ld
+sobel.c:357:28: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘u64’ {aka ‘long long unsigned int’} [-Wformat=]
+  357 |     printf("cycles[%d] = %lu ", i, cycles[i]);
+      |                          ~~^       ~~~~~~~~~
+      |                            |             |
+      |                            |             u64 {aka long long unsigned int}
+      |                            long unsigned int
+      |                          %llu
+sobel.c: In function ‘main’:
+sobel.c:357:30: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  357 |     fprintf(stderr, "cycles[%d] = %lu ", i, cycles[i]);
+      |                             ~^           ~
+      |                              |           |
+      |                              int         size_t {aka long unsigned int}
+      |                             %ld
+sobel.c:357:37: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 4 has type ‘u64’ {aka ‘long long unsigned int’} [-Wformat=]
+  357 |     fprintf(stderr, "cycles[%d] = %lu ", i, cycles[i]);
+      |                                   ~~^       ~~~~~~~~~
+      |                                     |             |
+      |                                     |             u64 {aka long long unsigned int}
+      |                                     long unsigned int
+      |                                   %llu

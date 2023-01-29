@@ -93,8 +93,6 @@ void sobel_baseline(u8 *cframe, u8 *oframe, f32 threshold)
       }
 }
 
-#endif
-
 /*
 ######################################
 # Version 1 : ajout de flags de compilation
@@ -102,7 +100,7 @@ void sobel_baseline(u8 *cframe, u8 *oframe, f32 threshold)
 ######################################
 */
 
-#if V1
+#elif V1
 
 //
 i32 convolve_v1(u8 *m, i32 *f, u64 fh, u64 fw)
@@ -143,8 +141,6 @@ void sobel_v1(u8 *cframe, u8 *oframe, f32 threshold)
       }
 }
 
-#endif
-
 /*
 ######################################
 # Version 2 : Optimisations au niveau du code source
@@ -154,13 +150,14 @@ void sobel_v1(u8 *cframe, u8 *oframe, f32 threshold)
 ######################################
 */
 
-#if V2
+#elif V2
 
 #define H3 H-3
 #define W3 W*3
 #define W3_3 W*3-3
+#define THRESHOLD 100
 
-void sobel_v2(u8* const cframe, u8* restrict oframe, u32 const threshold)
+void sobel_v2(u8* const cframe, u8* restrict oframe)
 {
   //
   for (u32 i = 0; i < H3; i++)
@@ -176,12 +173,10 @@ void sobel_v2(u8* const cframe, u8* restrict oframe, u32 const threshold)
       mag_approx += - *(cframe + i_W3_j + 2) + *(cframe + i_W3_j + 6) + 2 * ( *(cframe + i_W3_j + 7) - *(cframe + i_W3_j + 1) );
 
       mag_approx = abs(mag_approx) + abs(gx);
-      *(oframe + i_W3_j) = (mag_approx > threshold) ? 255 : (mag_approx);
+      *(oframe + i_W3_j) = (mag_approx > THRESHOLD) ? 255 : (mag_approx);
     }
   }
 }
-
-#endif
 
 /*
 ######################################
@@ -190,18 +185,19 @@ void sobel_v2(u8* const cframe, u8* restrict oframe, u32 const threshold)
 ######################################
 */
 
-#if V3
+#elif V3
 
 #include <omp.h>
 
 #define H3 H-3
 #define W3 W*3
 #define W3_3 W*3-3
+#define THRESHOLD 100
 
-void sobel_v3(u8* const cframe, u8* restrict oframe, u32 const threshold)
+void sobel_v3(u8* const cframe, u8* restrict oframe)
 {
   //
-  #pragma omp parallel for collapse(2)
+  #pragma omp parallel for
   for (u32 i = 0; i < H3; i++)
   {
     for (u32 j = 0; j < W3_3; j++)
@@ -215,7 +211,43 @@ void sobel_v3(u8* const cframe, u8* restrict oframe, u32 const threshold)
       mag_approx += - *(cframe + i_W3_j + 2) + *(cframe + i_W3_j + 6) + 2 * ( *(cframe + i_W3_j + 7) - *(cframe + i_W3_j + 1) );
 
       mag_approx = abs(mag_approx) + abs(gx);
-      *(oframe + i_W3_j) = (mag_approx > threshold) ? 255 : (mag_approx);
+      *(oframe + i_W3_j) = (mag_approx > THRESHOLD) ? 255 : (mag_approx);
+    }
+  }
+}
+
+/*
+######################################
+# Version 4 : Modification de la fonction main
+# Réduction des entrées / sorties en lisant la vidéo d'abord entièrement et non frame par frame
+# Retrait de la parallélisation dans la fonction Sobel pour paralléliser les frames et non la fonction Sobel
+######################################
+*/
+
+#elif V4
+
+#define H3 H-3
+#define W3 W*3
+#define W3_3 W*3-3
+#define THRESHOLD 100
+
+void sobel_v4(u8* const cframe, u8* restrict oframe)
+{
+  //
+  for (u32 i = 0; i < H3; i++)
+  {
+    for (u32 j = 0; j < W3_3; j++)
+    {
+      u32 gx, i_W3_j, mag_approx; //gy is stored in mag_approx
+      i_W3_j = i * W3 + j;
+
+      gx = ( *(cframe + i_W3_j + 8) - *(cframe + i_W3_j) );
+      mag_approx = gx;
+      gx +=           *(cframe + i_W3_j + 2) - *(cframe + i_W3_j + 6) + 2 * ( *(cframe + i_W3_j + 5) - *(cframe + i_W3_j + 3) );
+      mag_approx += - *(cframe + i_W3_j + 2) + *(cframe + i_W3_j + 6) + 2 * ( *(cframe + i_W3_j + 7) - *(cframe + i_W3_j + 1) );
+
+      mag_approx = abs(mag_approx) + abs(gx);
+      *(oframe + i_W3_j) = (mag_approx > THRESHOLD) ? 255 : (mag_approx);
     }
   }
 }
@@ -229,14 +261,23 @@ int main(int argc, char **argv)
   if (argc < 3)
     return printf("Usage: %s [raw input file] [raw output file]\n", argv[0]), 1;
   
-  //
-  u64 size = sizeof(u8) * H * W * 3;
   u64 cycles[MAX_SAMPLES], cycles_a, cycles_b;
   u64 nb_bytes = 1, frame_count = 0, samples_count = 0;
  
   //
+#if BASELINE || V1 || V2 || V3
+  u64 size = sizeof(u8) * H * W * 3;
   u8 *cframe = _mm_malloc(size, 32);
   u8 *oframe = _mm_malloc(size, 32);
+
+#elif V4
+  #define NB_FRAMES_VIDEO 360 //14 seconds -> 360/14 = 25 fps
+  #define SIZE_FRAME sizeof(u8)*H*W*3  //1*1280*720*3 = 2764800
+
+  u8 *cframe = _mm_malloc(SIZE_FRAME * NB_FRAMES_VIDEO, 32);
+  u8 *oframe = _mm_malloc(SIZE_FRAME * NB_FRAMES_VIDEO, 32);
+
+#endif
 
   //
   FILE *fpi = fopen(argv[1], "rb"); 
@@ -251,24 +292,40 @@ int main(int argc, char **argv)
     return printf("Error: cannot open file '%s'\n", argv[2]), 2;
   
   //Read & process video frames
+#if BASELINE || V1 || V2 || V3
   while ((nb_bytes = fread(cframe, sizeof(u8), H * W * 3, fpi)))
-    {
-      //
+  {
+
+#elif V4
+  #include <omp.h>
+
+  nb_bytes = fread(cframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpi);
+
+  #pragma omp parallel for shared(cframe, oframe, cycles, samples_count, frame_count, nb_bytes)
+  for(size_t i = 0; i < NB_FRAMES_VIDEO; i++)
+  {
+#endif
+
+#if BASELINE || V1 || V2 || V3
       grayscale_weighted(cframe);
+#elif V4
+      grayscale_weighted(&cframe[i * SIZE_FRAME]);
+#endif
       
       //Start 
       cycles_b = rdtsc();
 
       //Put other versions here
-      
 #if BASELINE
       sobel_baseline(cframe, oframe, 100.0);
 #elif V1
       sobel_v1(cframe, oframe, 100.0);
 #elif V2
-      sobel_v2(cframe, oframe, 100);
+      sobel_v2(cframe, oframe);
 #elif V3
-      sobel_v3(cframe, oframe, 100);
+      sobel_v3(cframe, oframe);
+#elif V4
+      sobel_v4(&cframe[i * SIZE_FRAME], &oframe[i * SIZE_FRAME]);
 #endif
       
       //Stop
@@ -279,17 +336,20 @@ int main(int argc, char **argv)
 
       //
       if (samples_count < MAX_SAMPLES)
-	cycles[samples_count++] = elapsed;
+	      cycles[samples_count++] = elapsed;
       
       //frame number; size in Bytes; elapsed cycles; bytes per cycle
       fprintf(stdout, "%20llu; %20llu; %20llu; %15.3lf\n", frame_count, nb_bytes, elapsed, (f64)(nb_bytes) / (f64)elapsed);
-      
-      // Write this frame to the output pipe
-      fwrite(oframe, sizeof(u8), H * W * 3, fpo);
 
       //
       frame_count++;
-    }
+#if BASELINE || V1 || V2 || V3
+      fwrite(oframe, sizeof(u8), H * W * 3, fpo);
+  }
+#elif V4
+  }
+  fwrite(oframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpo);
+#endif
 
   //
   sort(cycles, samples_count);
@@ -309,6 +369,7 @@ int main(int argc, char **argv)
   avg = (min + max) / 2.0;
 
   //Color frame, gray frame, output frame
+#if BASELINE || V1 || V2 || V3
   bpc = (size << 1) / mea;
 
   //
@@ -321,6 +382,20 @@ int main(int argc, char **argv)
 	  bpc,
 	  (dev * 100.0 / mea));
   
+#elif V4
+  bpc = (SIZE_FRAME << 1) / mea;
+
+  //
+  fprintf(stderr, "\n%20lu; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf; %15.3lf %%;\n",
+	  SIZE_FRAME,
+	  min,
+	  max,
+	  avg,
+	  mea,
+	  bpc,
+	  (dev * 100.0 / mea));
+#endif
+
   //
   _mm_free(cframe);
   _mm_free(oframe);

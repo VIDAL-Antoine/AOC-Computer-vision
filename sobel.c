@@ -288,17 +288,18 @@ int main(int argc, char **argv)
 #elif V4
   #include <omp.h>
 
-  #define NB_FRAMES_VIDEO 360 //14 seconds -> 360/14 = 25 fps
+  #define NB_FRAMES_VIDEO 360 //14 seconds -> 360/14 = 25 fps //obtenu avec ffmpeg
   #define SIZE_FRAME sizeof(u8)*H*W*3  //1*1280*720*3 = 2764800
+  #define SIZE_VIDEO NB_FRAMES_VIDEO*SIZE_FRAME //380*2764800 = 995328000
 
   u8 *cframe = _mm_malloc(SIZE_FRAME * NB_FRAMES_VIDEO, 32);
   u8 *oframe = _mm_malloc(SIZE_FRAME * NB_FRAMES_VIDEO, 32);
   nb_bytes = fread(cframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpi);
 
   #pragma omp parallel for shared(cframe, oframe, cycles, samples_count, frame_count, nb_bytes)
-  for(size_t i = 0; i < NB_FRAMES_VIDEO; i++)
+  for(size_t i = 0; i < SIZE_VIDEO; i+=SIZE_FRAME)
   {
-      grayscale_weighted(&cframe[i * SIZE_FRAME]);
+      grayscale_weighted(&cframe[i]);
 #endif
       
       //Start 
@@ -314,7 +315,7 @@ int main(int argc, char **argv)
 #elif V3
       sobel_v3(cframe, oframe);
 #elif V4
-      sobel_v4(&cframe[i * SIZE_FRAME], &oframe[i * SIZE_FRAME]);
+      sobel_v4(&cframe[i], &oframe[i]);
 #endif
       
       //Stop

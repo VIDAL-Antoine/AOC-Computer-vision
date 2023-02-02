@@ -264,7 +264,7 @@ int main(int argc, char **argv)
   u64 cycles[MAX_SAMPLES], cycles_a, cycles_b;
   u64 nb_bytes = 1, frame_count = 0, samples_count = 0;
 
-  //
+  // b_ Ouverture du fichier en lecture et en écriture
   FILE *fpi = fopen(argv[1], "rb"); 
   FILE *fpo = fopen(argv[2], "wb");
 
@@ -276,13 +276,13 @@ int main(int argc, char **argv)
   if (!fpo)
     return printf("Error: cannot open file '%s'\n", argv[2]), 2;
   
-  //Read & process video frames
+  // b_ Read & process video frames
 #if BASELINE || V1 || V2 || V3
   u64 size = sizeof(u8) * H * W * 3; //1*1280*720*3 = 2764800
   u8 *cframe = _mm_malloc(size, 32);
   u8 *oframe = _mm_malloc(size, 32);
 
-  while ((nb_bytes = fread(cframe, sizeof(u8), H * W * 3, fpi)))
+  while ((nb_bytes = fread(cframe, sizeof(u8), H * W * 3, fpi))) // b_ Lecture d'une frame
   {
       grayscale_weighted(cframe);
 #elif V4

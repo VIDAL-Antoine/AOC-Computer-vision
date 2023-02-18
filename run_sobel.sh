@@ -56,7 +56,7 @@ do
     cp "plot_sob.gp" $dir"/"$opt
     
     #Going through sobel code variants
-    for variant in sob_baseline sobel_v1 sobel_v2 sobel_v3 sobel_v4
+    for variant in sob_baseline sobel_v1 sobel_v2 sobel_v3
     #for variant in sobel_v2
     do
 	#

@@ -168,9 +168,9 @@ static void sobel_v2(u8* const restrict cframe, u8* restrict oframe)
       u32 gx, i_W3_j, mag_approx; //gy is stored in mag_approx
       i_W3_j = i * W3 + j;
 
-      gx = ( cframe[i_W3_j + 8]- cframe[i_W3_j] );
+      gx = ( cframe[i_W3_j + 8] - cframe[i_W3_j] );
       mag_approx = gx;
-      gx +=           cframe[i_W3_j + 2] - cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 5] - cframe[i_W3_j + 3] );
+      gx         +=   cframe[i_W3_j + 2] - cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 5] - cframe[i_W3_j + 3] );
       mag_approx += - cframe[i_W3_j + 2] + cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 7] - cframe[i_W3_j + 1] );
       mag_approx = abs(mag_approx) + abs(gx);
       oframe[i_W3_j] = (mag_approx > THRESHOLD) ? 255 : (mag_approx);
@@ -180,8 +180,10 @@ static void sobel_v2(u8* const restrict cframe, u8* restrict oframe)
 
 /*
 ######################################
-# Version 3 : Ajout de librairies externes
-# La librairie ajoutée est OpenMP. D'autres librairies ont été considérées (BLAS...) mais n'ont pas été retenues.
+# Version 3 : Ajout de librairies externes et modification de la fonction main
+# La librairie ajoutée est OpenMP. D'autres librairies ont été considérées (BLAS...) mais n'ont pas été retenues
+# Réduction des entrées / sorties en lisant la vidéo d'abord entièrement et non frame par frame
+# Parallélisation au niveau des frames
 ######################################
 */
 
@@ -197,7 +199,6 @@ static void sobel_v2(u8* const restrict cframe, u8* restrict oframe)
 static void sobel_v3(u8* const restrict cframe, u8* restrict oframe)
 {
   //
-  #pragma omp parallel for
   for (u32 i = 0; i < H3; i++)
   {
     for (u32 j = 0; j < W3_3; j++)
@@ -205,44 +206,9 @@ static void sobel_v3(u8* const restrict cframe, u8* restrict oframe)
       u32 gx, i_W3_j, mag_approx; //gy is stored in mag_approx
       i_W3_j = i * W3 + j;
 
-      gx = ( cframe[i_W3_j + 8]- cframe[i_W3_j] );
+      gx = ( cframe[i_W3_j + 8] - cframe[i_W3_j] );
       mag_approx = gx;
-      gx +=           cframe[i_W3_j + 2] - cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 5] - cframe[i_W3_j + 3] );
-      mag_approx += - cframe[i_W3_j + 2] + cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 7] - cframe[i_W3_j + 1] );
-      mag_approx = abs(mag_approx) + abs(gx);
-      oframe[i_W3_j] = (mag_approx > THRESHOLD) ? 255 : (mag_approx);
-    }
-  }
-}
-
-/*
-######################################
-# Version 4 : Modification de la fonction main
-# Réduction des entrées / sorties en lisant la vidéo d'abord entièrement et non frame par frame
-# Retrait de la parallélisation dans la fonction Sobel pour paralléliser les frames et non la fonction Sobel
-######################################
-*/
-
-#elif V4
-
-#define H3 H-3
-#define W3 W*3
-#define W3_3 W*3-3
-#define THRESHOLD 100
-
-static void sobel_v4(u8* const restrict cframe, u8* restrict oframe)
-{
-  //
-  for (u32 i = 0; i < H3; i++)
-  {
-    for (u32 j = 0; j < W3_3; j++)
-    {
-      u32 gx, i_W3_j, mag_approx; //gy is stored in mag_approx
-      i_W3_j = i * W3 + j;
-
-      gx = ( cframe[i_W3_j + 8]- cframe[i_W3_j] );
-      mag_approx = gx;
-      gx +=           cframe[i_W3_j + 2] - cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 5] - cframe[i_W3_j + 3] );
+      gx         +=   cframe[i_W3_j + 2] - cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 5] - cframe[i_W3_j + 3] );
       mag_approx += - cframe[i_W3_j + 2] + cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 7] - cframe[i_W3_j + 1] );
       mag_approx = abs(mag_approx) + abs(gx);
       oframe[i_W3_j] = (mag_approx > THRESHOLD) ? 255 : (mag_approx);
@@ -275,7 +241,7 @@ int main(int argc, char **argv)
     return printf("Error: cannot open file '%s'\n", argv[2]), 2;
   
   //Read & process video frames
-#if BASELINE || V1 || V2 || V3
+#if BASELINE || V1 || V2
   u64 size = sizeof(u8) * H * W * 3; //1*1280*720*3 = 2764800
   u8 *cframe = _mm_malloc(size, 32);
   u8 *oframe = _mm_malloc(size, 32);
@@ -283,7 +249,7 @@ int main(int argc, char **argv)
   while ((nb_bytes = fread(cframe, sizeof(u8), H * W * 3, fpi)))
   {
       grayscale_weighted(cframe);
-#elif V4
+#elif V3
   #include <omp.h>
 
   #define NB_FRAMES_VIDEO 360 //14 seconds -> 360/14 = 25 fps //obtenu avec ffmpeg
@@ -314,8 +280,6 @@ int main(int argc, char **argv)
       sobel_v2(cframe, oframe);
 #elif V3
       sobel_v3(cframe, oframe);
-#elif V4
-      sobel_v4(&p_cframe[i], &p_oframe[i]);
 #endif
       
       //Stop
@@ -333,10 +297,10 @@ int main(int argc, char **argv)
 
       //
       frame_count++;
-#if BASELINE || V1 || V2 || V3
+#if BASELINE || V1 || V2
       fwrite(oframe, sizeof(u8), H * W * 3, fpo);
   }
-#elif V4
+#elif V3
   }
   fwrite(p_oframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpo);
 #endif
@@ -359,7 +323,7 @@ int main(int argc, char **argv)
   avg = (min + max) / 2.0;
 
   //Color frame, gray frame, output frame
-#if BASELINE || V1 || V2 || V3
+#if BASELINE || V1 || V2
   bpc = (size << 1) / mea;
 
   //
@@ -372,7 +336,7 @@ int main(int argc, char **argv)
 	  bpc,
 	  (dev * 100.0 / mea));
   
-#elif V4
+#elif V3
   bpc = (SIZE_FRAME << 1) / mea;
 
   //

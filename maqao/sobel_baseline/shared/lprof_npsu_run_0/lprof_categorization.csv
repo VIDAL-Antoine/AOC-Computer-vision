@@ -1,5 +1,0 @@
-Node;Process;Thread;System (%);Binary (%);MPI (%);Nb Cycle Events;OMP (%);Others (%);String (%);Memory (%);IO (%);Time (s);Math (%);Pthread (%);
-_ALL;_ALL;_ALL;0;91.77;0;16579.01;0;0;0;0;0;82.9;8.23;0;
-vidal-NBLK-WAX9X;_ALL;_ALL;0;91.77;0;16579.01;0;0;0;0;0;82.9;8.23;0;
-vidal-NBLK-WAX9X;6909;_ALL;0;91.77;0;16579.01;0;0;0;0;0;82.9;8.23;0;
-vidal-NBLK-WAX9X;6909;6909;0;91.77;0;16579.01;0;0;0;0;0;82.9;8.23;0;

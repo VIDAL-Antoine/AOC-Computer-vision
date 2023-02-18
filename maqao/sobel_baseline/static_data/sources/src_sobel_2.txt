@@ -1,5 +1,0 @@
-/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c: 55 - 56
---------------------------------------------------------------------------------
-
-55:     for (u64 j = 0; j < fw; j++)
-56:       r += m[INDEX(i, j, fw)] * f[INDEX(i, j, fw)];

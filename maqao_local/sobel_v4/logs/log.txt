@@ -1,0 +1,7 @@
+********************************************************************************
+
+MAQAO 2.16.0 - 766cd4a6ff7535ecc31168278a1f4b2786663ebf::20221116-145906 || 2022/11/16
+
+maqao oneview --create-report=one --replace xp=./maqao_local/sobel_v4 lprof_params=--include-kernel --sampling-rate=high executable=sobel run_command=<executable> in/input.raw sout/output.raw 
+
+CMD:   /usr/local/bin/maqao lprof --include-kernel --sampling-rate=high --xp="/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v4/tools/lprof_npsu_run_0" --mpi-command=""   -- /home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v4/binaries/sobel in/input.raw sout/output.raw

@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html translate="no" lang="en-US"><head><title>OV - sobel - Outputs</title>
+<meta charset="utf-8" />
+<meta name="google" content="notranslate" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/ui.jqgrid.css" />
+<link rel="stylesheet" type="text/css" href="css/themes/redmond_custom/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="css/themes/redmond_custom/jquery.jqplot.min.css" />
+<link rel="stylesheet" type="text/css" href="css/MAQAO_theme.css" />
+<link rel="stylesheet" type="text/css" href="css/maqao_modal.css" />
+<link rel="stylesheet" type="text/css" href="css/global.css" />
+<link rel="stylesheet" type="text/css" href="css/maqao_menu.css" />
+<script src="js/jquery-1.9.0.min.js" ></script>
+<script src="js/jquery-ui-1.10.3.custom.min.js" ></script>
+<script src="js/grid.locale-en.js" ></script>
+<script src="js/jquery.jqGrid.min.js" ></script>
+<script src="js/d3.min.js" ></script>
+<script class="include" src="js/jquery.jqplot.min.js"></script>
+<script class="include" src="js/jqplot.pieRenderer.min.js"></script>
+<script class="include" src="js/jqplot.barRenderer.min.js"></script>
+<script class="include" src="js/jqplot.categoryAxisRenderer.min.js"></script>
+<script class="include" src="js/jqplot.pointLabels.min.js"></script>
+<script class="include" src="js/jqplot.cursor.min.js"></script>
+<script class="include" src="js/jqplot.canvasTextRenderer.min.js"></script>
+<script class="include" src="js/jqplot.canvasAxisTickRenderer.min.js"></script>
+<script class="include" src="js/jqplot.canvasAxisLabelRenderer.min.js"></script>
+<script class="include" src="js/jqplot.enhancedLegendRenderer.min.js"></script>
+<script class="include" src="js/jqplot.highlighter.min.js"></script>
+<script class="include" src="js/maqao_menu.js"></script>
+<script>
+$( function() {
+  $( document ).tooltip({
+    content: function() {
+      if ($(this).hasClass ("tooltip-maqao")
+      ||  $(this).hasClass ("tooltip-maqao-button")) {
+        return tooltips_texts[$(this).attr('tooltip_id')];
+      }
+    },
+    position: {
+      my: "center bottom-20",
+        at: "center top",
+        using: function( position, feedback ) {
+          $( this ).css( position );
+          $( "<div>" )
+            .addClass( "arrow-tt" )
+            .addClass( feedback.vertical )
+            .addClass( feedback.horizontal )
+            .appendTo( this );
+        }
+      }
+  });
+} );
+
+// Code from https://www.htmlgoodies.com/beyond/javascript/article.php/3724571/Using-Multiple-JavaScript-Onload-Functions.htm
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      if (oldonload) {
+        oldonload();
+      }
+      func();
+    }
+  }
+}
+function loadCSS(filename){ 
+  var file = document.createElement("link");
+  file.setAttribute("rel", "stylesheet");
+  file.setAttribute("type", "text/css");
+  file.setAttribute("href", filename);
+  document.head.appendChild(file);
+}
+addLoadEvent(function(){
+  var theme = localStorage.getItem("__MAQAO_OV_theme__");
+  if (theme) {
+    loadCSS("css/"+theme+".css");
+  }
+  else {
+    localStorage.setItem("__MAQAO_OV_theme__", "MAQAO_theme");
+    loadCSS("css/MAQAO_theme.css");
+  }
+});
+</script>
+</head><body>
+<div id="page_title"><img alt="MAQAO" id="maqao_logo" src="images/MAQAO_small_logo.png"/><ul id="maqao_menu"><li ><a  href="index.html">Global</a><ul><li ><a  href="config.html">Configurations</a></li><li ><a  href="env.html">Environment Variables</a></li><li ><a class="_current_page" href="outputs.html">Outputs</a></li><li ><a  href="log.html">Logs</a></li></ul></li><li ><a class="_current_page _first_menu_level" href="outputs.html">Outputs</a></li><li ><a  href="application.html">Application</a></li><li ><a  href="fcts_and_loops.html">Functions</a></li><li ><a  href="loops_index.html">Loops</a></li><li ><a  href="topology.html">Topology</a></li></ul>
+<span><img alt="options" id="menu_options_icon" src="images/gear_20.png" onclick="__open_options ()"/></span>
+</div>
+<script>
+function __change_theme () {
+  var new_theme = document.getElementById("select_theme").value;
+  localStorage.setItem("__MAQAO_OV_theme__", new_theme);
+    loadCSS("css/"+new_theme+".css");
+}
+function __open_options () {
+  var elem = document.getElementById ("options_configuration");
+  if (elem.dataset.open == "false") {
+    elem.dataset.open = "true";
+    elem.style.display = "block";
+  }
+  else {
+    elem.dataset.open = "false";
+    elem.style.display = "none";
+  }
+}
+</script>
+<div id="anchor_file_start"></div>
+<div id="maqao_content">
+<div>
+  <div id="spacer_page_title" ></div>
+  <div id="options_configuration" data-open="false" style="display:none;">
+    <h3 id="options_configuration_header">Report Configuration</h3>
+    <span style="margin-left:10px;"><label for="select_theme">Theme: </label>    <select name="theme" id="select_theme" onchange="__change_theme ()">  <option value="MAQAO_theme">MAQAO_theme</option>  <option value="darkgrey">darkgrey</option>  <option value="cyan">cyan</option></select></span></div>
+</div>
+<script>
+document.getElementById("spacer_page_title").style.height = (document.getElementById("page_title").clientHeight + 25)+"px";
+var obj = document.getElementById("page_title");
+if (obj) {
+  var elems = document.getElementsByClassName ("_first_menu_level")
+  if (obj.clientHeight < 90) {
+    for (var i = 0; i < elems.length; i++) {
+      elems.item(i).style.borderBottomLeftRadius = "";
+      elems.item(i).style.borderBottomRightRadius = "";
+    }
+  }
+  else {
+    for (var i = 0; i < elems.length; i++) {
+      elems.item(i).style.borderBottomLeftRadius = "10px";
+      elems.item(i).style.borderBottomRightRadius = "10px";
+    }
+  }
+}
+</script>
+<div class="_fixed_box" ><h3 class="_header">Executable Output<span class="tooltip-maqao-button help-maqao" title="" tooltip_id="0" ></span></h3>
+<div class="_content"><span style="text-align:center; width:100%; display:inline-block;"><select id="select_run" style="cursor:pointer;" size="1" onchange="__select_run (this);" autocomplete="off">
+<option value="1">run_0</option>
+</select></span>
+<pre id="output_run_1">
+
+* Info: Selecting the 'perf-low-ppn' engine for node vidal-NBLK-WAX9X
+
+* Info: "ref-cycles" not supported on vidal-NBLK-WAX9X: fallback to "cpu-clock"
+* Info: Process launched (host vidal-NBLK-WAX9X, process 7046)                   0;              2764800;              6467874;           0.427
+                   1;              2764800;              4347147;           0.636
+                   2;              2764800;              4349352;           0.636
+                   3;              2764800;              4348680;           0.636
+                   4;              2764800;              4342527;           0.637
+                   5;              2764800;              4342464;           0.637
+                   6;              2764800;              4345068;           0.636
+                   7;              2764800;              4354371;           0.635
+                   8;              2764800;              4357374;           0.635
+                   9;              2764800;              4356072;           0.635
+                  10;              2764800;              4374195;           0.632
+                  11;              2764800;              4355421;           0.635
+                  12;              2764800;              4377240;           0.632
+                  13;              2764800;              4357731;           0.634
+                  14;              2764800;              4361679;           0.634
+                  15;              2764800;              4362267;           0.634
+                  16;              2764800;              4356345;           0.635
+                  17;              2764800;              4360230;           0.634
+                  18;              2764800;              4342842;           0.637
+                  19;              2764800;              4343052;           0.637
+                  20;              2764800;              4343808;           0.636
+                  21;              2764800;              4343073;           0.637
+                  22;              2764800;              4343430;           0.637
+                  23;              2764800;              4345656;           0.636
+                  24;              2764800;              4343262;           0.637
+                  25;              2764800;              4364409;           0.633
+                  26;              2764800;              4358319;           0.634
+                  27;              2764800;              4398030;           0.629
+                  28;              2764800;              4354917;           0.635
+                  29;              2764800;              4356387;           0.635
+                  30;              2764800;              4357437;           0.635
+                  31;              2764800;              4356765;           0.635
+                  32;              2764800;              4361406;           0.634
+                  33;              2764800;              4373628;           0.632
+                  34;              2764800;              4360272;           0.634
+                  35;              2764800;              4349940;           0.636
+                  36;              2764800;              4345551;           0.636
+                  37;              2764800;              4344228;           0.636
+                  38;              2764800;              4344333;           0.636
+                  39;              2764800;              4343199;           0.637
+                  40;              2764800;              4365312;           0.633
+                  41;              2764800;              4356219;           0.635
+                  42;              2764800;              4359096;           0.634
+                  43;              2764800;              4355022;           0.635
+                  44;              2764800;              4357437;           0.635
+                  45;              2764800;              4359600;           0.634
+                  46;              2764800;              4345719;           0.636
+                  47;              2764800;              4343409;           0.637
+                  48;              2764800;              4346685;           0.636
+                  49;              2764800;              4342338;           0.637
+                  50;              2764800;              4342191;           0.637
+                  51;              2764800;              4378731;           0.631
+                  52;              2764800;              4356177;           0.635
+                  53;              2764800;              4380117;           0.631
+                  54;              2764800;              4360902;           0.634
+                  55;              2764800;              4360860;           0.634
+                  56;              2764800;              4360125;           0.634
+                  57;              2764800;              4346874;           0.636
+                  58;              2764800;              4345719;           0.636
+                  59;              2764800;              4346832;           0.636
+                  60;              2764800;              4345446;           0.636
+                  61;              2764800;              4343913;           0.636
+                  62;              2764800;              4354875;           0.635
+                  63;              2764800;              4360209;           0.634
+                  64;              2764800;              4376043;           0.632
+                  65;              2764800;              4363821;           0.634
+                  66;              2764800;              4370394;           0.633
+                  67;              2764800;              4362141;           0.634
+                  68;              2764800;              4344396;           0.636
+                  69;              2764800;              4344249;           0.636
+                  70;              2764800;              4346727;           0.636
+                  71;              2764800;              4342821;           0.637
+                  72;              2764800;              4357500;           0.634
+                  73;              2764800;              4356681;           0.635
+                  74;              2764800;              4365186;           0.633
+                  75;              2764800;              4383813;           0.631
+                  76;              2764800;              4361280;           0.634
+                  77;              2764800;              4346307;           0.636
+                  78;              2764800;              4344144;           0.636
+                  79;              2764800;              4349814;           0.636
+                  80;              2764800;              4345383;           0.636
+                  81;              2764800;              4340868;           0.637
+                  82;              2764800;              4367538;           0.633
+                  83;              2764800;              4361091;           0.634
+                  84;              2764800;              4357899;           0.634
+                  85;              2764800;              4355568;           0.635
+                  86;              2764800;              4363485;           0.634
+                  87;              2764800;              4346076;           0.636
+                  88;              2764800;              4343451;           0.637
+                  89;              2764800;              4344585;           0.636
+                  90;              2764800;              4342947;           0.637
+                  91;              2764800;              4356282;           0.635
+                  92;              2764800;              4357584;           0.634
+                  93;              2764800;              4356471;           0.635
+                  94;              2764800;              4361616;           0.634
+                  95;              2764800;              4363065;           0.634
+                  96;              2764800;              4347630;           0.636
+                  97;              2764800;              4365711;           0.633
+                  98;              2764800;              4345635;           0.636
+                  99;              2764800;              4343031;           0.637
+                 100;              2764800;              4351179;           0.635
+                 101;              2764800;              4355022;           0.635
+                 102;              2764800;              4355841;           0.635
+                 103;              2764800;              4359747;           0.634
+                 104;              2764800;              4361364;           0.634
+                 105;              2764800;              4345551;           0.636
+                 106;              2764800;              4345068;           0.636
+                 107;              2764800;              4346013;           0.636
+                 108;              2764800;              4364724;           0.633
+                 109;              2764800;              4354308;           0.635
+                 110;              2764800;              4356177;           0.635
+                 111;              2764800;              4354497;           0.635
+                 112;              2764800;              4377261;           0.632
+                 113;              2764800;              4361091;           0.634
+                 114;              2764800;              4358655;           0.634
+                 115;              2764800;              4343157;           0.637
+                 116;              2764800;              4345068;           0.636
+                 117;              2764800;              4364199;           0.634
+                 118;              2764800;              4364787;           0.633
+                 119;              2764800;              4426779;           0.625
+                 120;              2764800;              4359936;           0.634
+                 121;              2764800;              4364535;           0.633
+                 122;              2764800;              4346937;           0.636
+                 123;              2764800;              4340595;           0.637
+                 124;              2764800;              4342128;           0.637
+                 125;              2764800;              4340973;           0.637
+                 126;              2764800;              4355988;           0.635
+                 127;              2764800;              4356051;           0.635
+                 128;              2764800;              4379592;           0.631
+                 129;              2764800;              4358823;           0.634
+                 130;              2764800;              4343661;           0.637
+                 131;              2764800;              4343367;           0.637
+                 132;              2764800;              4345215;           0.636
+                 133;              2764800;              4344501;           0.636
+                 134;              2764800;              4360398;           0.634
+                 135;              2764800;              4357857;           0.634
+                 136;              2764800;              4360818;           0.634
+                 137;              2764800;              4358949;           0.634
+                 138;              2764800;              4362204;           0.634
+                 139;              2764800;              4365291;           0.633
+                 140;              2764800;              4342926;           0.637
+                 141;              2764800;              4345068;           0.636
+                 142;              2764800;              4341603;           0.637
+                 143;              2764800;              4356597;           0.635
+                 144;              2764800;              4359390;           0.634
+                 145;              2764800;              4360734;           0.634
+                 146;              2764800;              4366593;           0.633
+                 147;              2764800;              4346286;           0.636
+                 148;              2764800;              4362477;           0.634
+                 149;              2764800;              4344585;           0.636
+                 150;              2764800;              4367118;           0.633
+                 151;              2764800;              4352061;           0.635
+                 152;              2764800;              4356744;           0.635
+                 153;              2764800;              4357647;           0.634
+                 154;              2764800;              4364976;           0.633
+                 155;              2764800;              4359180;           0.634
+                 156;              2764800;              4344711;           0.636
+                 157;              2764800;              4343220;           0.637
+                 158;              2764800;              4345005;           0.636
+                 159;              2764800;              4360755;           0.634
+                 160;              2764800;              4355022;           0.635
+                 161;              2764800;              4356030;           0.635
+                 162;              2764800;              4357500;           0.634
+                 163;              2764800;              4365585;           0.633
+                 164;              2764800;              4346013;           0.636
+                 165;              2764800;              4344270;           0.636
+                 166;              2764800;              4345215;           0.636
+                 167;              2764800;              4343346;           0.637
+                 168;              2764800;              4361721;           0.634
+                 169;              2764800;              4355694;           0.635
+                 170;              2764800;              4378668;           0.631
+                 171;              2764800;              4359243;           0.634
+                 172;              2764800;              4357668;           0.634
+                 173;              2764800;              4343766;           0.636
+                 174;              2764800;              4345089;           0.636
+                 175;              2764800;              4341981;           0.637
+                 176;              2764800;              4344039;           0.636
+                 177;              2764800;              4360398;           0.634
+                 178;              2764800;              4355463;           0.635
+                 179;              2764800;              4381797;           0.631
+                 180;              2764800;              4360335;           0.634
+                 181;              2764800;              4367202;           0.633
+                 182;              2764800;              4344837;           0.636
+                 183;              2764800;              4343913;           0.636
+                 184;              2764800;              4341645;           0.637
+                 185;              2764800;              4359915;           0.634
+                 186;              2764800;              4357206;           0.635
+                 187;              2764800;              4361700;           0.634
+                 188;              2764800;              4360923;           0.634
+                 189;              2764800;              4346328;           0.636
+                 190;              2764800;              4364892;           0.633
+                 191;              2764800;              4349100;           0.636
+                 192;              2764800;              4375161;           0.632
+                 193;              2764800;              4360314;           0.634
+                 194;              2764800;              4436691;           0.623
+                 195;              2764800;              4362057;           0.634
+                 196;              2764800;              4357521;           0.634
+                 197;              2764800;              4347000;           0.636
+                 198;              2764800;              4343556;           0.637
+                 199;              2764800;              4367433;           0.633
+                 200;              2764800;              4355043;           0.635
+                 201;              2764800;              4377996;           0.632
+                 202;              2764800;              4357122;           0.635
+                 203;              2764800;              4363275;           0.634
+                 204;              2764800;              4359159;           0.634
+                 205;              2764800;              4346496;           0.636
+                 206;              2764800;              4342884;           0.637
+                 207;              2764800;              4348260;           0.636
+                 208;              2764800;              4341792;           0.637
+                 209;              2764800;              4417602;           0.626
+                 210;              2764800;              4379613;           0.631
+                 211;              2764800;              4359054;           0.634
+                 212;              2764800;              4362288;           0.634
+                 213;              2764800;              4352292;           0.635
+                 214;              2764800;              4342338;           0.637
+                 215;              2764800;              4356891;           0.635
+                 216;              2764800;              4342380;           0.637
+                 217;              2764800;              4402419;           0.628
+                 218;              2764800;              4365984;           0.633
+                 219;              2764800;              4377702;           0.632
+                 220;              2764800;              4429530;           0.624
+                 221;              2764800;              4348029;           0.636
+                 222;              2764800;              4344627;           0.636
+                 223;              2764800;              4342989;           0.637
+                 224;              2764800;              4362099;           0.634
+                 225;              2764800;              4360335;           0.634
+                 226;              2764800;              4360356;           0.634
+                 227;              2764800;              4392486;           0.629
+                 228;              2764800;              4363359;           0.634
+                 229;              2764800;              4344459;           0.636
+                 230;              2764800;              4389441;           0.630
+                 231;              2764800;              4344711;           0.636
+                 232;              2764800;              4343241;           0.637
+                 233;              2764800;              4366005;           0.633
+                 234;              2764800;              4361595;           0.634
+                 235;              2764800;              4370268;           0.633
+                 236;              2764800;              4360629;           0.634
+                 237;              2764800;              4344963;           0.636
+                 238;              2764800;              4343094;           0.637
+                 239;              2764800;              4360377;           0.634
+                 240;              2764800;              4343472;           0.637
+                 241;              2764800;              4376085;           0.632
+                 242;              2764800;              4362099;           0.634
+                 243;              2764800;              4360734;           0.634
+                 244;              2764800;              4359096;           0.634
+                 245;              2764800;              4365858;           0.633
+                 246;              2764800;              4343136;           0.637
+                 247;              2764800;              4341981;           0.637
+                 248;              2764800;              4344627;           0.636
+                 249;              2764800;              4345131;           0.636
+                 250;              2764800;              4374699;           0.632
+                 251;              2764800;              4354938;           0.635
+                 252;              2764800;              4377555;           0.632
+                 253;              2764800;              4362057;           0.634
+                 254;              2764800;              4361133;           0.634
+                 255;              2764800;              4345383;           0.636
+                 256;              2764800;              4341771;           0.637
+                 257;              2764800;              4343703;           0.637
+                 258;              2764800;              4341267;           0.637
+                 259;              2764800;              4355358;           0.635
+                 260;              2764800;              4355463;           0.635
+                 261;              2764800;              4378101;           0.632
+                 262;              2764800;              4357479;           0.634
+                 263;              2764800;              4344186;           0.636
+                 264;              2764800;              4345866;           0.636
+                 265;              2764800;              4342086;           0.637
+                 266;              2764800;              4346055;           0.636
+                 267;              2764800;              4355820;           0.635
+                 268;              2764800;              4355484;           0.635
+                 269;              2764800;              4354938;           0.635
+                 270;              2764800;              4359852;           0.634
+                 271;              2764800;              4361616;           0.634
+                 272;              2764800;              4366047;           0.633
+                 273;              2764800;              4341267;           0.637
+                 274;              2764800;              4343031;           0.637
+                 275;              2764800;              4344480;           0.636
+                 276;              2764800;              4353909;           0.635
+                 277;              2764800;              4355946;           0.635
+                 278;              2764800;              4356324;           0.635
+                 279;              2764800;              4360419;           0.634
+                 280;              2764800;              4343367;           0.637
+                 281;              2764800;              4366152;           0.633
+                 282;              2764800;              4344312;           0.636
+                 283;              2764800;              4365585;           0.633
+                 284;              2764800;              4356429;           0.635
+                 285;              2764800;              4358991;           0.634
+                 286;              2764800;              4355757;           0.635
+                 287;              2764800;              4361784;           0.634
+                 288;              2764800;              4361805;           0.634
+                 289;              2764800;              4344081;           0.636
+                 290;              2764800;              4346664;           0.636
+                 291;              2764800;              4341561;           0.637
+                 292;              2764800;              4377975;           0.632
+                 293;              2764800;              4357605;           0.634
+                 294;              2764800;              4357731;           0.634
+                 295;              2764800;              4366803;           0.633
+                 296;              2764800;              4358004;           0.634
+                 297;              2764800;              4346265;           0.636
+                 298;              2764800;              4344438;           0.636
+                 299;              2764800;              4346412;           0.636
+                 300;              2764800;              4341897;           0.637
+                 301;              2764800;              4358928;           0.634
+                 302;              2764800;              4357542;           0.634
+                 303;              2764800;              4385115;           0.630
+                 304;              2764800;              4359663;           0.634
+                 305;              2764800;              4343871;           0.636
+                 306;              2764800;              4345320;           0.636
+                 307;              2764800;              4342170;           0.637
+                 308;              2764800;              4343451;           0.637
+                 309;              2764800;              4363779;           0.634
+                 310;              2764800;              4362666;           0.634
+                 311;              2764800;              4358697;           0.634
+                 312;              2764800;              4381881;           0.631
+                 313;              2764800;              4345509;           0.636
+                 314;              2764800;              4351116;           0.635
+                 315;              2764800;              4343472;           0.637
+                 316;              2764800;              4341162;           0.637
+                 317;              2764800;              4355568;           0.635
+                 318;              2764800;              4361196;           0.634
+                 319;              2764800;              4361931;           0.634
+                 320;              2764800;              4358424;           0.634
+                 321;              2764800;              4345299;           0.636
+                 322;              2764800;              4340973;           0.637
+                 323;              2764800;              4366572;           0.633
+                 324;              2764800;              4349898;           0.636
+                 325;              2764800;              4361784;           0.634
+                 326;              2764800;              4353699;           0.635
+                 327;              2764800;              4369596;           0.633
+                 328;              2764800;              4361238;           0.634
+                 329;              2764800;              4345068;           0.636
+                 330;              2764800;              4346433;           0.636
+                 331;              2764800;              4348407;           0.636
+                 332;              2764800;              4376211;           0.632
+                 333;              2764800;              4359222;           0.634
+                 334;              2764800;              4354959;           0.635
+                 335;              2764800;              4359453;           0.634
+                 336;              2764800;              4342989;           0.637
+                 337;              2764800;              4344123;           0.636
+                 338;              2764800;              4344354;           0.636
+                 339;              2764800;              4344375;           0.636
+                 340;              2764800;              4356681;           0.635
+                 341;              2764800;              4374846;           0.632
+                 342;              2764800;              4361868;           0.634
+                 343;              2764800;              4384023;           0.631
+                 344;              2764800;              4344333;           0.636
+                 345;              2764800;              4347819;           0.636
+                 346;              2764800;              4344396;           0.636
+                 347;              2764800;              4343829;           0.636
+                 348;              2764800;              4358361;           0.634
+                 349;              2764800;              4356198;           0.635
+                 350;              2764800;              4362036;           0.634
+                 351;              2764800;              4360104;           0.634
+                 352;              2764800;              4368693;           0.633
+                 353;              2764800;              4344690;           0.636
+                 354;              2764800;              4346160;           0.636
+                 355;              2764800;              4342338;           0.637
+                 356;              2764800;              4354623;           0.635
+                 357;              2764800;              4360293;           0.634
+                 358;              2764800;              4361133;           0.634
+                 359;              2764800;              4374006;           0.632
+
+* Info: Process finished (host vidal-NBLK-WAX9X, process 7046)
+* Info: Dumping samples (host vidal-NBLK-WAX9X, process 7046)
+* Info: Dumping source info for callchain nodes (host vidal-NBLK-WAX9X, process 7046)
+* Info: Building/writing metadata (host vidal-NBLK-WAX9X)
+* Info: Finished collect step (host vidal-NBLK-WAX9X, process 7046)
+
+Your experiment path is /home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v2/tools/lprof_npsu_run_0
+
+To display your profiling results:
+#################################################################################################################################################################
+#    LEVEL    |     REPORT     |                                                            COMMAND                                                             #
+#################################################################################################################################################################
+#  Functions  |  Cluster-wide  |  maqao lprof -df xp=/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v2/tools/lprof_npsu_run_0      #
+#  Functions  |  Per-node      |  maqao lprof -df -dn xp=/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v2/tools/lprof_npsu_run_0  #
+#  Functions  |  Per-process   |  maqao lprof -df -dp xp=/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v2/tools/lprof_npsu_run_0  #
+#  Functions  |  Per-thread    |  maqao lprof -df -dt xp=/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v2/tools/lprof_npsu_run_0  #
+#  Loops      |  Cluster-wide  |  maqao lprof -dl xp=/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v2/tools/lprof_npsu_run_0      #
+#  Loops      |  Per-node      |  maqao lprof -dl -dn xp=/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v2/tools/lprof_npsu_run_0  #
+#  Loops      |  Per-process   |  maqao lprof -dl -dp xp=/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v2/tools/lprof_npsu_run_0  #
+#  Loops      |  Per-thread    |  maqao lprof -dl -dt xp=/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v2/tools/lprof_npsu_run_0  #
+#################################################################################################################################################################
+
+</pre>
+</div></div><script>
+function __clean_runs () {
+  for (let i = 0; i < 1; i++) {
+    var e = document.getElementById ("output_run_"+(i + 1));
+    if (e)
+      e.style.display = "none";
+  }
+}
+function __select_run (selector) {
+  __clean_runs ();
+  var selected_id = selector.value;
+  var e = document.getElementById ("output_run_"+selected_id);
+  if (e)
+    e.style.display = "";
+}
+addLoadEvent(function(){
+  __clean_runs ();
+  __select_run (select_run);
+});
+function _onresize () {
+  __maqao_legacy_onresize ();
+}
+var resizeId;
+window.addEventListener("resize", function() {
+  clearTimeout(resizeId);
+  resizeId = setTimeout(_onresize, 250);
+});
+</script>
+<style>
+body {
+  overflow : auto;
+}
+</style>
+
+  <div id="MaqaoModal" class="maqao_modal">
+    <div class="maqao_modal-content">
+      <div class="maqao_modal-header">
+        <span class="maqao_close">&times;</span>
+      </div>
+      <div id="maqao_modal-body" class="maqao_modal-body">
+      </div>
+    </div>
+  </div>
+</div><script>
+var tooltips_texts = ['Executable output catched by LPROF analysis.<br>Additionnal messages from LPROF are displayed.'];
+var modal = document.getElementById('MaqaoModal');
+var span = document.getElementsByClassName("maqao_close")[0];
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+const comparer = (idx, asc) => (a, b) => ((v1, v2) => 
+    v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v2 - v1 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+addLoadEvent(function(){
+  document.querySelectorAll('._fixed_table th').forEach(th => th.addEventListener('click', (() => {
+    const table = th.closest('table');
+    // Remove all symbols in header
+    table.querySelectorAll('th').forEach(function (e) {
+      e.firstChild.textContent = "";
+    });
+    // Change the symbol on the clicked header
+    if (this.asc != true) {
+      th.firstChild.textContent = "\u25BC";
+    }
+    else {
+      th.firstChild.textContent = "\u25B2";
+    }
+    Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+        .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+        .forEach(tr => table.appendChild(tr) );
+  })));
+});
+function _check_all_checkbox_ (obj_id, opts_ids) {
+  var obj   = document.getElementById (obj_id);
+  var opts  = window[opts_ids];
+  var count = 0
+  for (i = 0; i < opts.length; i++) {
+    var obj_s = document.getElementById(opts[i]);
+    if (obj_s.checked) {
+      count ++;
+    }
+  }
+  if (count == 0) {
+    obj.value = "Select all";
+  }
+  else if (count == opts.length) {
+    obj.value = "Select none";
+  }
+}
+// Fonction for table selector
+function click_table_menu (c, obj_id, opt_ids) {
+  var is_checked = document.getElementById (c).checked;
+  localStorage.setItem("__functions_"+c, is_checked);
+  $("."+c).each(function(index, element) {
+    if (is_checked) {
+      element.classList.remove("_tcol_hidden");
+    }
+    else {
+      element.classList.add("_tcol_hidden");
+    }
+  });
+  if (obj_id != undefined) {
+    _check_all_checkbox_ (obj_id, opt_ids)
+  }
+}
+function set_all_table_menu (obj, var_opt_ids) {
+  var opt_ids = window[var_opt_ids];
+  var is_selected = true
+  if (obj.value == "Select all") {
+    is_selected = false;
+  }
+  for (i = 0; i < opt_ids.length; i++) {
+    var obj_s = document.getElementById(opt_ids[i]);
+    if (is_selected == obj_s.checked) {
+      obj_s.checked = !obj_s.checked;
+      click_table_menu (opt_ids[i]);
+    }
+  }
+  if (is_selected == false) {
+    obj.value = "Select none";
+  } else {
+    obj.value = "Select all";
+  }
+  localStorage.setItem(obj.id, obj.value);
+}
+// Script for accordion box
+function _click_accordion_header(obj) {
+  var content = obj.nextSibling;
+  content.classList.toggle('collapsed');
+  obj.classList.toggle('collapsed');
+  obj.parentNode.classList.toggle('collapsed');
+  // Check if the box must be openned ...
+  if (obj.classList.contains ('collapsed'))
+  {
+    obj.firstChild.textContent = "\u25B6";
+  }
+  // or closed.
+  else 
+  {
+    obj.firstChild.textContent = "\u25BC";
+  }
+  if (typeof _onresize === "function") {
+    _onresize ();
+  }
+}
+  // Script for paged table
+function _click_paged_prev(obj) {
+  var pages_content_id = '_paged_tables_page_' + obj.parentNode.parentNode.id.substr (obj.parentNode.parentNode.id.lastIndexOf('_') + 1);
+  var pages_content = document.getElementById(pages_content_id).innerHTML;
+  var max_pages = pages_content.substr (pages_content.lastIndexOf('/') + 1);
+  var cur_page  = pages_content.substring (pages_content.lastIndexOf(' ') + 1, pages_content.lastIndexOf('/'));
+  max_pages = Number (max_pages);
+  cur_page  = Number (cur_page);
+  if (cur_page > 1) {
+    var div_paged = obj.parentNode.parentNode.id;
+    var i;
+    var x = document.getElementsByClassName(div_paged + '_' + (cur_page - 1));
+    for (i = 0; i < x.length; i++) {
+      x[i].classList.toggle('_paged_hidden');
+    }
+    x = document.getElementsByClassName(div_paged + '_' + (cur_page - 2));
+    for (i = 0; i < x.length; i++) {
+      x[i].classList.toggle('_paged_hidden');
+    }
+  document.getElementById(pages_content_id).textContent = "Page " + (cur_page - 1) + "/" + max_pages;
+  }
+}
+function _click_paged_next(obj) {
+  var pages_content_id = '_paged_tables_page_' + obj.parentNode.parentNode.id.substr (obj.parentNode.parentNode.id.lastIndexOf('_') + 1);
+  var pages_content = document.getElementById(pages_content_id).innerHTML;
+  var max_pages = pages_content.substr (pages_content.lastIndexOf('/') + 1);
+  var cur_page  = pages_content.substring (pages_content.lastIndexOf(' ') + 1, pages_content.lastIndexOf('/'));
+  max_pages = Number (max_pages);
+  cur_page  = Number (cur_page);
+  if (cur_page < max_pages) {
+    var div_paged = obj.parentNode.parentNode.id;
+    var i;
+    var x = document.getElementsByClassName(div_paged + '_' + (cur_page - 1));
+    for (i = 0; i < x.length; i++) {
+      x[i].classList.toggle('_paged_hidden');
+    }
+    x = document.getElementsByClassName(div_paged + '_' + cur_page);
+    for (i = 0; i < x.length; i++) {
+      x[i].classList.toggle('_paged_hidden');
+    }
+    document.getElementById(pages_content_id).textContent = "Page " + (cur_page + 1) + "/" + max_pages;
+  }
+}
+// Function for tree table
+function _click_treed(obj) {
+  if (obj.innerHTML == "\u25BA") {
+    obj.textContent = "\u25BC";
+    // Open childs
+    var x = document.getElementsByClassName(obj.parentNode.parentNode.id);
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.toggle('_treed_hidden');
+    }
+  }
+  else if (obj.innerHTML == "\u25BC") {
+    obj.textContent = "\u25BA";
+    // Close all childs
+    var trs = document.getElementsByTagName('tr');
+    var r   = obj.parentNode.parentNode.id+'_';
+    var re  = new RegExp (r, "g");
+    for (var i = 0; i < trs.length; i++) {
+      var s = trs[i].id+""
+      if (s.match(re)) {
+        var o = document.getElementById(s);
+        if (! o.classList.contains('_treed_hidden')) {
+          o.classList.toggle('_treed_hidden');
+        }
+        if (o.firstChild.firstChild.textContent == "\u25BC") {
+          o.firstChild.firstChild.textContent = "\u25BA";
+        }
+        if (o.firstChild.childNodes.length == 3) {
+          o.firstChild.childNodes[2].textContent = '+';
+        }
+      }
+    }
+    if (obj.parentNode.childNodes.length == 3) {
+      obj.parentNode.childNodes[2].textContent = '+';
+    }
+  }
+}
+function _click_expand (obj) {
+  var trs = document.getElementsByTagName('tr');
+  var r   = obj.parentNode.parentNode.id+'_';
+  var re  = new RegExp (r, "g");
+  // Symbole + => expand all
+  if (obj.textContent == "+") {
+    for (var i = 0; i < trs.length; i++) {
+      var s = trs[i].id+"";
+      if (s.match(re)) {
+        var o = document.getElementById(s);
+        if (o.classList.contains('_treed_hidden')) {
+           o.classList.toggle('_treed_hidden');
+        }
+        if (o.firstChild.firstChild.textContent == "\u25BA") {
+          o.firstChild.firstChild.textContent = "\u25BC";
+        }
+        if (o.firstChild.childNodes.length == 3) {
+          o.firstChild.childNodes[2].textContent = '\u2010';
+        }
+      }
+    }
+    var o = obj.parentNode.parentNode;
+    if (o.firstChild.firstChild.textContent == "\u25BA") {
+      o.firstChild.firstChild.textContent = "\u25BC";
+    }
+    obj.textContent = "\u2010";
+  }
+  // Symbole - => collapse all
+  else {
+    for (var i = 0; i < trs.length; i++) {
+      var s = trs[i].id+"";
+      if (s.match(re)) {
+        var o = document.getElementById(s);
+        if (! o.classList.contains('_treed_hidden')) {
+           o.classList.toggle('_treed_hidden');
+        }
+        if (o.firstChild.firstChild.textContent == "\u25BC") {
+          o.firstChild.firstChild.textContent = "\u25BA";
+        }
+        if (o.firstChild.childNodes.length == 3) {
+          o.firstChild.childNodes[2].textContent = '+';
+        }
+      }
+    }
+    var o = obj.parentNode.parentNode;
+    if (o.firstChild.firstChild.textContent == "\u25BC") {
+      o.firstChild.firstChild.textContent = "\u25BA";
+    }
+    obj.textContent = "+";
+  }
+}
+// Hide unselected tabs
+addLoadEvent(function(){
+  var x = document.getElementsByClassName("_tab_header_li");
+  for (var i = 0; i < x.length; i++) {
+    if (x[i].classList.contains("selected_tab") == false) {
+      var e = document.getElementById (x[i].dataset.tab);
+      e.style.display = "none";
+    }
+  }
+});
+// Change tab
+function change_tab (e, baseId) {
+  // Handle tabs
+  var i = 1;
+  while (true) {
+    var id = baseId + i;
+    var t = document.getElementById (id);
+    if (t == null) {
+      break;
+    }
+    if (id == e.dataset.tab) {
+      t.style.removeProperty("display");
+    }
+    else {
+      t.style.display = "none";
+    }
+    i = i + 1;
+  }
+  // Handle headers
+  $(e).siblings().each( function () {
+    this.classList.remove("selected_tab");
+  });
+  e.classList.add("selected_tab");
+}
+function __maqao_legacy_onresize () {
+  var obj = document.getElementById("spacer_page_title");
+  if (obj) {
+    obj.style.height = (document.getElementById("page_title").clientHeight + 20)+"px";
+  }
+  var obj = document.getElementById("page_title");
+  if (obj) {
+    var elems = document.getElementsByClassName ("_first_menu_level")
+    if (obj.clientHeight < 90) {
+      for (var i = 0; i < elems.length; i++) {
+        elems.item(i).style.borderBottomLeftRadius = "";
+        elems.item(i).style.borderBottomRightRadius = "";
+      }
+    }
+    else {
+      for (var i = 0; i < elems.length; i++) {
+        elems.item(i).style.borderBottomLeftRadius = "10px";
+        elems.item(i).style.borderBottomRightRadius = "10px";
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>

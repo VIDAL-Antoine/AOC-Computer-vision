@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <emmintrin.h>
+#include <malloc.h>
 
 //
 #include "rdtsc.h"
@@ -294,12 +295,14 @@ int main(int argc, char **argv)
 
   u8 *cframe = _mm_malloc(SIZE_FRAME * NB_FRAMES_VIDEO, 32);
   u8 *oframe = _mm_malloc(SIZE_FRAME * NB_FRAMES_VIDEO, 32);
-  nb_bytes = fread(cframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpi);
+  u8 *p_cframe = __builtin_assume_aligned(cframe, 32);
+  u8 *p_oframe = __builtin_assume_aligned(oframe, 32);
+  nb_bytes = fread(p_cframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpi);
 
   #pragma omp parallel for shared(cframe, oframe, cycles, samples_count, frame_count, nb_bytes)
   for(size_t i = 0; i < SIZE_VIDEO; i+=SIZE_FRAME)
   {
-      grayscale_weighted(&cframe[i]);
+      grayscale_weighted(&p_cframe[i]);
 #endif
       
       //Start 
@@ -315,7 +318,7 @@ int main(int argc, char **argv)
 #elif V3
       sobel_v3(cframe, oframe);
 #elif V4
-      sobel_v4(&cframe[i], &oframe[i]);
+      sobel_v4(&p_cframe[i], &p_oframe[i]);
 #endif
       
       //Stop
@@ -338,7 +341,7 @@ int main(int argc, char **argv)
   }
 #elif V4
   }
-  fwrite(oframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpo);
+  fwrite(p_oframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpo);
 #endif
 
   //

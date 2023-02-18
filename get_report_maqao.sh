@@ -8,14 +8,14 @@ else
     echo "Missing raw file(s). Check if in/input.raw and sout/output.raw exist."
     exit 1
   else
-    module load maqao/2.15.3 gcc/10.2.0 2018/make/4.3 
+    #module load maqao/2.15.3 gcc/10.2.0 2018/make/4.3 
     mkdir -p maqao/
     if [ "$1" == "v0" ]; then
       make sob_baseline
-      maqao oneview --create-report=one --replace xp=./maqao/sobel_baseline executable=sobel run_command="<executable> in/input.raw sout/output.raw"
+      maqao oneview --create-report=one --replace xp=./maqao_local/sobel_baseline lprof_params="--include-kernel --sampling-rate=high" executable=sobel run_command="<executable> in/input.raw sout/output.raw"
     else
-      make sobel_$1_maqao
-      maqao oneview --create-report=one --replace xp=./maqao/sobel_$1 executable=sobel run_command="<executable> in/input.raw sout/output.raw"
+      make sobel_$1
+      maqao oneview --create-report=one --replace xp=./maqao_local/sobel_$1 lprof_params="--include-kernel --sampling-rate=high" executable=sobel run_command="<executable> in/input.raw sout/output.raw"
     fi
     rm sobel
   fi

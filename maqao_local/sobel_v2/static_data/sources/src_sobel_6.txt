@@ -1,0 +1,15 @@
+/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c: 166 - 177
+--------------------------------------------------------------------------------
+
+166:     for (u32 j = 0; j < W3_3; j++)
+167:     {
+168:       u32 gx, i_W3_j, mag_approx; //gy is stored in mag_approx
+169:       i_W3_j = i * W3 + j;
+170: 
+171:       gx = ( *(cframe + i_W3_j + 8) - *(cframe + i_W3_j) );
+172:       mag_approx = gx;
+173:       gx +=           *(cframe + i_W3_j + 2) - *(cframe + i_W3_j + 6) + 2 * ( *(cframe + i_W3_j + 5) - *(cframe + i_W3_j + 3) );
+174:       mag_approx += - *(cframe + i_W3_j + 2) + *(cframe + i_W3_j + 6) + 2 * ( *(cframe + i_W3_j + 7) - *(cframe + i_W3_j + 1) );
+175: 
+176:       mag_approx = abs(mag_approx) + abs(gx);
+177:       *(oframe + i_W3_j) = (mag_approx > THRESHOLD) ? 255 : (mag_approx);

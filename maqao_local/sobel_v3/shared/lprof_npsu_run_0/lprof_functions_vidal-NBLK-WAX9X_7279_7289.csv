@@ -1,0 +1,3 @@
+function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;cats;label_name;
+8;sobel;sobel_v3._omp_fn.0;sobel.c:201-215;63.8;0.85;;;;;;;"100,0,0,0,0,0,0,0,0,0";sobel_v3._omp_fn.0;
+269;libgomp.so.1.0.0;omp_get_num_procs;;36.2;0.48;;;;;;;"0,0,100,0,0,0,0,0,0,0";omp_get_num_procs;

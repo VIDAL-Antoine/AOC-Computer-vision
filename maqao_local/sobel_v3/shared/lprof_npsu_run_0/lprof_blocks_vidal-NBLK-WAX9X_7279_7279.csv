@@ -1,0 +1,5 @@
+block_id;module;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;
+23;sobel;sobel.c:21-28;38.61;1.14;;;;;;;
+91;sobel;sobel.c:209-215;13.39;0.39;;;;;;;
+93;sobel;sobel.c:204-215;0.95;0.03;;;;;;;
+92;sobel;sobel.c:204-215;0.41;0.01;;;;;;;

@@ -1,0 +1,13 @@
+/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c: 21 - 30
+--------------------------------------------------------------------------------
+
+21:   for (u64 i = 0; i < H * W * 3; i += 3)
+22:     {
+23:       //Convert RGB color values into grayscale for each pixel using color weights
+24:       //Other possible weights: 0.59, 0.30, 0.11
+25:       //Principle: mix different quantities of R, G, B to create a variant of gray
+26:       gray = ((float)frame[i] * 0.299) + ((float)frame[i + 1] * 0.587) + ((float)frame[i + 2] * 0.114);
+27:       
+28:       frame[i]     = gray;
+29:       frame[i + 1] = gray;
+30:       frame[i + 2] = gray;

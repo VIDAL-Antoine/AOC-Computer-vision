@@ -1,7 +1,0 @@
-sobel_baseline - /home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:80
-sobel
-main - /home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:173
-__libc_init_first - :0
-libc.so.6
-sobel_baseline - /home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:79
-main - /home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:162

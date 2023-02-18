@@ -1,0 +1,6 @@
+function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;cats;label_name;
+8;sobel;sobel_v3._omp_fn.0;sobel.c:201-215;67.12;0.95;;;;;;;"100,0,0,0,0,0,0,0,0,0";sobel_v3._omp_fn.0;
+269;libgomp.so.1.0.0;omp_get_num_procs;;32.67;0.46;;;;;;;"0,0,100,0,0,0,0,0,0,0";omp_get_num_procs;
+-1;kernel;__softirqentry_text_start;;0.07;0;;;;;;;"0,0,0,0,100,0,0,0,0,0";__softirqentry_text_start;
+-1;kernel;_raw_spin_unlock_irqrestore;;0.07;0;;;;;;;"0,0,0,0,100,0,0,0,0,0";_raw_spin_unlock_irqrestore;
+-1;kernel;__iommu_unmap;;0.07;0;;;;;;;"0,0,0,0,100,0,0,0,0,0";__iommu_unmap;

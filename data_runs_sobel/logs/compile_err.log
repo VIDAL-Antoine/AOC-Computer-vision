@@ -199,3 +199,24 @@ sobel.c:294:20: error: ‘cframe’ undeclared (first use in this function)
       |                    ^~~~~~
 sobel.c:294:20: note: each undeclared identifier is reported only once for each function it appears in
 make: *** [Makefile:34: sobel_v4] Error 1
+sobel.c: In function ‘main’:
+sobel.c:306:35: warning: dereferencing ‘void *’ pointer
+  306 |       grayscale_weighted(&p_cframe[i]);
+      |                                   ^
+sobel.c:322:25: warning: dereferencing ‘void *’ pointer
+  322 |       sobel_v4(&p_cframe[i], &p_oframe[i]);
+      |                         ^
+sobel.c:322:39: warning: dereferencing ‘void *’ pointer
+  322 |       sobel_v4(&p_cframe[i], &p_oframe[i]);
+      |                                       ^
+sobel.c: In function ‘main’:
+sobel.c:306:35: warning: dereferencing ‘void *’ pointer
+  306 |       grayscale_weighted(&p_cframe[i]);
+      |                                   ^
+sobel.c:322:25: warning: dereferencing ‘void *’ pointer
+  322 |       sobel_v4(&p_cframe[i], &p_oframe[i]);
+      |                         ^
+sobel.c:322:39: warning: dereferencing ‘void *’ pointer
+  322 |       sobel_v4(&p_cframe[i], &p_oframe[i]);
+      |                                       ^
+make: *** [Makefile:13: sob_baseline] Interrupt

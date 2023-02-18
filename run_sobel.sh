@@ -67,6 +67,7 @@ do
 	
 	#Run & select run number & cycles 
 	./sobel in/input.raw sout/output.raw 2> $dir/"cycles_${opt}_${variant}.dat" | cut -d';' -f1,3 > $dir"/"$opt"/data/"$variant
+	#./sobel in/input.raw sout/output.raw $dir/"cycles_${opt}_${variant}.dat" | cut -d';' -f1,3 > $dir"/"$opt"/data/"$variant
 	
 	#Convert raw file into mp4 video
 	./cvt_vid.sh r2v "sout/output.raw" "sout/output_"$variant".mp4" >> $dir"/logs/cvt.log" 2>> $dir"/logs/cvt_err.log"

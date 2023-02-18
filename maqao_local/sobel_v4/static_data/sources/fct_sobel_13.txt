@@ -1,0 +1,14 @@
+/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/common.c: 7 - 17
+--------------------------------------------------------------------------------
+
+7: {
+8:   for (u64 i = 0; i < n; i++)
+9:     for (u64 j = i + 1; j < n; j++)
+10:       if (a[i] > a[j])
+11: 	{
+12: 	  u64 tmp = a[i];
+13: 
+14: 	  a[i] = a[j];
+15: 	  a[j] = tmp;
+16: 	}
+17: }

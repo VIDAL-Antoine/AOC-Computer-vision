@@ -1,0 +1,25 @@
+address;source_location;insn;indent
+0x1500;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;MOV	-0x10(%RBP),%RAX;
+0x1504;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;IMUL	-0x40(%RBP),%RAX;
+0x1509;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;MOV	%RAX,%RDX;
+0x150c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;MOV	-0x8(%RBP),%RAX;
+0x1510;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;ADD	%RAX,%RDX;
+0x1513;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;MOV	-0x28(%RBP),%RAX;
+0x1517;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;ADD	%RDX,%RAX;
+0x151a;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;MOVZX	(%RAX),%EAX;
+0x151d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;MOVZX	%AL,%EDX;
+0x1520;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;MOV	-0x10(%RBP),%RAX;
+0x1524;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;IMUL	-0x40(%RBP),%RAX;
+0x1529;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;MOV	%RAX,%RCX;
+0x152c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;MOV	-0x8(%RBP),%RAX;
+0x1530;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;ADD	%RCX,%RAX;
+0x1533;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;LEA	(,%RAX,4),%RCX;
+0x153b;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;MOV	-0x30(%RBP),%RAX;
+0x153f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;ADD	%RCX,%RAX;
+0x1542;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;MOV	(%RAX),%EAX;
+0x1544;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;IMUL	%EDX,%EAX;
+0x1547;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:65;ADD	%EAX,-0x14(%RBP);
+0x154a;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:64;ADDQ	$0x1,-0x8(%RBP);
+0x154f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:64;MOV	-0x8(%RBP),%RAX;
+0x1553;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:64;CMP	-0x40(%RBP),%RAX;
+0x1557;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:64;JB	1500 <convolve_baseline+0x33>;

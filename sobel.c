@@ -158,7 +158,7 @@ void sobel_v1(u8 *cframe, u8 *oframe, f32 threshold)
 #define W3_3 W*3-3
 #define THRESHOLD 100
 
-void sobel_v2(u8* const cframe, u8* restrict oframe)
+static void sobel_v2(u8* const restrict cframe, u8* restrict oframe)
 {
   //
   for (u32 i = 0; i < H3; i++)
@@ -168,13 +168,12 @@ void sobel_v2(u8* const cframe, u8* restrict oframe)
       u32 gx, i_W3_j, mag_approx; //gy is stored in mag_approx
       i_W3_j = i * W3 + j;
 
-      gx = ( *(cframe + i_W3_j + 8) - *(cframe + i_W3_j) );
+      gx = ( cframe[i_W3_j + 8]- cframe[i_W3_j] );
       mag_approx = gx;
-      gx +=           *(cframe + i_W3_j + 2) - *(cframe + i_W3_j + 6) + 2 * ( *(cframe + i_W3_j + 5) - *(cframe + i_W3_j + 3) );
-      mag_approx += - *(cframe + i_W3_j + 2) + *(cframe + i_W3_j + 6) + 2 * ( *(cframe + i_W3_j + 7) - *(cframe + i_W3_j + 1) );
-
+      gx +=           cframe[i_W3_j + 2] - cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 5] - cframe[i_W3_j + 3] );
+      mag_approx += - cframe[i_W3_j + 2] + cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 7] - cframe[i_W3_j + 1] );
       mag_approx = abs(mag_approx) + abs(gx);
-      *(oframe + i_W3_j) = (mag_approx > THRESHOLD) ? 255 : (mag_approx);
+      oframe[i_W3_j] = (mag_approx > THRESHOLD) ? 255 : (mag_approx);
     }
   }
 }
@@ -195,7 +194,7 @@ void sobel_v2(u8* const cframe, u8* restrict oframe)
 #define W3_3 W*3-3
 #define THRESHOLD 100
 
-void sobel_v3(u8* const cframe, u8* restrict oframe)
+static void sobel_v3(u8* const restrict cframe, u8* restrict oframe)
 {
   //
   #pragma omp parallel for
@@ -206,13 +205,12 @@ void sobel_v3(u8* const cframe, u8* restrict oframe)
       u32 gx, i_W3_j, mag_approx; //gy is stored in mag_approx
       i_W3_j = i * W3 + j;
 
-      gx = ( *(cframe + i_W3_j + 8) - *(cframe + i_W3_j) );
+      gx = ( cframe[i_W3_j + 8]- cframe[i_W3_j] );
       mag_approx = gx;
-      gx +=           *(cframe + i_W3_j + 2) - *(cframe + i_W3_j + 6) + 2 * ( *(cframe + i_W3_j + 5) - *(cframe + i_W3_j + 3) );
-      mag_approx += - *(cframe + i_W3_j + 2) + *(cframe + i_W3_j + 6) + 2 * ( *(cframe + i_W3_j + 7) - *(cframe + i_W3_j + 1) );
-
+      gx +=           cframe[i_W3_j + 2] - cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 5] - cframe[i_W3_j + 3] );
+      mag_approx += - cframe[i_W3_j + 2] + cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 7] - cframe[i_W3_j + 1] );
       mag_approx = abs(mag_approx) + abs(gx);
-      *(oframe + i_W3_j) = (mag_approx > THRESHOLD) ? 255 : (mag_approx);
+      oframe[i_W3_j] = (mag_approx > THRESHOLD) ? 255 : (mag_approx);
     }
   }
 }
@@ -232,7 +230,7 @@ void sobel_v3(u8* const cframe, u8* restrict oframe)
 #define W3_3 W*3-3
 #define THRESHOLD 100
 
-void sobel_v4(u8* const cframe, u8* restrict oframe)
+static void sobel_v4(u8* const restrict cframe, u8* restrict oframe)
 {
   //
   for (u32 i = 0; i < H3; i++)
@@ -242,13 +240,12 @@ void sobel_v4(u8* const cframe, u8* restrict oframe)
       u32 gx, i_W3_j, mag_approx; //gy is stored in mag_approx
       i_W3_j = i * W3 + j;
 
-      gx = ( *(cframe + i_W3_j + 8) - *(cframe + i_W3_j) );
+      gx = ( cframe[i_W3_j + 8]- cframe[i_W3_j] );
       mag_approx = gx;
-      gx +=           *(cframe + i_W3_j + 2) - *(cframe + i_W3_j + 6) + 2 * ( *(cframe + i_W3_j + 5) - *(cframe + i_W3_j + 3) );
-      mag_approx += - *(cframe + i_W3_j + 2) + *(cframe + i_W3_j + 6) + 2 * ( *(cframe + i_W3_j + 7) - *(cframe + i_W3_j + 1) );
-
+      gx +=           cframe[i_W3_j + 2] - cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 5] - cframe[i_W3_j + 3] );
+      mag_approx += - cframe[i_W3_j + 2] + cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 7] - cframe[i_W3_j + 1] );
       mag_approx = abs(mag_approx) + abs(gx);
-      *(oframe + i_W3_j) = (mag_approx > THRESHOLD) ? 255 : (mag_approx);
+      oframe[i_W3_j] = (mag_approx > THRESHOLD) ? 255 : (mag_approx);
     }
   }
 }

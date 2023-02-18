@@ -21,7 +21,7 @@
 9:   __asm__ volatile ("rdtsc" : "=a" (a), "=d" (d));
 10: 
 11:   return (d << 32) | a;
-/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c: 21 - 401
+/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c: 21 - 398
 --------------------------------------------------------------------------------
 
 21:   for (u64 i = 0; i < H * W * 3; i += 3)
@@ -33,60 +33,72 @@
 27:       
 28:       frame[i]     = gray;
 [...]
-260: {
-261:   //
-262:   if (argc < 3)
-263:     return printf("Usage: %s [raw input file] [raw output file]\n", argv[0]), 1;
-264:   
-265:   u64 cycles[MAX_SAMPLES], cycles_a, cycles_b;
-266:   u64 nb_bytes = 1, frame_count = 0, samples_count = 0;
-267: 
-268:   //
-269:   FILE *fpi = fopen(argv[1], "rb"); 
-270:   FILE *fpo = fopen(argv[2], "wb");
-271: 
-272:   //
-273:   if (!fpi)
-274:     return printf("Error: cannot open file '%s'\n", argv[1]), 2;
-275:   
-276:   //
-277:   if (!fpo)
-278:     return printf("Error: cannot open file '%s'\n", argv[2]), 2;
+164:   for (u32 i = 0; i < H3; i++)
+165:   {
+166:     for (u32 j = 0; j < W3_3; j++)
+167:     {
+168:       u32 gx, i_W3_j, mag_approx; //gy is stored in mag_approx
+169:       i_W3_j = i * W3 + j;
+170: 
+171:       gx = ( cframe[i_W3_j + 8]- cframe[i_W3_j] );
+172:       mag_approx = gx;
+173:       gx +=           cframe[i_W3_j + 2] - cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 5] - cframe[i_W3_j + 3] );
+174:       mag_approx += - cframe[i_W3_j + 2] + cframe[i_W3_j + 6] + 2 * ( cframe[i_W3_j + 7] - cframe[i_W3_j + 1] );
+175:       mag_approx = abs(mag_approx) + abs(gx);
+176:       oframe[i_W3_j] = (mag_approx > THRESHOLD) ? 255 : (mag_approx);
 [...]
-286:   while ((nb_bytes = fread(cframe, sizeof(u8), H * W * 3, fpi)))
+257: {
+258:   //
+259:   if (argc < 3)
+260:     return printf("Usage: %s [raw input file] [raw output file]\n", argv[0]), 1;
+261:   
+262:   u64 cycles[MAX_SAMPLES], cycles_a, cycles_b;
+263:   u64 nb_bytes = 1, frame_count = 0, samples_count = 0;
+264: 
+265:   //
+266:   FILE *fpi = fopen(argv[1], "rb"); 
+267:   FILE *fpo = fopen(argv[2], "wb");
+268: 
+269:   //
+270:   if (!fpi)
+271:     return printf("Error: cannot open file '%s'\n", argv[1]), 2;
+272:   
+273:   //
+274:   if (!fpo)
+275:     return printf("Error: cannot open file '%s'\n", argv[2]), 2;
 [...]
-317:       sobel_v2(cframe, oframe);
+283:   while ((nb_bytes = fread(cframe, sizeof(u8), H * W * 3, fpi)))
 [...]
-328:       u64 elapsed = (cycles_a - cycles_b);
-329: 
-330:       //
-331:       if (samples_count < MAX_SAMPLES)
-332: 	      cycles[samples_count++] = elapsed;
-333:       
-334:       //frame number; size in Bytes; elapsed cycles; bytes per cycle
-335:       fprintf(stdout, "%20llu; %20llu; %20llu; %15.3lf\n", frame_count, nb_bytes, elapsed, (f64)(nb_bytes) / (f64)elapsed);
-336: 
-337:       //
-338:       frame_count++;
-339: #if BASELINE || V1 || V2 || V3
-340:       fwrite(oframe, sizeof(u8), H * W * 3, fpo);
+325:       u64 elapsed = (cycles_a - cycles_b);
+326: 
+327:       //
+328:       if (samples_count < MAX_SAMPLES)
+329: 	      cycles[samples_count++] = elapsed;
+330:       
+331:       //frame number; size in Bytes; elapsed cycles; bytes per cycle
+332:       fprintf(stdout, "%20llu; %20llu; %20llu; %15.3lf\n", frame_count, nb_bytes, elapsed, (f64)(nb_bytes) / (f64)elapsed);
+333: 
+334:       //
+335:       frame_count++;
+336: #if BASELINE || V1 || V2 || V3
+337:       fwrite(oframe, sizeof(u8), H * W * 3, fpo);
 [...]
-348:   sort(cycles, samples_count);
+345:   sort(cycles, samples_count);
 [...]
-354:   mea = mean(cycles, samples_count);
-355:   
+351:   mea = mean(cycles, samples_count);
+352:   
+353:   //
+354:   dev = stddev(cycles, samples_count);
+355: 
 356:   //
-357:   dev = stddev(cycles, samples_count);
-358: 
-359:   //
-360:   min = cycles[0];
-361:   max = cycles[samples_count - 1];
-362:   avg = (min + max) / 2.0;
+357:   min = cycles[0];
+358:   max = cycles[samples_count - 1];
+359:   avg = (min + max) / 2.0;
 [...]
-376: 	  (dev * 100.0 / mea));
+373: 	  (dev * 100.0 / mea));
 [...]
-397:   fclose(fpi);
-398:   fclose(fpo);
-399: 
-400:   return  0;
-401: }
+394:   fclose(fpi);
+395:   fclose(fpo);
+396: 
+397:   return  0;
+398: }

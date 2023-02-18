@@ -57,7 +57,7 @@ do
     
     #Going through sobel code variants
     for variant in sob_baseline sobel_v1 sobel_v2 sobel_v3 sobel_v4
-    #for variant in sobel_v4
+    #for variant in sobel_v2
     do
 	#
 	echo -e "\tVariant: "$variant
@@ -66,8 +66,8 @@ do
 	make $variant O=$opt >> $dir"/logs/compile.log" 2>> $dir"/logs/compile_err.log"
 	
 	#Run & select run number & cycles 
-	./sobel in/input.raw sout/output.raw 2> $dir/"cycles_${opt}_${variant}.dat" | cut -d';' -f1,3 > $dir"/"$opt"/data/"$variant
-	#./sobel in/input.raw sout/output.raw $dir/"cycles_${opt}_${variant}.dat" | cut -d';' -f1,3 > $dir"/"$opt"/data/"$variant
+	./sobel in/input.raw sout/output.raw | cut -d';' -f1,3 > $dir"/"$opt"/data/"$variant
+	#./sobel in/input.raw sout/output.raw 2> $dir/"cycles_${opt}_${variant}.dat" | cut -d';' -f1,3 > $dir"/"$opt"/data/"$variant
 	
 	#Convert raw file into mp4 video
 	./cvt_vid.sh r2v "sout/output.raw" "sout/output_"$variant".mp4" >> $dir"/logs/cvt.log" 2>> $dir"/logs/cvt_err.log"

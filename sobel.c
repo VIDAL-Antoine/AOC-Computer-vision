@@ -252,7 +252,7 @@ int main(int argc, char **argv)
 #elif V3
   #define NB_FRAMES_VIDEO 360 //14 seconds -> 360/14 = 25 fps //obtenu avec ffmpeg
   #define SIZE_FRAME sizeof(u8)*H*W*3  //1*1280*720*3 = 2764800
-  #define SIZE_VIDEO NB_FRAMES_VIDEO*SIZE_FRAME //380*2764800 = 995328000
+  #define SIZE_VIDEO NB_FRAMES_VIDEO*SIZE_FRAME //360*2764800 = 995328000
 
   u8 *cframe = _mm_malloc(SIZE_FRAME * NB_FRAMES_VIDEO, 32);
   u8 *oframe = _mm_malloc(SIZE_FRAME * NB_FRAMES_VIDEO, 32);

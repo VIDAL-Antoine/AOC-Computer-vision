@@ -78,7 +78,7 @@ Divers scripts ont été ajoutés pour faciliter l'utilisation du programme :
 
 * `get_arch.sh` : script créant le dossier `arch/` et contient diverses informations sur l'environnement d'exécution : la version du noyau, la version du compilateur `gcc`, la version de `ldd` (pour les bibliothèques partagées), des informations sur le processeur comme la taille des caches ou les flags (jeux d'instructions supportés...).
 
-* `get_report_maqao.sh` : script permettant de créer les rapports *Maqao* en fournissant simplement la version qui doit être analysée, par exemple `./get_report_maqao v2`. Ce script suppose que les fichiers `in/input.raw` et `sout/output.raw` sont déjà présents (obtenus avec *ffmpeg*)
+* `get_report_maqao.sh` : script permettant de créer les rapports *Maqao* en fournissant simplement la version qui doit être analysée, par exemple `./get_report_maqao v2`. Ce script suppose que les fichiers `in/input.raw` et `sout/output.raw` sont déjà présents (obtenus avec *ffmpeg*).
 
 ## Crédits
 

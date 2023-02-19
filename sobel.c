@@ -250,8 +250,6 @@ int main(int argc, char **argv)
   {
       grayscale_weighted(cframe);
 #elif V3
-  #include <omp.h>
-
   #define NB_FRAMES_VIDEO 360 //14 seconds -> 360/14 = 25 fps //obtenu avec ffmpeg
   #define SIZE_FRAME sizeof(u8)*H*W*3  //1*1280*720*3 = 2764800
   #define SIZE_VIDEO NB_FRAMES_VIDEO*SIZE_FRAME //380*2764800 = 995328000

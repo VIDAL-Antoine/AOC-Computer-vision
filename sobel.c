@@ -277,7 +277,7 @@ int main(int argc, char **argv)
 #elif V2
       sobel_v2(cframe, oframe);
 #elif V3
-      sobel_v3(cframe, oframe);
+      sobel_v3(&p_cframe[i], &p_oframe[i]);
 #endif
       
       //Stop

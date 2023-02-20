@@ -1,6 +1,0 @@
-block_id;module;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;
-108;sobel;sobel.c:21-28;12.56;0.31;;;;;;;
-82;sobel;sobel.c:240-251;8.43;0.21;;;;;;;
-155;sobel;common.c:9-10;0.04;0;;;;;;;
-84;sobel;sobel.c:245-251;0.04;0;;;;;;;
-85;sobel;sobel.c:251-251;0.04;0;;;;;;;

@@ -95,25 +95,25 @@ addLoadEvent(function(){
       <td><button type="button" style="cursor:pointer;" onclick="set_next_ldbal_input ();">&rarr;</button></td>
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_3889" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_3929" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_3890" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_3930" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
   <script>
 function set_ldbal_input () {
   var selector_run  = document.getElementById ("ldbal_select_run");
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_3889").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_3889").getBoundingClientRect().width);
-  document.getElementById("chart_cat_3890").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_3890").getBoundingClientRect().width);
+  document.getElementById("chart_cat_3929").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_3929").getBoundingClientRect().width);
+  document.getElementById("chart_cat_3930").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_3930").getBoundingClientRect().width);
   // According to selector, draw both charts
   if (selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['vidal-NBLK-WAX9X_7279_7279','vidal-NBLK-WAX9X_7279_7290','vidal-NBLK-WAX9X_7279_7291','vidal-NBLK-WAX9X_7279_7292','vidal-NBLK-WAX9X_7279_7294'];
-    var data = [{value: 0.03, offset: 0, i: 0, color: "#333399"},{value: 0.07, offset: 0, i: 1, color: "#333399"},{value: 0.07, offset: 0, i: 2, color: "#333399"},{value: 0.07, offset: 0, i: 3, color: "#333399"},{value: 0.08, offset: 0, i: 4, color: "#333399"}];
+    var ordinals = ['vidal-NBLK-WAX9X_9005_9005','vidal-NBLK-WAX9X_9005_9014','vidal-NBLK-WAX9X_9005_9015','vidal-NBLK-WAX9X_9005_9016','vidal-NBLK-WAX9X_9005_9017','vidal-NBLK-WAX9X_9005_9018','vidal-NBLK-WAX9X_9005_9019','vidal-NBLK-WAX9X_9005_9020'];
+    var data = [{value: 0.04, offset: 0, i: 0, color: "#333399"},{value: 0.15, offset: 0, i: 1, color: "#333399"},{value: 0.17, offset: 0, i: 2, color: "#333399"},{value: 0.15, offset: 0, i: 3, color: "#333399"},{value: 0.15, offset: 0, i: 4, color: "#333399"},{value: 0.15, offset: 0, i: 5, color: "#333399"},{value: 0.15, offset: 0, i: 6, color: "#333399"},{value: 0.18, offset: 0, i: 7, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -128,7 +128,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_3889')
+    const svg = d3.select('#chart_cat_3929')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -184,13 +184,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_3889')
+      .attr('id', 'zoom_chart_3929')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_3889_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_3929_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -232,26 +232,35 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_3889_0").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7279.html");
+  $("#zoom_chart_3929_0").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9005.html");
   });
-  $("#zoom_chart_3889_1").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7290.html");
+  $("#zoom_chart_3929_1").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9014.html");
   });
-  $("#zoom_chart_3889_2").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7291.html");
+  $("#zoom_chart_3929_2").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9015.html");
   });
-  $("#zoom_chart_3889_3").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7292.html");
+  $("#zoom_chart_3929_3").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9016.html");
   });
-  $("#zoom_chart_3889_4").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7294.html");
+  $("#zoom_chart_3929_4").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9017.html");
+  });
+  $("#zoom_chart_3929_5").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9018.html");
+  });
+  $("#zoom_chart_3929_6").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9019.html");
+  });
+  $("#zoom_chart_3929_7").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9020.html");
   });
   }
   if (selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['vidal-NBLK-WAX9X_7279_7279','vidal-NBLK-WAX9X_7279_7290','vidal-NBLK-WAX9X_7279_7291','vidal-NBLK-WAX9X_7279_7292','vidal-NBLK-WAX9X_7279_7294'];
-    var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"},{value: 0, offset: 0, i: 4, color: "#333399"}];
+    var ordinals = ['vidal-NBLK-WAX9X_9005_9005','vidal-NBLK-WAX9X_9005_9014','vidal-NBLK-WAX9X_9005_9015','vidal-NBLK-WAX9X_9005_9016','vidal-NBLK-WAX9X_9005_9017','vidal-NBLK-WAX9X_9005_9018','vidal-NBLK-WAX9X_9005_9019','vidal-NBLK-WAX9X_9005_9020'];
+    var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"},{value: 0, offset: 0, i: 4, color: "#333399"},{value: 0, offset: 0, i: 5, color: "#333399"},{value: 0, offset: 0, i: 6, color: "#333399"},{value: 0, offset: 0, i: 7, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -266,7 +275,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_3890')
+    const svg = d3.select('#chart_cat_3930')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -322,13 +331,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_3890')
+      .attr('id', 'zoom_chart_3930')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_3890_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_3930_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -370,20 +379,29 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_3890_0").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7279.html");
+  $("#zoom_chart_3930_0").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9005.html");
   });
-  $("#zoom_chart_3890_1").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7290.html");
+  $("#zoom_chart_3930_1").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9014.html");
   });
-  $("#zoom_chart_3890_2").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7291.html");
+  $("#zoom_chart_3930_2").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9015.html");
   });
-  $("#zoom_chart_3890_3").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7292.html");
+  $("#zoom_chart_3930_3").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9016.html");
   });
-  $("#zoom_chart_3890_4").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7294.html");
+  $("#zoom_chart_3930_4").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9017.html");
+  });
+  $("#zoom_chart_3930_5").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9018.html");
+  });
+  $("#zoom_chart_3930_6").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9019.html");
+  });
+  $("#zoom_chart_3930_7").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9020.html");
   });
   }
 }

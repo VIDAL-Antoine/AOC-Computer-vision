@@ -1,0 +1,6 @@
+ID;Module;Source Location;Source Function;Level;Coverage (% app. time);Speedup if no scalar integer;Speedup if FP arith vectorized;Speedup if fully vectorized;Speedup if FP only;Number of paths;Vectorization Ratio (%);Vectorization Efficiency (%);CQA cycles;CQA cycles if no scalar integer;CQA cycles if FP arith vectorized;CQA cycles if fully vectorized;CQA cycles if FP only
+Loop 1;sobel;sobel.c:21-28;main._omp_fn.0;Innermost;40.09;1.00;1.00;1.69;4.00;1;98.73;40.51;144.00;144.00;144.00;85.25;36.00
+Loop 2;sobel;sobel.c:204-214;main._omp_fn.0;Innermost;24.62;1.00;1.00;2.49;32.00;1;100.00;43.08;32.00;32.00;32.00;12.83;1.00
+Loop 3;sobel;sobel.c:204-214;main._omp_fn.0;Innermost;0.22;1.00;1.00;12.34;18.67;2;0.00;11.98;18.67;18.67;18.67;1.51;1.00
+Loop 4;sobel;sobel.c:202-214;main._omp_fn.0;InBetween;0.07;1.00;1.00;5.05;9.00;4;0.00;13.50;9.00;9.00;9.00;1.78;1.00
+Loop 8;sobel;common.c:9-15;sort;Outermost;0.01;1.00;1.00;4.00;1.78;1000012;0.00;24.76;16.00;16.00;16.00;4.00;9.00

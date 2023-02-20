@@ -12,10 +12,20 @@ else
     mkdir -p maqao/
     if [ "$1" == "v0" ]; then
       make sob_baseline
-      maqao oneview --create-report=one --replace xp=./maqao_local/sobel_baseline lprof_params="--include-kernel --sampling-rate=high" executable=sobel run_command="<executable> in/input.raw sout/output.raw"
+      maqao oneview -R1 --replace xp=./maqao_local/sobel_baseline lprof_params="--include-kernel --sampling-rate=high" executable=sobel run_command="<executable> in/input.raw sout/output.raw"
     else
       make sobel_$1
-      maqao oneview --create-report=one --replace xp=./maqao_local/sobel_$1 lprof_params="--include-kernel --sampling-rate=high" executable=sobel run_command="<executable> in/input.raw sout/output.raw"
+
+      if [ "$1" == "v1" ] || [ "$1" == "v2" ]; then
+        maqao oneview -R1 --replace xp=./maqao_local/sobel_$1 lprof_params="--include-kernel --sampling-rate=high" executable=sobel run_command="<executable> in/input.raw sout/output.raw"
+
+      elif [ "$1" == "v3" ]; then
+        maqao oneview -R1 -WS --replace xp=./maqao_local/sobel_v3_SS c=config.lua
+        #maqao oneview -R1 --with-scalability=weak --replace xp=./maqao_local/sobel_v3_WS c=config_w.lua
+      else
+        echo "Unknown version."
+        exit 1
+      fi
     fi
     rm sobel
   fi

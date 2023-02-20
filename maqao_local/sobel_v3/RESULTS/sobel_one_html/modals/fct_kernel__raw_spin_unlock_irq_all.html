@@ -95,25 +95,25 @@ addLoadEvent(function(){
       <td><button type="button" style="cursor:pointer;" onclick="set_next_ldbal_input ();">&rarr;</button></td>
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_3561" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_2761" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_3562" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_2762" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
   <script>
 function set_ldbal_input () {
   var selector_run  = document.getElementById ("ldbal_select_run");
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_3561").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_3561").getBoundingClientRect().width);
-  document.getElementById("chart_cat_3562").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_3562").getBoundingClientRect().width);
+  document.getElementById("chart_cat_2761").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_2761").getBoundingClientRect().width);
+  document.getElementById("chart_cat_2762").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_2762").getBoundingClientRect().width);
   // According to selector, draw both charts
   if (selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['vidal-NBLK-WAX9X_7279_7279','vidal-NBLK-WAX9X_7279_7288','vidal-NBLK-WAX9X_7279_7289','vidal-NBLK-WAX9X_7279_7290','vidal-NBLK-WAX9X_7279_7291','vidal-NBLK-WAX9X_7279_7292','vidal-NBLK-WAX9X_7279_7293','vidal-NBLK-WAX9X_7279_7294'];
-    var data = [{value: 0.03, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0.07, offset: 0, i: 3, color: "#333399"},{value: 0.07, offset: 0, i: 4, color: "#333399"},{value: 0.07, offset: 0, i: 5, color: "#333399"},{value: 0, offset: 0, i: 6, color: "#333399"},{value: 0.08, offset: 0, i: 7, color: "#333399"}];
+    var ordinals = ['vidal-NBLK-WAX9X_9005_9005','vidal-NBLK-WAX9X_9005_9014','vidal-NBLK-WAX9X_9005_9015','vidal-NBLK-WAX9X_9005_9016','vidal-NBLK-WAX9X_9005_9017','vidal-NBLK-WAX9X_9005_9018','vidal-NBLK-WAX9X_9005_9019','vidal-NBLK-WAX9X_9005_9020'];
+    var data = [{value: 0.04, offset: 0, i: 0, color: "#333399"},{value: 0.15, offset: 0, i: 1, color: "#333399"},{value: 0.17, offset: 0, i: 2, color: "#333399"},{value: 0.15, offset: 0, i: 3, color: "#333399"},{value: 0.15, offset: 0, i: 4, color: "#333399"},{value: 0.15, offset: 0, i: 5, color: "#333399"},{value: 0.15, offset: 0, i: 6, color: "#333399"},{value: 0.18, offset: 0, i: 7, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -128,7 +128,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_3561')
+    const svg = d3.select('#chart_cat_2761')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -184,13 +184,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_3561')
+      .attr('id', 'zoom_chart_2761')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_3561_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_2761_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -232,34 +232,34 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_3561_0").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7279.html");
+  $("#zoom_chart_2761_0").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9005.html");
   });
-  $("#zoom_chart_3561_1").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7288.html");
+  $("#zoom_chart_2761_1").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9014.html");
   });
-  $("#zoom_chart_3561_2").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7289.html");
+  $("#zoom_chart_2761_2").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9015.html");
   });
-  $("#zoom_chart_3561_3").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7290.html");
+  $("#zoom_chart_2761_3").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9016.html");
   });
-  $("#zoom_chart_3561_4").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7291.html");
+  $("#zoom_chart_2761_4").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9017.html");
   });
-  $("#zoom_chart_3561_5").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7292.html");
+  $("#zoom_chart_2761_5").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9018.html");
   });
-  $("#zoom_chart_3561_6").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7293.html");
+  $("#zoom_chart_2761_6").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9019.html");
   });
-  $("#zoom_chart_3561_7").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7294.html");
+  $("#zoom_chart_2761_7").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9020.html");
   });
   }
   if (selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['vidal-NBLK-WAX9X_7279_7279','vidal-NBLK-WAX9X_7279_7288','vidal-NBLK-WAX9X_7279_7289','vidal-NBLK-WAX9X_7279_7290','vidal-NBLK-WAX9X_7279_7291','vidal-NBLK-WAX9X_7279_7292','vidal-NBLK-WAX9X_7279_7293','vidal-NBLK-WAX9X_7279_7294'];
+    var ordinals = ['vidal-NBLK-WAX9X_9005_9005','vidal-NBLK-WAX9X_9005_9014','vidal-NBLK-WAX9X_9005_9015','vidal-NBLK-WAX9X_9005_9016','vidal-NBLK-WAX9X_9005_9017','vidal-NBLK-WAX9X_9005_9018','vidal-NBLK-WAX9X_9005_9019','vidal-NBLK-WAX9X_9005_9020'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"},{value: 0, offset: 0, i: 4, color: "#333399"},{value: 0, offset: 0, i: 5, color: "#333399"},{value: 0, offset: 0, i: 6, color: "#333399"},{value: 0, offset: 0, i: 7, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -275,7 +275,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_3562')
+    const svg = d3.select('#chart_cat_2762')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -331,13 +331,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_3562')
+      .attr('id', 'zoom_chart_2762')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_3562_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_2762_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -379,29 +379,29 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_3562_0").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7279.html");
+  $("#zoom_chart_2762_0").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9005.html");
   });
-  $("#zoom_chart_3562_1").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7288.html");
+  $("#zoom_chart_2762_1").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9014.html");
   });
-  $("#zoom_chart_3562_2").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7289.html");
+  $("#zoom_chart_2762_2").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9015.html");
   });
-  $("#zoom_chart_3562_3").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7290.html");
+  $("#zoom_chart_2762_3").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9016.html");
   });
-  $("#zoom_chart_3562_4").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7291.html");
+  $("#zoom_chart_2762_4").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9017.html");
   });
-  $("#zoom_chart_3562_5").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7292.html");
+  $("#zoom_chart_2762_5").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9018.html");
   });
-  $("#zoom_chart_3562_6").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7293.html");
+  $("#zoom_chart_2762_6").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9019.html");
   });
-  $("#zoom_chart_3562_7").click( function () {
-    window.open("../topo/run_0_vidal-NBLK-WAX9X_7279_7294.html");
+  $("#zoom_chart_2762_7").click( function () {
+    window.open("../topo/run_0_vidal-NBLK-WAX9X_9005_9020.html");
   });
   }
 }

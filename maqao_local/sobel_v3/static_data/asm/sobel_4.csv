@@ -1,48 +1,300 @@
 address;source_location;insn;indent
-0x23aa;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;LEA	-0xefd(%R9),%R8D;
-0x23b1;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;NOPW	%CS:(%RAX,%RAX,1);
-0x23bc;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;NOPL	(%RAX);
-0x23c0;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:209;MOV	%R8D,%EAX;  (3) 
-0x23c3;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:209;MOVZX	(%RDX,%RAX,1),%EDI;  (3) 
-0x23c7;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:209;MOVZX	0x8(%RDX,%RAX,1),%ESI;  (3) 
-0x23cc;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:211;MOVZX	0x2(%RDX,%RAX,1),%R12D;  (3) 
-0x23d2;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:211;MOVZX	0x3(%RDX,%RAX,1),%EBP;  (3) 
-0x23d7;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:211;MOVZX	0x5(%RDX,%RAX,1),%R13D;  (3) 
-0x23dd;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:209;SUB	%EDI,%ESI;  (3) 
-0x23df;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:211;MOVZX	0x6(%RDX,%RAX,1),%EDI;  (3) 
-0x23e4;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:211;MOV	%R12D,%ECX;  (3) 
-0x23e7;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:211;SUB	%EBP,%R13D;  (3) 
-0x23ea;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:211;SUB	%EDI,%ECX;  (3) 
-0x23ec;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:211;LEA	(%RCX,%R13,2),%R13D;  (3) 
-0x23f0;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;MOVZX	0x7(%RDX,%RAX,1),%ECX;  (3) 
-0x23f5;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:211;ADD	%ESI,%R13D;  (3) 
-0x23f8;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;MOV	%R13D,%EBP;  (3) 
-0x23fb;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;NEG	%EBP;  (3) 
-0x23fd;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;CMOVS	%R13D,%EBP;  (3) 
-0x2401;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;MOVZX	0x1(%RDX,%RAX,1),%R13D;  (3) 
-0x2407;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;SUB	%R12D,%EDI;  (3) 
-0x240a;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;SUB	%R13D,%ECX;  (3) 
-0x240d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;LEA	(%RDI,%RCX,2),%R12D;  (3) 
-0x2411;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;ADD	%ESI,%R12D;  (3) 
-0x2414;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;MOV	%R12D,%ESI;  (3) 
-0x2417;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;NEG	%ESI;  (3) 
-0x2419;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;CMOVNS	%ESI,%R12D;  (3) 
-0x241d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;ADD	%EBP,%R12D;  (3) 
-0x2420;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;CMP	$0x64,%R12D;  (3) 
-0x2424;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;JG	2450 <sobel_v3._omp_fn.0+0x100>;  (3) 
-0x2426;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:204;INC	%R8D;  (3) 
-0x2429;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;MOV	%R12B,(%R10,%RAX,1);  (3) 
-0x242d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:204;CMP	%R9D,%R8D;  (3) 
-0x2430;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:204;JNE	23c0 <sobel_v3._omp_fn.0+0x70>;  (3) 
-0x2432;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:204;INC	%R11D;
-0x2435;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:204;ADD	$0xf00,%R9D;
-0x243c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:204;CMP	%R11D,%EBX;
-0x243f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:204;JNE	23aa <sobel_v3._omp_fn.0+0x5a>;
-0x2450;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:204;INC	%R8D;  (3) 
-0x2453;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;MOVB	$-0x1,(%R10,%RAX,1);  (3) 
-0x2458;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:204;CMP	%R9D,%R8D;  (3) 
-0x245b;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:204;JNE	23c0 <sobel_v3._omp_fn.0+0x70>;  (3) 
-0x2461;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:204;INC	%R11D;
-0x2464;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:204;ADD	$0xf00,%R9D;
-0x246b;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:204;CMP	%R11D,%EBX;
-0x246e;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:204;JNE	23aa <sobel_v3._omp_fn.0+0x5a>;
+0x2310;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;MOV	(%RSP),%RSI;
+0x2314;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;LEA	0x8(%RCX),%R12;
+0x2318;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;LEA	0x2(%RCX),%R13;
+0x231c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;LEA	0x6(%RCX),%R11;
+0x2320;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;LEA	0x5(%RCX),%R10;
+0x2324;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;LEA	0x3(%RCX),%R14;
+0x2328;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;LEA	0x7(%RCX),%R15;
+0x232c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;LEA	0x1(%RCX),%RDI;
+0x2330;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:203;XOR	%EDX,%EDX;
+0x2332;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:203;ADD	%RAX,%RSI;
+0x2335;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VMOVDQU	(%R12,%RDX,1),%XMM10;  (2) 
+0x233b;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VMOVDQA	(%RCX,%RDX,1),%XMM4;  (2) 
+0x2340;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VMOVDQU	(%R13,%RDX,1),%XMM3;  (2) 
+0x2347;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VPSRLDQ	$0x8,%XMM10,%XMM11;  (2) 
+0x234d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VPMOVZXBW	%XMM11,%XMM13;  (2) 
+0x2352;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VMOVDQU	(%R11,%RDX,1),%XMM11;  (2) 
+0x2358;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VPMOVZXBW	%XMM10,%XMM0;  (2) 
+0x235d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VPMOVZXBW	%XMM4,%XMM14;  (2) 
+0x2362;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VPSRLDQ	$0x8,%XMM4,%XMM6;  (2) 
+0x2367;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VPMOVZXBW	%XMM6,%XMM5;  (2) 
+0x236c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXBW	%XMM3,%XMM2;  (2) 
+0x2371;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VPSUBW	%XMM14,%XMM0,%XMM7;  (2) 
+0x2376;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VPSUBW	%XMM5,%XMM13,%XMM15;  (2) 
+0x237a;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSRLDQ	$0x8,%XMM3,%XMM10;  (2) 
+0x237f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXBW	%XMM10,%XMM14;  (2) 
+0x2384;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VPSRLDQ	$0x8,%XMM7,%XMM12;  (2) 
+0x2389;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VPMOVSXWD	%XMM12,%XMM9;  (2) 
+0x238e;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VPMOVSXWD	%XMM15,%XMM1;  (2) 
+0x2393;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VPSRLDQ	$0x8,%XMM15,%XMM8;  (2) 
+0x2399;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VPMOVSXWD	%XMM8,%XMM15;  (2) 
+0x239e;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VPMOVSXWD	%XMM7,%XMM13;  (2) 
+0x23a3;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXWD	%XMM2,%XMM0;  (2) 
+0x23a8;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSRLDQ	$0x8,%XMM14,%XMM7;  (2) 
+0x23ae;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;VMOVDQA	%XMM1,0x30(%RSP);  (2) 
+0x23b4;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSRLDQ	$0x8,%XMM2,%XMM4;  (2) 
+0x23b9;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXWD	%XMM7,%XMM1;  (2) 
+0x23be;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXWD	%XMM14,%XMM6;  (2) 
+0x23c3;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXWD	%XMM4,%XMM4;  (2) 
+0x23c8;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXBW	%XMM11,%XMM5;  (2) 
+0x23cd;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSRLDQ	$0x8,%XMM11,%XMM12;  (2) 
+0x23d3;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VMOVDQU	(%R10,%RDX,1),%XMM11;  (2) 
+0x23d9;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXBW	%XMM12,%XMM8;  (2) 
+0x23de;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSRLDQ	$0x8,%XMM5,%XMM3;  (2) 
+0x23e3;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXWD	%XMM3,%XMM10;  (2) 
+0x23e8;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VMOVDQU	(%R14,%RDX,1),%XMM3;  (2) 
+0x23ee;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXWD	%XMM8,%XMM12;  (2) 
+0x23f3;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSRLDQ	$0x8,%XMM8,%XMM2;  (2) 
+0x23f9;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXWD	%XMM5,%XMM14;  (2) 
+0x23fe;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXWD	%XMM2,%XMM5;  (2) 
+0x2403;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXBW	%XMM11,%XMM7;  (2) 
+0x2408;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSRLDQ	$0x8,%XMM11,%XMM11;  (2) 
+0x240e;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXBW	%XMM3,%XMM8;  (2) 
+0x2413;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSRLDQ	$0x8,%XMM3,%XMM3;  (2) 
+0x2418;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSUBW	%XMM8,%XMM7,%XMM2;  (2) 
+0x241d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXBW	%XMM11,%XMM8;  (2) 
+0x2422;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSLLW	$0x1,%XMM2,%XMM7;  (2) 
+0x2427;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVZXBW	%XMM3,%XMM2;  (2) 
+0x242c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSUBW	%XMM2,%XMM8,%XMM11;  (2) 
+0x2430;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VMOVDQU	(%R15,%RDX,1),%XMM8;  (2) 
+0x2436;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSLLW	$0x1,%XMM11,%XMM2;  (2) 
+0x243c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VMOVDQU	(%RDI,%RDX,1),%XMM11;  (2) 
+0x2441;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPMOVZXBW	%XMM8,%XMM3;  (2) 
+0x2446;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPMOVZXBW	%XMM11,%XMM8;  (2) 
+0x244b;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPSRLDQ	$0x8,%XMM11,%XMM11;  (2) 
+0x2451;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPMOVZXBW	%XMM11,%XMM11;  (2) 
+0x2456;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPSUBW	%XMM8,%XMM3,%XMM3;  (2) 
+0x245b;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPSLLW	$0x1,%XMM3,%XMM8;  (2) 
+0x2460;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VMOVDQU	(%R15,%RDX,1),%XMM3;  (2) 
+0x2466;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPSRLDQ	$0x8,%XMM3,%XMM3;  (2) 
+0x246b;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPMOVZXBW	%XMM3,%XMM3;  (2) 
+0x2470;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPSUBW	%XMM11,%XMM3,%XMM3;  (2) 
+0x2475;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPSUBD	%XMM0,%XMM14,%XMM11;  (2) 
+0x2479;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSUBD	%XMM14,%XMM0,%XMM0;  (2) 
+0x247e;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVSXWD	%XMM7,%XMM14;  (2) 
+0x2483;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VMOVDQA	%XMM11,0x40(%RSP);  (2) 
+0x2489;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPMOVSXWD	%XMM8,%XMM11;  (2) 
+0x248e;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPADDD	0x40(%RSP),%XMM11,%XMM11;  (2) 
+0x2494;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPADDD	%XMM14,%XMM0,%XMM0;  (2) 
+0x2499;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPSRLDQ	$0x8,%XMM8,%XMM8;  (2) 
+0x249f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPSLLW	$0x1,%XMM3,%XMM3;  (2) 
+0x24a4;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPADDD	%XMM13,%XMM11,%XMM11;  (2) 
+0x24a9;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPADDD	%XMM13,%XMM0,%XMM13;  (2) 
+0x24ae;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPABSD	%XMM13,%XMM14;  (2) 
+0x24b3;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPABSD	%XMM11,%XMM11;  (2) 
+0x24b8;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPMOVSXWD	%XMM8,%XMM13;  (2) 
+0x24bd;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPADDD	%XMM14,%XMM11,%XMM0;  (2) 
+0x24c2;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPSUBD	%XMM4,%XMM10,%XMM11;  (2) 
+0x24c6;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSUBD	%XMM10,%XMM4,%XMM4;  (2) 
+0x24cb;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSRLDQ	$0x8,%XMM7,%XMM10;  (2) 
+0x24d0;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVSXWD	%XMM10,%XMM7;  (2) 
+0x24d5;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VMOVDQA	0x30(%RSP),%XMM10;  (2) 
+0x24db;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPADDD	%XMM13,%XMM11,%XMM14;  (2) 
+0x24e0;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPADDD	%XMM7,%XMM4,%XMM13;  (2) 
+0x24e4;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPADDD	%XMM9,%XMM14,%XMM11;  (2) 
+0x24e9;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPADDD	%XMM9,%XMM13,%XMM9;  (2) 
+0x24ee;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPABSD	%XMM11,%XMM8;  (2) 
+0x24f3;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPSUBD	%XMM6,%XMM12,%XMM4;  (2) 
+0x24f7;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPABSD	%XMM9,%XMM14;  (2) 
+0x24fc;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSUBD	%XMM12,%XMM6,%XMM6;  (2) 
+0x2501;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVSXWD	%XMM2,%XMM12;  (2) 
+0x2506;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPADDD	%XMM14,%XMM8,%XMM11;  (2) 
+0x250b;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPMOVSXWD	%XMM3,%XMM8;  (2) 
+0x2510;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPADDD	%XMM12,%XMM6,%XMM14;  (2) 
+0x2515;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPSRLDQ	$0x8,%XMM3,%XMM3;  (2) 
+0x251a;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPADDD	%XMM8,%XMM4,%XMM7;  (2) 
+0x251f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPADDD	%XMM10,%XMM7,%XMM13;  (2) 
+0x2524;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPADDD	%XMM10,%XMM14,%XMM4;  (2) 
+0x2529;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPSUBD	%XMM1,%XMM5,%XMM10;  (2) 
+0x252d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPABSD	%XMM13,%XMM9;  (2) 
+0x2532;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPABSD	%XMM4,%XMM8;  (2) 
+0x2537;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPMOVSXWD	%XMM3,%XMM13;  (2) 
+0x253c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSUBD	%XMM5,%XMM1,%XMM1;  (2) 
+0x2540;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPSRLDQ	$0x8,%XMM2,%XMM5;  (2) 
+0x2545;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPMOVSXWD	%XMM5,%XMM2;  (2) 
+0x254a;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPADDD	%XMM8,%XMM9,%XMM7;  (2) 
+0x254f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPADDD	%XMM13,%XMM10,%XMM9;  (2) 
+0x2554;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPADDD	%XMM2,%XMM1,%XMM14;  (2) 
+0x2558;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPADDD	%XMM15,%XMM9,%XMM6;  (2) 
+0x255d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;VPCMPGTD	0x2beb(%RIP),%XMM0,%XMM10;  (2) 
+0x2565;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;VPADDD	%XMM15,%XMM14,%XMM15;  (2) 
+0x256a;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPABSD	%XMM6,%XMM12;  (2) 
+0x256f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPCMPGTD	0x2bd9(%RIP),%XMM11,%XMM3;  (2) 
+0x2577;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPBLENDVB	%XMM10,0x2bdf(%RIP),%XMM0,%XMM0;  (2) 
+0x2581;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPABSD	%XMM15,%XMM4;  (2) 
+0x2586;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPCMPGTD	0x2bc2(%RIP),%XMM7,%XMM13;  (2) 
+0x258e;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPBLENDVB	%XMM3,0x2bc8(%RIP),%XMM11,%XMM11;  (2) 
+0x2598;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;VPAND	0x2b90(%RIP),%XMM11,%XMM1;  (2) 
+0x25a0;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;VPADDD	%XMM4,%XMM12,%XMM8;  (2) 
+0x25a4;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;VPBLENDVB	%XMM13,0x2bb2(%RIP),%XMM7,%XMM7;  (2) 
+0x25ae;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;VPAND	0x2b7a(%RIP),%XMM0,%XMM12;  (2) 
+0x25b6;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;VPAND	0x2b72(%RIP),%XMM7,%XMM2;  (2) 
+0x25be;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;VPCMPGTD	0x2b8a(%RIP),%XMM8,%XMM9;  (2) 
+0x25c6;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;VPBLENDVB	%XMM9,0x2b90(%RIP),%XMM8,%XMM6;  (2) 
+0x25d0;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;VPAND	0x2b58(%RIP),%XMM6,%XMM14;  (2) 
+0x25d8;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;VPACKUSDW	%XMM1,%XMM12,%XMM5;  (2) 
+0x25dd;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;VPAND	0x2b5b(%RIP),%XMM5,%XMM4;  (2) 
+0x25e5;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;VPACKUSDW	%XMM14,%XMM2,%XMM15;  (2) 
+0x25ea;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;VPAND	0x2b4e(%RIP),%XMM15,%XMM8;  (2) 
+0x25f2;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;VPACKUSWB	%XMM8,%XMM4,%XMM10;  (2) 
+0x25f7;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;VMOVDQA	%XMM10,(%RSI,%RDX,1);  (2) 
+0x25fc;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;ADD	$0x10,%RDX;  (2) 
+0x2600;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;CMP	$0xef0,%RDX;  (2) 
+0x2607;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;JNE	2335 <main._omp_fn.0+0xdf5>;  (2) 
+0x260d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;MOV	0x20(%RSP),%RBX;
+0x2612;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;MOVZX	0xef2(%RCX),%R11D;
+0x261a;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;LEA	0xef8(%RCX),%RDX;
+0x2621;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;MOV	$0xef0,%R12D;
+0x2627;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;MOVZX	0xef6(%RCX),%R9D;
+0x262f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;MOVZX	0xef7(%RCX),%R8D;
+0x2637;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;MOVZX	0xef1(%RCX),%R10D;
+0x263f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;MOVZX	0xef5(%RCX),%EDI;
+0x2646;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;LEA	(%RBX,%RAX,1),%RSI;
+0x264a;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;MOVZX	0xef0(%RCX),%EBX;
+0x2651;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;MOVZX	-0x5(%RDX),%R13D;  (3) 
+0x2656;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;MOVZX	(%RDX),%EBP;  (3) 
+0x2659;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;MOV	%R11D,%R15D;  (3) 
+0x265c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;SUB	%R9D,%R15D;  (3) 
+0x265f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;SUB	%R13D,%EDI;  (3) 
+0x2662;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;MOV	%EBP,%R14D;  (3) 
+0x2665;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;SUB	%EBX,%R14D;  (3) 
+0x2668;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;LEA	(%R15,%RDI,2),%EBX;  (3) 
+0x266c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;MOV	%R8D,%R15D;  (3) 
+0x266f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;ADD	%R14D,%EBX;  (3) 
+0x2672;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;MOV	%EBX,%EDI;  (3) 
+0x2674;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;NEG	%EDI;  (3) 
+0x2676;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;CMOVS	%EBX,%EDI;  (3) 
+0x2679;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;MOV	%R9D,%EBX;  (3) 
+0x267c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;SUB	%R10D,%R15D;  (3) 
+0x267f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;SUB	%R11D,%EBX;  (3) 
+0x2682;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;LEA	(%RBX,%R15,2),%R15D;  (3) 
+0x2686;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;MOV	$0xff,%EBX;  (3) 
+0x268b;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;ADD	%R14D,%R15D;  (3) 
+0x268e;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;MOV	%R15D,%R14D;  (3) 
+0x2691;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;NEG	%R14D;  (3) 
+0x2694;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;CMOVNS	%R14D,%R15D;  (3) 
+0x2698;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;ADD	%R15D,%EDI;  (3) 
+0x269b;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;CMP	$0x65,%EDI;  (3) 
+0x269e;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;CMOVGE	%EBX,%EDI;  (3) 
+0x26a1;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;MOVZX	-0x4(%RDX),%EBX;  (3) 
+0x26a5;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;MOV	%DIL,-0x3(%RSI);  (3) 
+0x26a9;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;MOVZX	0x1(%RDX),%EDI;  (3) 
+0x26ad;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;SUB	%EBX,%R9D;  (3) 
+0x26b0;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;MOV	%EDI,%R14D;  (3) 
+0x26b3;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;SUB	%R10D,%R14D;  (3) 
+0x26b6;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;MOV	%R13D,%R10D;  (3) 
+0x26b9;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;SUB	%R8D,%R10D;  (3) 
+0x26bc;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;LEA	(%R10,%R9,2),%R15D;  (3) 
+0x26c0;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;MOV	%R8D,%R10D;  (3) 
+0x26c3;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;ADD	%R14D,%R15D;  (3) 
+0x26c6;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;MOV	%R15D,%R9D;  (3) 
+0x26c9;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;NEG	%R9D;  (3) 
+0x26cc;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;CMOVS	%R15D,%R9D;  (3) 
+0x26d0;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;MOV	%EBP,%R15D;  (3) 
+0x26d3;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;SUB	%R13D,%R10D;  (3) 
+0x26d6;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;SUB	%R11D,%R15D;  (3) 
+0x26d9;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;LEA	(%R10,%R15,2),%R10D;  (3) 
+0x26dd;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;MOV	%EDI,%R15D;  (3) 
+0x26e0;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;ADD	%R14D,%R10D;  (3) 
+0x26e3;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;MOV	%R10D,%R14D;  (3) 
+0x26e6;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;NEG	%R14D;  (3) 
+0x26e9;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;CMOVNS	%R14D,%R10D;  (3) 
+0x26ed;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;ADD	%R10D,%R9D;  (3) 
+0x26f0;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;MOV	$0xff,%R10D;  (3) 
+0x26f6;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;CMP	$0x65,%R9D;  (3) 
+0x26fa;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;CMOVGE	%R10D,%R9D;  (3) 
+0x26fe;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;SUB	%R13D,%R15D;  (3) 
+0x2701;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;MOVZX	-0x3(%RDX),%R10D;  (3) 
+0x2706;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;MOV	%R9B,-0x2(%RSI);  (3) 
+0x270a;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;MOVZX	0x2(%RDX),%R9D;  (3) 
+0x270f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;MOV	%R9D,%R14D;  (3) 
+0x2712;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;SUB	%R11D,%R14D;  (3) 
+0x2715;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;MOV	%EBP,%R11D;  (3) 
+0x2718;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;SUB	%EBX,%R11D;  (3) 
+0x271b;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;LEA	(%R11,%R15,2),%R15D;  (3) 
+0x271f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;ADD	%R14D,%R15D;  (3) 
+0x2722;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;MOV	%R15D,%R11D;  (3) 
+0x2725;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;NEG	%R11D;  (3) 
+0x2728;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;CMOVS	%R15D,%R11D;  (3) 
+0x272c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;MOV	%EBX,%R15D;  (3) 
+0x272f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;SUB	%R10D,%R8D;  (3) 
+0x2732;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;SUB	%EBP,%R15D;  (3) 
+0x2735;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;LEA	(%R15,%R8,2),%R8D;  (3) 
+0x2739;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;MOV	%EDI,%R15D;  (3) 
+0x273c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;ADD	%R14D,%R8D;  (3) 
+0x273f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;MOV	%R8D,%R14D;  (3) 
+0x2742;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;NEG	%R14D;  (3) 
+0x2745;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;CMOVNS	%R14D,%R8D;  (3) 
+0x2749;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;ADD	%R11D,%R8D;  (3) 
+0x274c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;MOV	$0xff,%R11D;  (3) 
+0x2752;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;CMP	$0x65,%R8D;  (3) 
+0x2756;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;CMOVGE	%R11D,%R8D;  (3) 
+0x275a;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;SUB	%R10D,%R15D;  (3) 
+0x275d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;MOV	%R8B,-0x1(%RSI);  (3) 
+0x2761;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;MOVZX	0x3(%RDX),%R8D;  (3) 
+0x2766;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;MOV	%R8D,%R14D;  (3) 
+0x2769;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;SUB	%R13D,%R14D;  (3) 
+0x276c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;MOV	%R9D,%R13D;  (3) 
+0x276f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;SUB	%EBX,%R13D;  (3) 
+0x2772;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;LEA	(%R15,%R13,2),%R11D;  (3) 
+0x2776;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;MOV	%R10D,%R15D;  (3) 
+0x2779;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;ADD	%R14D,%R11D;  (3) 
+0x277c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;MOV	%R11D,%R13D;  (3) 
+0x277f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;NEG	%R13D;  (3) 
+0x2782;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;CMOVS	%R11D,%R13D;  (3) 
+0x2786;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;MOVZX	-0x2(%RDX),%R11D;  (3) 
+0x278b;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;SUB	%EDI,%R15D;  (3) 
+0x278e;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;SUB	%R11D,%EBP;  (3) 
+0x2791;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;LEA	(%R15,%RBP,2),%EBP;  (3) 
+0x2795;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;ADD	%R14D,%EBP;  (3) 
+0x2798;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;MOV	%EBP,%R14D;  (3) 
+0x279b;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;NEG	%R14D;  (3) 
+0x279e;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;CMOVNS	%R14D,%EBP;  (3) 
+0x27a2;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;ADD	%EBP,%R13D;  (3) 
+0x27a5;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;CMP	$0x64,%R13D;  (3) 
+0x27a9;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;JG	293f <main._omp_fn.0+0x13ff>;  (3) 
+0x27af;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;MOV	%R13B,(%RSI);  (3) 
+0x27b2;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;ADD	$0x4,%R12D;  (3) 
+0x27b6;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;ADD	$0x4,%RDX;  (3) 
+0x27ba;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;ADD	$0x4,%RSI;  (3) 
+0x27be;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;CMP	$0xefc,%R12D;  (3) 
+0x27c5;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;JNE	2651 <main._omp_fn.0+0x1111>;  (3) 
+0x27cb;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;MOVZX	0xefe(%RCX),%EDI;
+0x27d2;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;MOVZX	0xf02(%RCX),%EBX;
+0x27d9;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;MOVZX	0xf01(%RCX),%R9D;
+0x27e1;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;MOVZX	0xeff(%RCX),%ESI;
+0x27e8;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;MOVZX	0xf04(%RCX),%R12D;
+0x27f0;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;MOVZX	0xefc(%RCX),%EDX;
+0x27f7;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;MOVZX	0xf03(%RCX),%R11D;
+0x27ff;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;MOVZX	0xefd(%RCX),%R15D;
+0x2807;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;MOV	%EDI,%R10D;
+0x280a;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;SUB	%EBX,%R10D;
+0x280d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;SUB	%ESI,%R9D;
+0x2810;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:212;SUB	%EDX,%R12D;
+0x2813;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;LEA	(%R10,%R9,2),%R8D;
+0x2817;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:214;ADD	%R12D,%R8D;
+0x281a;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;MOV	%R8D,%R13D;
+0x281d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;NEG	%R13D;
+0x2820;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;CMOVS	%R8D,%R13D;
+0x2824;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;SUB	%R15D,%R11D;
+0x2827;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;SUB	%EDI,%EBX;
+0x2829;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;LEA	(%RBX,%R11,2),%EBP;
+0x282d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:215;ADD	%R12D,%EBP;
+0x2830;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;MOV	%EBP,%R14D;
+0x2833;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;NEG	%R14D;
+0x2836;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;CMOVNS	%R14D,%EBP;
+0x283a;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:216;ADD	%EBP,%R13D;
+0x283d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;CMP	$0x64,%R13D;
+0x2841;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;JG	2930 <main._omp_fn.0+0x13f0>;
+0x2847;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;MOV	0x50(%RSP),%RDX;
+0x284c;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;MOV	%R13B,(%RDX,%RAX,1);
+0x2850;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:205;ADD	$0xf00,%RCX;
+0x2857;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:205;ADD	$0xf00,%RAX;
+0x285d;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:205;CMP	0x10(%RSP),%RCX;
+0x2862;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:205;JNE	2310 <main._omp_fn.0+0xdd0>;
+0x2930;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;MOV	0x50(%RSP),%R12;
+0x2935;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;MOVB	$-0x1,(%R12,%RAX,1);
+0x293a;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:207;JMP	2850 <main._omp_fn.0+0x1310>;
+0x293f;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;MOVB	$-0x1,(%RSI);  (3) 
+0x2942;/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/sobel.c:217;JMP	27b2 <main._omp_fn.0+0x1272>;  (3) 

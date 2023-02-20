@@ -220,3 +220,34 @@ sobel.c:322:39: warning: dereferencing ‘void *’ pointer
   322 |       sobel_v4(&p_cframe[i], &p_oframe[i]);
       |                                       ^
 make: *** [Makefile:13: sob_baseline] Interrupt
+sobel.c: In function ‘main’:
+sobel.c:266:32: warning: passing argument 1 of ‘grayscale_weighted’ makes pointer from integer without a cast [-Wint-conversion]
+  266 |       grayscale_weighted(cframe[i]);
+      |                          ~~~~~~^~~
+      |                                |
+      |                                u8 {aka unsigned char}
+sobel.c:17:29: note: expected ‘u8 *’ {aka ‘unsigned char *’} but argument is of type ‘u8’ {aka ‘unsigned char’}
+   17 | void grayscale_weighted(u8 *frame)
+      |                         ~~~~^~~~~
+sobel.c:280:22: warning: passing argument 1 of ‘sobel_v3’ makes pointer from integer without a cast [-Wint-conversion]
+  280 |       sobel_v3(cframe[i], oframe[i]);
+      |                ~~~~~~^~~
+      |                      |
+      |                      u8 {aka unsigned char}
+sobel.c:199:41: note: expected ‘u8 * const restrict’ {aka ‘unsigned char * const restrict’} but argument is of type ‘u8’ {aka ‘unsigned char’}
+  199 | static void sobel_v3(u8* const restrict cframe, u8* restrict oframe)
+      |                      ~~~~~~~~~~~~~~~~~~~^~~~~~
+sobel.c:280:33: warning: passing argument 2 of ‘sobel_v3’ makes pointer from integer without a cast [-Wint-conversion]
+  280 |       sobel_v3(cframe[i], oframe[i]);
+      |                           ~~~~~~^~~
+      |                                 |
+      |                                 u8 {aka unsigned char}
+sobel.c:199:62: note: expected ‘u8 * restrict’ {aka ‘unsigned char * restrict’} but argument is of type ‘u8’ {aka ‘unsigned char’}
+  199 | static void sobel_v3(u8* const restrict cframe, u8* restrict oframe)
+      |                                                 ~~~~~~~~~~~~~^~~~~~
+sobel.c:303:10: error: ‘p_oframe’ undeclared (first use in this function); did you mean ‘oframe’?
+  303 |   fwrite(p_oframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpo);
+      |          ^~~~~~~~
+      |          oframe
+sobel.c:303:10: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:22: sobel_v3] Error 1

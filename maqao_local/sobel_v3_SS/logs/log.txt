@@ -1,0 +1,10 @@
+********************************************************************************
+
+MAQAO 2.16.0 - 766cd4a6ff7535ecc31168278a1f4b2786663ebf::20221116-145906 || 2022/11/16
+
+maqao oneview -R1 -WS --replace xp=./maqao_local/sobel_v3_SS c=config.lua 
+
+CMD:  OMP_NUM_THREADS=1   /usr/local/bin/maqao lprof --include-kernel --sampling-rate=high --xp="/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v3_SS/tools/lprof_npsu_run_0" --mpi-command=""   -- /home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v3_SS/binaries/sobel in/input.raw sout/output.raw
+CMD:  OMP_NUM_THREADS=2   /usr/local/bin/maqao lprof --include-kernel --sampling-rate=high --xp="/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v3_SS/tools/lprof_npsu_run_1" --mpi-command=""   -- /home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v3_SS/binaries/sobel in/input.raw sout/output.raw
+CMD:  OMP_NUM_THREADS=4   /usr/local/bin/maqao lprof --include-kernel --sampling-rate=high --xp="/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v3_SS/tools/lprof_npsu_run_2" --mpi-command=""   -- /home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v3_SS/binaries/sobel in/input.raw sout/output.raw
+CMD:  OMP_NUM_THREADS=8   /usr/local/bin/maqao lprof --include-kernel --sampling-rate=high --xp="/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v3_SS/tools/lprof_npsu_run_3" --mpi-command=""   -- /home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v3_SS/binaries/sobel in/input.raw sout/output.raw

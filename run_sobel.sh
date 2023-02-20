@@ -42,8 +42,8 @@ mkdir -p $dir $dir"/logs"
 cp "plot_sob_all.gp" $dir
 
 #Compiler optimizations
-for opt in "O1" "O2" "O3" "Ofast"
-#for opt in "Ofast"
+#for opt in "O1" "O2" "O3" "Ofast"
+for opt in "Ofast"
 do
     #
     echo "Running with flag: "$opt
@@ -56,12 +56,15 @@ do
     cp "plot_sob.gp" $dir"/"$opt
     
     #Going through sobel code variants
-    for variant in sob_baseline sobel_v1 sobel_v2 sobel_v3
-    #for variant in sobel_v2
+    #for variant in sob_baseline sobel_v1 sobel_v2 sobel_v3
+    for variant in sobel_v3
     do
 	#
 	echo -e "\tVariant: "$variant
 	
+    if [[ "$variant" == "sobel_v3" ]]; then
+        export OMP_NUM_THREADS=8
+    fi
 	#Compile variant
 	make $variant O=$opt >> $dir"/logs/compile.log" 2>> $dir"/logs/compile_err.log"
 	

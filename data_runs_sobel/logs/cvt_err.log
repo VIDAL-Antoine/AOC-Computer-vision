@@ -5273,3 +5273,9 @@ Output #0, mp4, to 'sout/output_sobel_v3.mp4':
       cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
 frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=N/A    frame=   44 fps=0.0 q=5.0 size=    2304kB time=00:00:01.72 bitrate=10973.2kbits/s speed= 3.4x    frame=  106 fps=105 q=5.0 size=    5632kB time=00:00:04.20 bitrate=10985.0kbits/s speed=4.18x    frame=  165 fps=109 q=5.0 size=    8448kB time=00:00:06.56 bitrate=10549.6kbits/s speed=4.35x    frame=  228 fps=113 q=5.0 size=   11264kB time=00:00:09.08 bitrate=10162.4kbits/s speed=4.51x    frame=  294 fps=117 q=5.0 size=   14848kB time=00:00:11.72 bitrate=10378.4kbits/s speed=4.66x    frame=  360 fps= 88 q=5.0 Lsize=   17656kB time=00:00:14.36 bitrate=10072.3kbits/s speed= 3.5x    
 video:17654kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.014726%
+./cvt_vid.sh: line 52: ffmpeg: command not found
+cat: sout/output_ws.raw: No such file or directory
+./cvt_vid.sh: line 52: ffmpeg: command not found
+cat: sout/output_ws.raw: No such file or directory
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found

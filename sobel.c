@@ -187,7 +187,7 @@ static void sobel_v2(u8* const restrict cframe, u8* restrict oframe)
 ######################################
 */
 
-#elif V3
+#elif V3_SS || V3_WS
 
 #include <omp.h>
 
@@ -249,7 +249,7 @@ int main(int argc, char **argv)
   while ((nb_bytes = fread(cframe, sizeof(u8), H * W * 3, fpi)))
   {
       grayscale_weighted(cframe);
-#elif V3
+#elif V3_SS
   #define NB_FRAMES_VIDEO 360 //14 seconds -> 360/14 = 25 fps //obtenu avec ffmpeg
   #define SIZE_FRAME sizeof(u8)*H*W*3  //1*1280*720*3 = 2764800
   #define SIZE_VIDEO NB_FRAMES_VIDEO*SIZE_FRAME //360*2764800 = 995328000
@@ -260,10 +260,29 @@ int main(int argc, char **argv)
   u8 *p_oframe = __builtin_assume_aligned(oframe, 32);
   nb_bytes = fread(p_cframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpi);
 
-  #pragma omp parallel for shared(cframe, oframe, cycles, samples_count, frame_count, nb_bytes)
   for(size_t i = 0; i < SIZE_VIDEO; i+=SIZE_FRAME)
   {
       grayscale_weighted(&p_cframe[i]);
+#elif V3_WS
+  #define NB_FRAMES_VIDEO 360 //14 seconds -> 360/14 = 25 fps //obtenu avec ffmpeg
+  #define SIZE_FRAME sizeof(u8)*H*W*3  //1*1280*720*3 = 2764800
+  #define SIZE_VIDEO NB_FRAMES_VIDEO*SIZE_FRAME //360*2764800 = 995328000
+  #define NB_THREADS 4
+
+  u8 *cframe = _mm_malloc(NB_THREADS * SIZE_FRAME * NB_FRAMES_VIDEO, 32);
+  u8 *oframe = _mm_malloc(NB_THREADS * SIZE_FRAME * NB_FRAMES_VIDEO, 32);
+  u8 *p_cframe = __builtin_assume_aligned(cframe, 32);
+  u8 *p_oframe = __builtin_assume_aligned(oframe, 32);
+  nb_bytes = fread(p_cframe, SIZE_FRAME, NB_THREADS * NB_FRAMES_VIDEO, fpi);
+
+  printf("nbb %llu\n", nb_bytes);
+  #pragma omp parallel for shared(cframe, oframe, cycles, samples_count, frame_count, nb_bytes)
+  for(size_t loop = 0; loop < NB_THREADS; loop++)
+  {
+
+  for(size_t i = 0; i < SIZE_VIDEO; i+=SIZE_FRAME)
+  {
+      grayscale_weighted(&p_cframe[loop*SIZE_FRAME+i]);
 #endif
       
       //Start 
@@ -276,8 +295,10 @@ int main(int argc, char **argv)
       sobel_v1(cframe, oframe, 100.0);
 #elif V2
       sobel_v2(cframe, oframe);
-#elif V3
+#elif V3_SS
       sobel_v3(&p_cframe[i], &p_oframe[i]);
+#elif V3_WS
+      sobel_v3(&p_cframe[loop*SIZE_FRAME+i], &p_oframe[loop*SIZE_FRAME+i]);
 #endif
       
       //Stop
@@ -298,9 +319,13 @@ int main(int argc, char **argv)
 #if BASELINE || V1 || V2
       fwrite(oframe, sizeof(u8), H * W * 3, fpo);
   }
-#elif V3
+#elif V3_SS
   }
   fwrite(p_oframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpo);
+#elif V3_WS
+  }
+  }
+  fwrite(p_oframe, SIZE_FRAME, NB_THREADS*NB_FRAMES_VIDEO, fpo);
 #endif
 
   //

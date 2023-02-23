@@ -19,7 +19,10 @@ sobel_v2:
 	$(CC) -DV2=1 $(CFLAGS) $(OFLAGS) sobel.c common.c -o sobel -lm
 
 sobel_v3:
-	$(CC) -DV3=1 $(CFLAGS) $(OFLAGS) sobel.c common.c -o sobel -lm -fopenmp
+	$(CC) -DV3_SS=1 $(CFLAGS) $(OFLAGS) sobel.c common.c -o sobel -lm -fopenmp
+
+sobel_v3_ws:
+	$(CC) -DV3_WS=1 $(CFLAGS) $(OFLAGS) sobel.c common.c -o sobel -lm -fopenmp
 
 clean:
 	rm -Rf *~ invert sobel

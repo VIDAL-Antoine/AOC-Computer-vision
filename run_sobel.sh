@@ -58,7 +58,7 @@ do
     
     #Going through sobel code variants
     #for variant in sob_baseline sobel_v1 sobel_v2 sobel_v3
-    for variant in sobel_v3_ss
+    for variant in sobel_v3_ws
     do
 	#
 	echo -e "\tVariant: "$variant
@@ -70,8 +70,8 @@ do
 	#Compile variant
 	make $variant O=$opt >> $dir"/logs/compile.log" 2>> $dir"/logs/compile_err.log"
 	
-  if [[ "$variant" != "sobel_v3_ss" ]]; then
-    #Run & select run number & cycles 
+  if [[ "$variant" != "sobel_v3_ws" ]]; then
+    #Run & select run number & cycles
     ./sobel in/input.raw sout/output.raw | cut -d';' -f1,3 > $dir"/"$opt"/data/"$variant
     #./sobel in/input.raw sout/output.raw 2> $dir/"cycles_${opt}_${variant}.dat" | cut -d';' -f1,3 > $dir"/"$opt"/data/"$variant
     

@@ -260,6 +260,7 @@ int main(int argc, char **argv)
   u8 *p_oframe = __builtin_assume_aligned(oframe, 32);
   nb_bytes = fread(p_cframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpi);
 
+  #pragma omp parallel for shared(cframe, oframe, cycles, samples_count, frame_count, nb_bytes)
   for(size_t i = 0; i < SIZE_VIDEO; i+=SIZE_FRAME)
   {
       grayscale_weighted(&p_cframe[i]);
@@ -275,8 +276,7 @@ int main(int argc, char **argv)
   u8 *p_oframe = __builtin_assume_aligned(oframe, 32);
   nb_bytes = fread(p_cframe, SIZE_FRAME, NB_THREADS * NB_FRAMES_VIDEO, fpi);
 
-  printf("nbb %llu\n", nb_bytes);
-  #pragma omp parallel for shared(cframe, oframe, cycles, samples_count, frame_count, nb_bytes)
+  #pragma omp parallel for shared(cframe, oframe, cycles, samples_count, frame_count, nb_bytes) num_threads(NB_THREADS) collapse(2)
   for(size_t loop = 0; loop < NB_THREADS; loop++)
   {
 

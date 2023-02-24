@@ -484,3 +484,100 @@ make: *** [Makefile:25: sobel_v3_ss] Error 1
 make: Warning: File 'Makefile' has modification time 155 s in the future
 make: warning:  Clock skew detected.  Your build may be incomplete.
 make: *** No rule to make target 'sobel_v3_ss'.  Stop.
+sobel.c:325:19: error: expected ‘)’ before ‘sizeof’
+  325 |   fwrite(p_oframe, SIZE_FRAME, NB_THREADS*NB_FRAMES_VIDEO, fpo);
+      |                   ^
+      |                   )
+sobel.c:329:3: warning: data definition has no type or storage class
+  329 |   sort(cycles, samples_count);
+      |   ^~~~
+sobel.c:329:3: warning: type defaults to ‘int’ in declaration of ‘sort’ [-Wimplicit-int]
+sobel.c:329:3: warning: parameter names (without types) in function declaration
+sobel.c:329:3: error: conflicting types for ‘sort’
+In file included from sobel.c:14:
+common.h:27:6: note: previous declaration of ‘sort’ was here
+   27 | void sort(u64 *a, u64 n);
+      |      ^~~~
+sobel.c:335:3: warning: data definition has no type or storage class
+  335 |   mea = mean(cycles, samples_count);
+      |   ^~~
+sobel.c:335:3: warning: type defaults to ‘int’ in declaration of ‘mea’ [-Wimplicit-int]
+sobel.c:335:3: error: conflicting types for ‘mea’
+sobel.c:332:22: note: previous declaration of ‘mea’ was here
+  332 |   f64 min, max, avg, mea, dev, bpc;
+      |                      ^~~
+sobel.c:335:14: error: ‘cycles’ undeclared here (not in a function)
+  335 |   mea = mean(cycles, samples_count);
+      |              ^~~~~~
+sobel.c:335:22: error: ‘samples_count’ undeclared here (not in a function)
+  335 |   mea = mean(cycles, samples_count);
+      |                      ^~~~~~~~~~~~~
+sobel.c:338:3: warning: data definition has no type or storage class
+  338 |   dev = stddev(cycles, samples_count);
+      |   ^~~
+sobel.c:338:3: warning: type defaults to ‘int’ in declaration of ‘dev’ [-Wimplicit-int]
+sobel.c:338:3: error: conflicting types for ‘dev’
+sobel.c:332:27: note: previous declaration of ‘dev’ was here
+  332 |   f64 min, max, avg, mea, dev, bpc;
+      |                           ^~~
+sobel.c:341:3: warning: data definition has no type or storage class
+  341 |   min = cycles[0];
+      |   ^~~
+sobel.c:341:3: warning: type defaults to ‘int’ in declaration of ‘min’ [-Wimplicit-int]
+sobel.c:341:3: error: conflicting types for ‘min’
+sobel.c:332:7: note: previous declaration of ‘min’ was here
+  332 |   f64 min, max, avg, mea, dev, bpc;
+      |       ^~~
+sobel.c:342:3: warning: data definition has no type or storage class
+  342 |   max = cycles[samples_count - 1];
+      |   ^~~
+sobel.c:342:3: warning: type defaults to ‘int’ in declaration of ‘max’ [-Wimplicit-int]
+sobel.c:342:3: error: conflicting types for ‘max’
+sobel.c:332:12: note: previous declaration of ‘max’ was here
+  332 |   f64 min, max, avg, mea, dev, bpc;
+      |            ^~~
+sobel.c:343:3: warning: data definition has no type or storage class
+  343 |   avg = (min + max) / 2.0;
+      |   ^~~
+sobel.c:343:3: warning: type defaults to ‘int’ in declaration of ‘avg’ [-Wimplicit-int]
+sobel.c:343:3: error: conflicting types for ‘avg’
+sobel.c:332:17: note: previous declaration of ‘avg’ was here
+  332 |   f64 min, max, avg, mea, dev, bpc;
+      |                 ^~~
+sobel.c:343:9: error: initializer element is not constant
+  343 |   avg = (min + max) / 2.0;
+      |         ^
+sobel.c:374:3: warning: data definition has no type or storage class
+  374 |   _mm_free(cframe);
+      |   ^~~~~~~~
+sobel.c:374:3: warning: type defaults to ‘int’ in declaration of ‘_mm_free’ [-Wimplicit-int]
+sobel.c:374:3: warning: parameter names (without types) in function declaration
+sobel.c:374:3: error: conflicting types for ‘_mm_free’
+In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/xmmintrin.h:34,
+                 from /usr/lib/gcc/x86_64-linux-gnu/9/include/emmintrin.h:31,
+                 from sobel.c:7:
+/usr/lib/gcc/x86_64-linux-gnu/9/include/mm_malloc.h:52:1: note: previous definition of ‘_mm_free’ was here
+   52 | _mm_free (void *__ptr)
+      | ^~~~~~~~
+sobel.c:375:3: warning: data definition has no type or storage class
+  375 |   _mm_free(oframe);
+      |   ^~~~~~~~
+sobel.c:375:3: warning: type defaults to ‘int’ in declaration of ‘_mm_free’ [-Wimplicit-int]
+sobel.c:375:3: warning: parameter names (without types) in function declaration
+sobel.c:378:3: warning: data definition has no type or storage class
+  378 |   fclose(fpi);
+      |   ^~~~~~
+sobel.c:378:3: warning: type defaults to ‘int’ in declaration of ‘fclose’ [-Wimplicit-int]
+sobel.c:378:3: warning: parameter names (without types) in function declaration
+sobel.c:379:3: warning: data definition has no type or storage class
+  379 |   fclose(fpo);
+      |   ^~~~~~
+sobel.c:379:3: warning: type defaults to ‘int’ in declaration of ‘fclose’ [-Wimplicit-int]
+sobel.c:379:3: warning: parameter names (without types) in function declaration
+sobel.c:381:3: error: expected identifier or ‘(’ before ‘return’
+  381 |   return  0;
+      |   ^~~~~~
+sobel.c:382:1: error: expected identifier or ‘(’ before ‘}’ token
+  382 | }
+      | ^
+make: *** [Makefile:25: sobel_v3_ws] Error 1

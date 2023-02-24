@@ -276,13 +276,10 @@ int main(int argc, char **argv)
   u8 *p_oframe = __builtin_assume_aligned(oframe, 32);
   nb_bytes = fread(p_cframe, SIZE_FRAME, NB_THREADS * NB_FRAMES_VIDEO, fpi);
 
-  #pragma omp parallel for shared(cframe, oframe, cycles, samples_count, frame_count, nb_bytes) num_threads(NB_THREADS) collapse(2)
-  for(size_t loop = 0; loop < NB_THREADS; loop++)
+  #pragma omp parallel for shared(cframe, oframe, cycles, samples_count, frame_count, nb_bytes) num_threads(NB_THREADS)
+  for(size_t i = 0; i < NB_THREADS * SIZE_VIDEO; i+=SIZE_FRAME)
   {
-
-  for(size_t i = 0; i < SIZE_VIDEO; i+=SIZE_FRAME)
-  {
-      grayscale_weighted(&p_cframe[loop*SIZE_FRAME+i]);
+      grayscale_weighted(&p_cframe[i]);
 #endif
       
       //Start 
@@ -295,10 +292,8 @@ int main(int argc, char **argv)
       sobel_v1(cframe, oframe, 100.0);
 #elif V2
       sobel_v2(cframe, oframe);
-#elif V3_SS
+#elif V3_SS || V3_WS
       sobel_v3(&p_cframe[i], &p_oframe[i]);
-#elif V3_WS
-      sobel_v3(&p_cframe[loop*SIZE_FRAME+i], &p_oframe[loop*SIZE_FRAME+i]);
 #endif
       
       //Stop
@@ -323,7 +318,6 @@ int main(int argc, char **argv)
   }
   fwrite(p_oframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpo);
 #elif V3_WS
-  }
   }
   fwrite(p_oframe, SIZE_FRAME, NB_THREADS*NB_FRAMES_VIDEO, fpo);
 #endif

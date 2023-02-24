@@ -241,3 +241,13 @@ gcc -DV3=1 -g3 -march=native -funroll-loops -Ofast sobel.c common.c -o sobel -lm
 gcc -DV3=1 -DWEAK_SCALING=1 -g3 -march=native -funroll-loops -Ofast sobel.c common.c -o sobel -lm -fopenmp
 gcc -DV3=1 -DWEAK_SCALING=1 -g3 -march=native -funroll-loops -Ofast sobel.c common.c -o sobel -lm -fopenmp
 gcc -DV3=1 -DWS=1 -g3 -march=native -funroll-loops -Ofast sobel.c common.c -o sobel -lm -fopenmp
+gcc -DV3_WS=1 -g3 -march=native -funroll-loops -Ofast sobel.c common.c -o sobel -lm -fopenmp
+gcc -DV3_WS=1 -g3 -march=native -funroll-loops -Ofast sobel.c common.c -o sobel -lm -fopenmp
+gcc -DV3_WS=1 -g3 -march=native -funroll-loops -Ofast sobel.c common.c -o sobel -lm -fopenmp
+gcc -DV3_WS=1 -g3 -march=native -funroll-loops -Ofast sobel.c common.c -o sobel -lm -fopenmp
+gcc -DV3_WS=1 -g3 -march=native -funroll-loops -Ofast sobel.c common.c -o sobel -lm -fopenmp
+gcc -DV3_SS=1 -g3 -march=native -funroll-loops -Ofast sobel.c common.c -o sobel -lm -fopenmp
+gcc -DV3_WS=1 -g3 -march=native -funroll-loops -Ofast sobel.c common.c -o sobel -lm -fopenmp
+gcc -DV3_WS=1 -g3 -march=native -funroll-loops -Ofast sobel.c common.c -o sobel -lm -fopenmp
+gcc -DV3_SS=1 -g3 -march=native -funroll-loops -Ofast sobel.c common.c -o sobel -lm -fopenmp
+gcc -DV3_WS=1 -g3 -march=native -funroll-loops -Ofast sobel.c common.c -o sobel -lm -fopenmp

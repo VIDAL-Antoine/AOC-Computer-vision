@@ -287,6 +287,7 @@ multiruns_params = {
   {name="2T", envv_OMP_NUM_THREADS="2"},
   {name="4T", envv_OMP_NUM_THREADS="4"},
   {name="8T", envv_OMP_NUM_THREADS="8"},
+  {name="16T", envv_OMP_NUM_THREADS="16"},
 }
 
 -- Specify which run will be used as reference when scalability reports are generated.

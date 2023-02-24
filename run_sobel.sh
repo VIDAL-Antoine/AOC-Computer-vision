@@ -66,8 +66,8 @@ do
 	#
 	echo -e "\tVariant: "$variant
 	
-  if [[ "$variant" == "sobel_v3*" ]]; then
-      export OMP_NUM_THREADS=32
+  if [[ "$variant" == "sobel_v3" ]]; then
+      export OMP_NUM_THREADS=16
   fi
 
 	#Compile variant

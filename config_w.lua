@@ -38,7 +38,7 @@ external_libraries = {
 --   example: "<executable> -n4"
 -- Use an empty string or remove the declaration if no 
 -- specific command is required to run the application
-run_command    = "<executable> in/input.raw sout/output.raw"
+run_command    = "<executable> in/input_ws.raw sout/output_ws.raw"
 
 -- Script to use with job scheduler. 
 -- If your application must be run on a cluster using a job scheduler (ex. SLURM), fill
@@ -284,9 +284,8 @@ cqa_params = {}
 base_run_name="1T"
 envv_OMP_NUM_THREADS="1"
 multiruns_params = {
-  {name="2T", envv_OMP_NUM_THREADS="2", run_command = "<executable> in/input.raw sout/output.raw"},
-  {name="4T", envv_OMP_NUM_THREADS="4", run_command = "<executable> in/input.raw sout/output.raw"},
-  {name="8T", envv_OMP_NUM_THREADS="8", run_command = "<executable> in/input.raw sout/output.raw"},
+  {name="2T", envv_OMP_NUM_THREADS="2"},
+  {name="4T", envv_OMP_NUM_THREADS="4"},
 }
 
 -- Specify which run will be used as reference when scalability reports are generated.

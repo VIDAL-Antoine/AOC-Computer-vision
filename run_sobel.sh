@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-~/ffmpeg -version >> "/dev/null"
+ffmpeg -version >> "/dev/null"
 
 if [ $? -ne 0 ] 
 then
@@ -10,13 +10,13 @@ then
 fi
 
 #
-#gnuplot --version >> "/dev/null"
+gnuplot --version >> "/dev/null"
 
-#if [ $? -ne 0 ] 
-#then
-#    echo "Error: Cannot invoke GNUPLOT"
-#    exit 1
-#fi
+if [ $? -ne 0 ] 
+then
+    echo "Error: Cannot invoke GNUPLOT"
+    exit 1
+fi
 
 #
 echo -e "[BEGIN]\n"
@@ -85,7 +85,7 @@ do
     cd $dir"/"$opt
 
     #Generate the plot
-    #gnuplot -c "plot_sob.gp" > "plot_"$opt".png"
+    gnuplot -c "plot_sob.gp" > "plot_"$opt".png"
 
     cd ../..
 
@@ -95,7 +95,7 @@ done
 #
 cd $dir
 
-#gnuplot -c "plot_sob_all.gp" > "plot_all.png" 
+gnuplot -c "plot_sob_all.gp" > "plot_all.png" 
 
 cd ..
 

@@ -1,0 +1,12 @@
+block_id;module;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
+23;sobel;sobel.c:21-30;40.76;5.65;5.65;5.65;5.65;0;1;
+31;sobel;sobel.c:166-176;34.97;4.85;4.85;4.85;4.85;0;1;
+28;sobel;sobel.c:171-176;0.81;0.11;0.11;0.11;0.11;0;1;
+33;sobel;sobel.c:166-176;0.05;0.01;0.01;0.01;0.01;0;1;
+27;sobel;sobel.c:166-176;0.03;0;0;0;0;0;1;
+32;sobel;sobel.c:171-176;0.03;0;0;0;0;0;1;
+25;sobel;sobel.c:166-166,rdtsc.h:11-11;0.01;0;0;0;0;0;1;
+133;sobel;common.c:9-10;0.01;0;0;0;0;0;1;
+24;sobel;rdtsc.h:9-11;0.01;0;0;0;0;0;1;
+29;sobel;sobel.c:164-164;0.01;0;0;0;0;0;1;
+34;sobel;sobel.c:166-166;0.01;0;0;0;0;0;1;

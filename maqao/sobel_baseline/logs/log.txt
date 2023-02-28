@@ -1,0 +1,19 @@
+********************************************************************************
+
+MAQAO 2.15.5 - 0b66882c33fcd95ef103e22d5fec6c0d2ff1b5e2::20220328-144625 || 2022/03/28
+
+maqao oneview -R1 --replace xp=./maqao/sobel_baseline lprof_params=--include-kernel --sampling-rate=high executable=sobel run_command=<executable> in/input.raw sout/output.raw 
+
+CMD:   /opt/other/maqao/2.15.5/bin/maqao lprof --include-kernel --sampling-rate=high --xp="/scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_baseline/tools/lprof_npsu_run_0" --mpi-command=""   -- /scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_baseline/binaries/sobel in/input.raw sout/output.raw
+In run , 2 loops were discarded from static analysis because their coverage
+are lower than object_coverage_threshold value (0.01%).
+That represents 0% of the execution time. To include them, change the value
+in the experiment directory configuration file, then rerun the command with the additionnal parameter
+--force-static-analysis
+
+9 functions were discarded from static analysis because their coverage
+are lower than object_coverage_threshold value (0.01%).
+That represents 0% of the execution time. To include them, change the value
+in the experiment directory configuration file, then rerun the command with the additionnal parameter
+--force-static-analysis
+

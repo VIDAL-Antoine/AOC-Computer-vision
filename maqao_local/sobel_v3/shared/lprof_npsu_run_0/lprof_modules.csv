@@ -1,5 +1,0 @@
-name;time_p;time_s;cpi_ratio;
-/home/vidal/Desktop/AOC_oseret/Projet/AOC-Computer-vision/maqao_local/sobel_v3/binaries/sobel;66.87;1.66;;
-kernel;32.77;0.82;;
-/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0;0.32;0.01;;
-/usr/lib/x86_64-linux-gnu/libc.so.6;0.04;0;;

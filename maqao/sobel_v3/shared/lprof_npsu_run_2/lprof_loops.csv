@@ -1,0 +1,8 @@
+loop_id;module;function_name;function_id;source_info;level;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
+0;sobel;main._omp_fn.0;8;sobel.c:21-30;Innermost;32.82;2.63;1.37;1.39;1.41;14.64928817749;4;
+1;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;28.79;2.31;1.19;1.22;1.24;12.882468223572;4;
+5;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;0.68;0.05;0.02;0.03;0.03;0.37234374880791;4;
+4;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;0.24;0.02;0.01;0.01;0.01;0.1557569205761;4;
+2;sobel;main._omp_fn.0;8;sobel.c:202-313;InBetween;0.08;0.01;0;0;0;0.064625449478626;4;
+3;sobel;main._omp_fn.0;8;sobel.c:21-330,rdtsc.h:9-11,stdio2.h:100-100;Outermost;0.01;0;0;0;0;0;1;
+9;sobel;sort;12;common.c:9-15;Innermost;0.01;0;0;0;0;0;1;

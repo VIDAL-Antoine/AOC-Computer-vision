@@ -243,8 +243,8 @@ int main(int argc, char **argv)
   //Read & process video frames
 #if BASELINE || V1 || V2
   u64 size = sizeof(u8) * H * W * 3; //1*1280*720*3 = 2764800
-  u8 *cframe = _mm_malloc(size, 32);
-  u8 *oframe = _mm_malloc(size, 32);
+  u8 *cframe = _mm_malloc(size, 64);
+  u8 *oframe = _mm_malloc(size, 64);
 
   while ((nb_bytes = fread(cframe, sizeof(u8), H * W * 3, fpi)))
   {
@@ -253,33 +253,50 @@ int main(int argc, char **argv)
   #define NB_FRAMES_VIDEO 360 //14 seconds -> 360/14 = 25 fps //obtenu avec ffmpeg
   #define SIZE_FRAME sizeof(u8)*H*W*3  //1*1280*720*3 = 2764800
   #define SIZE_VIDEO NB_FRAMES_VIDEO*SIZE_FRAME //360*2764800 = 995328000
+ 
+  u8* cframe = NULL;
+  u8* oframe = NULL;
 
-  u8 *cframe = _mm_malloc(SIZE_FRAME * NB_FRAMES_VIDEO, 32);
-  u8 *oframe = _mm_malloc(SIZE_FRAME * NB_FRAMES_VIDEO, 32);
-  u8 *p_cframe = __builtin_assume_aligned(cframe, 32);
-  u8 *p_oframe = __builtin_assume_aligned(oframe, 32);
-  nb_bytes = fread(p_cframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpi);
+  if (posix_memalign((void*)&cframe, 64, SIZE_FRAME * NB_FRAMES_VIDEO))
+    return 1;
+
+  if (posix_memalign((void*)&oframe, 64, SIZE_FRAME * NB_FRAMES_VIDEO))
+    return 1;
+
+  cframe = __builtin_assume_aligned(cframe, 64);
+  oframe = __builtin_assume_aligned(oframe, 64);
+  
+  nb_bytes = fread(cframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpi);
 
   #pragma omp parallel for shared(cframe, oframe, cycles, samples_count, frame_count, nb_bytes)
   for(size_t i = 0; i < SIZE_VIDEO; i+=SIZE_FRAME)
   {
-      grayscale_weighted(&p_cframe[i]);
+      grayscale_weighted(&cframe[i]);
 #elif V3_WS
   #define NB_FRAMES_VIDEO 360 //14 seconds -> 360/14 = 25 fps //obtenu avec ffmpeg
   #define SIZE_FRAME sizeof(u8)*H*W*3  //1*1280*720*3 = 2764800
   #define SIZE_VIDEO NB_FRAMES_VIDEO*SIZE_FRAME //360*2764800 = 995328000
-  #define NB_THREADS 4
 
-  u8 *cframe = _mm_malloc(NB_THREADS * SIZE_FRAME * NB_FRAMES_VIDEO, 32);
-  u8 *oframe = _mm_malloc(NB_THREADS * SIZE_FRAME * NB_FRAMES_VIDEO, 32);
-  u8 *p_cframe = __builtin_assume_aligned(cframe, 32);
-  u8 *p_oframe = __builtin_assume_aligned(oframe, 32);
-  nb_bytes = fread(p_cframe, SIZE_FRAME, NB_THREADS * NB_FRAMES_VIDEO, fpi);
+  u8 NB_THREADS = omp_get_max_threads();
+
+  u8 *cframe = NULL;
+  u8 *oframe = NULL;
+
+  if (posix_memalign((void*)&cframe, 64, NB_THREADS * SIZE_FRAME * NB_FRAMES_VIDEO))
+    return 1;
+
+  if (posix_memalign((void*)&oframe, 64, NB_THREADS * SIZE_FRAME * NB_FRAMES_VIDEO))
+    return 1;
+
+  cframe = __builtin_assume_aligned(cframe, 64);
+  oframe = __builtin_assume_aligned(oframe, 64);
+
+  nb_bytes = fread(cframe, SIZE_FRAME, NB_THREADS * NB_FRAMES_VIDEO, fpi);
 
   #pragma omp parallel for shared(cframe, oframe, cycles, samples_count, frame_count, nb_bytes) num_threads(NB_THREADS)
   for(size_t i = 0; i < NB_THREADS * SIZE_VIDEO; i+=SIZE_FRAME)
   {
-      grayscale_weighted(&p_cframe[i]);
+      grayscale_weighted(&cframe[i]);
 #endif
       
       //Start 
@@ -293,7 +310,7 @@ int main(int argc, char **argv)
 #elif V2
       sobel_v2(cframe, oframe);
 #elif V3_SS || V3_WS
-      sobel_v3(&p_cframe[i], &p_oframe[i]);
+      sobel_v3(&cframe[i], &oframe[i]);
 #endif
       
       //Stop
@@ -316,10 +333,10 @@ int main(int argc, char **argv)
   }
 #elif V3_SS
   }
-  fwrite(p_oframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpo);
+  fwrite(oframe, SIZE_FRAME, NB_FRAMES_VIDEO, fpo);
 #elif V3_WS
   }
-  fwrite(p_oframe, SIZE_FRAME, NB_THREADS*NB_FRAMES_VIDEO, fpo);
+  fwrite(oframe, SIZE_FRAME, NB_THREADS*NB_FRAMES_VIDEO, fpo);
 #endif
 
   //
@@ -353,7 +370,10 @@ int main(int argc, char **argv)
 	  bpc,
 	  (dev * 100.0 / mea));
   
-#elif V3
+  _mm_free(cframe);
+  _mm_free(oframe);
+
+#elif V3_SS || V3_WS
   bpc = (SIZE_FRAME << 1) / mea;
 
   //
@@ -365,11 +385,11 @@ int main(int argc, char **argv)
 	  mea,
 	  bpc,
 	  (dev * 100.0 / mea));
-#endif
 
-  //
-  _mm_free(cframe);
-  _mm_free(oframe);
+  free(cframe);
+  free(oframe);
+
+#endif
 
   //
   fclose(fpi);
@@ -377,3 +397,4 @@ int main(int argc, char **argv)
 
   return  0;
 }
+

@@ -1,9 +1,5 @@
 #!/bin/bash
 
-#Load ffmpeg alias because ffmpeg isn't installed on fob1
-shopt -s expand_aliases
-source ~/.bashrc
-
 #
 ~/ffmpeg -version >> "/dev/null"
 
@@ -46,8 +42,8 @@ mkdir -p $dir $dir"/logs"
 cp "plot_sob_all.gp" $dir
 
 #Compiler optimizations
-#for opt in "O1" "O2" "O3" "Ofast"
-for opt in "Ofast"
+for opt in "O1" "O2" "O3" "Ofast"
+#for opt in "Ofast"
 do
     #
     echo "Running with flag: "$opt
@@ -60,23 +56,26 @@ do
     cp "plot_sob.gp" $dir"/"$opt
     
     #Going through sobel code variants
-    #for variant in sob_baseline sobel_v1 sobel_v2 sobel_v3
-    for variant in sobel_v3
+    for variant in sob_baseline sobel_v1 sobel_v2 sobel_v3
+    #for variant in sobel_v3
     do
 	#
 	echo -e "\tVariant: "$variant
 	
   if [[ "$variant" == "sobel_v3" ]]; then
-      export OMP_NUM_THREADS=16
+      export OMP_NUM_THREADS=32
   fi
 
 	#Compile variant
+  echo Compiling...
 	make $variant O=$opt >> $dir"/logs/compile.log" 2>> $dir"/logs/compile_err.log"
 	
   #Run & select run number & cycles
+  echo Running Sobel...
   ./sobel in/input.raw sout/output.raw | cut -d';' -f1,3 > $dir"/"$opt"/data/"$variant
     
   #Convert raw file into mp4 video
+  echo Converting raw into mp4...
   ./cvt_vid.sh r2v "sout/output.raw" "sout/output_"$variant".mp4" >> $dir"/logs/cvt.log" 2>> $dir"/logs/cvt_err.log"
 
 	echo

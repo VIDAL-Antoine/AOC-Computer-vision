@@ -1,0 +1,12 @@
+function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;cats;
+8;sobel;main._omp_fn.0;sobel.c:21-330,rdtsc.h:9-11,stdio2.h:100-100;57.45;10.78;;;;;;"100,0,0,0,0,0,0,0,0,0";
+-1;kernel;unknown_kernel_region;;42.49;7.97;;;;;;"0,0,0,0,97.303661183114,2.6963388168856,0,0,0,0";
+1905;libc-2.31.so;__nss_database_lookup;;0.01;0;;;;;;"0,0,0,0,0,0,0,0,0,100";
+1458;libc-2.31.so;__fprintf_chk;;0.01;0;;;;;;"0,0,0,0,0,0,100,0,0,0";
+306;libc-2.31.so;cuserid;;0.01;0;;;;;;"0,0,0,0,100,0,0,0,0,0";
+718;libc-2.31.so;explicit_bzero;;0.01;0;;;;;;"0,0,0,0,0,0,0,0,100,0";
+550;libc-2.31.so;__libc_alloca_cutoff;;0.01;0;;;;;;"0,0,0,0,0,0,0,0,100,0";
+507;libc-2.31.so;_IO_file_overflow;;0.01;0;;;;;;"0,0,0,0,0,0,100,0,0,0";
+498;libc-2.31.so;_IO_file_xsputn;;0.01;0;;;;;;"0,0,0,0,0,0,100,0,0,0";
+369;libc-2.31.so;_IO_padn;;0.01;0;;;;;;"0,0,0,0,0,0,100,0,0,0";
+299;libc-2.31.so;swapcontext;;0.01;0;;;;;;"0,0,0,0,100,0,0,0,0,0";

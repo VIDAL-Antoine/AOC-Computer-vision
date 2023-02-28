@@ -1,7 +1,0 @@
-module;src_file;score;issue;opts;
-sobel;;0.25;"-g is missing, it is needed to have more accurate reports. ";"";
-sobel;;0.25;"-O2, -O3 or -Ofast is missing. ";"";
-sobel;;0.25;"-x(target) or -ax(target) is missing. ";"";
-sobel;sobel.c;0.25;"-O2, -O3 or -Ofast is missing. ";"GNU C17 11.3.0 -mtune=generic -march=x86-64 -g3 -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection";
-sobel;sobel.c;0.25;"-march=(target) is missing. ";"GNU C17 11.3.0 -mtune=generic -march=x86-64 -g3 -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection";
-sobel;sobel.c;0.25;"-funroll-loops is missing. ";"GNU C17 11.3.0 -mtune=generic -march=x86-64 -g3 -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection";

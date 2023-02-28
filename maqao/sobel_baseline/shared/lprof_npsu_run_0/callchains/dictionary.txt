@@ -1,0 +1,18 @@
+sobel_baseline - /scratch/chps/users/user22024/Projet/AOC-Computer-vision/sobel.c:89
+sobel
+main - /scratch/chps/users/user22024/Projet/AOC-Computer-vision/sobel.c:317
+sobel_baseline - /scratch/chps/users/user22024/Projet/AOC-Computer-vision/sobel.c:88
+__libc_start_main - :0
+libc-2.31.so
+main - /scratch/chps/users/user22024/Projet/AOC-Computer-vision/sobel.c:303
+main - /scratch/chps/users/user22024/Projet/AOC-Computer-vision/sobel.c:349
+unknown kernel region
+kernel
+__read - :0
+__write - :0
+_IO_fprintf - :0
+psiginfo - :0
+vprintf - :0
+.text@start - :0
+ld-2.31.so
+__get_cpu_features - :0

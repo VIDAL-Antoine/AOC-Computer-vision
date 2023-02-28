@@ -1,0 +1,12 @@
+main - /scratch/chps/users/user22024/Projet/AOC-Computer-vision/sobel.c:317
+sobel
+__libc_start_main - :0
+libc-2.31.so
+unknown kernel region
+kernel
+__read - :0
+__write - :0
+__open - :0
+__fprintf_chk - :0
+psiginfo - :0
+vprintf - :0

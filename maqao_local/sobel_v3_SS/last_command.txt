@@ -1,1 +1,0 @@
-maqao oneview -R1 -WS --replace xp=./maqao_local/sobel_v3_SS c=config.lua 

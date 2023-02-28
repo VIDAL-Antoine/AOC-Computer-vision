@@ -1,0 +1,1 @@
+maqao oneview -R1 --replace xp=./maqao/sobel_v2 lprof_params=--include-kernel --sampling-rate=high executable=sobel run_command=<executable> in/input.raw sout/output.raw 

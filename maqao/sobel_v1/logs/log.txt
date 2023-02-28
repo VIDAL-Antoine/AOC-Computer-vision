@@ -1,0 +1,7 @@
+********************************************************************************
+
+MAQAO 2.15.5 - 0b66882c33fcd95ef103e22d5fec6c0d2ff1b5e2::20220328-144625 || 2022/03/28
+
+maqao oneview -R1 --replace xp=./maqao/sobel_v1 lprof_params=--include-kernel --sampling-rate=high executable=sobel run_command=<executable> in/input.raw sout/output.raw 
+
+CMD:   /opt/other/maqao/2.15.5/bin/maqao lprof --include-kernel --sampling-rate=high --xp="/scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v1/tools/lprof_npsu_run_0" --mpi-command=""   -- /scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v1/binaries/sobel in/input.raw sout/output.raw

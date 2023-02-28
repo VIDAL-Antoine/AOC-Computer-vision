@@ -1,0 +1,12 @@
+/scratch/chps/users/user22024/Projet/AOC-Computer-vision/sobel.c: 60 - 68
+--------------------------------------------------------------------------------
+
+60: {
+61:   i32 r = 0;
+62: 
+63:   for (u64 i = 0; i < fh; i++)
+64:     for (u64 j = 0; j < fw; j++)
+65:       r += m[INDEX(i, j, fw)] * f[INDEX(i, j, fw)];
+66:   
+67:   return r;
+68: }

@@ -5,7 +5,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1493.639
+cpu MHz		: 1460.562
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -32,7 +32,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1436.728
+cpu MHz		: 1325.552
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -59,7 +59,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1607.450
+cpu MHz		: 1260.093
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -86,7 +86,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1608.836
+cpu MHz		: 1359.669
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -113,7 +113,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1457.395
+cpu MHz		: 1362.830
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -140,7 +140,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1337.862
+cpu MHz		: 1371.524
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -167,7 +167,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1424.029
+cpu MHz		: 1373.794
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -194,7 +194,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1437.901
+cpu MHz		: 1376.864
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -221,7 +221,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1376.176
+cpu MHz		: 1430.076
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -248,7 +248,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1352.093
+cpu MHz		: 1361.185
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -275,7 +275,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1402.361
+cpu MHz		: 1313.675
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -302,7 +302,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1396.819
+cpu MHz		: 1348.066
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -329,7 +329,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1457.550
+cpu MHz		: 1585.278
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -356,7 +356,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1379.358
+cpu MHz		: 1509.063
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -383,7 +383,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1382.565
+cpu MHz		: 1332.862
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -410,7 +410,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1426.481
+cpu MHz		: 1350.495
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -437,7 +437,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1546.478
+cpu MHz		: 1373.794
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -464,7 +464,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1453.832
+cpu MHz		: 1327.334
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -491,7 +491,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1459.176
+cpu MHz		: 1567.858
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -518,7 +518,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1414.959
+cpu MHz		: 1476.637
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -572,7 +572,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1424.029
+cpu MHz		: 1536.500
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -599,7 +599,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1471.648
+cpu MHz		: 1459.176
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -626,7 +626,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1566.432
+cpu MHz		: 1405.889
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -653,7 +653,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1446.705
+cpu MHz		: 1436.728
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -680,7 +680,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1556.455
+cpu MHz		: 1418.990
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -707,7 +707,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1459.176
+cpu MHz		: 1387.748
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -734,7 +734,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1546.478
+cpu MHz		: 1407.904
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -761,7 +761,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1446.705
+cpu MHz		: 1441.162
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -788,7 +788,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1526.523
+cpu MHz		: 1517.971
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -815,7 +815,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1446.705
+cpu MHz		: 1486.614
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -842,7 +842,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1608.836
+cpu MHz		: 1558.949
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -869,7 +869,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1585.278
+cpu MHz		: 1596.364
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -896,7 +896,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1430.076
+cpu MHz		: 1583.892
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -923,7 +923,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1624.871
+cpu MHz		: 1371.875
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -950,7 +950,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1536.500
+cpu MHz		: 1546.478
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -977,7 +977,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1618.536
+cpu MHz		: 1471.648
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1004,7 +1004,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1418.990
+cpu MHz		: 1396.819
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1031,7 +1031,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1471.648
+cpu MHz		: 1681.884
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1058,7 +1058,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1414.959
+cpu MHz		: 1546.478
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1085,7 +1085,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1471.648
+cpu MHz		: 1484.120
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1112,7 +1112,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1556.455
+cpu MHz		: 1424.029
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1139,7 +1139,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1667.630
+cpu MHz		: 1541.943
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1166,7 +1166,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1546.478
+cpu MHz		: 1460.958
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1193,7 +1193,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1471.648
+cpu MHz		: 1436.728
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1220,7 +1220,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1546.478
+cpu MHz		: 1418.990
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1247,7 +1247,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1607.450
+cpu MHz		: 1446.705
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1274,7 +1274,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1407.904
+cpu MHz		: 1430.076
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1301,7 +1301,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1653.377
+cpu MHz		: 1596.364
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1328,7 +1328,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1546.478
+cpu MHz		: 1608.836
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1355,7 +1355,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1505.662
+cpu MHz		: 1446.705
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1382,7 +1382,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1482.338
+cpu MHz		: 1536.500
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1409,7 +1409,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1446.705
+cpu MHz		: 1459.176
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1436,7 +1436,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1536.500
+cpu MHz		: 1546.478
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1463,7 +1463,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1667.630
+cpu MHz		: 1426.750
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1490,7 +1490,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1405.889
+cpu MHz		: 1571.421
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1544,7 +1544,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1526.523
+cpu MHz		: 1546.478
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1571,7 +1571,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1596.364
+cpu MHz		: 1446.705
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1598,7 +1598,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1396.819
+cpu MHz		: 1387.748
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1625,7 +1625,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1436.728
+cpu MHz		: 1446.705
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1652,7 +1652,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1396.819
+cpu MHz		: 1536.500
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1679,7 +1679,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1443.379
+cpu MHz		: 1446.705
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1706,7 +1706,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1469.985
+cpu MHz		: 1526.523
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1733,7 +1733,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1585.278
+cpu MHz		: 1488.277
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1760,7 +1760,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1571.421
+cpu MHz		: 1560.731
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1787,7 +1787,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1446.705
+cpu MHz		: 1230.531
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1814,7 +1814,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1556.455
+cpu MHz		: 1284.032
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1841,7 +1841,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1446.705
+cpu MHz		: 1460.958
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1868,7 +1868,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1556.455
+cpu MHz		: 1420.294
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1895,7 +1895,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1437.901
+cpu MHz		: 1463.334
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1922,7 +1922,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1402.070
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1949,7 +1949,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1566.432
+cpu MHz		: 1331.582
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -1976,7 +1976,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1571.421
+cpu MHz		: 1354.607
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2003,7 +2003,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1293.664
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2030,7 +2030,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1536.500
+cpu MHz		: 1295.355
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2057,7 +2057,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1449.476
+cpu MHz		: 1444.709
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2084,7 +2084,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1396.819
+cpu MHz		: 1409.290
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2111,7 +2111,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1452.461
+cpu MHz		: 1378.111
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2138,7 +2138,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1419.980
+cpu MHz		: 1408.791
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2165,7 +2165,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1412.782
+cpu MHz		: 1390.167
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2192,7 +2192,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1494.706
+cpu MHz		: 1488.277
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2219,7 +2219,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1449.639
+cpu MHz		: 1391.171
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2246,7 +2246,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1475.049
+cpu MHz		: 1417.461
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2273,7 +2273,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1466.105
+cpu MHz		: 1396.819
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2300,7 +2300,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1424.533
+cpu MHz		: 1504.906
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2327,7 +2327,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1474.289
+cpu MHz		: 1362.488
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2354,7 +2354,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1482.938
+cpu MHz		: 1376.864
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2381,7 +2381,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1510.845
+cpu MHz		: 1488.786
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2408,7 +2408,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1522.619
+cpu MHz		: 1368.312
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2435,7 +2435,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1479.962
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2462,7 +2462,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1516.546
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2489,7 +2489,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1471.648
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2516,7 +2516,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1526.523
+cpu MHz		: 1378.678
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2543,7 +2543,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1526.523
+cpu MHz		: 1506.569
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2570,7 +2570,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1389.144
+cpu MHz		: 1479.962
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2624,7 +2624,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1471.648
+cpu MHz		: 1479.962
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2678,7 +2678,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1516.546
+cpu MHz		: 1488.277
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2705,7 +2705,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1538.163
+cpu MHz		: 1453.832
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2732,7 +2732,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1479.962
+cpu MHz		: 1446.705
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2759,7 +2759,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1465.892
+cpu MHz		: 1516.546
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2786,7 +2786,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1506.569
+cpu MHz		: 1488.277
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2813,7 +2813,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1623.575
+cpu MHz		: 1479.962
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2840,7 +2840,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1516.546
+cpu MHz		: 1506.569
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2867,7 +2867,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1471.648
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2894,7 +2894,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1506.569
+cpu MHz		: 1605.434
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2921,7 +2921,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1478.451
+cpu MHz		: 1516.546
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2948,7 +2948,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1521.534
+cpu MHz		: 1488.277
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -2975,7 +2975,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1488.277
+cpu MHz		: 1526.523
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3002,7 +3002,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1536.500
+cpu MHz		: 1513.220
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3029,7 +3029,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1536.500
+cpu MHz		: 1387.748
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3056,7 +3056,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1404.493
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3083,7 +3083,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1446.705
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3110,7 +3110,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1471.648
+cpu MHz		: 1446.705
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3137,7 +3137,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1489.465
+cpu MHz		: 1506.569
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3164,7 +3164,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1516.546
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3191,7 +3191,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1471.648
+cpu MHz		: 1488.277
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3245,7 +3245,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1488.277
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3272,7 +3272,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1596.364
+cpu MHz		: 1516.546
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3299,7 +3299,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1534.965
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3326,7 +3326,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1523.197
+cpu MHz		: 1488.277
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3353,7 +3353,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1471.648
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3380,7 +3380,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1516.546
+cpu MHz		: 1479.962
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3407,7 +3407,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1479.962
+cpu MHz		: 1516.546
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3434,7 +3434,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1378.678
+cpu MHz		: 1504.906
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3461,7 +3461,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1463.334
+cpu MHz		: 1578.224
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3515,7 +3515,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1471.648
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3542,7 +3542,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1488.277
+cpu MHz		: 1486.614
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3569,7 +3569,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1476.637
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3596,7 +3596,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1479.962
+cpu MHz		: 1614.505
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3623,7 +3623,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1509.063
+cpu MHz		: 1651.793
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3650,7 +3650,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1385.081
+cpu MHz		: 1471.648
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3677,7 +3677,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1476.637
+cpu MHz		: 1543.152
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3704,7 +3704,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1463.334
+cpu MHz		: 1460.958
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3731,7 +3731,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1336.087
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3758,7 +3758,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1521.534
+cpu MHz		: 1265.300
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3785,7 +3785,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1486.614
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3812,7 +3812,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1488.277
+cpu MHz		: 1407.904
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3839,7 +3839,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1483.288
+cpu MHz		: 1396.819
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3866,7 +3866,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1446.705
+cpu MHz		: 1662.879
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3893,7 +3893,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1529.849
+cpu MHz		: 1381.469
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3920,7 +3920,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1492.253
+cpu MHz		: 1375.246
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3947,7 +3947,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1453.832
+cpu MHz		: 1300.317
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -3974,7 +3974,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1465.412
+cpu MHz		: 1306.548
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4001,7 +4001,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1431.739
+cpu MHz		: 1396.819
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4028,7 +4028,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1413.447
+cpu MHz		: 1403.255
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4055,7 +4055,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1458.746
+cpu MHz		: 1422.686
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4082,7 +4082,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1426.439
+cpu MHz		: 1417.461
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4109,7 +4109,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1424.755
+cpu MHz		: 1437.222
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4136,7 +4136,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1359.866
+cpu MHz		: 1477.884
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4163,7 +4163,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1464.705
+cpu MHz		: 1386.497
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4190,7 +4190,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1438.584
+cpu MHz		: 1421.762
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4217,7 +4217,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1443.055
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4244,7 +4244,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1458.217
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4271,7 +4271,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1436.264
+cpu MHz		: 1450.542
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4298,7 +4298,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1474.902
+cpu MHz		: 1446.705
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4325,7 +4325,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1470.335
+cpu MHz		: 1404.493
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4352,7 +4352,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1472.836
+cpu MHz		: 1311.299
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4379,7 +4379,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1502.827
+cpu MHz		: 1475.211
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4406,7 +4406,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1484.120
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4487,7 +4487,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1490.355
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4514,7 +4514,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1517.971
+cpu MHz		: 1502.827
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4541,7 +4541,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1489.465
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4568,7 +4568,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1477.884
+cpu MHz		: 1484.120
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4595,7 +4595,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1596.364
+cpu MHz		: 1489.465
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4622,7 +4622,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1569.758
+cpu MHz		: 1484.120
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4649,7 +4649,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1489.465
+cpu MHz		: 1543.543
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4676,7 +4676,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1471.648
+cpu MHz		: 1455.775
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4703,7 +4703,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1510.845
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4730,7 +4730,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1502.827
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4757,7 +4757,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1489.465
+cpu MHz		: 1477.884
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4784,7 +4784,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1477.884
+cpu MHz		: 1484.120
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4811,7 +4811,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1475.211
+cpu MHz		: 1484.120
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4838,7 +4838,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1477.884
+cpu MHz		: 1482.338
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4865,7 +4865,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1485.505
+cpu MHz		: 1517.971
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4892,7 +4892,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1525.098
+cpu MHz		: 1502.827
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4919,7 +4919,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1453.832
+cpu MHz		: 1510.845
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4946,7 +4946,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1490.355
+cpu MHz		: 1459.176
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -4973,7 +4973,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1503.718
+cpu MHz		: 1471.648
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5000,7 +5000,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1503.718
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5027,7 +5027,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1477.884
+cpu MHz		: 1527.291
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5054,7 +5054,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1503.718
+cpu MHz		: 1489.940
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5081,7 +5081,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1561.150
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5108,7 +5108,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1484.120
+cpu MHz		: 1503.718
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5135,7 +5135,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1510.845
+cpu MHz		: 1471.648
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5162,7 +5162,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1465.412
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5189,7 +5189,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1489.465
+cpu MHz		: 1477.884
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5216,7 +5216,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1569.758
+cpu MHz		: 1510.845
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5243,7 +5243,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1504.266
+cpu MHz		: 1569.758
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5297,7 +5297,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1484.120
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5324,7 +5324,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1537.674
+cpu MHz		: 1490.355
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5351,7 +5351,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1471.648
+cpu MHz		: 1465.412
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5405,7 +5405,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1482.338
+cpu MHz		: 1453.832
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5432,7 +5432,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1459.176
+cpu MHz		: 1446.705
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5459,7 +5459,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1460.958
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5486,7 +5486,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1479.962
+cpu MHz		: 1509.063
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5513,7 +5513,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1569.758
+cpu MHz		: 1509.063
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5540,7 +5540,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1489.465
+cpu MHz		: 1482.338
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5567,7 +5567,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1433.577
+cpu MHz		: 1465.412
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5594,7 +5594,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1460.310
+cpu MHz		: 1604.039
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5621,7 +5621,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1471.648
+cpu MHz		: 1465.412
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5648,7 +5648,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1489.465
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5675,7 +5675,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1475.211
+cpu MHz		: 1304.172
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5702,7 +5702,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1477.884
+cpu MHz		: 1297.046
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5729,7 +5729,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1569.758
+cpu MHz		: 1426.750
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5756,7 +5756,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1503.718
+cpu MHz		: 1487.089
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5783,7 +5783,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1566.432
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5810,7 +5810,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1396.819
+cpu MHz		: 1442.867
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5837,7 +5837,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1526.523
+cpu MHz		: 1336.350
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5864,7 +5864,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1459.833
+cpu MHz		: 1363.561
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5891,7 +5891,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1513.220
+cpu MHz		: 1306.548
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5918,7 +5918,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1292.139
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5945,7 +5945,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1472.256
+cpu MHz		: 1446.705
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5972,7 +5972,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1415.526
+cpu MHz		: 1414.959
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -5999,7 +5999,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1462.383
+cpu MHz		: 1403.255
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6026,7 +6026,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1455.589
+cpu MHz		: 1440.469
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6053,7 +6053,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1416.773
+cpu MHz		: 1452.691
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6080,7 +6080,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1392.981
+cpu MHz		: 1434.827
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6107,7 +6107,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1436.264
+cpu MHz		: 1443.587
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6134,7 +6134,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1454.465
+cpu MHz		: 1430.076
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6161,7 +6161,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1447.865
+cpu MHz		: 1481.625
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6188,7 +6188,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1440.198
+cpu MHz		: 1513.220
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6215,7 +6215,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1447.612
+cpu MHz		: 1433.402
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6242,7 +6242,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1447.580
+cpu MHz		: 1434.967
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6269,7 +6269,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1500.748
+cpu MHz		: 1412.168
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6296,7 +6296,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1466.226
+cpu MHz		: 1304.172
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6323,7 +6323,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1476.637
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6350,7 +6350,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1506.569
+cpu MHz		: 1491.048
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6377,7 +6377,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1549.103
+cpu MHz		: 1543.852
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6404,7 +6404,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1491.048
+cpu MHz		: 1485.505
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6431,7 +6431,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1423.074
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6458,7 +6458,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1486.614
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6485,7 +6485,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1485.505
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6512,7 +6512,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1559.606
+cpu MHz		: 1471.648
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6539,7 +6539,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1572.888
+cpu MHz		: 1491.048
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6566,7 +6566,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1466.659
+cpu MHz		: 1476.637
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6593,7 +6593,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1549.103
+cpu MHz		: 1515.596
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6620,7 +6620,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1479.962
+cpu MHz		: 1505.267
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6674,7 +6674,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1502.134
+cpu MHz		: 1507.677
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6701,7 +6701,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1466.659
+cpu MHz		: 1572.888
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6728,7 +6728,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1491.048
+cpu MHz		: 1564.857
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6755,7 +6755,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1485.505
+cpu MHz		: 1539.351
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6782,7 +6782,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1549.103
+cpu MHz		: 1502.134
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6809,7 +6809,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1507.677
+cpu MHz		: 1502.134
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6836,7 +6836,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1506.569
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6863,7 +6863,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1476.637
+cpu MHz		: 1479.962
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6917,7 +6917,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1549.103
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6944,7 +6944,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1501.580
+cpu MHz		: 1502.134
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6971,7 +6971,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1486.614
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -6998,7 +6998,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1507.677
+cpu MHz		: 1502.134
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7025,7 +7025,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1554.354
+cpu MHz		: 1549.103
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7079,7 +7079,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1479.962
+cpu MHz		: 1572.888
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7133,7 +7133,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1476.637
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7160,7 +7160,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1466.659
+cpu MHz		: 1471.648
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7187,7 +7187,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1491.603
+cpu MHz		: 1471.648
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7214,7 +7214,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1451.694
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7241,7 +7241,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1491.840
+cpu MHz		: 1485.505
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7268,7 +7268,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1479.239
+cpu MHz		: 1476.637
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7295,7 +7295,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1485.505
+cpu MHz		: 1491.048
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7322,7 +7322,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1476.637
+cpu MHz		: 1471.648
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7349,7 +7349,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1463.334
+cpu MHz		: 1528.098
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7376,7 +7376,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1533.350
+cpu MHz		: 1561.150
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7403,7 +7403,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1528.098
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7430,7 +7430,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1485.505
+cpu MHz		: 1474.420
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7457,7 +7457,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1549.103
+cpu MHz		: 1534.600
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7484,7 +7484,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1549.103
+cpu MHz		: 1496.591
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7511,7 +7511,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1435.860
+cpu MHz		: 1466.659
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7538,7 +7538,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1464.057
+cpu MHz		: 1474.420
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7565,7 +7565,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1461.671
+cpu MHz		: 1525.098
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7592,7 +7592,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1474.420
+cpu MHz		: 1479.962
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7619,7 +7619,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1496.591
+cpu MHz		: 1316.609
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7646,7 +7646,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1481.625
+cpu MHz		: 1367.156
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7673,7 +7673,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1491.048
+cpu MHz		: 1396.819
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7700,7 +7700,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1471.648
+cpu MHz		: 1499.709
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7727,7 +7727,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1500.929
+cpu MHz		: 1476.637
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288
@@ -7754,7 +7754,7 @@ model		: 133
 model name	: Intel(R) Genuine Intel(R) CPU 0000 @ 1.40GHz
 stepping	: 0
 microcode	: 0x18
-cpu MHz		: 1454.380
+cpu MHz		: 1521.534
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 288

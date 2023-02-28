@@ -1,0 +1,6 @@
+name;time_p;time_s;cpi_ratio;
+/scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_baseline/binaries/sobel;92.13;514.97;;
+/usr/lib/x86_64-linux-gnu/libm-2.31.so;7.07;39.54;;
+kernel;0.8;4.45;;
+/usr/lib/x86_64-linux-gnu/libc-2.31.so;0;0.02;;
+/usr/lib/x86_64-linux-gnu/ld-2.31.so;0;0;;

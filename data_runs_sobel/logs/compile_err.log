@@ -581,3 +581,25 @@ sobel.c:382:1: error: expected identifier or ‘(’ before ‘}’ token
   382 | }
       | ^
 make: *** [Makefile:25: sobel_v3_ws] Error 1
+sobel.c: In function ‘main’:
+sobel.c:385: error: unterminated #elif
+  385 | #if V1 || V2
+      | 
+sobel.c:368:4: error: expected declaration or statement at end of input
+  368 |    (dev * 100.0 / mea));
+      |    ^
+make: *** [Makefile:13: sob_baseline] Error 1
+sobel.c: In function ‘main’:
+sobel.c:272:27: error: ‘size’ undeclared (first use in this function); did you mean ‘size_t’?
+  272 |   u8 *cframe = _mm_malloc(size, 64);
+      |                           ^~~~
+      |                           size_t
+sobel.c:272:27: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:22: sobel_v3] Error 1
+sobel.c: In function ‘main’:
+sobel.c:272:27: error: ‘size’ undeclared (first use in this function); did you mean ‘size_t’?
+  272 |   u8 *cframe = _mm_malloc(size, 64);
+      |                           ^~~~
+      |                           size_t
+sobel.c:272:27: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:22: sobel_v3] Error 1

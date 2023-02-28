@@ -1,0 +1,27 @@
+/scratch/chps/users/user22024/Projet/AOC-Computer-vision/sobel.c: 72 - 95
+--------------------------------------------------------------------------------
+
+72: {
+73:   i32 gx, gy;
+74:   f32 mag = 0.0;
+75: 
+76:   i32 f1[9] = { -1, 0, 1,
+77: 		       -2, 0, 2,
+78: 		       -1, 0, 1 }; //3x3 matrix
+79:   
+80:   i32 f2[9] = { -1, -2, -1,
+81: 		       0, 0, 0,
+82: 		       1, 2, 1 }; //3x3 matrix
+83:   
+84:   //
+85:   for (u64 i = 0; i < (H - 3); i++)
+86:     for (u64 j = 0; j < ((W * 3) - 3); j++)
+87:       {
+88: 	gx = convolve_baseline(&cframe[INDEX(i, j, W * 3)], f1, 3, 3);
+89: 	gy = convolve_baseline(&cframe[INDEX(i, j, W * 3)], f2, 3, 3);
+90:       
+91: 	mag = sqrt((gx * gx) + (gy * gy));
+92: 	
+93: 	oframe[INDEX(i, j, W * 3)] = (mag > threshold) ? 255 : mag;
+94:       }
+95: }

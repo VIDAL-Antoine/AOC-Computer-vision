@@ -1,3 +1,0 @@
-group_size;pattern;opcodes;offsets;addresses;stride_status;stride;memory_status;accessed_memory;accessed_memory_nooverlap;accessed_memory_overlap;span;head;unroll_factor;
-1;S;MOV,;0,;0x1734,;Not mono block loop;0;Success;1;1;0;1;0;1;
-19;LLLLSLLLSLLSLLLLLLS;CMP,MOV,MOV,MOV,MOV,MOV,MOV,MOV,MOV,MOV,MOV,MOVSS,MOVSS,COMISS,CVTTSS2SI,MOV,MOV,MOV,ADD,;-104,-112,-104,-136,-120,-112,-104,-136,-116,-120,-116,-124,-124,-148,-124,-112,-104,-144,-104,;0x173b,0x1642,0x1657,0x165e,0x167f,0x1682,0x1697,0x169e,0x16bf,0x16c2,0x16ca,0x16ed,0x16f2,0x16f7,0x1707,0x170e,0x1723,0x172a,0x1736,;Not mono block loop;0;Success;120;48;72;52;0;1;

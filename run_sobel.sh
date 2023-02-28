@@ -40,6 +40,7 @@ mkdir -p $dir $dir"/logs"
 
 #
 cp "plot_sob_all.gp" $dir
+cp "plot_sob_all_wo_baseline.gp" $dir
 
 #Compiler optimizations
 for opt in "O1" "O2" "O3" "Ofast"
@@ -54,6 +55,7 @@ do
 
     #
     cp "plot_sob.gp" $dir"/"$opt
+    cp "plot_sob_wo_baseline.gp" $dir"/"$opt
     
     #Going through sobel code variants
     for variant in sob_baseline sobel_v1 sobel_v2 sobel_v3
@@ -86,6 +88,7 @@ do
 
     #Generate the plot
     gnuplot -c "plot_sob.gp" > "plot_"$opt".png"
+    gnuplot -c "plot_sob_wo_baseline.gp" > "plot_"$opt"_wo_baseline.png"
 
     cd ../..
 
@@ -96,6 +99,7 @@ done
 cd $dir
 
 gnuplot -c "plot_sob_all.gp" > "plot_all.png" 
+gnuplot -c "plot_sob_all_wo_baseline.gp" > "plot_all_wo_baseline.png"
 
 cd ..
 

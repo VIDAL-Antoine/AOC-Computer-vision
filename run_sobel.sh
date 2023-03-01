@@ -40,7 +40,6 @@ mkdir -p $dir $dir"/logs"
 
 #
 cp "plot_sob_all.gp" $dir
-cp "plot_sob_all_wo_baseline.gp" $dir
 
 #Compiler optimizations
 for opt in "O1" "O2" "O3" "Ofast"
@@ -55,7 +54,6 @@ do
 
     #
     cp "plot_sob.gp" $dir"/"$opt
-    cp "plot_sob_wo_baseline.gp" $dir"/"$opt
     
     #Going through sobel code variants
     for variant in sob_baseline sobel_v1 sobel_v2 sobel_v3

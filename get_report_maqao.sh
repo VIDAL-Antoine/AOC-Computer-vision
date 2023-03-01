@@ -16,10 +16,10 @@ module load maqao/2.15.5
 mkdir -p maqao/
 
 if [ "$1" == "v0" ]; then
-  make sob_baseline
+  make sob_baseline O=Ofast
   maqao oneview -R1 --replace xp=./maqao/sobel_baseline lprof_params="--include-kernel --sampling-rate=high" executable=sobel run_command="<executable> in/input.raw sout/output.raw"
 else
-  make sobel_$1
+  make sobel_$1 O=Ofast
 
   if [ "$1" == "v1" ] || [ "$1" == "v2" ]; then
     maqao oneview -R1 --replace xp=./maqao/sobel_$1 lprof_params="--include-kernel --sampling-rate=high" executable=sobel run_command="<executable> in/input.raw sout/output.raw"

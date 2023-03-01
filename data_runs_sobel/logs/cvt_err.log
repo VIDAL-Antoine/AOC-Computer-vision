@@ -6322,3 +6322,23 @@ Output #0, mp4, to 'sout/output_sobel_v3.mp4':
       cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
 frame=    1 fps=0.0 q=5.0 size=       0kB time=00:00:00.00 bitrate=4512.8kbits/s speed=  39x    frame=    2 fps=0.0 q=5.0 size=       0kB time=00:00:00.04 bitrate=   8.8kbits/s speed=0.0474x    frame=   19 fps= 14 q=5.0 size=     768kB time=00:00:00.72 bitrate=8737.7kbits/s speed=0.523x    frame=   33 fps= 18 q=5.0 size=    1536kB time=00:00:01.28 bitrate=9830.1kbits/s speed=0.681x    frame=   50 fps= 21 q=5.0 size=    2560kB time=00:00:01.96 bitrate=10699.5kbits/s speed=0.819x    frame=   67 fps= 23 q=5.0 size=    3584kB time=00:00:02.64 bitrate=11121.1kbits/s speed=0.909x    frame=   84 fps= 25 q=5.0 size=    4608kB time=00:00:03.32 bitrate=11369.9kbits/s speed=0.975x    frame=  101 fps= 26 q=5.0 size=    5376kB time=00:00:04.00 bitrate=11009.9kbits/s speed=1.02x    frame=  118 fps= 27 q=5.0 size=    6400kB time=00:00:04.68 bitrate=11202.6kbits/s speed=1.06x    frame=  135 fps= 27 q=5.0 size=    7168kB time=00:00:05.36 bitrate=10955.2kbits/s speed=1.09x    frame=  153 fps= 28 q=5.0 size=    7936kB time=00:00:06.08 bitrate=10692.6kbits/s speed=1.12x    frame=  170 fps= 29 q=5.0 size=    8704kB time=00:00:06.76 bitrate=10547.7kbits/s speed=1.13x    frame=  188 fps= 29 q=5.0 size=    9472kB time=00:00:07.48 bitrate=10373.6kbits/s speed=1.15x    frame=  206 fps= 29 q=5.0 size=   10240kB time=00:00:08.20 bitrate=10230.0kbits/s speed=1.17x    frame=  223 fps= 30 q=5.0 size=   11008kB time=00:00:08.88 bitrate=10155.1kbits/s speed=1.18x    frame=  241 fps= 30 q=5.0 size=   12032kB time=00:00:09.60 bitrate=10267.3kbits/s speed= 1.2x    frame=  259 fps= 30 q=5.0 size=   13056kB time=00:00:10.32 bitrate=10363.8kbits/s speed=1.21x    frame=  276 fps= 30 q=5.0 size=   14080kB time=00:00:11.00 bitrate=10485.7kbits/s speed=1.21x    frame=  294 fps= 31 q=5.0 size=   14848kB time=00:00:11.72 bitrate=10378.4kbits/s speed=1.22x    frame=  311 fps= 31 q=5.0 size=   15616kB time=00:00:12.40 bitrate=10316.6kbits/s speed=1.23x    frame=  328 fps= 31 q=5.0 size=   16384kB time=00:00:13.08 bitrate=10261.3kbits/s speed=1.24x    frame=  345 fps= 31 q=5.0 size=   17152kB time=00:00:13.76 bitrate=10211.4kbits/s speed=1.24x    frame=  360 fps= 31 q=5.0 Lsize=   17699kB time=00:00:14.36 bitrate=10096.8kbits/s speed=1.24x    
 video:17696kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.014817%
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found
+./cvt_vid.sh: line 52: ffmpeg: command not found

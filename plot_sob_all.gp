@@ -5,7 +5,7 @@ set grid
 set ylabel "Latency in cycles"
 set xlabel "Frame number"
 
-set yrange [1e6:2.15e9]
+#set yrange [1e6:2.15e9]
 
 set multiplot layout 2,2 rowsfirst 
 

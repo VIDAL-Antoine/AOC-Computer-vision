@@ -38,12 +38,14 @@ Si l'on souhaite traiter uniquement une seule version ou une certaine optimisati
 
 #### Compilation
 
-Il est nécessaire d'avoir le compilateur `gcc` avec la librairie `OpenMP`. La compilation se fait ensuite à l'aide d'un `Makefile`. Il suffit donc de taper `make` puis la version de son choix :
+Il est nécessaire d'avoir le compilateur `gcc` avec la librairie `OpenMP`. La compilation se fait ensuite à l'aide d'un `Makefile`. Il suffit donc de taper `make` puis la version de son choix et d'ajouter le flag de compilation souhaité avec `O=` :
 
 * `sob_baseline` : la version de base non optimisée
 * `sobel_v1` : version de base avec des options de compilation ajoutées
 * `sobel_v2` : modification et optimisation du code source au niveau du filtre de *Sobel*
 * `sobel_v3` : parallélisation et réduction des entrées / sorties
+
+Exemple : `make sobel_v3 O=O3`
 
 Chaque nouvelle version cumule les modifications des versions précédentes. L'exécutable produit se nomme toujours `sobel`.
 

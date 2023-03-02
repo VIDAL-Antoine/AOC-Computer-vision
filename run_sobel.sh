@@ -31,7 +31,7 @@ else
     echo "Converting video to raw format"
     echo
     
-    ./cvt_vid.sh v2r "in/input.mp4" "in/input.raw" >> /dev/null 2>> /dev/null
+    #./cvt_vid.sh v2r "in/input.mp4" "in/input.raw" >> /dev/null 2>> /dev/null
 fi
 
 #
@@ -68,15 +68,15 @@ do
 
 	#Compile variant
   echo Compiling...
-	make $variant O=$opt >> $dir"/logs/compile.log" 2>> $dir"/logs/compile_err.log"
+	#make $variant O=$opt >> $dir"/logs/compile.log" 2>> $dir"/logs/compile_err.log"
 	
   #Run & select run number & cycles
   echo Running Sobel...
-  ./sobel in/input.raw sout/output.raw | cut -d';' -f1,3 > $dir"/"$opt"/data/"$variant
+  #./sobel in/input.raw sout/output.raw | cut -d';' -f1,3 > $dir"/"$opt"/data/"$variant
     
   #Convert raw file into mp4 video
   echo Converting raw into mp4...
-  ./cvt_vid.sh r2v "sout/output.raw" "sout/output_"$variant".mp4" >> $dir"/logs/cvt.log" 2>> $dir"/logs/cvt_err.log"
+  #./cvt_vid.sh r2v "sout/output.raw" "sout/output_"$variant".mp4" >> $dir"/logs/cvt.log" 2>> $dir"/logs/cvt_err.log"
 
 	echo
     done
@@ -100,7 +100,7 @@ gnuplot -c "plot_sob_all.gp" > "plot_all.png"
 cd ..
 
 #
-make clean
+#make clean
 
 #
 echo -e "\n[DONE]"

@@ -8,7 +8,7 @@ libc-2.31.so
 main._omp_fn.0 - /scratch/chps/users/user22024/Projet/AOC-Computer-vision/sobel.c:214
 sobel
 __write - :0
-__munmap - :0
 __close_nocancel - :0
-psiginfo - :0
+__munmap - :0
 __fprintf_chk - :0
+psiginfo - :0

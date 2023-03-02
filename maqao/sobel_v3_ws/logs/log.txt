@@ -13,7 +13,7 @@ That represents 0% of the execution time. To include them, change the value
 in the experiment directory configuration file, then rerun the command with the additionnal parameter
 --force-static-analysis
 
-9 functions were discarded from static analysis because their coverage
+7 functions were discarded from static analysis because their coverage
 are lower than object_coverage_threshold value (0.01%).
 That represents 0% of the execution time. To include them, change the value
 in the experiment directory configuration file, then rerun the command with the additionnal parameter
@@ -25,7 +25,7 @@ That represents 0% of the execution time. To include them, change the value
 in the experiment directory configuration file, then rerun the command with the additionnal parameter
 --force-static-analysis
 
-2 functions were discarded from static analysis because their coverage
+4 functions were discarded from static analysis because their coverage
 are lower than object_coverage_threshold value (0.01%).
 That represents 0% of the execution time. To include them, change the value
 in the experiment directory configuration file, then rerun the command with the additionnal parameter

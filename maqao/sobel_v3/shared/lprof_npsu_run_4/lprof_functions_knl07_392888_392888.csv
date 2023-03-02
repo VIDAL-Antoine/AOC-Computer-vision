@@ -1,0 +1,7 @@
+function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;cats;
+-1;kernel;unknown_kernel_region;;86.97;4.55;;;;;;"0,0,0,0,95.101111129331,4.8988888706692,0,0,0,0";
+8;sobel;main._omp_fn.0;sobel.c:21-334,rdtsc.h:9-11,stdio2.h:100-100;12.84;0.67;;;;;;"100,0,0,0,0,0,0,0,0,0";
+256;libgomp.so.1.0.0;omp_get_num_procs;;0.11;0.01;;;;;;"0,0,100,0,0,0,0,0,0,0";
+255;libgomp.so.1.0.0;omp_test_nest_lock;;0.04;0;;;;;;"0,0,100,0,0,0,0,0,0,0";
+587;libc-2.31.so;pthread_attr_setschedparam;;0.02;0;;;;;;"0,0,0,0,0,100,0,0,0,0";
+369;libc-2.31.so;_IO_padn;;0.02;0;;;;;;"0,0,0,0,0,0,100,0,0,0";

@@ -1,0 +1,1 @@
+maqao oneview -R1 --with-scalability=weak --replace xp=./maqao/sobel_v3_ws c=config_w.lua 

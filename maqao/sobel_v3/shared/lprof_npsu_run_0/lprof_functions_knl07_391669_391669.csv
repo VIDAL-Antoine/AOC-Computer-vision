@@ -1,0 +1,10 @@
+function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;cats;
+8;sobel;main._omp_fn.0;sobel.c:21-334,rdtsc.h:9-11,stdio2.h:100-100;59.5;10.79;;;;;;"100,0,0,0,0,0,0,0,0,0";
+-1;kernel;unknown_kernel_region;;40.43;7.33;;;;;;"0,0,0,0,100,0,0,0,0,0";
+308;libc-2.31.so;vprintf;;0.02;0;;;;;;"0,0,0,0,0,0,100,0,0,0";
+351;libc-2.31.so;psiginfo;;0.01;0;;;;;;"0,0,0,0,100,0,0,0,0,0";
+113;libgomp.so.1.0.0;GOMP_critical_start;;0.01;0;;;;;;"0,0,100,0,0,0,0,0,0,0";
+1905;libc-2.31.so;__nss_database_lookup;;0.01;0;;;;;;"0,0,0,0,0,0,0,0,0,100";
+718;libc-2.31.so;explicit_bzero;;0.01;0;;;;;;"0,0,0,0,0,0,0,0,100,0";
+306;libc-2.31.so;cuserid;;0.01;0;;;;;;"0,0,0,0,100,0,0,0,0,0";
+12;sobel;sort;common.c:7-17;0.01;0;;;;;;"100,0,0,0,0,0,0,0,0,0";

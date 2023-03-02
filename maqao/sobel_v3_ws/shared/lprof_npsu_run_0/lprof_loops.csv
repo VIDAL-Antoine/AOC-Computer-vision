@@ -1,6 +1,6 @@
 loop_id;module;function_name;function_id;source_info;level;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
-0;sobel;main._omp_fn.0;8;sobel.c:21-30;Innermost;34.24;5.56;5.56;5.56;5.56;0;1;
-1;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;30.91;5.02;5.02;5.02;5.02;0;1;
-5;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;0.66;0.11;0.11;0.11;0.11;0;1;
-4;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;0.22;0.04;0.04;0.04;0.04;0;1;
-2;sobel;main._omp_fn.0;8;sobel.c:202-313;InBetween;0.11;0.02;0.02;0.02;0.02;0;1;
+0;sobel;main._omp_fn.0;8;sobel.c:21-30;Innermost;33.7;5.54;5.54;5.54;5.54;0;1;
+1;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;29.86;4.91;4.91;4.91;4.91;0;1;
+5;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;0.73;0.12;0.12;0.12;0.12;0;1;
+4;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;0.14;0.02;0.02;0.02;0.02;0;1;
+2;sobel;main._omp_fn.0;8;sobel.c:202-313;InBetween;0.08;0.01;0.01;0.01;0.01;0;1;

@@ -11,4 +11,3 @@ __write - :0
 __close_nocancel - :0
 __fprintf_chk - :0
 psiginfo - :0
-__libc_secure_getenv - :0

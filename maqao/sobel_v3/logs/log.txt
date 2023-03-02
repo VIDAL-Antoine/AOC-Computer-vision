@@ -10,7 +10,7 @@ CMD:  OMP_NUM_THREADS=4   /opt/other/maqao/2.15.5/bin/maqao lprof --include-kern
 CMD:  OMP_NUM_THREADS=8   /opt/other/maqao/2.15.5/bin/maqao lprof --include-kernel --sampling-rate=high --xp="/scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v3/tools/lprof_npsu_run_3" --mpi-command=""   -- /scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v3/binaries/sobel in/input.raw sout/output.raw
 CMD:  OMP_NUM_THREADS=16   /opt/other/maqao/2.15.5/bin/maqao lprof --include-kernel --sampling-rate=high --xp="/scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v3/tools/lprof_npsu_run_4" --mpi-command=""   -- /scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v3/binaries/sobel in/input.raw sout/output.raw
 CMD:  OMP_NUM_THREADS=32   /opt/other/maqao/2.15.5/bin/maqao lprof --include-kernel --sampling-rate=high --xp="/scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v3/tools/lprof_npsu_run_5" --mpi-command=""   -- /scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v3/binaries/sobel in/input.raw sout/output.raw
-In run , 1 loops were discarded from static analysis because their coverage
+2 functions were discarded from static analysis because their coverage
 are lower than object_coverage_threshold value (0.01%).
 That represents 0% of the execution time. To include them, change the value
 in the experiment directory configuration file, then rerun the command with the additionnal parameter

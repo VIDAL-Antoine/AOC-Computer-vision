@@ -99,25 +99,25 @@ addLoadEvent(function(){
       <td><button type="button" style="cursor:pointer;" onclick="set_next_ldbal_input ();">&rarr;</button></td>
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_618" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_696" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_619" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_697" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
   <script>
 function set_ldbal_input () {
   var selector_run  = document.getElementById ("ldbal_select_run");
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_618").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_618").getBoundingClientRect().width);
-  document.getElementById("chart_cat_619").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_619").getBoundingClientRect().width);
+  document.getElementById("chart_cat_696").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_696").getBoundingClientRect().width);
+  document.getElementById("chart_cat_697").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_697").getBoundingClientRect().width);
   // According to selector, draw both charts
   if (selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['knl07_356407_356407'];
-    var data = [{value: 0.22, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['knl07_384458_384458'];
+    var data = [{value: 0.12, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -132,7 +132,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_618')
+    const svg = d3.select('#chart_cat_696')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -188,13 +188,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_618')
+      .attr('id', 'zoom_chart_696')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_618_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_696_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -236,14 +236,14 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_618_0").click( function () {
-    window.open("../topo/run_0_knl07_356407_356407.html");
+  $("#zoom_chart_696_0").click( function () {
+    window.open("../topo/run_0_knl07_384458_384458.html");
   });
   }
   if (selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['knl07_356407_356407'];
-    var data = [{value: 0.04, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['knl07_384458_384458'];
+    var data = [{value: 0.02, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -258,7 +258,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_619')
+    const svg = d3.select('#chart_cat_697')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -314,13 +314,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_619')
+      .attr('id', 'zoom_chart_697')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_619_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_697_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -362,14 +362,14 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_619_0").click( function () {
-    window.open("../topo/run_0_knl07_356407_356407.html");
+  $("#zoom_chart_697_0").click( function () {
+    window.open("../topo/run_0_knl07_384458_384458.html");
   });
   }
   if (selector_run.value  == "2") {
   $(document).ready(function(){
-    var ordinals = ['knl07_356702_356702','knl07_356702_356991'];
-    var data = [{value: 0.13, offset: 0, i: 0, color: "#333399"},{value: 0.2, offset: 0, i: 1, color: "#333399"}];
+    var ordinals = ['knl07_384766_384766','knl07_384766_385055'];
+    var data = [{value: 0.07, offset: 0, i: 0, color: "#333399"},{value: 0.2, offset: 0, i: 1, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -384,7 +384,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_618')
+    const svg = d3.select('#chart_cat_696')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -440,13 +440,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_618')
+      .attr('id', 'zoom_chart_696')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_618_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_696_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -488,16 +488,16 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_618_0").click( function () {
-    window.open("../topo/run_1_knl07_356702_356702.html");
+  $("#zoom_chart_696_0").click( function () {
+    window.open("../topo/run_1_knl07_384766_384766.html");
   });
-  $("#zoom_chart_618_1").click( function () {
-    window.open("../topo/run_1_knl07_356702_356991.html");
+  $("#zoom_chart_696_1").click( function () {
+    window.open("../topo/run_1_knl07_384766_385055.html");
   });
   }
   if (selector_run.value  == "2") {
   $(document).ready(function(){
-    var ordinals = ['knl07_356702_356702','knl07_356702_356991'];
+    var ordinals = ['knl07_384766_384766','knl07_384766_385055'];
     var data = [{value: 0.01, offset: 0, i: 0, color: "#333399"},{value: 0.01, offset: 0, i: 1, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -513,7 +513,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_619')
+    const svg = d3.select('#chart_cat_697')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -569,13 +569,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_619')
+      .attr('id', 'zoom_chart_697')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_619_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_697_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -617,17 +617,17 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_619_0").click( function () {
-    window.open("../topo/run_1_knl07_356702_356702.html");
+  $("#zoom_chart_697_0").click( function () {
+    window.open("../topo/run_1_knl07_384766_384766.html");
   });
-  $("#zoom_chart_619_1").click( function () {
-    window.open("../topo/run_1_knl07_356702_356991.html");
+  $("#zoom_chart_697_1").click( function () {
+    window.open("../topo/run_1_knl07_384766_385055.html");
   });
   }
   if (selector_run.value  == "3") {
   $(document).ready(function(){
-    var ordinals = ['knl07_357001_357001','knl07_357001_357290','knl07_357001_357291','knl07_357001_357292'];
-    var data = [{value: 0.11, offset: 0, i: 0, color: "#333399"},{value: 0.43, offset: 0, i: 1, color: "#333399"},{value: 0.2, offset: 0, i: 2, color: "#333399"},{value: 0.4, offset: 0, i: 3, color: "#333399"}];
+    var ordinals = ['knl07_385069_385069','knl07_385069_385358','knl07_385069_385359','knl07_385069_385360'];
+    var data = [{value: 0.1, offset: 0, i: 0, color: "#333399"},{value: 0.16, offset: 0, i: 1, color: "#333399"},{value: 0.2, offset: 0, i: 2, color: "#333399"},{value: 0.36, offset: 0, i: 3, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -642,7 +642,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_618')
+    const svg = d3.select('#chart_cat_696')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -698,13 +698,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_618')
+      .attr('id', 'zoom_chart_696')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_618_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_696_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -746,23 +746,23 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_618_0").click( function () {
-    window.open("../topo/run_2_knl07_357001_357001.html");
+  $("#zoom_chart_696_0").click( function () {
+    window.open("../topo/run_2_knl07_385069_385069.html");
   });
-  $("#zoom_chart_618_1").click( function () {
-    window.open("../topo/run_2_knl07_357001_357290.html");
+  $("#zoom_chart_696_1").click( function () {
+    window.open("../topo/run_2_knl07_385069_385358.html");
   });
-  $("#zoom_chart_618_2").click( function () {
-    window.open("../topo/run_2_knl07_357001_357291.html");
+  $("#zoom_chart_696_2").click( function () {
+    window.open("../topo/run_2_knl07_385069_385359.html");
   });
-  $("#zoom_chart_618_3").click( function () {
-    window.open("../topo/run_2_knl07_357001_357292.html");
+  $("#zoom_chart_696_3").click( function () {
+    window.open("../topo/run_2_knl07_385069_385360.html");
   });
   }
   if (selector_run.value  == "3") {
   $(document).ready(function(){
-    var ordinals = ['knl07_357001_357001','knl07_357001_357290','knl07_357001_357291','knl07_357001_357292'];
-    var data = [{value: 0.01, offset: 0, i: 0, color: "#333399"},{value: 0.01, offset: 0, i: 1, color: "#333399"},{value: 0.01, offset: 0, i: 2, color: "#333399"},{value: 0.01, offset: 0, i: 3, color: "#333399"}];
+    var ordinals = ['knl07_385069_385069','knl07_385069_385358','knl07_385069_385359','knl07_385069_385360'];
+    var data = [{value: 0.01, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0.01, offset: 0, i: 2, color: "#333399"},{value: 0.01, offset: 0, i: 3, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -777,7 +777,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_619')
+    const svg = d3.select('#chart_cat_697')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -833,13 +833,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_619')
+      .attr('id', 'zoom_chart_697')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_619_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_697_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -881,23 +881,23 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_619_0").click( function () {
-    window.open("../topo/run_2_knl07_357001_357001.html");
+  $("#zoom_chart_697_0").click( function () {
+    window.open("../topo/run_2_knl07_385069_385069.html");
   });
-  $("#zoom_chart_619_1").click( function () {
-    window.open("../topo/run_2_knl07_357001_357290.html");
+  $("#zoom_chart_697_1").click( function () {
+    window.open("../topo/run_2_knl07_385069_385358.html");
   });
-  $("#zoom_chart_619_2").click( function () {
-    window.open("../topo/run_2_knl07_357001_357291.html");
+  $("#zoom_chart_697_2").click( function () {
+    window.open("../topo/run_2_knl07_385069_385359.html");
   });
-  $("#zoom_chart_619_3").click( function () {
-    window.open("../topo/run_2_knl07_357001_357292.html");
+  $("#zoom_chart_697_3").click( function () {
+    window.open("../topo/run_2_knl07_385069_385360.html");
   });
   }
   if (selector_run.value  == "4") {
   $(document).ready(function(){
-    var ordinals = ['knl07_357299_357299','knl07_357299_357588','knl07_357299_357589','knl07_357299_357590','knl07_357299_357591','knl07_357299_357592','knl07_357299_357593','knl07_357299_357594'];
-    var data = [{value: 0.07, offset: 0, i: 0, color: "#333399"},{value: 0.13, offset: 0, i: 1, color: "#333399"},{value: 0.13, offset: 0, i: 2, color: "#333399"},{value: 0.33, offset: 0, i: 3, color: "#333399"},{value: 0.07, offset: 0, i: 4, color: "#333399"},{value: 0.13, offset: 0, i: 5, color: "#333399"},{value: 0.26, offset: 0, i: 6, color: "#333399"},{value: 0.33, offset: 0, i: 7, color: "#333399"}];
+    var ordinals = ['knl07_385368_385368','knl07_385368_385657','knl07_385368_385658','knl07_385368_385659','knl07_385368_385660','knl07_385368_385661','knl07_385368_385662','knl07_385368_385663'];
+    var data = [{value: 0.05, offset: 0, i: 0, color: "#333399"},{value: 0.33, offset: 0, i: 1, color: "#333399"},{value: 0.39, offset: 0, i: 2, color: "#333399"},{value: 0.2, offset: 0, i: 3, color: "#333399"},{value: 0.13, offset: 0, i: 4, color: "#333399"},{value: 0.26, offset: 0, i: 5, color: "#333399"},{value: 0.2, offset: 0, i: 6, color: "#333399"},{value: 0.26, offset: 0, i: 7, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -912,7 +912,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_618')
+    const svg = d3.select('#chart_cat_696')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -968,13 +968,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_618')
+      .attr('id', 'zoom_chart_696')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_618_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_696_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1016,35 +1016,35 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_618_0").click( function () {
-    window.open("../topo/run_3_knl07_357299_357299.html");
+  $("#zoom_chart_696_0").click( function () {
+    window.open("../topo/run_3_knl07_385368_385368.html");
   });
-  $("#zoom_chart_618_1").click( function () {
-    window.open("../topo/run_3_knl07_357299_357588.html");
+  $("#zoom_chart_696_1").click( function () {
+    window.open("../topo/run_3_knl07_385368_385657.html");
   });
-  $("#zoom_chart_618_2").click( function () {
-    window.open("../topo/run_3_knl07_357299_357589.html");
+  $("#zoom_chart_696_2").click( function () {
+    window.open("../topo/run_3_knl07_385368_385658.html");
   });
-  $("#zoom_chart_618_3").click( function () {
-    window.open("../topo/run_3_knl07_357299_357590.html");
+  $("#zoom_chart_696_3").click( function () {
+    window.open("../topo/run_3_knl07_385368_385659.html");
   });
-  $("#zoom_chart_618_4").click( function () {
-    window.open("../topo/run_3_knl07_357299_357591.html");
+  $("#zoom_chart_696_4").click( function () {
+    window.open("../topo/run_3_knl07_385368_385660.html");
   });
-  $("#zoom_chart_618_5").click( function () {
-    window.open("../topo/run_3_knl07_357299_357592.html");
+  $("#zoom_chart_696_5").click( function () {
+    window.open("../topo/run_3_knl07_385368_385661.html");
   });
-  $("#zoom_chart_618_6").click( function () {
-    window.open("../topo/run_3_knl07_357299_357593.html");
+  $("#zoom_chart_696_6").click( function () {
+    window.open("../topo/run_3_knl07_385368_385662.html");
   });
-  $("#zoom_chart_618_7").click( function () {
-    window.open("../topo/run_3_knl07_357299_357594.html");
+  $("#zoom_chart_696_7").click( function () {
+    window.open("../topo/run_3_knl07_385368_385663.html");
   });
   }
   if (selector_run.value  == "4") {
   $(document).ready(function(){
-    var ordinals = ['knl07_357299_357299','knl07_357299_357588','knl07_357299_357589','knl07_357299_357590','knl07_357299_357591','knl07_357299_357592','knl07_357299_357593','knl07_357299_357594'];
-    var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"},{value: 0, offset: 0, i: 4, color: "#333399"},{value: 0, offset: 0, i: 5, color: "#333399"},{value: 0, offset: 0, i: 6, color: "#333399"},{value: 0, offset: 0, i: 7, color: "#333399"}];
+    var ordinals = ['knl07_385368_385368','knl07_385368_385657','knl07_385368_385658','knl07_385368_385659','knl07_385368_385660','knl07_385368_385661','knl07_385368_385662','knl07_385368_385663'];
+    var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0.01, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"},{value: 0, offset: 0, i: 4, color: "#333399"},{value: 0, offset: 0, i: 5, color: "#333399"},{value: 0, offset: 0, i: 6, color: "#333399"},{value: 0, offset: 0, i: 7, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -1059,7 +1059,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_619')
+    const svg = d3.select('#chart_cat_697')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1115,13 +1115,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_619')
+      .attr('id', 'zoom_chart_697')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_619_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_697_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1163,35 +1163,35 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_619_0").click( function () {
-    window.open("../topo/run_3_knl07_357299_357299.html");
+  $("#zoom_chart_697_0").click( function () {
+    window.open("../topo/run_3_knl07_385368_385368.html");
   });
-  $("#zoom_chart_619_1").click( function () {
-    window.open("../topo/run_3_knl07_357299_357588.html");
+  $("#zoom_chart_697_1").click( function () {
+    window.open("../topo/run_3_knl07_385368_385657.html");
   });
-  $("#zoom_chart_619_2").click( function () {
-    window.open("../topo/run_3_knl07_357299_357589.html");
+  $("#zoom_chart_697_2").click( function () {
+    window.open("../topo/run_3_knl07_385368_385658.html");
   });
-  $("#zoom_chart_619_3").click( function () {
-    window.open("../topo/run_3_knl07_357299_357590.html");
+  $("#zoom_chart_697_3").click( function () {
+    window.open("../topo/run_3_knl07_385368_385659.html");
   });
-  $("#zoom_chart_619_4").click( function () {
-    window.open("../topo/run_3_knl07_357299_357591.html");
+  $("#zoom_chart_697_4").click( function () {
+    window.open("../topo/run_3_knl07_385368_385660.html");
   });
-  $("#zoom_chart_619_5").click( function () {
-    window.open("../topo/run_3_knl07_357299_357592.html");
+  $("#zoom_chart_697_5").click( function () {
+    window.open("../topo/run_3_knl07_385368_385661.html");
   });
-  $("#zoom_chart_619_6").click( function () {
-    window.open("../topo/run_3_knl07_357299_357593.html");
+  $("#zoom_chart_697_6").click( function () {
+    window.open("../topo/run_3_knl07_385368_385662.html");
   });
-  $("#zoom_chart_619_7").click( function () {
-    window.open("../topo/run_3_knl07_357299_357594.html");
+  $("#zoom_chart_697_7").click( function () {
+    window.open("../topo/run_3_knl07_385368_385663.html");
   });
   }
   if (selector_run.value  == "5") {
   $(document).ready(function(){
-    var ordinals = ['knl07_357601_357601','knl07_357601_357890','knl07_357601_357891','knl07_357601_357892','knl07_357601_357893','knl07_357601_357895','knl07_357601_357896','knl07_357601_357897','knl07_357601_357898','knl07_357601_357900','knl07_357601_357902','knl07_357601_357903','knl07_357601_357904'];
-    var data = [{value: 0.02, offset: 0, i: 0, color: "#333399"},{value: 0.13, offset: 0, i: 1, color: "#333399"},{value: 0.62, offset: 0, i: 2, color: "#333399"},{value: 0.51, offset: 0, i: 3, color: "#333399"},{value: 0.51, offset: 0, i: 4, color: "#333399"},{value: 0.13, offset: 0, i: 5, color: "#333399"},{value: 0.26, offset: 0, i: 6, color: "#333399"},{value: 0.67, offset: 0, i: 7, color: "#333399"},{value: 0.27, offset: 0, i: 8, color: "#333399"},{value: 0.13, offset: 0, i: 9, color: "#333399"},{value: 0.27, offset: 0, i: 10, color: "#333399"},{value: 0.27, offset: 0, i: 11, color: "#333399"},{value: 0.13, offset: 0, i: 12, color: "#333399"}];
+    var ordinals = ['knl07_385670_385670','knl07_385670_385959','knl07_385670_385960','knl07_385670_385961','knl07_385670_385962','knl07_385670_385963','knl07_385670_385964','knl07_385670_385965','knl07_385670_385966','knl07_385670_385968','knl07_385670_385969','knl07_385670_385970','knl07_385670_385971','knl07_385670_385972'];
+    var data = [{value: 0.06, offset: 0, i: 0, color: "#333399"},{value: 0.25, offset: 0, i: 1, color: "#333399"},{value: 0.13, offset: 0, i: 2, color: "#333399"},{value: 0.25, offset: 0, i: 3, color: "#333399"},{value: 0.13, offset: 0, i: 4, color: "#333399"},{value: 0.13, offset: 0, i: 5, color: "#333399"},{value: 0.38, offset: 0, i: 6, color: "#333399"},{value: 0.51, offset: 0, i: 7, color: "#333399"},{value: 0.26, offset: 0, i: 8, color: "#333399"},{value: 0.13, offset: 0, i: 9, color: "#333399"},{value: 0.39, offset: 0, i: 10, color: "#333399"},{value: 0.66, offset: 0, i: 11, color: "#333399"},{value: 0.26, offset: 0, i: 12, color: "#333399"},{value: 0.13, offset: 0, i: 13, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -1206,7 +1206,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_618')
+    const svg = d3.select('#chart_cat_696')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1262,13 +1262,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_618')
+      .attr('id', 'zoom_chart_696')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_618_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_696_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1310,50 +1310,53 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_618_0").click( function () {
-    window.open("../topo/run_4_knl07_357601_357601.html");
+  $("#zoom_chart_696_0").click( function () {
+    window.open("../topo/run_4_knl07_385670_385670.html");
   });
-  $("#zoom_chart_618_1").click( function () {
-    window.open("../topo/run_4_knl07_357601_357890.html");
+  $("#zoom_chart_696_1").click( function () {
+    window.open("../topo/run_4_knl07_385670_385959.html");
   });
-  $("#zoom_chart_618_2").click( function () {
-    window.open("../topo/run_4_knl07_357601_357891.html");
+  $("#zoom_chart_696_2").click( function () {
+    window.open("../topo/run_4_knl07_385670_385960.html");
   });
-  $("#zoom_chart_618_3").click( function () {
-    window.open("../topo/run_4_knl07_357601_357892.html");
+  $("#zoom_chart_696_3").click( function () {
+    window.open("../topo/run_4_knl07_385670_385961.html");
   });
-  $("#zoom_chart_618_4").click( function () {
-    window.open("../topo/run_4_knl07_357601_357893.html");
+  $("#zoom_chart_696_4").click( function () {
+    window.open("../topo/run_4_knl07_385670_385962.html");
   });
-  $("#zoom_chart_618_5").click( function () {
-    window.open("../topo/run_4_knl07_357601_357895.html");
+  $("#zoom_chart_696_5").click( function () {
+    window.open("../topo/run_4_knl07_385670_385963.html");
   });
-  $("#zoom_chart_618_6").click( function () {
-    window.open("../topo/run_4_knl07_357601_357896.html");
+  $("#zoom_chart_696_6").click( function () {
+    window.open("../topo/run_4_knl07_385670_385964.html");
   });
-  $("#zoom_chart_618_7").click( function () {
-    window.open("../topo/run_4_knl07_357601_357897.html");
+  $("#zoom_chart_696_7").click( function () {
+    window.open("../topo/run_4_knl07_385670_385965.html");
   });
-  $("#zoom_chart_618_8").click( function () {
-    window.open("../topo/run_4_knl07_357601_357898.html");
+  $("#zoom_chart_696_8").click( function () {
+    window.open("../topo/run_4_knl07_385670_385966.html");
   });
-  $("#zoom_chart_618_9").click( function () {
-    window.open("../topo/run_4_knl07_357601_357900.html");
+  $("#zoom_chart_696_9").click( function () {
+    window.open("../topo/run_4_knl07_385670_385968.html");
   });
-  $("#zoom_chart_618_10").click( function () {
-    window.open("../topo/run_4_knl07_357601_357902.html");
+  $("#zoom_chart_696_10").click( function () {
+    window.open("../topo/run_4_knl07_385670_385969.html");
   });
-  $("#zoom_chart_618_11").click( function () {
-    window.open("../topo/run_4_knl07_357601_357903.html");
+  $("#zoom_chart_696_11").click( function () {
+    window.open("../topo/run_4_knl07_385670_385970.html");
   });
-  $("#zoom_chart_618_12").click( function () {
-    window.open("../topo/run_4_knl07_357601_357904.html");
+  $("#zoom_chart_696_12").click( function () {
+    window.open("../topo/run_4_knl07_385670_385971.html");
+  });
+  $("#zoom_chart_696_13").click( function () {
+    window.open("../topo/run_4_knl07_385670_385972.html");
   });
   }
   if (selector_run.value  == "5") {
   $(document).ready(function(){
-    var ordinals = ['knl07_357601_357601','knl07_357601_357890','knl07_357601_357891','knl07_357601_357892','knl07_357601_357893','knl07_357601_357895','knl07_357601_357896','knl07_357601_357897','knl07_357601_357898','knl07_357601_357900','knl07_357601_357902','knl07_357601_357903','knl07_357601_357904'];
-    var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0.01, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"},{value: 0, offset: 0, i: 4, color: "#333399"},{value: 0, offset: 0, i: 5, color: "#333399"},{value: 0, offset: 0, i: 6, color: "#333399"},{value: 0, offset: 0, i: 7, color: "#333399"},{value: 0, offset: 0, i: 8, color: "#333399"},{value: 0, offset: 0, i: 9, color: "#333399"},{value: 0, offset: 0, i: 10, color: "#333399"},{value: 0, offset: 0, i: 11, color: "#333399"},{value: 0, offset: 0, i: 12, color: "#333399"}];
+    var ordinals = ['knl07_385670_385670','knl07_385670_385959','knl07_385670_385960','knl07_385670_385961','knl07_385670_385962','knl07_385670_385963','knl07_385670_385964','knl07_385670_385965','knl07_385670_385966','knl07_385670_385968','knl07_385670_385969','knl07_385670_385970','knl07_385670_385971','knl07_385670_385972'];
+    var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"},{value: 0, offset: 0, i: 4, color: "#333399"},{value: 0, offset: 0, i: 5, color: "#333399"},{value: 0, offset: 0, i: 6, color: "#333399"},{value: 0, offset: 0, i: 7, color: "#333399"},{value: 0, offset: 0, i: 8, color: "#333399"},{value: 0, offset: 0, i: 9, color: "#333399"},{value: 0, offset: 0, i: 10, color: "#333399"},{value: 0, offset: 0, i: 11, color: "#333399"},{value: 0, offset: 0, i: 12, color: "#333399"},{value: 0, offset: 0, i: 13, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -1368,7 +1371,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_619')
+    const svg = d3.select('#chart_cat_697')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1424,13 +1427,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_619')
+      .attr('id', 'zoom_chart_697')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_619_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_697_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1472,50 +1475,53 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_619_0").click( function () {
-    window.open("../topo/run_4_knl07_357601_357601.html");
+  $("#zoom_chart_697_0").click( function () {
+    window.open("../topo/run_4_knl07_385670_385670.html");
   });
-  $("#zoom_chart_619_1").click( function () {
-    window.open("../topo/run_4_knl07_357601_357890.html");
+  $("#zoom_chart_697_1").click( function () {
+    window.open("../topo/run_4_knl07_385670_385959.html");
   });
-  $("#zoom_chart_619_2").click( function () {
-    window.open("../topo/run_4_knl07_357601_357891.html");
+  $("#zoom_chart_697_2").click( function () {
+    window.open("../topo/run_4_knl07_385670_385960.html");
   });
-  $("#zoom_chart_619_3").click( function () {
-    window.open("../topo/run_4_knl07_357601_357892.html");
+  $("#zoom_chart_697_3").click( function () {
+    window.open("../topo/run_4_knl07_385670_385961.html");
   });
-  $("#zoom_chart_619_4").click( function () {
-    window.open("../topo/run_4_knl07_357601_357893.html");
+  $("#zoom_chart_697_4").click( function () {
+    window.open("../topo/run_4_knl07_385670_385962.html");
   });
-  $("#zoom_chart_619_5").click( function () {
-    window.open("../topo/run_4_knl07_357601_357895.html");
+  $("#zoom_chart_697_5").click( function () {
+    window.open("../topo/run_4_knl07_385670_385963.html");
   });
-  $("#zoom_chart_619_6").click( function () {
-    window.open("../topo/run_4_knl07_357601_357896.html");
+  $("#zoom_chart_697_6").click( function () {
+    window.open("../topo/run_4_knl07_385670_385964.html");
   });
-  $("#zoom_chart_619_7").click( function () {
-    window.open("../topo/run_4_knl07_357601_357897.html");
+  $("#zoom_chart_697_7").click( function () {
+    window.open("../topo/run_4_knl07_385670_385965.html");
   });
-  $("#zoom_chart_619_8").click( function () {
-    window.open("../topo/run_4_knl07_357601_357898.html");
+  $("#zoom_chart_697_8").click( function () {
+    window.open("../topo/run_4_knl07_385670_385966.html");
   });
-  $("#zoom_chart_619_9").click( function () {
-    window.open("../topo/run_4_knl07_357601_357900.html");
+  $("#zoom_chart_697_9").click( function () {
+    window.open("../topo/run_4_knl07_385670_385968.html");
   });
-  $("#zoom_chart_619_10").click( function () {
-    window.open("../topo/run_4_knl07_357601_357902.html");
+  $("#zoom_chart_697_10").click( function () {
+    window.open("../topo/run_4_knl07_385670_385969.html");
   });
-  $("#zoom_chart_619_11").click( function () {
-    window.open("../topo/run_4_knl07_357601_357903.html");
+  $("#zoom_chart_697_11").click( function () {
+    window.open("../topo/run_4_knl07_385670_385970.html");
   });
-  $("#zoom_chart_619_12").click( function () {
-    window.open("../topo/run_4_knl07_357601_357904.html");
+  $("#zoom_chart_697_12").click( function () {
+    window.open("../topo/run_4_knl07_385670_385971.html");
+  });
+  $("#zoom_chart_697_13").click( function () {
+    window.open("../topo/run_4_knl07_385670_385972.html");
   });
   }
   if (selector_run.value  == "6") {
   $(document).ready(function(){
-    var ordinals = ['knl07_357913_358205','knl07_357913_358206','knl07_357913_358207','knl07_357913_358208','knl07_357913_358209','knl07_357913_358210','knl07_357913_358211','knl07_357913_358212','knl07_357913_358213','knl07_357913_358214','knl07_357913_358215','knl07_357913_358217','knl07_357913_358219','knl07_357913_358220','knl07_357913_358221','knl07_357913_358222','knl07_357913_358223','knl07_357913_358224','knl07_357913_358227','knl07_357913_358228','knl07_357913_358231','knl07_357913_358232'];
-    var data = [{value: 0.91, offset: 0, i: 0, color: "#333399"},{value: 0.36, offset: 0, i: 1, color: "#333399"},{value: 0.48, offset: 0, i: 2, color: "#333399"},{value: 0.18, offset: 0, i: 3, color: "#333399"},{value: 0.38, offset: 0, i: 4, color: "#333399"},{value: 0.2, offset: 0, i: 5, color: "#333399"},{value: 0.57, offset: 0, i: 6, color: "#333399"},{value: 0.38, offset: 0, i: 7, color: "#333399"},{value: 0.19, offset: 0, i: 8, color: "#333399"},{value: 0.19, offset: 0, i: 9, color: "#333399"},{value: 0.4, offset: 0, i: 10, color: "#333399"},{value: 0.19, offset: 0, i: 11, color: "#333399"},{value: 0.2, offset: 0, i: 12, color: "#333399"},{value: 0.19, offset: 0, i: 13, color: "#333399"},{value: 0.19, offset: 0, i: 14, color: "#333399"},{value: 0.38, offset: 0, i: 15, color: "#333399"},{value: 0.76, offset: 0, i: 16, color: "#333399"},{value: 0.8, offset: 0, i: 17, color: "#333399"},{value: 0.2, offset: 0, i: 18, color: "#333399"},{value: 0.2, offset: 0, i: 19, color: "#333399"},{value: 0.19, offset: 0, i: 20, color: "#333399"},{value: 0.39, offset: 0, i: 21, color: "#333399"}];
+    var ordinals = ['knl07_385982_386273','knl07_385982_386274','knl07_385982_386276','knl07_385982_386277','knl07_385982_386278','knl07_385982_386279','knl07_385982_386281','knl07_385982_386282','knl07_385982_386283','knl07_385982_386284','knl07_385982_386285','knl07_385982_386286','knl07_385982_386287','knl07_385982_386288','knl07_385982_386290','knl07_385982_386291','knl07_385982_386292','knl07_385982_386296','knl07_385982_386297','knl07_385982_386299','knl07_385982_386300','knl07_385982_386301'];
+    var data = [{value: 0.47, offset: 0, i: 0, color: "#333399"},{value: 0.71, offset: 0, i: 1, color: "#333399"},{value: 0.35, offset: 0, i: 2, color: "#333399"},{value: 0.17, offset: 0, i: 3, color: "#333399"},{value: 0.19, offset: 0, i: 4, color: "#333399"},{value: 0.19, offset: 0, i: 5, color: "#333399"},{value: 0.19, offset: 0, i: 6, color: "#333399"},{value: 0.19, offset: 0, i: 7, color: "#333399"},{value: 0.56, offset: 0, i: 8, color: "#333399"},{value: 0.56, offset: 0, i: 9, color: "#333399"},{value: 0.19, offset: 0, i: 10, color: "#333399"},{value: 0.2, offset: 0, i: 11, color: "#333399"},{value: 0.2, offset: 0, i: 12, color: "#333399"},{value: 0.38, offset: 0, i: 13, color: "#333399"},{value: 0.37, offset: 0, i: 14, color: "#333399"},{value: 0.38, offset: 0, i: 15, color: "#333399"},{value: 0.39, offset: 0, i: 16, color: "#333399"},{value: 0.59, offset: 0, i: 17, color: "#333399"},{value: 0.38, offset: 0, i: 18, color: "#333399"},{value: 0.19, offset: 0, i: 19, color: "#333399"},{value: 0.19, offset: 0, i: 20, color: "#333399"},{value: 0.19, offset: 0, i: 21, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -1530,7 +1536,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_618')
+    const svg = d3.select('#chart_cat_696')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1586,13 +1592,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_618')
+      .attr('id', 'zoom_chart_696')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_618_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_696_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1634,76 +1640,76 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_618_0").click( function () {
-    window.open("../topo/run_5_knl07_357913_358205.html");
+  $("#zoom_chart_696_0").click( function () {
+    window.open("../topo/run_5_knl07_385982_386273.html");
   });
-  $("#zoom_chart_618_1").click( function () {
-    window.open("../topo/run_5_knl07_357913_358206.html");
+  $("#zoom_chart_696_1").click( function () {
+    window.open("../topo/run_5_knl07_385982_386274.html");
   });
-  $("#zoom_chart_618_2").click( function () {
-    window.open("../topo/run_5_knl07_357913_358207.html");
+  $("#zoom_chart_696_2").click( function () {
+    window.open("../topo/run_5_knl07_385982_386276.html");
   });
-  $("#zoom_chart_618_3").click( function () {
-    window.open("../topo/run_5_knl07_357913_358208.html");
+  $("#zoom_chart_696_3").click( function () {
+    window.open("../topo/run_5_knl07_385982_386277.html");
   });
-  $("#zoom_chart_618_4").click( function () {
-    window.open("../topo/run_5_knl07_357913_358209.html");
+  $("#zoom_chart_696_4").click( function () {
+    window.open("../topo/run_5_knl07_385982_386278.html");
   });
-  $("#zoom_chart_618_5").click( function () {
-    window.open("../topo/run_5_knl07_357913_358210.html");
+  $("#zoom_chart_696_5").click( function () {
+    window.open("../topo/run_5_knl07_385982_386279.html");
   });
-  $("#zoom_chart_618_6").click( function () {
-    window.open("../topo/run_5_knl07_357913_358211.html");
+  $("#zoom_chart_696_6").click( function () {
+    window.open("../topo/run_5_knl07_385982_386281.html");
   });
-  $("#zoom_chart_618_7").click( function () {
-    window.open("../topo/run_5_knl07_357913_358212.html");
+  $("#zoom_chart_696_7").click( function () {
+    window.open("../topo/run_5_knl07_385982_386282.html");
   });
-  $("#zoom_chart_618_8").click( function () {
-    window.open("../topo/run_5_knl07_357913_358213.html");
+  $("#zoom_chart_696_8").click( function () {
+    window.open("../topo/run_5_knl07_385982_386283.html");
   });
-  $("#zoom_chart_618_9").click( function () {
-    window.open("../topo/run_5_knl07_357913_358214.html");
+  $("#zoom_chart_696_9").click( function () {
+    window.open("../topo/run_5_knl07_385982_386284.html");
   });
-  $("#zoom_chart_618_10").click( function () {
-    window.open("../topo/run_5_knl07_357913_358215.html");
+  $("#zoom_chart_696_10").click( function () {
+    window.open("../topo/run_5_knl07_385982_386285.html");
   });
-  $("#zoom_chart_618_11").click( function () {
-    window.open("../topo/run_5_knl07_357913_358217.html");
+  $("#zoom_chart_696_11").click( function () {
+    window.open("../topo/run_5_knl07_385982_386286.html");
   });
-  $("#zoom_chart_618_12").click( function () {
-    window.open("../topo/run_5_knl07_357913_358219.html");
+  $("#zoom_chart_696_12").click( function () {
+    window.open("../topo/run_5_knl07_385982_386287.html");
   });
-  $("#zoom_chart_618_13").click( function () {
-    window.open("../topo/run_5_knl07_357913_358220.html");
+  $("#zoom_chart_696_13").click( function () {
+    window.open("../topo/run_5_knl07_385982_386288.html");
   });
-  $("#zoom_chart_618_14").click( function () {
-    window.open("../topo/run_5_knl07_357913_358221.html");
+  $("#zoom_chart_696_14").click( function () {
+    window.open("../topo/run_5_knl07_385982_386290.html");
   });
-  $("#zoom_chart_618_15").click( function () {
-    window.open("../topo/run_5_knl07_357913_358222.html");
+  $("#zoom_chart_696_15").click( function () {
+    window.open("../topo/run_5_knl07_385982_386291.html");
   });
-  $("#zoom_chart_618_16").click( function () {
-    window.open("../topo/run_5_knl07_357913_358223.html");
+  $("#zoom_chart_696_16").click( function () {
+    window.open("../topo/run_5_knl07_385982_386292.html");
   });
-  $("#zoom_chart_618_17").click( function () {
-    window.open("../topo/run_5_knl07_357913_358224.html");
+  $("#zoom_chart_696_17").click( function () {
+    window.open("../topo/run_5_knl07_385982_386296.html");
   });
-  $("#zoom_chart_618_18").click( function () {
-    window.open("../topo/run_5_knl07_357913_358227.html");
+  $("#zoom_chart_696_18").click( function () {
+    window.open("../topo/run_5_knl07_385982_386297.html");
   });
-  $("#zoom_chart_618_19").click( function () {
-    window.open("../topo/run_5_knl07_357913_358228.html");
+  $("#zoom_chart_696_19").click( function () {
+    window.open("../topo/run_5_knl07_385982_386299.html");
   });
-  $("#zoom_chart_618_20").click( function () {
-    window.open("../topo/run_5_knl07_357913_358231.html");
+  $("#zoom_chart_696_20").click( function () {
+    window.open("../topo/run_5_knl07_385982_386300.html");
   });
-  $("#zoom_chart_618_21").click( function () {
-    window.open("../topo/run_5_knl07_357913_358232.html");
+  $("#zoom_chart_696_21").click( function () {
+    window.open("../topo/run_5_knl07_385982_386301.html");
   });
   }
   if (selector_run.value  == "6") {
   $(document).ready(function(){
-    var ordinals = ['knl07_357913_358205','knl07_357913_358206','knl07_357913_358207','knl07_357913_358208','knl07_357913_358209','knl07_357913_358210','knl07_357913_358211','knl07_357913_358212','knl07_357913_358213','knl07_357913_358214','knl07_357913_358215','knl07_357913_358217','knl07_357913_358219','knl07_357913_358220','knl07_357913_358221','knl07_357913_358222','knl07_357913_358223','knl07_357913_358224','knl07_357913_358227','knl07_357913_358228','knl07_357913_358231','knl07_357913_358232'];
+    var ordinals = ['knl07_385982_386273','knl07_385982_386274','knl07_385982_386276','knl07_385982_386277','knl07_385982_386278','knl07_385982_386279','knl07_385982_386281','knl07_385982_386282','knl07_385982_386283','knl07_385982_386284','knl07_385982_386285','knl07_385982_386286','knl07_385982_386287','knl07_385982_386288','knl07_385982_386290','knl07_385982_386291','knl07_385982_386292','knl07_385982_386296','knl07_385982_386297','knl07_385982_386299','knl07_385982_386300','knl07_385982_386301'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"},{value: 0, offset: 0, i: 4, color: "#333399"},{value: 0, offset: 0, i: 5, color: "#333399"},{value: 0, offset: 0, i: 6, color: "#333399"},{value: 0, offset: 0, i: 7, color: "#333399"},{value: 0, offset: 0, i: 8, color: "#333399"},{value: 0, offset: 0, i: 9, color: "#333399"},{value: 0, offset: 0, i: 10, color: "#333399"},{value: 0, offset: 0, i: 11, color: "#333399"},{value: 0, offset: 0, i: 12, color: "#333399"},{value: 0, offset: 0, i: 13, color: "#333399"},{value: 0, offset: 0, i: 14, color: "#333399"},{value: 0, offset: 0, i: 15, color: "#333399"},{value: 0, offset: 0, i: 16, color: "#333399"},{value: 0, offset: 0, i: 17, color: "#333399"},{value: 0, offset: 0, i: 18, color: "#333399"},{value: 0, offset: 0, i: 19, color: "#333399"},{value: 0, offset: 0, i: 20, color: "#333399"},{value: 0, offset: 0, i: 21, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -1719,7 +1725,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_619')
+    const svg = d3.select('#chart_cat_697')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1775,13 +1781,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_619')
+      .attr('id', 'zoom_chart_697')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_619_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_697_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1823,71 +1829,71 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_619_0").click( function () {
-    window.open("../topo/run_5_knl07_357913_358205.html");
+  $("#zoom_chart_697_0").click( function () {
+    window.open("../topo/run_5_knl07_385982_386273.html");
   });
-  $("#zoom_chart_619_1").click( function () {
-    window.open("../topo/run_5_knl07_357913_358206.html");
+  $("#zoom_chart_697_1").click( function () {
+    window.open("../topo/run_5_knl07_385982_386274.html");
   });
-  $("#zoom_chart_619_2").click( function () {
-    window.open("../topo/run_5_knl07_357913_358207.html");
+  $("#zoom_chart_697_2").click( function () {
+    window.open("../topo/run_5_knl07_385982_386276.html");
   });
-  $("#zoom_chart_619_3").click( function () {
-    window.open("../topo/run_5_knl07_357913_358208.html");
+  $("#zoom_chart_697_3").click( function () {
+    window.open("../topo/run_5_knl07_385982_386277.html");
   });
-  $("#zoom_chart_619_4").click( function () {
-    window.open("../topo/run_5_knl07_357913_358209.html");
+  $("#zoom_chart_697_4").click( function () {
+    window.open("../topo/run_5_knl07_385982_386278.html");
   });
-  $("#zoom_chart_619_5").click( function () {
-    window.open("../topo/run_5_knl07_357913_358210.html");
+  $("#zoom_chart_697_5").click( function () {
+    window.open("../topo/run_5_knl07_385982_386279.html");
   });
-  $("#zoom_chart_619_6").click( function () {
-    window.open("../topo/run_5_knl07_357913_358211.html");
+  $("#zoom_chart_697_6").click( function () {
+    window.open("../topo/run_5_knl07_385982_386281.html");
   });
-  $("#zoom_chart_619_7").click( function () {
-    window.open("../topo/run_5_knl07_357913_358212.html");
+  $("#zoom_chart_697_7").click( function () {
+    window.open("../topo/run_5_knl07_385982_386282.html");
   });
-  $("#zoom_chart_619_8").click( function () {
-    window.open("../topo/run_5_knl07_357913_358213.html");
+  $("#zoom_chart_697_8").click( function () {
+    window.open("../topo/run_5_knl07_385982_386283.html");
   });
-  $("#zoom_chart_619_9").click( function () {
-    window.open("../topo/run_5_knl07_357913_358214.html");
+  $("#zoom_chart_697_9").click( function () {
+    window.open("../topo/run_5_knl07_385982_386284.html");
   });
-  $("#zoom_chart_619_10").click( function () {
-    window.open("../topo/run_5_knl07_357913_358215.html");
+  $("#zoom_chart_697_10").click( function () {
+    window.open("../topo/run_5_knl07_385982_386285.html");
   });
-  $("#zoom_chart_619_11").click( function () {
-    window.open("../topo/run_5_knl07_357913_358217.html");
+  $("#zoom_chart_697_11").click( function () {
+    window.open("../topo/run_5_knl07_385982_386286.html");
   });
-  $("#zoom_chart_619_12").click( function () {
-    window.open("../topo/run_5_knl07_357913_358219.html");
+  $("#zoom_chart_697_12").click( function () {
+    window.open("../topo/run_5_knl07_385982_386287.html");
   });
-  $("#zoom_chart_619_13").click( function () {
-    window.open("../topo/run_5_knl07_357913_358220.html");
+  $("#zoom_chart_697_13").click( function () {
+    window.open("../topo/run_5_knl07_385982_386288.html");
   });
-  $("#zoom_chart_619_14").click( function () {
-    window.open("../topo/run_5_knl07_357913_358221.html");
+  $("#zoom_chart_697_14").click( function () {
+    window.open("../topo/run_5_knl07_385982_386290.html");
   });
-  $("#zoom_chart_619_15").click( function () {
-    window.open("../topo/run_5_knl07_357913_358222.html");
+  $("#zoom_chart_697_15").click( function () {
+    window.open("../topo/run_5_knl07_385982_386291.html");
   });
-  $("#zoom_chart_619_16").click( function () {
-    window.open("../topo/run_5_knl07_357913_358223.html");
+  $("#zoom_chart_697_16").click( function () {
+    window.open("../topo/run_5_knl07_385982_386292.html");
   });
-  $("#zoom_chart_619_17").click( function () {
-    window.open("../topo/run_5_knl07_357913_358224.html");
+  $("#zoom_chart_697_17").click( function () {
+    window.open("../topo/run_5_knl07_385982_386296.html");
   });
-  $("#zoom_chart_619_18").click( function () {
-    window.open("../topo/run_5_knl07_357913_358227.html");
+  $("#zoom_chart_697_18").click( function () {
+    window.open("../topo/run_5_knl07_385982_386297.html");
   });
-  $("#zoom_chart_619_19").click( function () {
-    window.open("../topo/run_5_knl07_357913_358228.html");
+  $("#zoom_chart_697_19").click( function () {
+    window.open("../topo/run_5_knl07_385982_386299.html");
   });
-  $("#zoom_chart_619_20").click( function () {
-    window.open("../topo/run_5_knl07_357913_358231.html");
+  $("#zoom_chart_697_20").click( function () {
+    window.open("../topo/run_5_knl07_385982_386300.html");
   });
-  $("#zoom_chart_619_21").click( function () {
-    window.open("../topo/run_5_knl07_357913_358232.html");
+  $("#zoom_chart_697_21").click( function () {
+    window.open("../topo/run_5_knl07_385982_386301.html");
   });
   }
 }

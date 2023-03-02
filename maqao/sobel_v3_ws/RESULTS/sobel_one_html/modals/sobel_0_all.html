@@ -96,25 +96,25 @@ addLoadEvent(function(){
       <td><button type="button" style="cursor:pointer;" onclick="set_next_ldbal_input ();">&rarr;</button></td>
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_398" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_440" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_399" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_441" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
   <script>
 function set_ldbal_input () {
   var selector_run  = document.getElementById ("ldbal_select_run");
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_398").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_398").getBoundingClientRect().width);
-  document.getElementById("chart_cat_399").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_399").getBoundingClientRect().width);
+  document.getElementById("chart_cat_440").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_440").getBoundingClientRect().width);
+  document.getElementById("chart_cat_441").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_441").getBoundingClientRect().width);
   // According to selector, draw both charts
   if (selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['knl07_359590_359590'];
-    var data = [{value: 29.87, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['knl07_386327_386327'];
+    var data = [{value: 32.42, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -129,7 +129,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_398')
+    const svg = d3.select('#chart_cat_440')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -185,13 +185,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_398')
+      .attr('id', 'zoom_chart_440')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_398_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_440_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -233,13 +233,13 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_398_0").click( function () {
-    window.open("../topo/run_0_knl07_359590_359590.html");
+  $("#zoom_chart_440_0").click( function () {
+    window.open("../topo/run_0_knl07_386327_386327.html");
   });
   }
   if (selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['knl07_359590_359590'];
+    var ordinals = ['knl07_386327_386327'];
     var data = [{value: 5.6, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -255,7 +255,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_399')
+    const svg = d3.select('#chart_cat_441')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -311,13 +311,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_399')
+      .attr('id', 'zoom_chart_441')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_399_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_441_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -359,14 +359,14 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_399_0").click( function () {
-    window.open("../topo/run_0_knl07_359590_359590.html");
+  $("#zoom_chart_441_0").click( function () {
+    window.open("../topo/run_0_knl07_386327_386327.html");
   });
   }
   if (selector_run.value  == "2") {
   $(document).ready(function(){
-    var ordinals = ['knl07_359887_360176','knl07_359887_359887'];
-    var data = [{value: 45.48, offset: 0, i: 0, color: "#333399"},{value: 22.15, offset: 0, i: 1, color: "#333399"}];
+    var ordinals = ['knl07_386624_386913','knl07_386624_386624'];
+    var data = [{value: 45.12, offset: 0, i: 0, color: "#333399"},{value: 20.83, offset: 0, i: 1, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -381,7 +381,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_398')
+    const svg = d3.select('#chart_cat_440')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -437,13 +437,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_398')
+      .attr('id', 'zoom_chart_440')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_398_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_440_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -485,17 +485,17 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_398_0").click( function () {
-    window.open("../topo/run_1_knl07_359887_360176.html");
+  $("#zoom_chart_440_0").click( function () {
+    window.open("../topo/run_1_knl07_386624_386913.html");
   });
-  $("#zoom_chart_398_1").click( function () {
-    window.open("../topo/run_1_knl07_359887_359887.html");
+  $("#zoom_chart_440_1").click( function () {
+    window.open("../topo/run_1_knl07_386624_386624.html");
   });
   }
   if (selector_run.value  == "2") {
   $(document).ready(function(){
-    var ordinals = ['knl07_359887_360176','knl07_359887_359887'];
-    var data = [{value: 5.57, offset: 0, i: 0, color: "#333399"},{value: 5.53, offset: 0, i: 1, color: "#333399"}];
+    var ordinals = ['knl07_386624_386913','knl07_386624_386624'];
+    var data = [{value: 5.63, offset: 0, i: 0, color: "#333399"},{value: 5.59, offset: 0, i: 1, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -510,7 +510,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_399')
+    const svg = d3.select('#chart_cat_441')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -566,13 +566,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_399')
+      .attr('id', 'zoom_chart_441')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_399_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_441_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -614,17 +614,17 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_399_0").click( function () {
-    window.open("../topo/run_1_knl07_359887_360176.html");
+  $("#zoom_chart_441_0").click( function () {
+    window.open("../topo/run_1_knl07_386624_386913.html");
   });
-  $("#zoom_chart_399_1").click( function () {
-    window.open("../topo/run_1_knl07_359887_359887.html");
+  $("#zoom_chart_441_1").click( function () {
+    window.open("../topo/run_1_knl07_386624_386624.html");
   });
   }
   if (selector_run.value  == "3") {
   $(document).ready(function(){
-    var ordinals = ['knl07_360185_360477','knl07_360185_360476','knl07_360185_360475','knl07_360185_360185'];
-    var data = [{value: 45.76, offset: 0, i: 0, color: "#333399"},{value: 45.65, offset: 0, i: 1, color: "#333399"},{value: 41.78, offset: 0, i: 2, color: "#333399"},{value: 11.59, offset: 0, i: 3, color: "#333399"}];
+    var ordinals = ['knl07_386930_387222','knl07_386930_387221','knl07_386930_387223','knl07_386930_386930'];
+    var data = [{value: 44.7, offset: 0, i: 0, color: "#333399"},{value: 44.2, offset: 0, i: 1, color: "#333399"},{value: 41.68, offset: 0, i: 2, color: "#333399"},{value: 12.75, offset: 0, i: 3, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -639,7 +639,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_398')
+    const svg = d3.select('#chart_cat_440')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -695,13 +695,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_398')
+      .attr('id', 'zoom_chart_440')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_398_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_440_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -743,23 +743,23 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_398_0").click( function () {
-    window.open("../topo/run_2_knl07_360185_360477.html");
+  $("#zoom_chart_440_0").click( function () {
+    window.open("../topo/run_2_knl07_386930_387222.html");
   });
-  $("#zoom_chart_398_1").click( function () {
-    window.open("../topo/run_2_knl07_360185_360476.html");
+  $("#zoom_chart_440_1").click( function () {
+    window.open("../topo/run_2_knl07_386930_387221.html");
   });
-  $("#zoom_chart_398_2").click( function () {
-    window.open("../topo/run_2_knl07_360185_360475.html");
+  $("#zoom_chart_440_2").click( function () {
+    window.open("../topo/run_2_knl07_386930_387223.html");
   });
-  $("#zoom_chart_398_3").click( function () {
-    window.open("../topo/run_2_knl07_360185_360185.html");
+  $("#zoom_chart_440_3").click( function () {
+    window.open("../topo/run_2_knl07_386930_386930.html");
   });
   }
   if (selector_run.value  == "3") {
   $(document).ready(function(){
-    var ordinals = ['knl07_360185_360475','knl07_360185_360476','knl07_360185_360185','knl07_360185_360477'];
-    var data = [{value: 5.57, offset: 0, i: 0, color: "#333399"},{value: 5.56, offset: 0, i: 1, color: "#333399"},{value: 5.56, offset: 0, i: 2, color: "#333399"},{value: 5.56, offset: 0, i: 3, color: "#333399"}];
+    var ordinals = ['knl07_386930_387223','knl07_386930_386930','knl07_386930_387222','knl07_386930_387221'];
+    var data = [{value: 5.62, offset: 0, i: 0, color: "#333399"},{value: 5.57, offset: 0, i: 1, color: "#333399"},{value: 5.56, offset: 0, i: 2, color: "#333399"},{value: 5.56, offset: 0, i: 3, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -774,7 +774,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_399')
+    const svg = d3.select('#chart_cat_441')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -830,13 +830,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_399')
+      .attr('id', 'zoom_chart_441')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_399_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_441_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -878,17 +878,17 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_399_0").click( function () {
-    window.open("../topo/run_2_knl07_360185_360475.html");
+  $("#zoom_chart_441_0").click( function () {
+    window.open("../topo/run_2_knl07_386930_387223.html");
   });
-  $("#zoom_chart_399_1").click( function () {
-    window.open("../topo/run_2_knl07_360185_360476.html");
+  $("#zoom_chart_441_1").click( function () {
+    window.open("../topo/run_2_knl07_386930_386930.html");
   });
-  $("#zoom_chart_399_2").click( function () {
-    window.open("../topo/run_2_knl07_360185_360185.html");
+  $("#zoom_chart_441_2").click( function () {
+    window.open("../topo/run_2_knl07_386930_387222.html");
   });
-  $("#zoom_chart_399_3").click( function () {
-    window.open("../topo/run_2_knl07_360185_360477.html");
+  $("#zoom_chart_441_3").click( function () {
+    window.open("../topo/run_2_knl07_386930_387221.html");
   });
   }
 }

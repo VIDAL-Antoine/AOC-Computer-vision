@@ -10,5 +10,3 @@ main._omp_fn.0 - /scratch/chps/users/user22024/Projet/AOC-Computer-vision/sobel.
 sobel
 __fprintf_chk - :0
 psiginfo - :0
-.text@start - :0
-ld-2.31.so

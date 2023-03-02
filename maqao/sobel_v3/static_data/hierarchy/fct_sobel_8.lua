@@ -1,7 +1,7 @@
 __fct = {
   loops = {
     _3 = {
-      src = "sobel.c:21-330",
+      src = "sobel.c:21-334",
       src_regions = {
         {
           path = "/scratch/chps/users/user22024/Projet/AOC-Computer-vision/sobel.c",
@@ -10,7 +10,7 @@ __fct = {
             {202, 214},
             {271, 274},
             {313, 313},
-            {320, 330},
+            {320, 334},
           },
         },
         {

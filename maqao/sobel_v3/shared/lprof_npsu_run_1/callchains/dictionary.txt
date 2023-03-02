@@ -1,6 +1,6 @@
-GOMP_parallel - :0
-libgomp.so.1.0.0
 omp_in_final - :0
+libgomp.so.1.0.0
+GOMP_parallel - :0
 unknown kernel region
 kernel
 __read - :0

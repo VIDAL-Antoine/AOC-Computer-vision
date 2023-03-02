@@ -96,24 +96,24 @@ addLoadEvent(function(){
       <td><button type="button" style="cursor:pointer;" onclick="set_next_ldbal_input ();">&rarr;</button></td>
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_682" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_674" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_683" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_675" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
   <script>
 function set_ldbal_input () {
   var selector_run  = document.getElementById ("ldbal_select_run");
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_682").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_682").getBoundingClientRect().width);
-  document.getElementById("chart_cat_683").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_683").getBoundingClientRect().width);
+  document.getElementById("chart_cat_674").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_674").getBoundingClientRect().width);
+  document.getElementById("chart_cat_675").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_675").getBoundingClientRect().width);
   // According to selector, draw both charts
   if (selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['knl07_359590_359590'];
+    var ordinals = ['knl07_386327_386327'];
     var data = [{value: 0.01, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -129,7 +129,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_682')
+    const svg = d3.select('#chart_cat_674')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -185,13 +185,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_682')
+      .attr('id', 'zoom_chart_674')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_682_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_674_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -233,13 +233,13 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_682_0").click( function () {
-    window.open("../topo/run_0_knl07_359590_359590.html");
+  $("#zoom_chart_674_0").click( function () {
+    window.open("../topo/run_0_knl07_386327_386327.html");
   });
   }
   if (selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['knl07_359590_359590'];
+    var ordinals = ['knl07_386327_386327'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -255,7 +255,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_683')
+    const svg = d3.select('#chart_cat_675')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -311,13 +311,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_683')
+      .attr('id', 'zoom_chart_675')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_683_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_675_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -359,14 +359,14 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_683_0").click( function () {
-    window.open("../topo/run_0_knl07_359590_359590.html");
+  $("#zoom_chart_675_0").click( function () {
+    window.open("../topo/run_0_knl07_386327_386327.html");
   });
   }
   if (selector_run.value  == "2") {
   $(document).ready(function(){
-    var ordinals = ['knl07_359887_359887'];
-    var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = [];
+    var data = [];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -381,7 +381,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_682')
+    const svg = d3.select('#chart_cat_674')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -437,13 +437,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_682')
+      .attr('id', 'zoom_chart_674')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_682_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_674_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -485,14 +485,11 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_682_0").click( function () {
-    window.open("../topo/run_1_knl07_359887_359887.html");
-  });
   }
   if (selector_run.value  == "2") {
   $(document).ready(function(){
-    var ordinals = ['knl07_359887_359887'];
-    var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = [];
+    var data = [];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -507,7 +504,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_683')
+    const svg = d3.select('#chart_cat_675')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -563,13 +560,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_683')
+      .attr('id', 'zoom_chart_675')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_683_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_675_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -611,14 +608,11 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_683_0").click( function () {
-    window.open("../topo/run_1_knl07_359887_359887.html");
-  });
   }
   if (selector_run.value  == "3") {
   $(document).ready(function(){
-    var ordinals = ['knl07_360185_360475','knl07_360185_360476'];
-    var data = [{value: 0.02, offset: 0, i: 0, color: "#333399"},{value: 0.01, offset: 0, i: 1, color: "#333399"}];
+    var ordinals = [];
+    var data = [];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -633,7 +627,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_682')
+    const svg = d3.select('#chart_cat_674')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -689,13 +683,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_682')
+      .attr('id', 'zoom_chart_674')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_682_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_674_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -737,17 +731,11 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_682_0").click( function () {
-    window.open("../topo/run_2_knl07_360185_360475.html");
-  });
-  $("#zoom_chart_682_1").click( function () {
-    window.open("../topo/run_2_knl07_360185_360476.html");
-  });
   }
   if (selector_run.value  == "3") {
   $(document).ready(function(){
-    var ordinals = ['knl07_360185_360475','knl07_360185_360476'];
-    var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"}];
+    var ordinals = [];
+    var data = [];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -762,7 +750,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_683')
+    const svg = d3.select('#chart_cat_675')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -818,13 +806,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_683')
+      .attr('id', 'zoom_chart_675')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_683_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_675_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -865,12 +853,6 @@ function set_ldbal_input () {
       hideTicksWithoutLabel()
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
-  });
-  $("#zoom_chart_683_0").click( function () {
-    window.open("../topo/run_2_knl07_360185_360475.html");
-  });
-  $("#zoom_chart_683_1").click( function () {
-    window.open("../topo/run_2_knl07_360185_360476.html");
   });
   }
 }

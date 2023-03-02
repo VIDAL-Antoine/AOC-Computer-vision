@@ -1,6 +1,5 @@
 name;time_p;time_s;cpi_ratio;
-kernel;50.07;24.04;;
-/scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v3_ws/binaries/sobel;49.83;23.92;;
+/scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v3_ws/binaries/sobel;52.29;22.83;;
+kernel;47.6;20.78;;
 /usr/lib/x86_64-linux-gnu/libc-2.31.so;0.05;0.02;;
 /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0;0.05;0.02;;
-/usr/lib/x86_64-linux-gnu/libpthread-2.31.so;0;0;;

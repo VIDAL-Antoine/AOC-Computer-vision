@@ -319,6 +319,10 @@ int main(int argc, char **argv)
       //
       u64 elapsed = (cycles_a - cycles_b);
 
+#if V3_SS || V3_WS
+#pragma omp critical
+{
+#endif
       //
       if (samples_count < MAX_SAMPLES)
 	      cycles[samples_count++] = elapsed;
@@ -328,6 +332,9 @@ int main(int argc, char **argv)
 
       //
       frame_count++;
+#if V3_SS || V3_WS
+}
+#endif
 #if BASELINE || V1 || V2
       fwrite(oframe, sizeof(u8), H * W * 3, fpo);
   }

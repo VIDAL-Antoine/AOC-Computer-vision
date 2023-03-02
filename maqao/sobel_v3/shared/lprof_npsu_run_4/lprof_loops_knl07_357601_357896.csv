@@ -1,6 +1,0 @@
-loop_id;module;function_name;function_id;source_info;level;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
-0;sobel;main._omp_fn.0;8;sobel.c:21-30;Innermost;45.71;0.36;;;;;;
-1;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;41.23;0.32;;;;;;
-5;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;0.77;0.01;;;;;;
-4;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;0.26;0;;;;;;
-2;sobel;main._omp_fn.0;8;sobel.c:202-313;InBetween;0.13;0;;;;;;

@@ -1,4 +1,4 @@
-/scratch/chps/users/user22024/Projet/AOC-Computer-vision/sobel.c: 21 - 330
+/scratch/chps/users/user22024/Projet/AOC-Computer-vision/sobel.c: 21 - 334
 --------------------------------------------------------------------------------
 
 21:   for (u64 i = 0; i < H * W * 3; i += 3)
@@ -35,15 +35,19 @@
 [...]
 320:       u64 elapsed = (cycles_a - cycles_b);
 321: 
-322:       //
-323:       if (samples_count < MAX_SAMPLES)
-324: 	      cycles[samples_count++] = elapsed;
-325:       
-326:       //frame number; size in Bytes; elapsed cycles; bytes per cycle
-327:       fprintf(stdout, "%20llu; %20llu; %20llu; %15.3lf\n", frame_count, nb_bytes, elapsed, (f64)(nb_bytes) / (f64)elapsed);
-328: 
-329:       //
-330:       frame_count++;
+322: #if V3_SS || V3_WS
+323: #pragma omp critical
+324: {
+325: #endif
+326:       //
+327:       if (samples_count < MAX_SAMPLES)
+328: 	      cycles[samples_count++] = elapsed;
+329:       
+330:       //frame number; size in Bytes; elapsed cycles; bytes per cycle
+331:       fprintf(stdout, "%20llu; %20llu; %20llu; %15.3lf\n", frame_count, nb_bytes, elapsed, (f64)(nb_bytes) / (f64)elapsed);
+332: 
+333:       //
+334:       frame_count++;
 /scratch/chps/users/user22024/Projet/AOC-Computer-vision/rdtsc.h: 9 - 11
 --------------------------------------------------------------------------------
 

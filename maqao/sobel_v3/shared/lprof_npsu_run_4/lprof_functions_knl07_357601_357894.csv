@@ -1,4 +1,0 @@
-function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;cats;
-8;sobel;main._omp_fn.0;sobel.c:21-330,rdtsc.h:9-11,stdio2.h:100-100;86.94;0.68;;;;;;"100,0,0,0,0,0,0,0,0,0";
--1;kernel;unknown_kernel_region;;11.01;0.09;;;;;;"0,0,0,0,100,0,0,0,0,0";
-256;libgomp.so.1.0.0;omp_get_num_procs;;2.05;0.02;;;;;;"0,0,100,0,0,0,0,0,0,0";

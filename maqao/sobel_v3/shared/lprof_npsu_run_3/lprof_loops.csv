@@ -1,8 +1,7 @@
 loop_id;module;function_name;function_id;source_info;level;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
-0;sobel;main._omp_fn.0;8;sobel.c:21-30;Innermost;32.13;2.11;0.69;0.69;0.7;12.307911872864;8;
-1;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;28.64;1.88;0.58;0.62;0.64;10.913979530334;8;
-5;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;0.73;0.05;0.01;0.02;0.03;0.52907598018646;8;
-4;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;0.17;0.01;0;0;0.01;0.10933398455381;8;
-2;sobel;main._omp_fn.0;8;sobel.c:202-313;InBetween;0.08;0;0;0;0;0.054393604397774;7;
-3;sobel;main._omp_fn.0;8;sobel.c:21-334,rdtsc.h:9-11,stdio2.h:100-100;Outermost;0.01;0;0;0;0;0;1;
-9;sobel;sort;12;common.c:9-15;Innermost;0.01;0;0;0;0;0;1;
+0;sobel;main._omp_fn.0;8;sobel.c:21-30;Innermost;33.63;2.03;0.69;0.7;0.7;12.288601875305;8;
+1;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;29.86;1.8;0.61;0.62;0.63;10.919220924377;8;
+5;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;0.7;0.04;0.01;0.01;0.02;0.34410148859024;8;
+4;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;0.19;0.01;0;0;0.01;0.15031556785107;8;
+2;sobel;main._omp_fn.0;8;sobel.c:202-313;InBetween;0.08;0.01;0;0;0.01;0.11481959372759;4;
+3;sobel;main._omp_fn.0;8;sobel.c:21-334,rdtsc.h:9-11,stdio2.h:100-100;Outermost;0.01;0;0;0;0;1.6660004931168e-08;2;

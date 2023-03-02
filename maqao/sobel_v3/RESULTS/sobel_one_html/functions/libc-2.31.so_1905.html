@@ -134,12 +134,12 @@ if (obj) {
 <!-- ========================== Summary about the function ========================== -->
   <table id="object_summary" style="width:100%;border: 1px solid var(--table_border);border-radius:5px;color:var(--header_font);background:var(--header_background);margin-bottom:15px;">
     <tr>
-      <th><button class="tooltip-maqao-button" onclick="window.location.href='libc-2.31.so_308.html';" title="" tooltip_id="0" >Prev</button></th>
+      <th><button class="tooltip-maqao-button" onclick="window.location.href='libc-2.31.so_718.html';" title="" tooltip_id="0" >Prev</button></th>
 <th>Function: __nss_database_lookup</th>
       <th>Module: libc-2.31.so</th>
       <th>Source: Not Available</th>
       <th>Coverage: 0.01%</th>
-      <th><button class="tooltip-maqao-button" onclick="window.location.href='libc-2.31.so_718.html';" title="" tooltip_id="1" >Next</button></th>
+      <th><button class="tooltip-maqao-button" onclick="window.location.href='libc-2.31.so_49.html';" title="" tooltip_id="1" >Next</button></th>
     </tr>
   </table>
   <div class="drag-container" id="main_section_content">
@@ -358,7 +358,7 @@ for (var i = 0, row; row = table_asm.rows[i]; i++) {
   </style>
 </div></div>
 <div class="panelcontent" id="OV_panel_callchains">
-<div class="_div_table"><table id="_treed_table_31" class="_treed_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="6">Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="7">Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="8">Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="9">Module</th></tr>
+<div class="_div_table"><table id="_treed_table_35" class="_treed_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="6">Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="7">Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="8">Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="9">Module</th></tr>
 </table></div>
   <script>
 function src_onresize () {
@@ -395,10 +395,10 @@ function src_loadhelp (divId) {
       <td style="width:40%;" />
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_351" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_390" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_352" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_391" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
   <script>
@@ -408,15 +408,15 @@ function set_ldbal_input () {
   document.getElementById ("main_section_div").dataset.ldbal = selector_type.value;
   document.getElementById ("main_section_div").dataset.run = selector_run.value;
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_351").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_351").getBoundingClientRect().width);
-  document.getElementById("chart_cat_352").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_352").getBoundingClientRect().width);
+  document.getElementById("chart_cat_390").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_390").getBoundingClientRect().width);
+  document.getElementById("chart_cat_391").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_391").getBoundingClientRect().width);
   // According to selectors, draw both charts
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['knl07_384458_384458'];
+    var ordinals = ['knl07_388735_388735'];
     var data = [{value: 0.01, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -432,7 +432,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_351')
+    const svg = d3.select('#chart_cat_390')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -488,13 +488,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
+      .attr('id', 'zoom_chart_390')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -536,14 +536,14 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_351_0").click( function () {
-    window.open("../topo/run_0_knl07_384458_384458.html");
+  $("#zoom_chart_390_0").click( function () {
+    window.open("../topo/run_0_knl07_388735_388735.html");
   });
   }
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['knl07_384458_384458'];
+    var ordinals = ['knl07_388735_388735'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -559,7 +559,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -615,13 +615,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -663,14 +663,14 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_352_0").click( function () {
-    window.open("../topo/run_0_knl07_384458_384458.html");
+  $("#zoom_chart_391_0").click( function () {
+    window.open("../topo/run_0_knl07_388735_388735.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['knl07_384458_384458'];
+    var ordinals = ['knl07_388735_388735'];
     var data = [{value: 0.01, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -686,7 +686,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_351')
+    const svg = d3.select('#chart_cat_390')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -742,13 +742,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
+      .attr('id', 'zoom_chart_390')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -790,14 +790,14 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_351_0").click( function () {
-    window.open("../topo/run_0_knl07_384458_384458.html");
+  $("#zoom_chart_390_0").click( function () {
+    window.open("../topo/run_0_knl07_388735_388735.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['knl07_384458_384458'];
+    var ordinals = ['knl07_388735_388735'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -813,7 +813,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -869,13 +869,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -917,14 +917,14 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_352_0").click( function () {
-    window.open("../topo/run_0_knl07_384458_384458.html");
+  $("#zoom_chart_391_0").click( function () {
+    window.open("../topo/run_0_knl07_388735_388735.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['knl07_384458_384458'];
+    var ordinals = ['knl07_388735_388735'];
     var data = [{value: 0.01, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -940,7 +940,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_351')
+    const svg = d3.select('#chart_cat_390')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -996,13 +996,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
+      .attr('id', 'zoom_chart_390')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1044,14 +1044,14 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_351_0").click( function () {
-    window.open("../topo/run_0_knl07_384458_384458.html");
+  $("#zoom_chart_390_0").click( function () {
+    window.open("../topo/run_0_knl07_388735_388735.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['knl07_384458_384458'];
+    var ordinals = ['knl07_388735_388735'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -1067,7 +1067,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1123,13 +1123,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1171,15 +1171,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_352_0").click( function () {
-    window.open("../topo/run_0_knl07_384458_384458.html");
+  $("#zoom_chart_391_0").click( function () {
+    window.open("../topo/run_0_knl07_388735_388735.html");
   });
   }
   if (selector_type.value == "regular"
   &&  selector_run.value  == "2") {
   $(document).ready(function(){
-    var ordinals = ['knl07_384766_384766'];
-    var data = [{value: 0.01, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = [];
+    var data = [];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -1194,7 +1194,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_351')
+    const svg = d3.select('#chart_cat_390')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1250,13 +1250,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
+      .attr('id', 'zoom_chart_390')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1297,16 +1297,13 @@ function set_ldbal_input () {
       hideTicksWithoutLabel()
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
-  });
-  $("#zoom_chart_351_0").click( function () {
-    window.open("../topo/run_1_knl07_384766_384766.html");
   });
   }
   if (selector_type.value == "regular"
   &&  selector_run.value  == "2") {
   $(document).ready(function(){
-    var ordinals = ['knl07_384766_384766'];
-    var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = [];
+    var data = [];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -1321,7 +1318,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1377,13 +1374,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1425,15 +1422,12 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_352_0").click( function () {
-    window.open("../topo/run_1_knl07_384766_384766.html");
-  });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "2") {
   $(document).ready(function(){
-    var ordinals = ['knl07_384766_384766'];
-    var data = [{value: 0.01, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = [];
+    var data = [];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -1448,7 +1442,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_351')
+    const svg = d3.select('#chart_cat_390')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1504,13 +1498,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
+      .attr('id', 'zoom_chart_390')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1552,15 +1546,12 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_351_0").click( function () {
-    window.open("../topo/run_1_knl07_384766_384766.html");
-  });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "2") {
   $(document).ready(function(){
-    var ordinals = ['knl07_384766_384766'];
-    var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = [];
+    var data = [];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -1575,7 +1566,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1631,13 +1622,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1679,144 +1670,11 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_352_0").click( function () {
-    window.open("../topo/run_1_knl07_384766_384766.html");
-  });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "2") {
   $(document).ready(function(){
-    var ordinals = ['knl07_384766_384766','knl07_384766_385055'];
-    var data = [{value: 0.01, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"}];
-    var widthgl  = _width;
-    var widthin  = _width;
-    var heightgl = 480;
-    var heightin = 495;
-    let margin = {
-      top:    10,
-      right:  30,
-      bottom: 30,
-      left:   50
-    },
-    width = widthgl - margin.left - margin.right,
-    height = heightgl - margin.top - margin.bottom,
-    radius = (Math.min(width, height) / 2) - 10,
-    node;
-    const svg = d3.select('#chart_cat_351')
-        .append('svg')
-        .attr('width', widthin)
-        .attr('height', heightin)
-        .append('g')
-        .attr('transform', `translate(${margin.left}, ${margin.top})`)
-        .call(
-          d3.zoom()
-            .translateExtent([[0,0], [width, height] ])
-            .extent([[0, 0], [width, height] ])
-          .on('zoom', zoom)
-        ).on("dblclick.zoom", null);
-    let x = d3.scaleLinear().range([0, width])
-    let y = d3.scaleLinear().range([height, 0])
-    let color = d3.scaleOrdinal(d3.schemeCategory10)
-    let xScale = x.domain([-1, ordinals.length])
-    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
-    let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
-    svg.append('rect')
-      .attr('class', 'zoom-panel')
-      .attr('width', width)
-      .attr('height', height)
-      .style('fill', 'var(--background)')
-    let xAxis = svg.append('g')
-      .attr('class', 'xAxis')
-      .attr('transform', `translate(0, ${height})`)
-      .call(
-        d3.axisBottom(xScale).tickFormat((d, e) => {
-          return ordinals[d]
-        })
-      );
-    svg.append("text")
-      .attr("transform",
-            "translate(" + (width/2) + " ," + (height + margin.top + 30) + ")")
-      .style("text-anchor", "middle")
-      .style("fill", "var(--font)")
-      .text("MAQAO thread rank");
-    let yAxis = svg.append('g')
-      .attr('class', 'yAxis')
-      .call(d3.axisLeft(yScale));
-    yAxis.selectAll(".tick text").attr("fill","var(--font)");
-    yAxis.selectAll(".tick line").attr("stroke","var(--font)");
-    yAxis.selectAll(".domain").attr("stroke","var(--font)");
-    xAxis.selectAll(".tick text").attr("fill","var(--font)");
-    xAxis.selectAll(".tick line").attr("stroke","var(--font)");
-    xAxis.selectAll(".domain").attr("stroke","var(--font)");
-    svg.append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 0 - margin.left)
-      .attr("x",0 - (height / 2))
-      .attr("dy", "1em")
-      .style("text-anchor", "middle")
-      .style("fill", "var(--font)")
-      .text("Coverage (%)");
-    let bars = svg.append('g')
-      .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
-      .selectAll('.bar')
-      .data(data)
-      .enter()
-      .append('rect')
-      .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
-      .attr('x', function(d, i){
-        return xScale(d.i) - xBand.bandwidth()*0.9/2
-      })
-      .attr('y', function(d, i){
-        return yScale(d.value + d.offset)
-      })
-      .attr('width', xBand.bandwidth()*0.9)
-      .attr('height', function(d){
-        return height - yScale(d.value)
-      })
-      .style("fill", function(d){
-        return d.color
-      })
-    let defs = svg.append('defs')
-      defs.append('clipPath')
-        .attr('id', 'my-clip-path')
-        .append('rect')
-        .attr('width', width)
-        .attr('height', height)
-      let hideTicksWithoutLabel = function() {
-        d3.selectAll('.xAxis .tick text').each(function(d){
-          if(this.innerHTML === '') {
-            this.parentNode.style.display = 'none';
-          }
-        })
-      }
-      function zoom() {
-        if (d3.event.transform.k < 1) {
-          d3.event.transform.k = 1;
-          return;
-        }
-      xAxis.call(
-        d3.axisBottom(d3.event.transform.rescaleX(xScale)).tickFormat((d, e, target) => {
-          if (Math.floor(d) === d3.format(".1f")(d)) return ordinals[Math.floor(d)]
-            return ordinals[d];
-        })
-      )
-      hideTicksWithoutLabel()
-        bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
-    }
-  });
-  $("#zoom_chart_351_0").click( function () {
-    window.open("../topo/run_1_knl07_384766_384766.html");
-  });
-  $("#zoom_chart_351_1").click( function () {
-    window.open("../topo/run_1_knl07_384766_385055.html");
-  });
-  }
-  if (selector_type.value == "all"
-  &&  selector_run.value  == "2") {
-  $(document).ready(function(){
-    var ordinals = ['knl07_384766_384766','knl07_384766_385055'];
+    var ordinals = ['knl07_389033_389033','knl07_389033_389322'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -1832,137 +1690,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
-        .append('svg')
-        .attr('width', widthin)
-        .attr('height', heightin)
-        .append('g')
-        .attr('transform', `translate(${margin.left}, ${margin.top})`)
-        .call(
-          d3.zoom()
-            .translateExtent([[0,0], [width, height] ])
-            .extent([[0, 0], [width, height] ])
-          .on('zoom', zoom)
-        ).on("dblclick.zoom", null);
-    let x = d3.scaleLinear().range([0, width])
-    let y = d3.scaleLinear().range([height, 0])
-    let color = d3.scaleOrdinal(d3.schemeCategory10)
-    let xScale = x.domain([-1, ordinals.length])
-    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
-    let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
-    svg.append('rect')
-      .attr('class', 'zoom-panel')
-      .attr('width', width)
-      .attr('height', height)
-      .style('fill', 'var(--background)')
-    let xAxis = svg.append('g')
-      .attr('class', 'xAxis')
-      .attr('transform', `translate(0, ${height})`)
-      .call(
-        d3.axisBottom(xScale).tickFormat((d, e) => {
-          return ordinals[d]
-        })
-      );
-    svg.append("text")
-      .attr("transform",
-            "translate(" + (width/2) + " ," + (height + margin.top + 30) + ")")
-      .style("text-anchor", "middle")
-      .style("fill", "var(--font)")
-      .text("MAQAO thread rank");
-    let yAxis = svg.append('g')
-      .attr('class', 'yAxis')
-      .call(d3.axisLeft(yScale));
-    yAxis.selectAll(".tick text").attr("fill","var(--font)");
-    yAxis.selectAll(".tick line").attr("stroke","var(--font)");
-    yAxis.selectAll(".domain").attr("stroke","var(--font)");
-    xAxis.selectAll(".tick text").attr("fill","var(--font)");
-    xAxis.selectAll(".tick line").attr("stroke","var(--font)");
-    xAxis.selectAll(".domain").attr("stroke","var(--font)");
-    svg.append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 0 - margin.left)
-      .attr("x",0 - (height / 2))
-      .attr("dy", "1em")
-      .style("text-anchor", "middle")
-      .style("fill", "var(--font)")
-      .text("Time (s)");
-    let bars = svg.append('g')
-      .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
-      .selectAll('.bar')
-      .data(data)
-      .enter()
-      .append('rect')
-      .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
-      .attr('x', function(d, i){
-        return xScale(d.i) - xBand.bandwidth()*0.9/2
-      })
-      .attr('y', function(d, i){
-        return yScale(d.value + d.offset)
-      })
-      .attr('width', xBand.bandwidth()*0.9)
-      .attr('height', function(d){
-        return height - yScale(d.value)
-      })
-      .style("fill", function(d){
-        return d.color
-      })
-    let defs = svg.append('defs')
-      defs.append('clipPath')
-        .attr('id', 'my-clip-path')
-        .append('rect')
-        .attr('width', width)
-        .attr('height', height)
-      let hideTicksWithoutLabel = function() {
-        d3.selectAll('.xAxis .tick text').each(function(d){
-          if(this.innerHTML === '') {
-            this.parentNode.style.display = 'none';
-          }
-        })
-      }
-      function zoom() {
-        if (d3.event.transform.k < 1) {
-          d3.event.transform.k = 1;
-          return;
-        }
-      xAxis.call(
-        d3.axisBottom(d3.event.transform.rescaleX(xScale)).tickFormat((d, e, target) => {
-          if (Math.floor(d) === d3.format(".1f")(d)) return ordinals[Math.floor(d)]
-            return ordinals[d];
-        })
-      )
-      hideTicksWithoutLabel()
-        bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
-    }
-  });
-  $("#zoom_chart_352_0").click( function () {
-    window.open("../topo/run_1_knl07_384766_384766.html");
-  });
-  $("#zoom_chart_352_1").click( function () {
-    window.open("../topo/run_1_knl07_384766_385055.html");
-  });
-  }
-  if (selector_type.value == "regular"
-  &&  selector_run.value  == "3") {
-  $(document).ready(function(){
-    var ordinals = [];
-    var data = [];
-    var widthgl  = _width;
-    var widthin  = _width;
-    var heightgl = 480;
-    var heightin = 495;
-    let margin = {
-      top:    10,
-      right:  30,
-      bottom: 30,
-      left:   50
-    },
-    width = widthgl - margin.left - margin.right,
-    height = heightgl - margin.top - margin.bottom,
-    radius = (Math.min(width, height) / 2) - 10,
-    node;
-    const svg = d3.select('#chart_cat_351')
+    const svg = d3.select('#chart_cat_390')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -2018,13 +1746,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
+      .attr('id', 'zoom_chart_390')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -2066,12 +1794,18 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
+  $("#zoom_chart_390_0").click( function () {
+    window.open("../topo/run_1_knl07_389033_389033.html");
+  });
+  $("#zoom_chart_390_1").click( function () {
+    window.open("../topo/run_1_knl07_389033_389322.html");
+  });
   }
-  if (selector_type.value == "regular"
-  &&  selector_run.value  == "3") {
+  if (selector_type.value == "all"
+  &&  selector_run.value  == "2") {
   $(document).ready(function(){
-    var ordinals = [];
-    var data = [];
+    var ordinals = ['knl07_389033_389033','knl07_389033_389322'];
+    var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -2086,7 +1820,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -2142,13 +1876,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -2190,12 +1924,18 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
+  $("#zoom_chart_391_0").click( function () {
+    window.open("../topo/run_1_knl07_389033_389033.html");
+  });
+  $("#zoom_chart_391_1").click( function () {
+    window.open("../topo/run_1_knl07_389033_389322.html");
+  });
   }
-  if (selector_type.value == "sorted"
+  if (selector_type.value == "regular"
   &&  selector_run.value  == "3") {
   $(document).ready(function(){
-    var ordinals = [];
-    var data = [];
+    var ordinals = ['knl07_389334_389334','knl07_389334_389624'];
+    var data = [{value: 0.01, offset: 0, i: 0, color: "#333399"},{value: 0.03, offset: 0, i: 1, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -2210,7 +1950,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_351')
+    const svg = d3.select('#chart_cat_390')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -2266,13 +2006,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
+      .attr('id', 'zoom_chart_390')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -2314,12 +2054,18 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
+  $("#zoom_chart_390_0").click( function () {
+    window.open("../topo/run_2_knl07_389334_389334.html");
+  });
+  $("#zoom_chart_390_1").click( function () {
+    window.open("../topo/run_2_knl07_389334_389624.html");
+  });
   }
-  if (selector_type.value == "sorted"
+  if (selector_type.value == "regular"
   &&  selector_run.value  == "3") {
   $(document).ready(function(){
-    var ordinals = [];
-    var data = [];
+    var ordinals = ['knl07_389334_389334','knl07_389334_389624'];
+    var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -2334,7 +2080,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -2390,13 +2136,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -2437,12 +2183,414 @@ function set_ldbal_input () {
       hideTicksWithoutLabel()
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
+  });
+  $("#zoom_chart_391_0").click( function () {
+    window.open("../topo/run_2_knl07_389334_389334.html");
+  });
+  $("#zoom_chart_391_1").click( function () {
+    window.open("../topo/run_2_knl07_389334_389624.html");
+  });
+  }
+  if (selector_type.value == "sorted"
+  &&  selector_run.value  == "3") {
+  $(document).ready(function(){
+    var ordinals = ['knl07_389334_389624','knl07_389334_389334'];
+    var data = [{value: 0.03, offset: 0, i: 0, color: "#333399"},{value: 0.01, offset: 0, i: 1, color: "#333399"}];
+    var widthgl  = _width;
+    var widthin  = _width;
+    var heightgl = 480;
+    var heightin = 495;
+    let margin = {
+      top:    10,
+      right:  30,
+      bottom: 30,
+      left:   50
+    },
+    width = widthgl - margin.left - margin.right,
+    height = heightgl - margin.top - margin.bottom,
+    radius = (Math.min(width, height) / 2) - 10,
+    node;
+    const svg = d3.select('#chart_cat_390')
+        .append('svg')
+        .attr('width', widthin)
+        .attr('height', heightin)
+        .append('g')
+        .attr('transform', `translate(${margin.left}, ${margin.top})`)
+        .call(
+          d3.zoom()
+            .translateExtent([[0,0], [width, height] ])
+            .extent([[0, 0], [width, height] ])
+          .on('zoom', zoom)
+        ).on("dblclick.zoom", null);
+    let x = d3.scaleLinear().range([0, width])
+    let y = d3.scaleLinear().range([height, 0])
+    let color = d3.scaleOrdinal(d3.schemeCategory10)
+    let xScale = x.domain([-1, ordinals.length])
+    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
+    let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
+    svg.append('rect')
+      .attr('class', 'zoom-panel')
+      .attr('width', width)
+      .attr('height', height)
+      .style('fill', 'var(--background)')
+    let xAxis = svg.append('g')
+      .attr('class', 'xAxis')
+      .attr('transform', `translate(0, ${height})`)
+      .call(
+        d3.axisBottom(xScale).tickFormat((d, e) => {
+          return ordinals[d]
+        })
+      );
+    svg.append("text")
+      .attr("transform",
+            "translate(" + (width/2) + " ," + (height + margin.top + 30) + ")")
+      .style("text-anchor", "middle")
+      .style("fill", "var(--font)")
+      .text("MAQAO thread rank");
+    let yAxis = svg.append('g')
+      .attr('class', 'yAxis')
+      .call(d3.axisLeft(yScale));
+    yAxis.selectAll(".tick text").attr("fill","var(--font)");
+    yAxis.selectAll(".tick line").attr("stroke","var(--font)");
+    yAxis.selectAll(".domain").attr("stroke","var(--font)");
+    xAxis.selectAll(".tick text").attr("fill","var(--font)");
+    xAxis.selectAll(".tick line").attr("stroke","var(--font)");
+    xAxis.selectAll(".domain").attr("stroke","var(--font)");
+    svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .style("fill", "var(--font)")
+      .text("Coverage (%)");
+    let bars = svg.append('g')
+      .attr('clip-path','url(#my-clip-path)')
+      .attr('id', 'zoom_chart_390')
+      .selectAll('.bar')
+      .data(data)
+      .enter()
+      .append('rect')
+      .attr('class', 'bar')
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
+      .attr('x', function(d, i){
+        return xScale(d.i) - xBand.bandwidth()*0.9/2
+      })
+      .attr('y', function(d, i){
+        return yScale(d.value + d.offset)
+      })
+      .attr('width', xBand.bandwidth()*0.9)
+      .attr('height', function(d){
+        return height - yScale(d.value)
+      })
+      .style("fill", function(d){
+        return d.color
+      })
+    let defs = svg.append('defs')
+      defs.append('clipPath')
+        .attr('id', 'my-clip-path')
+        .append('rect')
+        .attr('width', width)
+        .attr('height', height)
+      let hideTicksWithoutLabel = function() {
+        d3.selectAll('.xAxis .tick text').each(function(d){
+          if(this.innerHTML === '') {
+            this.parentNode.style.display = 'none';
+          }
+        })
+      }
+      function zoom() {
+        if (d3.event.transform.k < 1) {
+          d3.event.transform.k = 1;
+          return;
+        }
+      xAxis.call(
+        d3.axisBottom(d3.event.transform.rescaleX(xScale)).tickFormat((d, e, target) => {
+          if (Math.floor(d) === d3.format(".1f")(d)) return ordinals[Math.floor(d)]
+            return ordinals[d];
+        })
+      )
+      hideTicksWithoutLabel()
+        bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
+    }
+  });
+  $("#zoom_chart_390_0").click( function () {
+    window.open("../topo/run_2_knl07_389334_389624.html");
+  });
+  $("#zoom_chart_390_1").click( function () {
+    window.open("../topo/run_2_knl07_389334_389334.html");
+  });
+  }
+  if (selector_type.value == "sorted"
+  &&  selector_run.value  == "3") {
+  $(document).ready(function(){
+    var ordinals = ['knl07_389334_389334','knl07_389334_389624'];
+    var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"}];
+    var widthgl  = _width;
+    var widthin  = _width;
+    var heightgl = 480;
+    var heightin = 495;
+    let margin = {
+      top:    10,
+      right:  30,
+      bottom: 30,
+      left:   50
+    },
+    width = widthgl - margin.left - margin.right,
+    height = heightgl - margin.top - margin.bottom,
+    radius = (Math.min(width, height) / 2) - 10,
+    node;
+    const svg = d3.select('#chart_cat_391')
+        .append('svg')
+        .attr('width', widthin)
+        .attr('height', heightin)
+        .append('g')
+        .attr('transform', `translate(${margin.left}, ${margin.top})`)
+        .call(
+          d3.zoom()
+            .translateExtent([[0,0], [width, height] ])
+            .extent([[0, 0], [width, height] ])
+          .on('zoom', zoom)
+        ).on("dblclick.zoom", null);
+    let x = d3.scaleLinear().range([0, width])
+    let y = d3.scaleLinear().range([height, 0])
+    let color = d3.scaleOrdinal(d3.schemeCategory10)
+    let xScale = x.domain([-1, ordinals.length])
+    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
+    let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
+    svg.append('rect')
+      .attr('class', 'zoom-panel')
+      .attr('width', width)
+      .attr('height', height)
+      .style('fill', 'var(--background)')
+    let xAxis = svg.append('g')
+      .attr('class', 'xAxis')
+      .attr('transform', `translate(0, ${height})`)
+      .call(
+        d3.axisBottom(xScale).tickFormat((d, e) => {
+          return ordinals[d]
+        })
+      );
+    svg.append("text")
+      .attr("transform",
+            "translate(" + (width/2) + " ," + (height + margin.top + 30) + ")")
+      .style("text-anchor", "middle")
+      .style("fill", "var(--font)")
+      .text("MAQAO thread rank");
+    let yAxis = svg.append('g')
+      .attr('class', 'yAxis')
+      .call(d3.axisLeft(yScale));
+    yAxis.selectAll(".tick text").attr("fill","var(--font)");
+    yAxis.selectAll(".tick line").attr("stroke","var(--font)");
+    yAxis.selectAll(".domain").attr("stroke","var(--font)");
+    xAxis.selectAll(".tick text").attr("fill","var(--font)");
+    xAxis.selectAll(".tick line").attr("stroke","var(--font)");
+    xAxis.selectAll(".domain").attr("stroke","var(--font)");
+    svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .style("fill", "var(--font)")
+      .text("Time (s)");
+    let bars = svg.append('g')
+      .attr('clip-path','url(#my-clip-path)')
+      .attr('id', 'zoom_chart_391')
+      .selectAll('.bar')
+      .data(data)
+      .enter()
+      .append('rect')
+      .attr('class', 'bar')
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
+      .attr('x', function(d, i){
+        return xScale(d.i) - xBand.bandwidth()*0.9/2
+      })
+      .attr('y', function(d, i){
+        return yScale(d.value + d.offset)
+      })
+      .attr('width', xBand.bandwidth()*0.9)
+      .attr('height', function(d){
+        return height - yScale(d.value)
+      })
+      .style("fill", function(d){
+        return d.color
+      })
+    let defs = svg.append('defs')
+      defs.append('clipPath')
+        .attr('id', 'my-clip-path')
+        .append('rect')
+        .attr('width', width)
+        .attr('height', height)
+      let hideTicksWithoutLabel = function() {
+        d3.selectAll('.xAxis .tick text').each(function(d){
+          if(this.innerHTML === '') {
+            this.parentNode.style.display = 'none';
+          }
+        })
+      }
+      function zoom() {
+        if (d3.event.transform.k < 1) {
+          d3.event.transform.k = 1;
+          return;
+        }
+      xAxis.call(
+        d3.axisBottom(d3.event.transform.rescaleX(xScale)).tickFormat((d, e, target) => {
+          if (Math.floor(d) === d3.format(".1f")(d)) return ordinals[Math.floor(d)]
+            return ordinals[d];
+        })
+      )
+      hideTicksWithoutLabel()
+        bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
+    }
+  });
+  $("#zoom_chart_391_0").click( function () {
+    window.open("../topo/run_2_knl07_389334_389334.html");
+  });
+  $("#zoom_chart_391_1").click( function () {
+    window.open("../topo/run_2_knl07_389334_389624.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "3") {
   $(document).ready(function(){
-    var ordinals = ['knl07_385069_385069','knl07_385069_385359','knl07_385069_385358','knl07_385069_385360'];
+    var ordinals = ['knl07_389334_389624','knl07_389334_389334','knl07_389334_389623','knl07_389334_389625'];
+    var data = [{value: 0.03, offset: 0, i: 0, color: "#333399"},{value: 0.01, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"}];
+    var widthgl  = _width;
+    var widthin  = _width;
+    var heightgl = 480;
+    var heightin = 495;
+    let margin = {
+      top:    10,
+      right:  30,
+      bottom: 30,
+      left:   50
+    },
+    width = widthgl - margin.left - margin.right,
+    height = heightgl - margin.top - margin.bottom,
+    radius = (Math.min(width, height) / 2) - 10,
+    node;
+    const svg = d3.select('#chart_cat_390')
+        .append('svg')
+        .attr('width', widthin)
+        .attr('height', heightin)
+        .append('g')
+        .attr('transform', `translate(${margin.left}, ${margin.top})`)
+        .call(
+          d3.zoom()
+            .translateExtent([[0,0], [width, height] ])
+            .extent([[0, 0], [width, height] ])
+          .on('zoom', zoom)
+        ).on("dblclick.zoom", null);
+    let x = d3.scaleLinear().range([0, width])
+    let y = d3.scaleLinear().range([height, 0])
+    let color = d3.scaleOrdinal(d3.schemeCategory10)
+    let xScale = x.domain([-1, ordinals.length])
+    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
+    let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
+    svg.append('rect')
+      .attr('class', 'zoom-panel')
+      .attr('width', width)
+      .attr('height', height)
+      .style('fill', 'var(--background)')
+    let xAxis = svg.append('g')
+      .attr('class', 'xAxis')
+      .attr('transform', `translate(0, ${height})`)
+      .call(
+        d3.axisBottom(xScale).tickFormat((d, e) => {
+          return ordinals[d]
+        })
+      );
+    svg.append("text")
+      .attr("transform",
+            "translate(" + (width/2) + " ," + (height + margin.top + 30) + ")")
+      .style("text-anchor", "middle")
+      .style("fill", "var(--font)")
+      .text("MAQAO thread rank");
+    let yAxis = svg.append('g')
+      .attr('class', 'yAxis')
+      .call(d3.axisLeft(yScale));
+    yAxis.selectAll(".tick text").attr("fill","var(--font)");
+    yAxis.selectAll(".tick line").attr("stroke","var(--font)");
+    yAxis.selectAll(".domain").attr("stroke","var(--font)");
+    xAxis.selectAll(".tick text").attr("fill","var(--font)");
+    xAxis.selectAll(".tick line").attr("stroke","var(--font)");
+    xAxis.selectAll(".domain").attr("stroke","var(--font)");
+    svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .style("fill", "var(--font)")
+      .text("Coverage (%)");
+    let bars = svg.append('g')
+      .attr('clip-path','url(#my-clip-path)')
+      .attr('id', 'zoom_chart_390')
+      .selectAll('.bar')
+      .data(data)
+      .enter()
+      .append('rect')
+      .attr('class', 'bar')
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
+      .attr('x', function(d, i){
+        return xScale(d.i) - xBand.bandwidth()*0.9/2
+      })
+      .attr('y', function(d, i){
+        return yScale(d.value + d.offset)
+      })
+      .attr('width', xBand.bandwidth()*0.9)
+      .attr('height', function(d){
+        return height - yScale(d.value)
+      })
+      .style("fill", function(d){
+        return d.color
+      })
+    let defs = svg.append('defs')
+      defs.append('clipPath')
+        .attr('id', 'my-clip-path')
+        .append('rect')
+        .attr('width', width)
+        .attr('height', height)
+      let hideTicksWithoutLabel = function() {
+        d3.selectAll('.xAxis .tick text').each(function(d){
+          if(this.innerHTML === '') {
+            this.parentNode.style.display = 'none';
+          }
+        })
+      }
+      function zoom() {
+        if (d3.event.transform.k < 1) {
+          d3.event.transform.k = 1;
+          return;
+        }
+      xAxis.call(
+        d3.axisBottom(d3.event.transform.rescaleX(xScale)).tickFormat((d, e, target) => {
+          if (Math.floor(d) === d3.format(".1f")(d)) return ordinals[Math.floor(d)]
+            return ordinals[d];
+        })
+      )
+      hideTicksWithoutLabel()
+        bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
+    }
+  });
+  $("#zoom_chart_390_0").click( function () {
+    window.open("../topo/run_2_knl07_389334_389624.html");
+  });
+  $("#zoom_chart_390_1").click( function () {
+    window.open("../topo/run_2_knl07_389334_389334.html");
+  });
+  $("#zoom_chart_390_2").click( function () {
+    window.open("../topo/run_2_knl07_389334_389623.html");
+  });
+  $("#zoom_chart_390_3").click( function () {
+    window.open("../topo/run_2_knl07_389334_389625.html");
+  });
+  }
+  if (selector_type.value == "all"
+  &&  selector_run.value  == "3") {
+  $(document).ready(function(){
+    var ordinals = ['knl07_389334_389334','knl07_389334_389624','knl07_389334_389623','knl07_389334_389625'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -2458,143 +2606,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_351')
-        .append('svg')
-        .attr('width', widthin)
-        .attr('height', heightin)
-        .append('g')
-        .attr('transform', `translate(${margin.left}, ${margin.top})`)
-        .call(
-          d3.zoom()
-            .translateExtent([[0,0], [width, height] ])
-            .extent([[0, 0], [width, height] ])
-          .on('zoom', zoom)
-        ).on("dblclick.zoom", null);
-    let x = d3.scaleLinear().range([0, width])
-    let y = d3.scaleLinear().range([height, 0])
-    let color = d3.scaleOrdinal(d3.schemeCategory10)
-    let xScale = x.domain([-1, ordinals.length])
-    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
-    let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
-    svg.append('rect')
-      .attr('class', 'zoom-panel')
-      .attr('width', width)
-      .attr('height', height)
-      .style('fill', 'var(--background)')
-    let xAxis = svg.append('g')
-      .attr('class', 'xAxis')
-      .attr('transform', `translate(0, ${height})`)
-      .call(
-        d3.axisBottom(xScale).tickFormat((d, e) => {
-          return ordinals[d]
-        })
-      );
-    svg.append("text")
-      .attr("transform",
-            "translate(" + (width/2) + " ," + (height + margin.top + 30) + ")")
-      .style("text-anchor", "middle")
-      .style("fill", "var(--font)")
-      .text("MAQAO thread rank");
-    let yAxis = svg.append('g')
-      .attr('class', 'yAxis')
-      .call(d3.axisLeft(yScale));
-    yAxis.selectAll(".tick text").attr("fill","var(--font)");
-    yAxis.selectAll(".tick line").attr("stroke","var(--font)");
-    yAxis.selectAll(".domain").attr("stroke","var(--font)");
-    xAxis.selectAll(".tick text").attr("fill","var(--font)");
-    xAxis.selectAll(".tick line").attr("stroke","var(--font)");
-    xAxis.selectAll(".domain").attr("stroke","var(--font)");
-    svg.append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 0 - margin.left)
-      .attr("x",0 - (height / 2))
-      .attr("dy", "1em")
-      .style("text-anchor", "middle")
-      .style("fill", "var(--font)")
-      .text("Coverage (%)");
-    let bars = svg.append('g')
-      .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
-      .selectAll('.bar')
-      .data(data)
-      .enter()
-      .append('rect')
-      .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
-      .attr('x', function(d, i){
-        return xScale(d.i) - xBand.bandwidth()*0.9/2
-      })
-      .attr('y', function(d, i){
-        return yScale(d.value + d.offset)
-      })
-      .attr('width', xBand.bandwidth()*0.9)
-      .attr('height', function(d){
-        return height - yScale(d.value)
-      })
-      .style("fill", function(d){
-        return d.color
-      })
-    let defs = svg.append('defs')
-      defs.append('clipPath')
-        .attr('id', 'my-clip-path')
-        .append('rect')
-        .attr('width', width)
-        .attr('height', height)
-      let hideTicksWithoutLabel = function() {
-        d3.selectAll('.xAxis .tick text').each(function(d){
-          if(this.innerHTML === '') {
-            this.parentNode.style.display = 'none';
-          }
-        })
-      }
-      function zoom() {
-        if (d3.event.transform.k < 1) {
-          d3.event.transform.k = 1;
-          return;
-        }
-      xAxis.call(
-        d3.axisBottom(d3.event.transform.rescaleX(xScale)).tickFormat((d, e, target) => {
-          if (Math.floor(d) === d3.format(".1f")(d)) return ordinals[Math.floor(d)]
-            return ordinals[d];
-        })
-      )
-      hideTicksWithoutLabel()
-        bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
-    }
-  });
-  $("#zoom_chart_351_0").click( function () {
-    window.open("../topo/run_2_knl07_385069_385069.html");
-  });
-  $("#zoom_chart_351_1").click( function () {
-    window.open("../topo/run_2_knl07_385069_385359.html");
-  });
-  $("#zoom_chart_351_2").click( function () {
-    window.open("../topo/run_2_knl07_385069_385358.html");
-  });
-  $("#zoom_chart_351_3").click( function () {
-    window.open("../topo/run_2_knl07_385069_385360.html");
-  });
-  }
-  if (selector_type.value == "all"
-  &&  selector_run.value  == "3") {
-  $(document).ready(function(){
-    var ordinals = ['knl07_385069_385069','knl07_385069_385359','knl07_385069_385358','knl07_385069_385360'];
-    var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"}];
-    var widthgl  = _width;
-    var widthin  = _width;
-    var heightgl = 480;
-    var heightin = 495;
-    let margin = {
-      top:    10,
-      right:  30,
-      bottom: 30,
-      left:   50
-    },
-    width = widthgl - margin.left - margin.right,
-    height = heightgl - margin.top - margin.bottom,
-    radius = (Math.min(width, height) / 2) - 10,
-    node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -2650,13 +2662,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -2698,24 +2710,24 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_352_0").click( function () {
-    window.open("../topo/run_2_knl07_385069_385069.html");
+  $("#zoom_chart_391_0").click( function () {
+    window.open("../topo/run_2_knl07_389334_389334.html");
   });
-  $("#zoom_chart_352_1").click( function () {
-    window.open("../topo/run_2_knl07_385069_385359.html");
+  $("#zoom_chart_391_1").click( function () {
+    window.open("../topo/run_2_knl07_389334_389624.html");
   });
-  $("#zoom_chart_352_2").click( function () {
-    window.open("../topo/run_2_knl07_385069_385358.html");
+  $("#zoom_chart_391_2").click( function () {
+    window.open("../topo/run_2_knl07_389334_389623.html");
   });
-  $("#zoom_chart_352_3").click( function () {
-    window.open("../topo/run_2_knl07_385069_385360.html");
+  $("#zoom_chart_391_3").click( function () {
+    window.open("../topo/run_2_knl07_389334_389625.html");
   });
   }
   if (selector_type.value == "regular"
   &&  selector_run.value  == "4") {
   $(document).ready(function(){
-    var ordinals = ['knl07_385368_385657','knl07_385368_385661'];
-    var data = [{value: 0.13, offset: 0, i: 0, color: "#333399"},{value: 0.07, offset: 0, i: 1, color: "#333399"}];
+    var ordinals = [];
+    var data = [];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -2730,7 +2742,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_351')
+    const svg = d3.select('#chart_cat_390')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -2786,13 +2798,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
+      .attr('id', 'zoom_chart_390')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -2833,19 +2845,13 @@ function set_ldbal_input () {
       hideTicksWithoutLabel()
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
-  });
-  $("#zoom_chart_351_0").click( function () {
-    window.open("../topo/run_3_knl07_385368_385657.html");
-  });
-  $("#zoom_chart_351_1").click( function () {
-    window.open("../topo/run_3_knl07_385368_385661.html");
   });
   }
   if (selector_type.value == "regular"
   &&  selector_run.value  == "4") {
   $(document).ready(function(){
-    var ordinals = ['knl07_385368_385657','knl07_385368_385661'];
-    var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"}];
+    var ordinals = [];
+    var data = [];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -2860,7 +2866,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -2916,13 +2922,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -2964,18 +2970,12 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_352_0").click( function () {
-    window.open("../topo/run_3_knl07_385368_385657.html");
-  });
-  $("#zoom_chart_352_1").click( function () {
-    window.open("../topo/run_3_knl07_385368_385661.html");
-  });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "4") {
   $(document).ready(function(){
-    var ordinals = ['knl07_385368_385657','knl07_385368_385661'];
-    var data = [{value: 0.13, offset: 0, i: 0, color: "#333399"},{value: 0.07, offset: 0, i: 1, color: "#333399"}];
+    var ordinals = [];
+    var data = [];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -2990,7 +2990,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_351')
+    const svg = d3.select('#chart_cat_390')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -3046,13 +3046,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
+      .attr('id', 'zoom_chart_390')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -3094,18 +3094,12 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_351_0").click( function () {
-    window.open("../topo/run_3_knl07_385368_385657.html");
-  });
-  $("#zoom_chart_351_1").click( function () {
-    window.open("../topo/run_3_knl07_385368_385661.html");
-  });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "4") {
   $(document).ready(function(){
-    var ordinals = ['knl07_385368_385657','knl07_385368_385661'];
-    var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"}];
+    var ordinals = [];
+    var data = [];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -3120,7 +3114,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -3176,13 +3170,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -3224,165 +3218,11 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_352_0").click( function () {
-    window.open("../topo/run_3_knl07_385368_385657.html");
-  });
-  $("#zoom_chart_352_1").click( function () {
-    window.open("../topo/run_3_knl07_385368_385661.html");
-  });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "4") {
   $(document).ready(function(){
-    var ordinals = ['knl07_385368_385657','knl07_385368_385661','knl07_385368_385368','knl07_385368_385660','knl07_385368_385659','knl07_385368_385658','knl07_385368_385662','knl07_385368_385663'];
-    var data = [{value: 0.13, offset: 0, i: 0, color: "#333399"},{value: 0.07, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"},{value: 0, offset: 0, i: 4, color: "#333399"},{value: 0, offset: 0, i: 5, color: "#333399"},{value: 0, offset: 0, i: 6, color: "#333399"},{value: 0, offset: 0, i: 7, color: "#333399"}];
-    var widthgl  = _width;
-    var widthin  = _width;
-    var heightgl = 480;
-    var heightin = 495;
-    let margin = {
-      top:    10,
-      right:  30,
-      bottom: 30,
-      left:   50
-    },
-    width = widthgl - margin.left - margin.right,
-    height = heightgl - margin.top - margin.bottom,
-    radius = (Math.min(width, height) / 2) - 10,
-    node;
-    const svg = d3.select('#chart_cat_351')
-        .append('svg')
-        .attr('width', widthin)
-        .attr('height', heightin)
-        .append('g')
-        .attr('transform', `translate(${margin.left}, ${margin.top})`)
-        .call(
-          d3.zoom()
-            .translateExtent([[0,0], [width, height] ])
-            .extent([[0, 0], [width, height] ])
-          .on('zoom', zoom)
-        ).on("dblclick.zoom", null);
-    let x = d3.scaleLinear().range([0, width])
-    let y = d3.scaleLinear().range([height, 0])
-    let color = d3.scaleOrdinal(d3.schemeCategory10)
-    let xScale = x.domain([-1, ordinals.length])
-    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
-    let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
-    svg.append('rect')
-      .attr('class', 'zoom-panel')
-      .attr('width', width)
-      .attr('height', height)
-      .style('fill', 'var(--background)')
-    let xAxis = svg.append('g')
-      .attr('class', 'xAxis')
-      .attr('transform', `translate(0, ${height})`)
-      .call(
-        d3.axisBottom(xScale).tickFormat((d, e) => {
-          return ordinals[d]
-        })
-      );
-    svg.append("text")
-      .attr("transform",
-            "translate(" + (width/2) + " ," + (height + margin.top + 30) + ")")
-      .style("text-anchor", "middle")
-      .style("fill", "var(--font)")
-      .text("MAQAO thread rank");
-    let yAxis = svg.append('g')
-      .attr('class', 'yAxis')
-      .call(d3.axisLeft(yScale));
-    yAxis.selectAll(".tick text").attr("fill","var(--font)");
-    yAxis.selectAll(".tick line").attr("stroke","var(--font)");
-    yAxis.selectAll(".domain").attr("stroke","var(--font)");
-    xAxis.selectAll(".tick text").attr("fill","var(--font)");
-    xAxis.selectAll(".tick line").attr("stroke","var(--font)");
-    xAxis.selectAll(".domain").attr("stroke","var(--font)");
-    svg.append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 0 - margin.left)
-      .attr("x",0 - (height / 2))
-      .attr("dy", "1em")
-      .style("text-anchor", "middle")
-      .style("fill", "var(--font)")
-      .text("Coverage (%)");
-    let bars = svg.append('g')
-      .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
-      .selectAll('.bar')
-      .data(data)
-      .enter()
-      .append('rect')
-      .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
-      .attr('x', function(d, i){
-        return xScale(d.i) - xBand.bandwidth()*0.9/2
-      })
-      .attr('y', function(d, i){
-        return yScale(d.value + d.offset)
-      })
-      .attr('width', xBand.bandwidth()*0.9)
-      .attr('height', function(d){
-        return height - yScale(d.value)
-      })
-      .style("fill", function(d){
-        return d.color
-      })
-    let defs = svg.append('defs')
-      defs.append('clipPath')
-        .attr('id', 'my-clip-path')
-        .append('rect')
-        .attr('width', width)
-        .attr('height', height)
-      let hideTicksWithoutLabel = function() {
-        d3.selectAll('.xAxis .tick text').each(function(d){
-          if(this.innerHTML === '') {
-            this.parentNode.style.display = 'none';
-          }
-        })
-      }
-      function zoom() {
-        if (d3.event.transform.k < 1) {
-          d3.event.transform.k = 1;
-          return;
-        }
-      xAxis.call(
-        d3.axisBottom(d3.event.transform.rescaleX(xScale)).tickFormat((d, e, target) => {
-          if (Math.floor(d) === d3.format(".1f")(d)) return ordinals[Math.floor(d)]
-            return ordinals[d];
-        })
-      )
-      hideTicksWithoutLabel()
-        bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
-    }
-  });
-  $("#zoom_chart_351_0").click( function () {
-    window.open("../topo/run_3_knl07_385368_385657.html");
-  });
-  $("#zoom_chart_351_1").click( function () {
-    window.open("../topo/run_3_knl07_385368_385661.html");
-  });
-  $("#zoom_chart_351_2").click( function () {
-    window.open("../topo/run_3_knl07_385368_385368.html");
-  });
-  $("#zoom_chart_351_3").click( function () {
-    window.open("../topo/run_3_knl07_385368_385660.html");
-  });
-  $("#zoom_chart_351_4").click( function () {
-    window.open("../topo/run_3_knl07_385368_385659.html");
-  });
-  $("#zoom_chart_351_5").click( function () {
-    window.open("../topo/run_3_knl07_385368_385658.html");
-  });
-  $("#zoom_chart_351_6").click( function () {
-    window.open("../topo/run_3_knl07_385368_385662.html");
-  });
-  $("#zoom_chart_351_7").click( function () {
-    window.open("../topo/run_3_knl07_385368_385663.html");
-  });
-  }
-  if (selector_type.value == "all"
-  &&  selector_run.value  == "4") {
-  $(document).ready(function(){
-    var ordinals = ['knl07_385368_385368','knl07_385368_385660','knl07_385368_385661','knl07_385368_385662','knl07_385368_385659','knl07_385368_385657','knl07_385368_385658','knl07_385368_385663'];
+    var ordinals = ['knl07_389634_389634','knl07_389634_389926','knl07_389634_389927','knl07_389634_389928','knl07_389634_389925','knl07_389634_389923','knl07_389634_389924','knl07_389634_389929'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"},{value: 0, offset: 0, i: 4, color: "#333399"},{value: 0, offset: 0, i: 5, color: "#333399"},{value: 0, offset: 0, i: 6, color: "#333399"},{value: 0, offset: 0, i: 7, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -3398,155 +3238,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
-        .append('svg')
-        .attr('width', widthin)
-        .attr('height', heightin)
-        .append('g')
-        .attr('transform', `translate(${margin.left}, ${margin.top})`)
-        .call(
-          d3.zoom()
-            .translateExtent([[0,0], [width, height] ])
-            .extent([[0, 0], [width, height] ])
-          .on('zoom', zoom)
-        ).on("dblclick.zoom", null);
-    let x = d3.scaleLinear().range([0, width])
-    let y = d3.scaleLinear().range([height, 0])
-    let color = d3.scaleOrdinal(d3.schemeCategory10)
-    let xScale = x.domain([-1, ordinals.length])
-    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
-    let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
-    svg.append('rect')
-      .attr('class', 'zoom-panel')
-      .attr('width', width)
-      .attr('height', height)
-      .style('fill', 'var(--background)')
-    let xAxis = svg.append('g')
-      .attr('class', 'xAxis')
-      .attr('transform', `translate(0, ${height})`)
-      .call(
-        d3.axisBottom(xScale).tickFormat((d, e) => {
-          return ordinals[d]
-        })
-      );
-    svg.append("text")
-      .attr("transform",
-            "translate(" + (width/2) + " ," + (height + margin.top + 30) + ")")
-      .style("text-anchor", "middle")
-      .style("fill", "var(--font)")
-      .text("MAQAO thread rank");
-    let yAxis = svg.append('g')
-      .attr('class', 'yAxis')
-      .call(d3.axisLeft(yScale));
-    yAxis.selectAll(".tick text").attr("fill","var(--font)");
-    yAxis.selectAll(".tick line").attr("stroke","var(--font)");
-    yAxis.selectAll(".domain").attr("stroke","var(--font)");
-    xAxis.selectAll(".tick text").attr("fill","var(--font)");
-    xAxis.selectAll(".tick line").attr("stroke","var(--font)");
-    xAxis.selectAll(".domain").attr("stroke","var(--font)");
-    svg.append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 0 - margin.left)
-      .attr("x",0 - (height / 2))
-      .attr("dy", "1em")
-      .style("text-anchor", "middle")
-      .style("fill", "var(--font)")
-      .text("Time (s)");
-    let bars = svg.append('g')
-      .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
-      .selectAll('.bar')
-      .data(data)
-      .enter()
-      .append('rect')
-      .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
-      .attr('x', function(d, i){
-        return xScale(d.i) - xBand.bandwidth()*0.9/2
-      })
-      .attr('y', function(d, i){
-        return yScale(d.value + d.offset)
-      })
-      .attr('width', xBand.bandwidth()*0.9)
-      .attr('height', function(d){
-        return height - yScale(d.value)
-      })
-      .style("fill", function(d){
-        return d.color
-      })
-    let defs = svg.append('defs')
-      defs.append('clipPath')
-        .attr('id', 'my-clip-path')
-        .append('rect')
-        .attr('width', width)
-        .attr('height', height)
-      let hideTicksWithoutLabel = function() {
-        d3.selectAll('.xAxis .tick text').each(function(d){
-          if(this.innerHTML === '') {
-            this.parentNode.style.display = 'none';
-          }
-        })
-      }
-      function zoom() {
-        if (d3.event.transform.k < 1) {
-          d3.event.transform.k = 1;
-          return;
-        }
-      xAxis.call(
-        d3.axisBottom(d3.event.transform.rescaleX(xScale)).tickFormat((d, e, target) => {
-          if (Math.floor(d) === d3.format(".1f")(d)) return ordinals[Math.floor(d)]
-            return ordinals[d];
-        })
-      )
-      hideTicksWithoutLabel()
-        bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
-    }
-  });
-  $("#zoom_chart_352_0").click( function () {
-    window.open("../topo/run_3_knl07_385368_385368.html");
-  });
-  $("#zoom_chart_352_1").click( function () {
-    window.open("../topo/run_3_knl07_385368_385660.html");
-  });
-  $("#zoom_chart_352_2").click( function () {
-    window.open("../topo/run_3_knl07_385368_385661.html");
-  });
-  $("#zoom_chart_352_3").click( function () {
-    window.open("../topo/run_3_knl07_385368_385662.html");
-  });
-  $("#zoom_chart_352_4").click( function () {
-    window.open("../topo/run_3_knl07_385368_385659.html");
-  });
-  $("#zoom_chart_352_5").click( function () {
-    window.open("../topo/run_3_knl07_385368_385657.html");
-  });
-  $("#zoom_chart_352_6").click( function () {
-    window.open("../topo/run_3_knl07_385368_385658.html");
-  });
-  $("#zoom_chart_352_7").click( function () {
-    window.open("../topo/run_3_knl07_385368_385663.html");
-  });
-  }
-  if (selector_type.value == "regular"
-  &&  selector_run.value  == "5") {
-  $(document).ready(function(){
-    var ordinals = [];
-    var data = [];
-    var widthgl  = _width;
-    var widthin  = _width;
-    var heightgl = 480;
-    var heightin = 495;
-    let margin = {
-      top:    10,
-      right:  30,
-      bottom: 30,
-      left:   50
-    },
-    width = widthgl - margin.left - margin.right,
-    height = heightgl - margin.top - margin.bottom,
-    radius = (Math.min(width, height) / 2) - 10,
-    node;
-    const svg = d3.select('#chart_cat_351')
+    const svg = d3.select('#chart_cat_390')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -3602,13 +3294,309 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
+      .attr('id', 'zoom_chart_390')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
+      .attr('x', function(d, i){
+        return xScale(d.i) - xBand.bandwidth()*0.9/2
+      })
+      .attr('y', function(d, i){
+        return yScale(d.value + d.offset)
+      })
+      .attr('width', xBand.bandwidth()*0.9)
+      .attr('height', function(d){
+        return height - yScale(d.value)
+      })
+      .style("fill", function(d){
+        return d.color
+      })
+    let defs = svg.append('defs')
+      defs.append('clipPath')
+        .attr('id', 'my-clip-path')
+        .append('rect')
+        .attr('width', width)
+        .attr('height', height)
+      let hideTicksWithoutLabel = function() {
+        d3.selectAll('.xAxis .tick text').each(function(d){
+          if(this.innerHTML === '') {
+            this.parentNode.style.display = 'none';
+          }
+        })
+      }
+      function zoom() {
+        if (d3.event.transform.k < 1) {
+          d3.event.transform.k = 1;
+          return;
+        }
+      xAxis.call(
+        d3.axisBottom(d3.event.transform.rescaleX(xScale)).tickFormat((d, e, target) => {
+          if (Math.floor(d) === d3.format(".1f")(d)) return ordinals[Math.floor(d)]
+            return ordinals[d];
+        })
+      )
+      hideTicksWithoutLabel()
+        bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
+    }
+  });
+  $("#zoom_chart_390_0").click( function () {
+    window.open("../topo/run_3_knl07_389634_389634.html");
+  });
+  $("#zoom_chart_390_1").click( function () {
+    window.open("../topo/run_3_knl07_389634_389926.html");
+  });
+  $("#zoom_chart_390_2").click( function () {
+    window.open("../topo/run_3_knl07_389634_389927.html");
+  });
+  $("#zoom_chart_390_3").click( function () {
+    window.open("../topo/run_3_knl07_389634_389928.html");
+  });
+  $("#zoom_chart_390_4").click( function () {
+    window.open("../topo/run_3_knl07_389634_389925.html");
+  });
+  $("#zoom_chart_390_5").click( function () {
+    window.open("../topo/run_3_knl07_389634_389923.html");
+  });
+  $("#zoom_chart_390_6").click( function () {
+    window.open("../topo/run_3_knl07_389634_389924.html");
+  });
+  $("#zoom_chart_390_7").click( function () {
+    window.open("../topo/run_3_knl07_389634_389929.html");
+  });
+  }
+  if (selector_type.value == "all"
+  &&  selector_run.value  == "4") {
+  $(document).ready(function(){
+    var ordinals = ['knl07_389634_389634','knl07_389634_389926','knl07_389634_389927','knl07_389634_389928','knl07_389634_389925','knl07_389634_389923','knl07_389634_389924','knl07_389634_389929'];
+    var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"},{value: 0, offset: 0, i: 4, color: "#333399"},{value: 0, offset: 0, i: 5, color: "#333399"},{value: 0, offset: 0, i: 6, color: "#333399"},{value: 0, offset: 0, i: 7, color: "#333399"}];
+    var widthgl  = _width;
+    var widthin  = _width;
+    var heightgl = 480;
+    var heightin = 495;
+    let margin = {
+      top:    10,
+      right:  30,
+      bottom: 30,
+      left:   50
+    },
+    width = widthgl - margin.left - margin.right,
+    height = heightgl - margin.top - margin.bottom,
+    radius = (Math.min(width, height) / 2) - 10,
+    node;
+    const svg = d3.select('#chart_cat_391')
+        .append('svg')
+        .attr('width', widthin)
+        .attr('height', heightin)
+        .append('g')
+        .attr('transform', `translate(${margin.left}, ${margin.top})`)
+        .call(
+          d3.zoom()
+            .translateExtent([[0,0], [width, height] ])
+            .extent([[0, 0], [width, height] ])
+          .on('zoom', zoom)
+        ).on("dblclick.zoom", null);
+    let x = d3.scaleLinear().range([0, width])
+    let y = d3.scaleLinear().range([height, 0])
+    let color = d3.scaleOrdinal(d3.schemeCategory10)
+    let xScale = x.domain([-1, ordinals.length])
+    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
+    let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
+    svg.append('rect')
+      .attr('class', 'zoom-panel')
+      .attr('width', width)
+      .attr('height', height)
+      .style('fill', 'var(--background)')
+    let xAxis = svg.append('g')
+      .attr('class', 'xAxis')
+      .attr('transform', `translate(0, ${height})`)
+      .call(
+        d3.axisBottom(xScale).tickFormat((d, e) => {
+          return ordinals[d]
+        })
+      );
+    svg.append("text")
+      .attr("transform",
+            "translate(" + (width/2) + " ," + (height + margin.top + 30) + ")")
+      .style("text-anchor", "middle")
+      .style("fill", "var(--font)")
+      .text("MAQAO thread rank");
+    let yAxis = svg.append('g')
+      .attr('class', 'yAxis')
+      .call(d3.axisLeft(yScale));
+    yAxis.selectAll(".tick text").attr("fill","var(--font)");
+    yAxis.selectAll(".tick line").attr("stroke","var(--font)");
+    yAxis.selectAll(".domain").attr("stroke","var(--font)");
+    xAxis.selectAll(".tick text").attr("fill","var(--font)");
+    xAxis.selectAll(".tick line").attr("stroke","var(--font)");
+    xAxis.selectAll(".domain").attr("stroke","var(--font)");
+    svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .style("fill", "var(--font)")
+      .text("Time (s)");
+    let bars = svg.append('g')
+      .attr('clip-path','url(#my-clip-path)')
+      .attr('id', 'zoom_chart_391')
+      .selectAll('.bar')
+      .data(data)
+      .enter()
+      .append('rect')
+      .attr('class', 'bar')
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
+      .attr('x', function(d, i){
+        return xScale(d.i) - xBand.bandwidth()*0.9/2
+      })
+      .attr('y', function(d, i){
+        return yScale(d.value + d.offset)
+      })
+      .attr('width', xBand.bandwidth()*0.9)
+      .attr('height', function(d){
+        return height - yScale(d.value)
+      })
+      .style("fill", function(d){
+        return d.color
+      })
+    let defs = svg.append('defs')
+      defs.append('clipPath')
+        .attr('id', 'my-clip-path')
+        .append('rect')
+        .attr('width', width)
+        .attr('height', height)
+      let hideTicksWithoutLabel = function() {
+        d3.selectAll('.xAxis .tick text').each(function(d){
+          if(this.innerHTML === '') {
+            this.parentNode.style.display = 'none';
+          }
+        })
+      }
+      function zoom() {
+        if (d3.event.transform.k < 1) {
+          d3.event.transform.k = 1;
+          return;
+        }
+      xAxis.call(
+        d3.axisBottom(d3.event.transform.rescaleX(xScale)).tickFormat((d, e, target) => {
+          if (Math.floor(d) === d3.format(".1f")(d)) return ordinals[Math.floor(d)]
+            return ordinals[d];
+        })
+      )
+      hideTicksWithoutLabel()
+        bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
+    }
+  });
+  $("#zoom_chart_391_0").click( function () {
+    window.open("../topo/run_3_knl07_389634_389634.html");
+  });
+  $("#zoom_chart_391_1").click( function () {
+    window.open("../topo/run_3_knl07_389634_389926.html");
+  });
+  $("#zoom_chart_391_2").click( function () {
+    window.open("../topo/run_3_knl07_389634_389927.html");
+  });
+  $("#zoom_chart_391_3").click( function () {
+    window.open("../topo/run_3_knl07_389634_389928.html");
+  });
+  $("#zoom_chart_391_4").click( function () {
+    window.open("../topo/run_3_knl07_389634_389925.html");
+  });
+  $("#zoom_chart_391_5").click( function () {
+    window.open("../topo/run_3_knl07_389634_389923.html");
+  });
+  $("#zoom_chart_391_6").click( function () {
+    window.open("../topo/run_3_knl07_389634_389924.html");
+  });
+  $("#zoom_chart_391_7").click( function () {
+    window.open("../topo/run_3_knl07_389634_389929.html");
+  });
+  }
+  if (selector_type.value == "regular"
+  &&  selector_run.value  == "5") {
+  $(document).ready(function(){
+    var ordinals = [];
+    var data = [];
+    var widthgl  = _width;
+    var widthin  = _width;
+    var heightgl = 480;
+    var heightin = 495;
+    let margin = {
+      top:    10,
+      right:  30,
+      bottom: 30,
+      left:   50
+    },
+    width = widthgl - margin.left - margin.right,
+    height = heightgl - margin.top - margin.bottom,
+    radius = (Math.min(width, height) / 2) - 10,
+    node;
+    const svg = d3.select('#chart_cat_390')
+        .append('svg')
+        .attr('width', widthin)
+        .attr('height', heightin)
+        .append('g')
+        .attr('transform', `translate(${margin.left}, ${margin.top})`)
+        .call(
+          d3.zoom()
+            .translateExtent([[0,0], [width, height] ])
+            .extent([[0, 0], [width, height] ])
+          .on('zoom', zoom)
+        ).on("dblclick.zoom", null);
+    let x = d3.scaleLinear().range([0, width])
+    let y = d3.scaleLinear().range([height, 0])
+    let color = d3.scaleOrdinal(d3.schemeCategory10)
+    let xScale = x.domain([-1, ordinals.length])
+    let yScale = y.domain([0, d3.max(data, function(d){return d.value + d.offset})])
+    let xBand = d3.scaleBand().domain(d3.range(-1, ordinals.length)).range([0, width])
+    svg.append('rect')
+      .attr('class', 'zoom-panel')
+      .attr('width', width)
+      .attr('height', height)
+      .style('fill', 'var(--background)')
+    let xAxis = svg.append('g')
+      .attr('class', 'xAxis')
+      .attr('transform', `translate(0, ${height})`)
+      .call(
+        d3.axisBottom(xScale).tickFormat((d, e) => {
+          return ordinals[d]
+        })
+      );
+    svg.append("text")
+      .attr("transform",
+            "translate(" + (width/2) + " ," + (height + margin.top + 30) + ")")
+      .style("text-anchor", "middle")
+      .style("fill", "var(--font)")
+      .text("MAQAO thread rank");
+    let yAxis = svg.append('g')
+      .attr('class', 'yAxis')
+      .call(d3.axisLeft(yScale));
+    yAxis.selectAll(".tick text").attr("fill","var(--font)");
+    yAxis.selectAll(".tick line").attr("stroke","var(--font)");
+    yAxis.selectAll(".domain").attr("stroke","var(--font)");
+    xAxis.selectAll(".tick text").attr("fill","var(--font)");
+    xAxis.selectAll(".tick line").attr("stroke","var(--font)");
+    xAxis.selectAll(".domain").attr("stroke","var(--font)");
+    svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .style("fill", "var(--font)")
+      .text("Coverage (%)");
+    let bars = svg.append('g')
+      .attr('clip-path','url(#my-clip-path)')
+      .attr('id', 'zoom_chart_390')
+      .selectAll('.bar')
+      .data(data)
+      .enter()
+      .append('rect')
+      .attr('class', 'bar')
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -3670,7 +3658,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -3726,13 +3714,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -3794,7 +3782,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_351')
+    const svg = d3.select('#chart_cat_390')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -3850,13 +3838,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
+      .attr('id', 'zoom_chart_390')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -3918,7 +3906,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -3974,13 +3962,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -4026,7 +4014,7 @@ function set_ldbal_input () {
   if (selector_type.value == "all"
   &&  selector_run.value  == "5") {
   $(document).ready(function(){
-    var ordinals = ['knl07_385670_385670','knl07_385670_385968','knl07_385670_385967','knl07_385670_385966','knl07_385670_385969','knl07_385670_385971','knl07_385670_385970','knl07_385670_385972','knl07_385670_385965','knl07_385670_385963','knl07_385670_385959','knl07_385670_385964','knl07_385670_385960','knl07_385670_385962','knl07_385670_385961','knl07_385670_385973'];
+    var ordinals = ['knl07_389937_389937','knl07_389937_390235','knl07_389937_390234','knl07_389937_390233','knl07_389937_390236','knl07_389937_390238','knl07_389937_390237','knl07_389937_390239','knl07_389937_390232','knl07_389937_390230','knl07_389937_390226','knl07_389937_390231','knl07_389937_390227','knl07_389937_390229','knl07_389937_390228','knl07_389937_390240'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"},{value: 0, offset: 0, i: 4, color: "#333399"},{value: 0, offset: 0, i: 5, color: "#333399"},{value: 0, offset: 0, i: 6, color: "#333399"},{value: 0, offset: 0, i: 7, color: "#333399"},{value: 0, offset: 0, i: 8, color: "#333399"},{value: 0, offset: 0, i: 9, color: "#333399"},{value: 0, offset: 0, i: 10, color: "#333399"},{value: 0, offset: 0, i: 11, color: "#333399"},{value: 0, offset: 0, i: 12, color: "#333399"},{value: 0, offset: 0, i: 13, color: "#333399"},{value: 0, offset: 0, i: 14, color: "#333399"},{value: 0, offset: 0, i: 15, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -4042,7 +4030,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_351')
+    const svg = d3.select('#chart_cat_390')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -4098,13 +4086,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
+      .attr('id', 'zoom_chart_390')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -4146,59 +4134,59 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_351_0").click( function () {
-    window.open("../topo/run_4_knl07_385670_385670.html");
+  $("#zoom_chart_390_0").click( function () {
+    window.open("../topo/run_4_knl07_389937_389937.html");
   });
-  $("#zoom_chart_351_1").click( function () {
-    window.open("../topo/run_4_knl07_385670_385968.html");
+  $("#zoom_chart_390_1").click( function () {
+    window.open("../topo/run_4_knl07_389937_390235.html");
   });
-  $("#zoom_chart_351_2").click( function () {
-    window.open("../topo/run_4_knl07_385670_385967.html");
+  $("#zoom_chart_390_2").click( function () {
+    window.open("../topo/run_4_knl07_389937_390234.html");
   });
-  $("#zoom_chart_351_3").click( function () {
-    window.open("../topo/run_4_knl07_385670_385966.html");
+  $("#zoom_chart_390_3").click( function () {
+    window.open("../topo/run_4_knl07_389937_390233.html");
   });
-  $("#zoom_chart_351_4").click( function () {
-    window.open("../topo/run_4_knl07_385670_385969.html");
+  $("#zoom_chart_390_4").click( function () {
+    window.open("../topo/run_4_knl07_389937_390236.html");
   });
-  $("#zoom_chart_351_5").click( function () {
-    window.open("../topo/run_4_knl07_385670_385971.html");
+  $("#zoom_chart_390_5").click( function () {
+    window.open("../topo/run_4_knl07_389937_390238.html");
   });
-  $("#zoom_chart_351_6").click( function () {
-    window.open("../topo/run_4_knl07_385670_385970.html");
+  $("#zoom_chart_390_6").click( function () {
+    window.open("../topo/run_4_knl07_389937_390237.html");
   });
-  $("#zoom_chart_351_7").click( function () {
-    window.open("../topo/run_4_knl07_385670_385972.html");
+  $("#zoom_chart_390_7").click( function () {
+    window.open("../topo/run_4_knl07_389937_390239.html");
   });
-  $("#zoom_chart_351_8").click( function () {
-    window.open("../topo/run_4_knl07_385670_385965.html");
+  $("#zoom_chart_390_8").click( function () {
+    window.open("../topo/run_4_knl07_389937_390232.html");
   });
-  $("#zoom_chart_351_9").click( function () {
-    window.open("../topo/run_4_knl07_385670_385963.html");
+  $("#zoom_chart_390_9").click( function () {
+    window.open("../topo/run_4_knl07_389937_390230.html");
   });
-  $("#zoom_chart_351_10").click( function () {
-    window.open("../topo/run_4_knl07_385670_385959.html");
+  $("#zoom_chart_390_10").click( function () {
+    window.open("../topo/run_4_knl07_389937_390226.html");
   });
-  $("#zoom_chart_351_11").click( function () {
-    window.open("../topo/run_4_knl07_385670_385964.html");
+  $("#zoom_chart_390_11").click( function () {
+    window.open("../topo/run_4_knl07_389937_390231.html");
   });
-  $("#zoom_chart_351_12").click( function () {
-    window.open("../topo/run_4_knl07_385670_385960.html");
+  $("#zoom_chart_390_12").click( function () {
+    window.open("../topo/run_4_knl07_389937_390227.html");
   });
-  $("#zoom_chart_351_13").click( function () {
-    window.open("../topo/run_4_knl07_385670_385962.html");
+  $("#zoom_chart_390_13").click( function () {
+    window.open("../topo/run_4_knl07_389937_390229.html");
   });
-  $("#zoom_chart_351_14").click( function () {
-    window.open("../topo/run_4_knl07_385670_385961.html");
+  $("#zoom_chart_390_14").click( function () {
+    window.open("../topo/run_4_knl07_389937_390228.html");
   });
-  $("#zoom_chart_351_15").click( function () {
-    window.open("../topo/run_4_knl07_385670_385973.html");
+  $("#zoom_chart_390_15").click( function () {
+    window.open("../topo/run_4_knl07_389937_390240.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "5") {
   $(document).ready(function(){
-    var ordinals = ['knl07_385670_385670','knl07_385670_385968','knl07_385670_385967','knl07_385670_385966','knl07_385670_385969','knl07_385670_385971','knl07_385670_385970','knl07_385670_385972','knl07_385670_385965','knl07_385670_385963','knl07_385670_385959','knl07_385670_385964','knl07_385670_385960','knl07_385670_385962','knl07_385670_385961','knl07_385670_385973'];
+    var ordinals = ['knl07_389937_389937','knl07_389937_390235','knl07_389937_390234','knl07_389937_390233','knl07_389937_390236','knl07_389937_390238','knl07_389937_390237','knl07_389937_390239','knl07_389937_390232','knl07_389937_390230','knl07_389937_390226','knl07_389937_390231','knl07_389937_390227','knl07_389937_390229','knl07_389937_390228','knl07_389937_390240'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"},{value: 0, offset: 0, i: 4, color: "#333399"},{value: 0, offset: 0, i: 5, color: "#333399"},{value: 0, offset: 0, i: 6, color: "#333399"},{value: 0, offset: 0, i: 7, color: "#333399"},{value: 0, offset: 0, i: 8, color: "#333399"},{value: 0, offset: 0, i: 9, color: "#333399"},{value: 0, offset: 0, i: 10, color: "#333399"},{value: 0, offset: 0, i: 11, color: "#333399"},{value: 0, offset: 0, i: 12, color: "#333399"},{value: 0, offset: 0, i: 13, color: "#333399"},{value: 0, offset: 0, i: 14, color: "#333399"},{value: 0, offset: 0, i: 15, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -4214,7 +4202,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -4270,13 +4258,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -4318,53 +4306,53 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_352_0").click( function () {
-    window.open("../topo/run_4_knl07_385670_385670.html");
+  $("#zoom_chart_391_0").click( function () {
+    window.open("../topo/run_4_knl07_389937_389937.html");
   });
-  $("#zoom_chart_352_1").click( function () {
-    window.open("../topo/run_4_knl07_385670_385968.html");
+  $("#zoom_chart_391_1").click( function () {
+    window.open("../topo/run_4_knl07_389937_390235.html");
   });
-  $("#zoom_chart_352_2").click( function () {
-    window.open("../topo/run_4_knl07_385670_385967.html");
+  $("#zoom_chart_391_2").click( function () {
+    window.open("../topo/run_4_knl07_389937_390234.html");
   });
-  $("#zoom_chart_352_3").click( function () {
-    window.open("../topo/run_4_knl07_385670_385966.html");
+  $("#zoom_chart_391_3").click( function () {
+    window.open("../topo/run_4_knl07_389937_390233.html");
   });
-  $("#zoom_chart_352_4").click( function () {
-    window.open("../topo/run_4_knl07_385670_385969.html");
+  $("#zoom_chart_391_4").click( function () {
+    window.open("../topo/run_4_knl07_389937_390236.html");
   });
-  $("#zoom_chart_352_5").click( function () {
-    window.open("../topo/run_4_knl07_385670_385971.html");
+  $("#zoom_chart_391_5").click( function () {
+    window.open("../topo/run_4_knl07_389937_390238.html");
   });
-  $("#zoom_chart_352_6").click( function () {
-    window.open("../topo/run_4_knl07_385670_385970.html");
+  $("#zoom_chart_391_6").click( function () {
+    window.open("../topo/run_4_knl07_389937_390237.html");
   });
-  $("#zoom_chart_352_7").click( function () {
-    window.open("../topo/run_4_knl07_385670_385972.html");
+  $("#zoom_chart_391_7").click( function () {
+    window.open("../topo/run_4_knl07_389937_390239.html");
   });
-  $("#zoom_chart_352_8").click( function () {
-    window.open("../topo/run_4_knl07_385670_385965.html");
+  $("#zoom_chart_391_8").click( function () {
+    window.open("../topo/run_4_knl07_389937_390232.html");
   });
-  $("#zoom_chart_352_9").click( function () {
-    window.open("../topo/run_4_knl07_385670_385963.html");
+  $("#zoom_chart_391_9").click( function () {
+    window.open("../topo/run_4_knl07_389937_390230.html");
   });
-  $("#zoom_chart_352_10").click( function () {
-    window.open("../topo/run_4_knl07_385670_385959.html");
+  $("#zoom_chart_391_10").click( function () {
+    window.open("../topo/run_4_knl07_389937_390226.html");
   });
-  $("#zoom_chart_352_11").click( function () {
-    window.open("../topo/run_4_knl07_385670_385964.html");
+  $("#zoom_chart_391_11").click( function () {
+    window.open("../topo/run_4_knl07_389937_390231.html");
   });
-  $("#zoom_chart_352_12").click( function () {
-    window.open("../topo/run_4_knl07_385670_385960.html");
+  $("#zoom_chart_391_12").click( function () {
+    window.open("../topo/run_4_knl07_389937_390227.html");
   });
-  $("#zoom_chart_352_13").click( function () {
-    window.open("../topo/run_4_knl07_385670_385962.html");
+  $("#zoom_chart_391_13").click( function () {
+    window.open("../topo/run_4_knl07_389937_390229.html");
   });
-  $("#zoom_chart_352_14").click( function () {
-    window.open("../topo/run_4_knl07_385670_385961.html");
+  $("#zoom_chart_391_14").click( function () {
+    window.open("../topo/run_4_knl07_389937_390228.html");
   });
-  $("#zoom_chart_352_15").click( function () {
-    window.open("../topo/run_4_knl07_385670_385973.html");
+  $("#zoom_chart_391_15").click( function () {
+    window.open("../topo/run_4_knl07_389937_390240.html");
   });
   }
   if (selector_type.value == "regular"
@@ -4386,7 +4374,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_351')
+    const svg = d3.select('#chart_cat_390')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -4442,13 +4430,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
+      .attr('id', 'zoom_chart_390')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -4510,7 +4498,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -4566,13 +4554,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -4634,7 +4622,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_351')
+    const svg = d3.select('#chart_cat_390')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -4690,13 +4678,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
+      .attr('id', 'zoom_chart_390')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -4758,7 +4746,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -4814,13 +4802,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -4866,7 +4854,7 @@ function set_ldbal_input () {
   if (selector_type.value == "all"
   &&  selector_run.value  == "6") {
   $(document).ready(function(){
-    var ordinals = ['knl07_385982_385982','knl07_385982_386290','knl07_385982_386291','knl07_385982_386292','knl07_385982_386289','knl07_385982_386287','knl07_385982_386288','knl07_385982_386286','knl07_385982_386293','knl07_385982_386295','knl07_385982_386299','knl07_385982_386294','knl07_385982_386298','knl07_385982_386296','knl07_385982_386297','knl07_385982_386300','knl07_385982_386285','knl07_385982_386283','knl07_385982_386274','knl07_385982_386275','knl07_385982_386273','knl07_385982_386271','knl07_385982_386272','knl07_385982_386284','knl07_385982_386276','knl07_385982_386278','knl07_385982_386282','knl07_385982_386277','knl07_385982_386281','knl07_385982_386279','knl07_385982_386280','knl07_385982_386301'];
+    var ordinals = ['knl07_390248_390248','knl07_390248_390556','knl07_390248_390557','knl07_390248_390558','knl07_390248_390555','knl07_390248_390553','knl07_390248_390554','knl07_390248_390552','knl07_390248_390559','knl07_390248_390561','knl07_390248_390565','knl07_390248_390560','knl07_390248_390564','knl07_390248_390562','knl07_390248_390563','knl07_390248_390566','knl07_390248_390551','knl07_390248_390549','knl07_390248_390540','knl07_390248_390541','knl07_390248_390539','knl07_390248_390537','knl07_390248_390538','knl07_390248_390550','knl07_390248_390542','knl07_390248_390544','knl07_390248_390548','knl07_390248_390543','knl07_390248_390547','knl07_390248_390545','knl07_390248_390546','knl07_390248_390567'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"},{value: 0, offset: 0, i: 4, color: "#333399"},{value: 0, offset: 0, i: 5, color: "#333399"},{value: 0, offset: 0, i: 6, color: "#333399"},{value: 0, offset: 0, i: 7, color: "#333399"},{value: 0, offset: 0, i: 8, color: "#333399"},{value: 0, offset: 0, i: 9, color: "#333399"},{value: 0, offset: 0, i: 10, color: "#333399"},{value: 0, offset: 0, i: 11, color: "#333399"},{value: 0, offset: 0, i: 12, color: "#333399"},{value: 0, offset: 0, i: 13, color: "#333399"},{value: 0, offset: 0, i: 14, color: "#333399"},{value: 0, offset: 0, i: 15, color: "#333399"},{value: 0, offset: 0, i: 16, color: "#333399"},{value: 0, offset: 0, i: 17, color: "#333399"},{value: 0, offset: 0, i: 18, color: "#333399"},{value: 0, offset: 0, i: 19, color: "#333399"},{value: 0, offset: 0, i: 20, color: "#333399"},{value: 0, offset: 0, i: 21, color: "#333399"},{value: 0, offset: 0, i: 22, color: "#333399"},{value: 0, offset: 0, i: 23, color: "#333399"},{value: 0, offset: 0, i: 24, color: "#333399"},{value: 0, offset: 0, i: 25, color: "#333399"},{value: 0, offset: 0, i: 26, color: "#333399"},{value: 0, offset: 0, i: 27, color: "#333399"},{value: 0, offset: 0, i: 28, color: "#333399"},{value: 0, offset: 0, i: 29, color: "#333399"},{value: 0, offset: 0, i: 30, color: "#333399"},{value: 0, offset: 0, i: 31, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -4882,7 +4870,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_351')
+    const svg = d3.select('#chart_cat_390')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -4938,13 +4926,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_351')
+      .attr('id', 'zoom_chart_390')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_351_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_390_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -4986,107 +4974,107 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_351_0").click( function () {
-    window.open("../topo/run_5_knl07_385982_385982.html");
+  $("#zoom_chart_390_0").click( function () {
+    window.open("../topo/run_5_knl07_390248_390248.html");
   });
-  $("#zoom_chart_351_1").click( function () {
-    window.open("../topo/run_5_knl07_385982_386290.html");
+  $("#zoom_chart_390_1").click( function () {
+    window.open("../topo/run_5_knl07_390248_390556.html");
   });
-  $("#zoom_chart_351_2").click( function () {
-    window.open("../topo/run_5_knl07_385982_386291.html");
+  $("#zoom_chart_390_2").click( function () {
+    window.open("../topo/run_5_knl07_390248_390557.html");
   });
-  $("#zoom_chart_351_3").click( function () {
-    window.open("../topo/run_5_knl07_385982_386292.html");
+  $("#zoom_chart_390_3").click( function () {
+    window.open("../topo/run_5_knl07_390248_390558.html");
   });
-  $("#zoom_chart_351_4").click( function () {
-    window.open("../topo/run_5_knl07_385982_386289.html");
+  $("#zoom_chart_390_4").click( function () {
+    window.open("../topo/run_5_knl07_390248_390555.html");
   });
-  $("#zoom_chart_351_5").click( function () {
-    window.open("../topo/run_5_knl07_385982_386287.html");
+  $("#zoom_chart_390_5").click( function () {
+    window.open("../topo/run_5_knl07_390248_390553.html");
   });
-  $("#zoom_chart_351_6").click( function () {
-    window.open("../topo/run_5_knl07_385982_386288.html");
+  $("#zoom_chart_390_6").click( function () {
+    window.open("../topo/run_5_knl07_390248_390554.html");
   });
-  $("#zoom_chart_351_7").click( function () {
-    window.open("../topo/run_5_knl07_385982_386286.html");
+  $("#zoom_chart_390_7").click( function () {
+    window.open("../topo/run_5_knl07_390248_390552.html");
   });
-  $("#zoom_chart_351_8").click( function () {
-    window.open("../topo/run_5_knl07_385982_386293.html");
+  $("#zoom_chart_390_8").click( function () {
+    window.open("../topo/run_5_knl07_390248_390559.html");
   });
-  $("#zoom_chart_351_9").click( function () {
-    window.open("../topo/run_5_knl07_385982_386295.html");
+  $("#zoom_chart_390_9").click( function () {
+    window.open("../topo/run_5_knl07_390248_390561.html");
   });
-  $("#zoom_chart_351_10").click( function () {
-    window.open("../topo/run_5_knl07_385982_386299.html");
+  $("#zoom_chart_390_10").click( function () {
+    window.open("../topo/run_5_knl07_390248_390565.html");
   });
-  $("#zoom_chart_351_11").click( function () {
-    window.open("../topo/run_5_knl07_385982_386294.html");
+  $("#zoom_chart_390_11").click( function () {
+    window.open("../topo/run_5_knl07_390248_390560.html");
   });
-  $("#zoom_chart_351_12").click( function () {
-    window.open("../topo/run_5_knl07_385982_386298.html");
+  $("#zoom_chart_390_12").click( function () {
+    window.open("../topo/run_5_knl07_390248_390564.html");
   });
-  $("#zoom_chart_351_13").click( function () {
-    window.open("../topo/run_5_knl07_385982_386296.html");
+  $("#zoom_chart_390_13").click( function () {
+    window.open("../topo/run_5_knl07_390248_390562.html");
   });
-  $("#zoom_chart_351_14").click( function () {
-    window.open("../topo/run_5_knl07_385982_386297.html");
+  $("#zoom_chart_390_14").click( function () {
+    window.open("../topo/run_5_knl07_390248_390563.html");
   });
-  $("#zoom_chart_351_15").click( function () {
-    window.open("../topo/run_5_knl07_385982_386300.html");
+  $("#zoom_chart_390_15").click( function () {
+    window.open("../topo/run_5_knl07_390248_390566.html");
   });
-  $("#zoom_chart_351_16").click( function () {
-    window.open("../topo/run_5_knl07_385982_386285.html");
+  $("#zoom_chart_390_16").click( function () {
+    window.open("../topo/run_5_knl07_390248_390551.html");
   });
-  $("#zoom_chart_351_17").click( function () {
-    window.open("../topo/run_5_knl07_385982_386283.html");
+  $("#zoom_chart_390_17").click( function () {
+    window.open("../topo/run_5_knl07_390248_390549.html");
   });
-  $("#zoom_chart_351_18").click( function () {
-    window.open("../topo/run_5_knl07_385982_386274.html");
+  $("#zoom_chart_390_18").click( function () {
+    window.open("../topo/run_5_knl07_390248_390540.html");
   });
-  $("#zoom_chart_351_19").click( function () {
-    window.open("../topo/run_5_knl07_385982_386275.html");
+  $("#zoom_chart_390_19").click( function () {
+    window.open("../topo/run_5_knl07_390248_390541.html");
   });
-  $("#zoom_chart_351_20").click( function () {
-    window.open("../topo/run_5_knl07_385982_386273.html");
+  $("#zoom_chart_390_20").click( function () {
+    window.open("../topo/run_5_knl07_390248_390539.html");
   });
-  $("#zoom_chart_351_21").click( function () {
-    window.open("../topo/run_5_knl07_385982_386271.html");
+  $("#zoom_chart_390_21").click( function () {
+    window.open("../topo/run_5_knl07_390248_390537.html");
   });
-  $("#zoom_chart_351_22").click( function () {
-    window.open("../topo/run_5_knl07_385982_386272.html");
+  $("#zoom_chart_390_22").click( function () {
+    window.open("../topo/run_5_knl07_390248_390538.html");
   });
-  $("#zoom_chart_351_23").click( function () {
-    window.open("../topo/run_5_knl07_385982_386284.html");
+  $("#zoom_chart_390_23").click( function () {
+    window.open("../topo/run_5_knl07_390248_390550.html");
   });
-  $("#zoom_chart_351_24").click( function () {
-    window.open("../topo/run_5_knl07_385982_386276.html");
+  $("#zoom_chart_390_24").click( function () {
+    window.open("../topo/run_5_knl07_390248_390542.html");
   });
-  $("#zoom_chart_351_25").click( function () {
-    window.open("../topo/run_5_knl07_385982_386278.html");
+  $("#zoom_chart_390_25").click( function () {
+    window.open("../topo/run_5_knl07_390248_390544.html");
   });
-  $("#zoom_chart_351_26").click( function () {
-    window.open("../topo/run_5_knl07_385982_386282.html");
+  $("#zoom_chart_390_26").click( function () {
+    window.open("../topo/run_5_knl07_390248_390548.html");
   });
-  $("#zoom_chart_351_27").click( function () {
-    window.open("../topo/run_5_knl07_385982_386277.html");
+  $("#zoom_chart_390_27").click( function () {
+    window.open("../topo/run_5_knl07_390248_390543.html");
   });
-  $("#zoom_chart_351_28").click( function () {
-    window.open("../topo/run_5_knl07_385982_386281.html");
+  $("#zoom_chart_390_28").click( function () {
+    window.open("../topo/run_5_knl07_390248_390547.html");
   });
-  $("#zoom_chart_351_29").click( function () {
-    window.open("../topo/run_5_knl07_385982_386279.html");
+  $("#zoom_chart_390_29").click( function () {
+    window.open("../topo/run_5_knl07_390248_390545.html");
   });
-  $("#zoom_chart_351_30").click( function () {
-    window.open("../topo/run_5_knl07_385982_386280.html");
+  $("#zoom_chart_390_30").click( function () {
+    window.open("../topo/run_5_knl07_390248_390546.html");
   });
-  $("#zoom_chart_351_31").click( function () {
-    window.open("../topo/run_5_knl07_385982_386301.html");
+  $("#zoom_chart_390_31").click( function () {
+    window.open("../topo/run_5_knl07_390248_390567.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "6") {
   $(document).ready(function(){
-    var ordinals = ['knl07_385982_385982','knl07_385982_386290','knl07_385982_386291','knl07_385982_386292','knl07_385982_386289','knl07_385982_386287','knl07_385982_386288','knl07_385982_386286','knl07_385982_386293','knl07_385982_386295','knl07_385982_386299','knl07_385982_386294','knl07_385982_386298','knl07_385982_386296','knl07_385982_386297','knl07_385982_386300','knl07_385982_386285','knl07_385982_386283','knl07_385982_386274','knl07_385982_386275','knl07_385982_386273','knl07_385982_386271','knl07_385982_386272','knl07_385982_386284','knl07_385982_386276','knl07_385982_386278','knl07_385982_386282','knl07_385982_386277','knl07_385982_386281','knl07_385982_386279','knl07_385982_386280','knl07_385982_386301'];
+    var ordinals = ['knl07_390248_390248','knl07_390248_390556','knl07_390248_390557','knl07_390248_390558','knl07_390248_390555','knl07_390248_390553','knl07_390248_390554','knl07_390248_390552','knl07_390248_390559','knl07_390248_390561','knl07_390248_390565','knl07_390248_390560','knl07_390248_390564','knl07_390248_390562','knl07_390248_390563','knl07_390248_390566','knl07_390248_390551','knl07_390248_390549','knl07_390248_390540','knl07_390248_390541','knl07_390248_390539','knl07_390248_390537','knl07_390248_390538','knl07_390248_390550','knl07_390248_390542','knl07_390248_390544','knl07_390248_390548','knl07_390248_390543','knl07_390248_390547','knl07_390248_390545','knl07_390248_390546','knl07_390248_390567'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"},{value: 0, offset: 0, i: 1, color: "#333399"},{value: 0, offset: 0, i: 2, color: "#333399"},{value: 0, offset: 0, i: 3, color: "#333399"},{value: 0, offset: 0, i: 4, color: "#333399"},{value: 0, offset: 0, i: 5, color: "#333399"},{value: 0, offset: 0, i: 6, color: "#333399"},{value: 0, offset: 0, i: 7, color: "#333399"},{value: 0, offset: 0, i: 8, color: "#333399"},{value: 0, offset: 0, i: 9, color: "#333399"},{value: 0, offset: 0, i: 10, color: "#333399"},{value: 0, offset: 0, i: 11, color: "#333399"},{value: 0, offset: 0, i: 12, color: "#333399"},{value: 0, offset: 0, i: 13, color: "#333399"},{value: 0, offset: 0, i: 14, color: "#333399"},{value: 0, offset: 0, i: 15, color: "#333399"},{value: 0, offset: 0, i: 16, color: "#333399"},{value: 0, offset: 0, i: 17, color: "#333399"},{value: 0, offset: 0, i: 18, color: "#333399"},{value: 0, offset: 0, i: 19, color: "#333399"},{value: 0, offset: 0, i: 20, color: "#333399"},{value: 0, offset: 0, i: 21, color: "#333399"},{value: 0, offset: 0, i: 22, color: "#333399"},{value: 0, offset: 0, i: 23, color: "#333399"},{value: 0, offset: 0, i: 24, color: "#333399"},{value: 0, offset: 0, i: 25, color: "#333399"},{value: 0, offset: 0, i: 26, color: "#333399"},{value: 0, offset: 0, i: 27, color: "#333399"},{value: 0, offset: 0, i: 28, color: "#333399"},{value: 0, offset: 0, i: 29, color: "#333399"},{value: 0, offset: 0, i: 30, color: "#333399"},{value: 0, offset: 0, i: 31, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -5102,7 +5090,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_352')
+    const svg = d3.select('#chart_cat_391')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -5158,13 +5146,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_352')
+      .attr('id', 'zoom_chart_391')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_352_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_391_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -5206,101 +5194,101 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_352_0").click( function () {
-    window.open("../topo/run_5_knl07_385982_385982.html");
+  $("#zoom_chart_391_0").click( function () {
+    window.open("../topo/run_5_knl07_390248_390248.html");
   });
-  $("#zoom_chart_352_1").click( function () {
-    window.open("../topo/run_5_knl07_385982_386290.html");
+  $("#zoom_chart_391_1").click( function () {
+    window.open("../topo/run_5_knl07_390248_390556.html");
   });
-  $("#zoom_chart_352_2").click( function () {
-    window.open("../topo/run_5_knl07_385982_386291.html");
+  $("#zoom_chart_391_2").click( function () {
+    window.open("../topo/run_5_knl07_390248_390557.html");
   });
-  $("#zoom_chart_352_3").click( function () {
-    window.open("../topo/run_5_knl07_385982_386292.html");
+  $("#zoom_chart_391_3").click( function () {
+    window.open("../topo/run_5_knl07_390248_390558.html");
   });
-  $("#zoom_chart_352_4").click( function () {
-    window.open("../topo/run_5_knl07_385982_386289.html");
+  $("#zoom_chart_391_4").click( function () {
+    window.open("../topo/run_5_knl07_390248_390555.html");
   });
-  $("#zoom_chart_352_5").click( function () {
-    window.open("../topo/run_5_knl07_385982_386287.html");
+  $("#zoom_chart_391_5").click( function () {
+    window.open("../topo/run_5_knl07_390248_390553.html");
   });
-  $("#zoom_chart_352_6").click( function () {
-    window.open("../topo/run_5_knl07_385982_386288.html");
+  $("#zoom_chart_391_6").click( function () {
+    window.open("../topo/run_5_knl07_390248_390554.html");
   });
-  $("#zoom_chart_352_7").click( function () {
-    window.open("../topo/run_5_knl07_385982_386286.html");
+  $("#zoom_chart_391_7").click( function () {
+    window.open("../topo/run_5_knl07_390248_390552.html");
   });
-  $("#zoom_chart_352_8").click( function () {
-    window.open("../topo/run_5_knl07_385982_386293.html");
+  $("#zoom_chart_391_8").click( function () {
+    window.open("../topo/run_5_knl07_390248_390559.html");
   });
-  $("#zoom_chart_352_9").click( function () {
-    window.open("../topo/run_5_knl07_385982_386295.html");
+  $("#zoom_chart_391_9").click( function () {
+    window.open("../topo/run_5_knl07_390248_390561.html");
   });
-  $("#zoom_chart_352_10").click( function () {
-    window.open("../topo/run_5_knl07_385982_386299.html");
+  $("#zoom_chart_391_10").click( function () {
+    window.open("../topo/run_5_knl07_390248_390565.html");
   });
-  $("#zoom_chart_352_11").click( function () {
-    window.open("../topo/run_5_knl07_385982_386294.html");
+  $("#zoom_chart_391_11").click( function () {
+    window.open("../topo/run_5_knl07_390248_390560.html");
   });
-  $("#zoom_chart_352_12").click( function () {
-    window.open("../topo/run_5_knl07_385982_386298.html");
+  $("#zoom_chart_391_12").click( function () {
+    window.open("../topo/run_5_knl07_390248_390564.html");
   });
-  $("#zoom_chart_352_13").click( function () {
-    window.open("../topo/run_5_knl07_385982_386296.html");
+  $("#zoom_chart_391_13").click( function () {
+    window.open("../topo/run_5_knl07_390248_390562.html");
   });
-  $("#zoom_chart_352_14").click( function () {
-    window.open("../topo/run_5_knl07_385982_386297.html");
+  $("#zoom_chart_391_14").click( function () {
+    window.open("../topo/run_5_knl07_390248_390563.html");
   });
-  $("#zoom_chart_352_15").click( function () {
-    window.open("../topo/run_5_knl07_385982_386300.html");
+  $("#zoom_chart_391_15").click( function () {
+    window.open("../topo/run_5_knl07_390248_390566.html");
   });
-  $("#zoom_chart_352_16").click( function () {
-    window.open("../topo/run_5_knl07_385982_386285.html");
+  $("#zoom_chart_391_16").click( function () {
+    window.open("../topo/run_5_knl07_390248_390551.html");
   });
-  $("#zoom_chart_352_17").click( function () {
-    window.open("../topo/run_5_knl07_385982_386283.html");
+  $("#zoom_chart_391_17").click( function () {
+    window.open("../topo/run_5_knl07_390248_390549.html");
   });
-  $("#zoom_chart_352_18").click( function () {
-    window.open("../topo/run_5_knl07_385982_386274.html");
+  $("#zoom_chart_391_18").click( function () {
+    window.open("../topo/run_5_knl07_390248_390540.html");
   });
-  $("#zoom_chart_352_19").click( function () {
-    window.open("../topo/run_5_knl07_385982_386275.html");
+  $("#zoom_chart_391_19").click( function () {
+    window.open("../topo/run_5_knl07_390248_390541.html");
   });
-  $("#zoom_chart_352_20").click( function () {
-    window.open("../topo/run_5_knl07_385982_386273.html");
+  $("#zoom_chart_391_20").click( function () {
+    window.open("../topo/run_5_knl07_390248_390539.html");
   });
-  $("#zoom_chart_352_21").click( function () {
-    window.open("../topo/run_5_knl07_385982_386271.html");
+  $("#zoom_chart_391_21").click( function () {
+    window.open("../topo/run_5_knl07_390248_390537.html");
   });
-  $("#zoom_chart_352_22").click( function () {
-    window.open("../topo/run_5_knl07_385982_386272.html");
+  $("#zoom_chart_391_22").click( function () {
+    window.open("../topo/run_5_knl07_390248_390538.html");
   });
-  $("#zoom_chart_352_23").click( function () {
-    window.open("../topo/run_5_knl07_385982_386284.html");
+  $("#zoom_chart_391_23").click( function () {
+    window.open("../topo/run_5_knl07_390248_390550.html");
   });
-  $("#zoom_chart_352_24").click( function () {
-    window.open("../topo/run_5_knl07_385982_386276.html");
+  $("#zoom_chart_391_24").click( function () {
+    window.open("../topo/run_5_knl07_390248_390542.html");
   });
-  $("#zoom_chart_352_25").click( function () {
-    window.open("../topo/run_5_knl07_385982_386278.html");
+  $("#zoom_chart_391_25").click( function () {
+    window.open("../topo/run_5_knl07_390248_390544.html");
   });
-  $("#zoom_chart_352_26").click( function () {
-    window.open("../topo/run_5_knl07_385982_386282.html");
+  $("#zoom_chart_391_26").click( function () {
+    window.open("../topo/run_5_knl07_390248_390548.html");
   });
-  $("#zoom_chart_352_27").click( function () {
-    window.open("../topo/run_5_knl07_385982_386277.html");
+  $("#zoom_chart_391_27").click( function () {
+    window.open("../topo/run_5_knl07_390248_390543.html");
   });
-  $("#zoom_chart_352_28").click( function () {
-    window.open("../topo/run_5_knl07_385982_386281.html");
+  $("#zoom_chart_391_28").click( function () {
+    window.open("../topo/run_5_knl07_390248_390547.html");
   });
-  $("#zoom_chart_352_29").click( function () {
-    window.open("../topo/run_5_knl07_385982_386279.html");
+  $("#zoom_chart_391_29").click( function () {
+    window.open("../topo/run_5_knl07_390248_390545.html");
   });
-  $("#zoom_chart_352_30").click( function () {
-    window.open("../topo/run_5_knl07_385982_386280.html");
+  $("#zoom_chart_391_30").click( function () {
+    window.open("../topo/run_5_knl07_390248_390546.html");
   });
-  $("#zoom_chart_352_31").click( function () {
-    window.open("../topo/run_5_knl07_385982_386301.html");
+  $("#zoom_chart_391_31").click( function () {
+    window.open("../topo/run_5_knl07_390248_390567.html");
   });
   }
 }
@@ -5353,34 +5341,34 @@ function cqa_loadhelp (divId) {
 </div>
 <div class="panelcontent" id="OV_panel_scala">
 <div class="_accordion_box collapsed" ><h3 id="_accordion_header_1" class="_header collapsed" onclick="_click_accordion_header(this)" ><span class="_accordion_box_button">&#x25B6;</span>Scalability Runs Description<span class="tooltip-maqao-button help-maqao" title="" tooltip_id="16" ></span></h3><div id="_accordion_content_1" class="_content collapsed"><table><tr><th>Run 1T</th><td><span style="white-space: nowrap;margin-left: 30px;">Number processes: 1</span><span style="white-space: nowrap;margin-left: 30px;">Number nodes: 1</span><span style="white-space: nowrap;margin-left: 30px;">Run Command: &lt;executable&gt; in/input.raw sout/output.raw</span><span style="white-space: nowrap;margin-left: 30px;">MPI Command: </span><span style="white-space: nowrap;margin-left: 30px;">Dataset: </span><span style="white-space: nowrap;margin-left: 30px;">Run Directory: .</span><span style="white-space: nowrap;margin-left: 30px;">OMP_NUM_THREADS: 1</span></td></tr><tr><th>Run 2T</th><td><span style="white-space: nowrap;margin-left: 30px;">OMP_NUM_THREADS: 2</span></td></tr><tr><th>Run 4T</th><td><span style="white-space: nowrap;margin-left: 30px;">OMP_NUM_THREADS: 4</span></td></tr><tr><th>Run 8T</th><td><span style="white-space: nowrap;margin-left: 30px;">OMP_NUM_THREADS: 8</span></td></tr><tr><th>Run 16T</th><td><span style="white-space: nowrap;margin-left: 30px;">OMP_NUM_THREADS: 16</span></td></tr><tr><th>Run 32T</th><td><span style="white-space: nowrap;margin-left: 30px;">OMP_NUM_THREADS: 32</span></td></tr></table>
-</div></div><div class="_div_table" id="_fixed_32"><div class="_accordion_box" ><h3 id="_accordion_header_2" class="_header" onclick="_click_accordion_header(this)" ><span class="_accordion_box_button">&#x25BC;</span>Colums Filter<span class="tooltip-maqao-button help-maqao" title="" tooltip_id="17" ></span></h3><div id="_accordion_content_2" class="_content"><div style="max-height:165px;"><form>
-<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table32_opt1" onclick="click_table_menu('_table32_opt1', '_table32_opt_all', 'list_opts_table32')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(1T) Efficiency</span>
-<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table32_opt2" onclick="click_table_menu('_table32_opt2', '_table32_opt_all', 'list_opts_table32')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(1T) Potential Speed-Up (%)</span>
-<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table32_opt3" onclick="click_table_menu('_table32_opt3', '_table32_opt_all', 'list_opts_table32')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(2T) Efficiency</span>
-<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table32_opt4" onclick="click_table_menu('_table32_opt4', '_table32_opt_all', 'list_opts_table32')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(2T) Potential Speed-Up (%)</span>
-<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table32_opt5" onclick="click_table_menu('_table32_opt5', '_table32_opt_all', 'list_opts_table32')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(4T) Efficiency</span>
-<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table32_opt6" onclick="click_table_menu('_table32_opt6', '_table32_opt_all', 'list_opts_table32')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(4T) Potential Speed-Up (%)</span>
-<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table32_opt7" onclick="click_table_menu('_table32_opt7', '_table32_opt_all', 'list_opts_table32')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(8T) Efficiency</span>
-<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table32_opt8" onclick="click_table_menu('_table32_opt8', '_table32_opt_all', 'list_opts_table32')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(8T) Potential Speed-Up (%)</span>
-<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table32_opt9" onclick="click_table_menu('_table32_opt9', '_table32_opt_all', 'list_opts_table32')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(16T) Efficiency</span>
-<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table32_opt10" onclick="click_table_menu('_table32_opt10', '_table32_opt_all', 'list_opts_table32')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(16T) Potential Speed-Up (%)</span>
-<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table32_opt11" onclick="click_table_menu('_table32_opt11', '_table32_opt_all', 'list_opts_table32')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(32T) Efficiency</span>
-<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table32_opt12" onclick="click_table_menu('_table32_opt12', '_table32_opt_all', 'list_opts_table32')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(32T) Potential Speed-Up (%)</span>
-<span style='white-space:nowrap;'><input class="input_check_table_menu" type="button" id="_table32_opt_all" onclick="set_all_table_menu(this, 'list_opts_table32')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" value="Select all"></span>
-<span style='white-space:nowrap;'><input class="input_check_table_menu" type="button" id="_table32_opt_select_all_speedups" onclick="select_all_speedups(_fixed_table_32, '_table32', this)" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" value="Deselect All Speed-Ups" data-selected="true" data-text="Select All Speed-Ups" data-text_alt="Deselect All Speed-Ups" ></span>
-<span style='white-space:nowrap;'><input class="input_check_table_menu" type="button" id="_table32_opt_select_all_efficiencies" onclick="select_all_efficiencies(_fixed_table_32, '_table32', this)" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" value="Deselect All Efficiencies" data-selected="true" data-text="Select All Efficiencies" data-text_alt="Deselect All Efficiencies" ></span>
+</div></div><div class="_div_table" id="_fixed_36"><div class="_accordion_box" ><h3 id="_accordion_header_2" class="_header" onclick="_click_accordion_header(this)" ><span class="_accordion_box_button">&#x25BC;</span>Colums Filter<span class="tooltip-maqao-button help-maqao" title="" tooltip_id="17" ></span></h3><div id="_accordion_content_2" class="_content"><div style="max-height:165px;"><form>
+<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table36_opt1" onclick="click_table_menu('_table36_opt1', '_table36_opt_all', 'list_opts_table36')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(1T) Efficiency</span>
+<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table36_opt2" onclick="click_table_menu('_table36_opt2', '_table36_opt_all', 'list_opts_table36')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(1T) Potential Speed-Up (%)</span>
+<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table36_opt3" onclick="click_table_menu('_table36_opt3', '_table36_opt_all', 'list_opts_table36')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(2T) Efficiency</span>
+<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table36_opt4" onclick="click_table_menu('_table36_opt4', '_table36_opt_all', 'list_opts_table36')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(2T) Potential Speed-Up (%)</span>
+<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table36_opt5" onclick="click_table_menu('_table36_opt5', '_table36_opt_all', 'list_opts_table36')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(4T) Efficiency</span>
+<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table36_opt6" onclick="click_table_menu('_table36_opt6', '_table36_opt_all', 'list_opts_table36')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(4T) Potential Speed-Up (%)</span>
+<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table36_opt7" onclick="click_table_menu('_table36_opt7', '_table36_opt_all', 'list_opts_table36')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(8T) Efficiency</span>
+<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table36_opt8" onclick="click_table_menu('_table36_opt8', '_table36_opt_all', 'list_opts_table36')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(8T) Potential Speed-Up (%)</span>
+<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table36_opt9" onclick="click_table_menu('_table36_opt9', '_table36_opt_all', 'list_opts_table36')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(16T) Efficiency</span>
+<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table36_opt10" onclick="click_table_menu('_table36_opt10', '_table36_opt_all', 'list_opts_table36')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(16T) Potential Speed-Up (%)</span>
+<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table36_opt11" onclick="click_table_menu('_table36_opt11', '_table36_opt_all', 'list_opts_table36')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(32T) Efficiency</span>
+<span style="white-space:nowrap;"><input class="input_check_table_menu" type="checkbox" id="_table36_opt12" onclick="click_table_menu('_table36_opt12', '_table36_opt_all', 'list_opts_table36')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" checked  >(32T) Potential Speed-Up (%)</span>
+<span style='white-space:nowrap;'><input class="input_check_table_menu" type="button" id="_table36_opt_all" onclick="set_all_table_menu(this, 'list_opts_table36')" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" value="Select all"></span>
+<span style='white-space:nowrap;'><input class="input_check_table_menu" type="button" id="_table36_opt_select_all_speedups" onclick="select_all_speedups(_fixed_table_36, '_table36', this)" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" value="Deselect All Speed-Ups" data-selected="true" data-text="Select All Speed-Ups" data-text_alt="Deselect All Speed-Ups" ></span>
+<span style='white-space:nowrap;'><input class="input_check_table_menu" type="button" id="_table36_opt_select_all_efficiencies" onclick="select_all_efficiencies(_fixed_table_36, '_table36', this)" style="margin-left: 30px;vertical-align: middle;cursor:pointer;" value="Deselect All Efficiencies" data-selected="true" data-text="Select All Efficiencies" data-text_alt="Deselect All Efficiencies" ></span>
 </form></div>
-</div></div><table class="_fixed_table" id="_fixed_table_32"><tr><th class="_freezed_row  _left _freezed_col _table32_opt1"><span></span>(1T) Efficiency</th><th class="_freezed_row  _table32_opt2"><span></span>(1T) Potential Speed-Up (%)</th><th class="_freezed_row  _table32_opt3"><span></span>(2T) Efficiency</th><th class="_freezed_row  _table32_opt4"><span></span>(2T) Potential Speed-Up (%)</th><th class="_freezed_row  _table32_opt5"><span></span>(4T) Efficiency</th><th class="_freezed_row  _table32_opt6"><span></span>(4T) Potential Speed-Up (%)</th><th class="_freezed_row  _table32_opt7"><span></span>(8T) Efficiency</th><th class="_freezed_row  _table32_opt8"><span></span>(8T) Potential Speed-Up (%)</th><th class="_freezed_row  _table32_opt9"><span></span>(16T) Efficiency</th><th class="_freezed_row  _table32_opt10"><span></span>(16T) Potential Speed-Up (%)</th><th class="_freezed_row  _table32_opt11"><span></span>(32T) Efficiency</th><th class="_freezed_row  _table32_opt12"><span></span>(32T) Potential Speed-Up (%)</th></tr><tr id="_tr_32_1" ><td id="_td_32_1_1"  data-_i="1" data-_j="1"  class=" _left _freezed_col  _centered _table32_opt1"  style="background:#579619;" >1</td><td id="_td_32_1_2"  data-_i="1" data-_j="2"  class=" _centered _table32_opt2"  style="background:#458B00;" >0</td><td id="_td_32_1_3"  data-_i="1" data-_j="3"  class=" _centered _table32_opt3"  style="background:#579619;" >1</td><td id="_td_32_1_4"  data-_i="1" data-_j="4"  class=" _centered _table32_opt4"  style="background:#458B00;" >0</td><td id="_td_32_1_5"  data-_i="1" data-_j="5"  class=" _centered _table32_opt5" ></td><td id="_td_32_1_6"  data-_i="1" data-_j="6"  class=" _centered _table32_opt6" ></td><td id="_td_32_1_7"  data-_i="1" data-_j="7"  class=" _centered _table32_opt7"  style="background:#579619;" >1</td><td id="_td_32_1_8"  data-_i="1" data-_j="8"  class=" _centered _table32_opt8"  style="background:#458B00;" >0</td><td id="_td_32_1_9"  data-_i="1" data-_j="9"  class=" _centered _table32_opt9" ></td><td id="_td_32_1_10"  data-_i="1" data-_j="10"  class=" _centered _table32_opt10" ></td><td id="_td_32_1_11"  data-_i="1" data-_j="11"  class=" _centered _table32_opt11" ></td><td id="_td_32_1_12"  data-_i="1" data-_j="12"  class=" _centered _table32_opt12" ></td></tr>
+</div></div><table class="_fixed_table" id="_fixed_table_36"><tr><th class="_freezed_row  _left _freezed_col _table36_opt1"><span></span>(1T) Efficiency</th><th class="_freezed_row  _table36_opt2"><span></span>(1T) Potential Speed-Up (%)</th><th class="_freezed_row  _table36_opt3"><span></span>(2T) Efficiency</th><th class="_freezed_row  _table36_opt4"><span></span>(2T) Potential Speed-Up (%)</th><th class="_freezed_row  _table36_opt5"><span></span>(4T) Efficiency</th><th class="_freezed_row  _table36_opt6"><span></span>(4T) Potential Speed-Up (%)</th><th class="_freezed_row  _table36_opt7"><span></span>(8T) Efficiency</th><th class="_freezed_row  _table36_opt8"><span></span>(8T) Potential Speed-Up (%)</th><th class="_freezed_row  _table36_opt9"><span></span>(16T) Efficiency</th><th class="_freezed_row  _table36_opt10"><span></span>(16T) Potential Speed-Up (%)</th><th class="_freezed_row  _table36_opt11"><span></span>(32T) Efficiency</th><th class="_freezed_row  _table36_opt12"><span></span>(32T) Potential Speed-Up (%)</th></tr><tr id="_tr_36_1" ><td id="_td_36_1_1"  data-_i="1" data-_j="1"  class=" _left _freezed_col  _centered _table36_opt1"  style="background:#579619;" >1</td><td id="_td_36_1_2"  data-_i="1" data-_j="2"  class=" _centered _table36_opt2"  style="background:#458B00;" >0</td><td id="_td_36_1_3"  data-_i="1" data-_j="3"  class=" _centered _table36_opt3" ></td><td id="_td_36_1_4"  data-_i="1" data-_j="4"  class=" _centered _table36_opt4" ></td><td id="_td_36_1_5"  data-_i="1" data-_j="5"  class=" _centered _table36_opt5"  style="background:#579619;" >1</td><td id="_td_36_1_6"  data-_i="1" data-_j="6"  class=" _centered _table36_opt6"  style="background:#458B00;" >0</td><td id="_td_36_1_7"  data-_i="1" data-_j="7"  class=" _centered _table36_opt7" ></td><td id="_td_36_1_8"  data-_i="1" data-_j="8"  class=" _centered _table36_opt8" ></td><td id="_td_36_1_9"  data-_i="1" data-_j="9"  class=" _centered _table36_opt9" ></td><td id="_td_36_1_10"  data-_i="1" data-_j="10"  class=" _centered _table36_opt10" ></td><td id="_td_36_1_11"  data-_i="1" data-_j="11"  class=" _centered _table36_opt11" ></td><td id="_td_36_1_12"  data-_i="1" data-_j="12"  class=" _centered _table36_opt12" ></td></tr>
 </table></div><script>
-var list_opts_table32 = ['_table32_opt1','_table32_opt2','_table32_opt3','_table32_opt4','_table32_opt5','_table32_opt6','_table32_opt7','_table32_opt8','_table32_opt9','_table32_opt10','_table32_opt11','_table32_opt12',];addLoadEvent(function(){
+var list_opts_table36 = ['_table36_opt1','_table36_opt2','_table36_opt3','_table36_opt4','_table36_opt5','_table36_opt6','_table36_opt7','_table36_opt8','_table36_opt9','_table36_opt10','_table36_opt11','_table36_opt12',];addLoadEvent(function(){
   var displayed_columns = [true, true, true, true, true, true, true, true, true, true, true, true];
   // Update initial state using localStorage
   for (var i = 0; i < displayed_columns.length; i++) {
-    var val = localStorage.getItem("__functions__table32_opt"+(i + 1));
+    var val = localStorage.getItem("__functions__table36_opt"+(i + 1));
     if (val) {
       displayed_columns[i] = (val === "true");
     }
-    var obj = document.getElementById("_table32_opt"+(i + 1));
+    var obj = document.getElementById("_table36_opt"+(i + 1));
     if (obj) {
       if (displayed_columns[i] == true) {
         obj.checked = true;
@@ -5391,7 +5379,7 @@ var list_opts_table32 = ['_table32_opt1','_table32_opt2','_table32_opt3','_table
     }
   }
   // Update table
-  var table = document.getElementById("_fixed_table_32");
+  var table = document.getElementById("_fixed_table_36");
   for (let i in table.rows) {
     let row = table.rows[i]
     for (let j in row.cells) {
@@ -5407,20 +5395,20 @@ var list_opts_table32 = ['_table32_opt1','_table32_opt2','_table32_opt3','_table
     }
   }
   {
-    var value = localStorage.getItem("_table32_opt_all");
+    var value = localStorage.getItem("_table36_opt_all");
     if (value) {
-      var obj = document.getElementById ("_table32_opt_all");
+      var obj = document.getElementById ("_table36_opt_all");
       if (obj) {
         obj.value = value;
       }
     }
   }
-  _check_all_checkbox_ ("_table32_opt_all", "list_opts_table32");
+  _check_all_checkbox_ ("_table36_opt_all", "list_opts_table36");
   {
-    var text     = localStorage.getItem("_table32_opt_select_all_speedups_value");
-    var selected = localStorage.getItem("_table32_opt_select_all_speedups_selected");
+    var text     = localStorage.getItem("_table36_opt_select_all_speedups_value");
+    var selected = localStorage.getItem("_table36_opt_select_all_speedups_selected");
     if (text && selected) {
-      var checkbox = document.getElementById ("_table32_opt_select_all_speedups");
+      var checkbox = document.getElementById ("_table36_opt_select_all_speedups");
       if (checkbox) {
         checkbox.dataset.selected = selected;
         checkbox.value            = text;
@@ -5428,10 +5416,10 @@ var list_opts_table32 = ['_table32_opt1','_table32_opt2','_table32_opt3','_table
     }
   }
   {
-    var text     = localStorage.getItem("_table32_opt_select_all_efficiencies_value");
-    var selected = localStorage.getItem("_table32_opt_select_all_efficiencies_selected");
+    var text     = localStorage.getItem("_table36_opt_select_all_efficiencies_value");
+    var selected = localStorage.getItem("_table36_opt_select_all_efficiencies_selected");
     if (text && selected) {
-      var checkbox = document.getElementById ("_table32_opt_select_all_efficiencies");
+      var checkbox = document.getElementById ("_table36_opt_select_all_efficiencies");
       if (checkbox) {
         checkbox.dataset.selected = selected;
         checkbox.value            = text;
@@ -5509,21 +5497,21 @@ function select_all_efficiencies(table, id_root, checkbox){
 }
 </script>
 <br><div class="_fixed_box" ><h3 class="_header">Speed-Up and Efficiency</h3>
-<div class="_content"><div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_389" style="height:500px;margin-top:20px;" ></div></div>
+<div class="_content"><div style="margin-top: 10px; margin-bottom: 10px; background-color: var(--chart_background); overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_428" style="height:500px;margin-top:20px;" ></div></div>
 <script class="code" >
-</script><div class="_accordion_box collapsed" ><h3 id="_accordion_header_3" class="_header collapsed" onclick="_click_accordion_header(this)" ><span class="_accordion_box_button">&#x25B6;</span>Detailed Speed-Up and Efficiency</h3><div id="_accordion_content_3" class="_content collapsed"><div class="_div_table" id="_fixed_33"><table class="_fixed_table" id="_fixed_table_33"><tr><th class="_freezed_row  _left _freezed_col"><span></span>Run</th><th class="_freezed_row "><span></span>Number of threads</th><th class="_freezed_row "><span></span>Efficiency (ideal is 1)</th><th class="_freezed_row "><span></span>Speedup</th><th class="_freezed_row "><span></span>Ideal Speedup</th><th class="_freezed_row "><span></span>Time (s)</th><th class="_freezed_row "><span></span>Coverage (%)</th></tr><tr id="_tr_33_1" ><td id="_td_33_1_1"  data-_i="1" data-_j="1"  title="" tooltip_id="18" class=" _left _freezed_col  _centered tooltip-maqao" >1T</td><td id="_td_33_1_2"  data-_i="1" data-_j="2"  class=" _centered" >1</td><td id="_td_33_1_3"  data-_i="1" data-_j="3"  class=" _centered"  style="background:#579619;" >1</td><td id="_td_33_1_4"  data-_i="1" data-_j="4"  class=" _centered" >1</td><td id="_td_33_1_5"  data-_i="1" data-_j="5"  class=" _centered" >1</td><td id="_td_33_1_6"  data-_i="1" data-_j="6"  class=" _centered" >0</td><td id="_td_33_1_7"  data-_i="1" data-_j="7"  class=" _centered" >0.01</td></tr>
-<tr id="_tr_33_2" ><td id="_td_33_2_1"  data-_i="2" data-_j="1"  title="" tooltip_id="19" class=" _left _freezed_col  _centered tooltip-maqao" >2T</td><td id="_td_33_2_2"  data-_i="2" data-_j="2"  class=" _centered" >1</td><td id="_td_33_2_3"  data-_i="2" data-_j="3"  class=" _centered"  style="background:#579619;" >1</td><td id="_td_33_2_4"  data-_i="2" data-_j="4"  class=" _centered" >1</td><td id="_td_33_2_5"  data-_i="2" data-_j="5"  class=" _centered" >2</td><td id="_td_33_2_6"  data-_i="2" data-_j="6"  class=" _centered" >0</td><td id="_td_33_2_7"  data-_i="2" data-_j="7"  class=" _centered" >0.01</td></tr>
-<tr id="_tr_33_3" ><td id="_td_33_3_1"  data-_i="3" data-_j="1"  title="" tooltip_id="20" class=" _left _freezed_col  _centered tooltip-maqao" >4T</td><td id="_td_33_3_2"  data-_i="3" data-_j="2"  class=" _centered" ></td><td id="_td_33_3_3"  data-_i="3" data-_j="3"  class=" _centered" ></td><td id="_td_33_3_4"  data-_i="3" data-_j="4"  class=" _centered" ></td><td id="_td_33_3_5"  data-_i="3" data-_j="5"  class=" _centered" ></td><td id="_td_33_3_6"  data-_i="3" data-_j="6"  class=" _centered" ></td><td id="_td_33_3_7"  data-_i="3" data-_j="7"  class=" _centered" ></td></tr>
-<tr id="_tr_33_4" ><td id="_td_33_4_1"  data-_i="4" data-_j="1"  title="" tooltip_id="21" class=" _left _freezed_col  _centered tooltip-maqao" >8T</td><td id="_td_33_4_2"  data-_i="4" data-_j="2"  class=" _centered" >2</td><td id="_td_33_4_3"  data-_i="4" data-_j="3"  class=" _centered"  style="background:#579619;" >1</td><td id="_td_33_4_4"  data-_i="4" data-_j="4"  class=" _centered" >1</td><td id="_td_33_4_5"  data-_i="4" data-_j="5"  class=" _centered" >8</td><td id="_td_33_4_6"  data-_i="4" data-_j="6"  class=" _centered" >0</td><td id="_td_33_4_7"  data-_i="4" data-_j="7"  class=" _centered" >0.02</td></tr>
-<tr id="_tr_33_5" ><td id="_td_33_5_1"  data-_i="5" data-_j="1"  title="" tooltip_id="22" class=" _left _freezed_col  _centered tooltip-maqao" >16T</td><td id="_td_33_5_2"  data-_i="5" data-_j="2"  class=" _centered" ></td><td id="_td_33_5_3"  data-_i="5" data-_j="3"  class=" _centered" ></td><td id="_td_33_5_4"  data-_i="5" data-_j="4"  class=" _centered" ></td><td id="_td_33_5_5"  data-_i="5" data-_j="5"  class=" _centered" ></td><td id="_td_33_5_6"  data-_i="5" data-_j="6"  class=" _centered" ></td><td id="_td_33_5_7"  data-_i="5" data-_j="7"  class=" _centered" ></td></tr>
-<tr id="_tr_33_6" ><td id="_td_33_6_1"  data-_i="6" data-_j="1"  title="" tooltip_id="23" class=" _left _freezed_col  _centered tooltip-maqao" >32T</td><td id="_td_33_6_2"  data-_i="6" data-_j="2"  class=" _centered" ></td><td id="_td_33_6_3"  data-_i="6" data-_j="3"  class=" _centered" ></td><td id="_td_33_6_4"  data-_i="6" data-_j="4"  class=" _centered" ></td><td id="_td_33_6_5"  data-_i="6" data-_j="5"  class=" _centered" ></td><td id="_td_33_6_6"  data-_i="6" data-_j="6"  class=" _centered" ></td><td id="_td_33_6_7"  data-_i="6" data-_j="7"  class=" _centered" ></td></tr>
+</script><div class="_accordion_box collapsed" ><h3 id="_accordion_header_3" class="_header collapsed" onclick="_click_accordion_header(this)" ><span class="_accordion_box_button">&#x25B6;</span>Detailed Speed-Up and Efficiency</h3><div id="_accordion_content_3" class="_content collapsed"><div class="_div_table" id="_fixed_37"><table class="_fixed_table" id="_fixed_table_37"><tr><th class="_freezed_row  _left _freezed_col"><span></span>Run</th><th class="_freezed_row "><span></span>Number of threads</th><th class="_freezed_row "><span></span>Efficiency (ideal is 1)</th><th class="_freezed_row "><span></span>Speedup</th><th class="_freezed_row "><span></span>Ideal Speedup</th><th class="_freezed_row "><span></span>Time (s)</th><th class="_freezed_row "><span></span>Coverage (%)</th></tr><tr id="_tr_37_1" ><td id="_td_37_1_1"  data-_i="1" data-_j="1"  title="" tooltip_id="18" class=" _left _freezed_col  _centered tooltip-maqao" >1T</td><td id="_td_37_1_2"  data-_i="1" data-_j="2"  class=" _centered" >1</td><td id="_td_37_1_3"  data-_i="1" data-_j="3"  class=" _centered"  style="background:#579619;" >1</td><td id="_td_37_1_4"  data-_i="1" data-_j="4"  class=" _centered" >1</td><td id="_td_37_1_5"  data-_i="1" data-_j="5"  class=" _centered" >1</td><td id="_td_37_1_6"  data-_i="1" data-_j="6"  class=" _centered" >0</td><td id="_td_37_1_7"  data-_i="1" data-_j="7"  class=" _centered" >0.01</td></tr>
+<tr id="_tr_37_2" ><td id="_td_37_2_1"  data-_i="2" data-_j="1"  title="" tooltip_id="19" class=" _left _freezed_col  _centered tooltip-maqao" >2T</td><td id="_td_37_2_2"  data-_i="2" data-_j="2"  class=" _centered" ></td><td id="_td_37_2_3"  data-_i="2" data-_j="3"  class=" _centered" ></td><td id="_td_37_2_4"  data-_i="2" data-_j="4"  class=" _centered" ></td><td id="_td_37_2_5"  data-_i="2" data-_j="5"  class=" _centered" ></td><td id="_td_37_2_6"  data-_i="2" data-_j="6"  class=" _centered" ></td><td id="_td_37_2_7"  data-_i="2" data-_j="7"  class=" _centered" ></td></tr>
+<tr id="_tr_37_3" ><td id="_td_37_3_1"  data-_i="3" data-_j="1"  title="" tooltip_id="20" class=" _left _freezed_col  _centered tooltip-maqao" >4T</td><td id="_td_37_3_2"  data-_i="3" data-_j="2"  class=" _centered" >2</td><td id="_td_37_3_3"  data-_i="3" data-_j="3"  class=" _centered"  style="background:#579619;" >1</td><td id="_td_37_3_4"  data-_i="3" data-_j="4"  class=" _centered" >1</td><td id="_td_37_3_5"  data-_i="3" data-_j="5"  class=" _centered" >4</td><td id="_td_37_3_6"  data-_i="3" data-_j="6"  class=" _centered" >0</td><td id="_td_37_3_7"  data-_i="3" data-_j="7"  class=" _centered" >0.01</td></tr>
+<tr id="_tr_37_4" ><td id="_td_37_4_1"  data-_i="4" data-_j="1"  title="" tooltip_id="21" class=" _left _freezed_col  _centered tooltip-maqao" >8T</td><td id="_td_37_4_2"  data-_i="4" data-_j="2"  class=" _centered" ></td><td id="_td_37_4_3"  data-_i="4" data-_j="3"  class=" _centered" ></td><td id="_td_37_4_4"  data-_i="4" data-_j="4"  class=" _centered" ></td><td id="_td_37_4_5"  data-_i="4" data-_j="5"  class=" _centered" ></td><td id="_td_37_4_6"  data-_i="4" data-_j="6"  class=" _centered" ></td><td id="_td_37_4_7"  data-_i="4" data-_j="7"  class=" _centered" ></td></tr>
+<tr id="_tr_37_5" ><td id="_td_37_5_1"  data-_i="5" data-_j="1"  title="" tooltip_id="22" class=" _left _freezed_col  _centered tooltip-maqao" >16T</td><td id="_td_37_5_2"  data-_i="5" data-_j="2"  class=" _centered" ></td><td id="_td_37_5_3"  data-_i="5" data-_j="3"  class=" _centered" ></td><td id="_td_37_5_4"  data-_i="5" data-_j="4"  class=" _centered" ></td><td id="_td_37_5_5"  data-_i="5" data-_j="5"  class=" _centered" ></td><td id="_td_37_5_6"  data-_i="5" data-_j="6"  class=" _centered" ></td><td id="_td_37_5_7"  data-_i="5" data-_j="7"  class=" _centered" ></td></tr>
+<tr id="_tr_37_6" ><td id="_td_37_6_1"  data-_i="6" data-_j="1"  title="" tooltip_id="23" class=" _left _freezed_col  _centered tooltip-maqao" >32T</td><td id="_td_37_6_2"  data-_i="6" data-_j="2"  class=" _centered" ></td><td id="_td_37_6_3"  data-_i="6" data-_j="3"  class=" _centered" ></td><td id="_td_37_6_4"  data-_i="6" data-_j="4"  class=" _centered" ></td><td id="_td_37_6_5"  data-_i="6" data-_j="5"  class=" _centered" ></td><td id="_td_37_6_6"  data-_i="6" data-_j="6"  class=" _centered" ></td><td id="_td_37_6_7"  data-_i="6" data-_j="7"  class=" _centered" ></td></tr>
 </table></div></div></div></div></div>  <script>
 function scala_onresize () {
-  document.getElementById ("chart_cat_389").innerHTML = "";
+  document.getElementById ("chart_cat_428").innerHTML = "";
   $(document).ready(function(){
-  var plot389_data = [[1,1,0,1,0,0,],[1,1,0,1,0,0,],[1,2,0,8,0,0,],];
-  var plot389_ticks = ['1T','2T','4T','8T','16T','32T',];
-  var plot389 = jQuery.jqplot ('chart_cat_389', plot389_data, {
+  var plot428_data = [[1,0,1,0,0,0,],[1,0,1,0,0,0,],[1,0,4,0,0,0,],];
+  var plot428_ticks = ['1T','2T','4T','8T','16T','32T',];
+  var plot428 = jQuery.jqplot ('chart_cat_428', plot428_data, {
     seriesDefaults: {
       renderer: jQuery.jqplot.BarRenderer,
       rendererOptions: {
@@ -5535,7 +5523,7 @@ function scala_onresize () {
     axes: {
       xaxis: {
         renderer: $.jqplot.CategoryAxisRenderer,
-        ticks: plot389_ticks,
+        ticks: plot428_ticks,
         label: 'Run',
         labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
       },
@@ -5554,7 +5542,7 @@ function scala_onresize () {
     },
     highlighter: {
       tooltipContentEditor: function (str, seriesIndex, pointIndex) {
-        return plot389_ticks[pointIndex]+' - '+plot389_data[seriesIndex][pointIndex];
+        return plot428_ticks[pointIndex]+' - '+plot428_data[seriesIndex][pointIndex];
       },
       show: true,
       showTooltip: true,
@@ -5575,7 +5563,7 @@ function scala_onresize () {
     series: [{label:'Efficiency', yaxis:'yaxis', },{label:'Speedup', renderer: $.jqplot.LineRenderer, yaxis:'y2axis', },{label:'Ideal Speedup If Perfect Scaling', renderer: $.jqplot.LineRenderer, linePattern: 'dashed', yaxis:'y2axis', },],
   });
   var txts = ["24","25","26","27","28","29",];
-  var div_chart = document.getElementById ("chart_cat_389");
+  var div_chart = document.getElementById ("chart_cat_428");
   if (div_chart == null) {
     return ;
   }
@@ -5605,8 +5593,8 @@ function scala_loadhelp (divId) {
   </script>
 </div>
 <div class="panelcontent" id="OV_panel_loops">
-<div class="_div_table"><table id="_treed_table_34" class="_treed_table"><tr><th class="_freezed_row  _left ">Name</th><th class="_freezed_row ">Coverage (%)</th><th class="_freezed_row ">Time (s)</th></tr>
-<tr id="_tr_34_1" ><td id="_tr_34_1-1"  data-_i="1" data-_j="1"  class=" _left"  style="width:70%;" ><span style="margin-right:10px;margin-left:3px;" >&#x25CB;</span></td><td id="_tr_34_1-2"  data-_i="1" data-_j="2"  class=" _centered"  style="width:15%;" ></td><td id="_tr_34_1-3"  data-_i="1" data-_j="3"  class=" _centered"  style="width:15%;" ></td></tr>
+<div class="_div_table"><table id="_treed_table_38" class="_treed_table"><tr><th class="_freezed_row  _left ">Name</th><th class="_freezed_row ">Coverage (%)</th><th class="_freezed_row ">Time (s)</th></tr>
+<tr id="_tr_38_1" ><td id="_tr_38_1-1"  data-_i="1" data-_j="1"  class=" _left"  style="width:70%;" ><span style="margin-right:10px;margin-left:3px;" >&#x25CB;</span></td><td id="_tr_38_1-2"  data-_i="1" data-_j="2"  class=" _centered"  style="width:15%;" ></td><td id="_tr_38_1-3"  data-_i="1" data-_j="3"  class=" _centered"  style="width:15%;" ></td></tr>
 </table></div>
   <script>
 function loops_onresize () {
@@ -5983,8 +5971,8 @@ addLoadEvent(function(){
     </div>
   </div>
 </div><script>
-var tooltips_texts = ['Go to previous function: vprintf',
-'Go to next function: explicit_bzero',
+var tooltips_texts = ['Go to previous function: explicit_bzero',
+'Go to next function: .plt.sec@start',
 'Open on a new tab',
 'Open on a new tab',
 'Source code of the loop.<br/>It is extracted using MAQAO core.',

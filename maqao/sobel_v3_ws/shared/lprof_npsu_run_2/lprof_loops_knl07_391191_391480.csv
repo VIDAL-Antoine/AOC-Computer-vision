@@ -1,0 +1,7 @@
+loop_id;module;function_name;function_id;source_info;level;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
+0;sobel;main._omp_fn.0;8;sobel.c:21-30;Innermost;42.09;5.64;;;;;;
+1;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;37.34;5;;;;;;
+5;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;0.78;0.1;;;;;;
+4;sobel;main._omp_fn.0;8;sobel.c:204-214;Innermost;0.23;0.03;;;;;;
+2;sobel;main._omp_fn.0;8;sobel.c:202-313;InBetween;0.16;0.02;;;;;;
+3;sobel;main._omp_fn.0;8;sobel.c:21-334,rdtsc.h:9-11,stdio2.h:100-100;Outermost;0.01;0;;;;;;

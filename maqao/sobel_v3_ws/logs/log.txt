@@ -7,25 +7,25 @@ maqao oneview -R1 --with-scalability=weak --replace xp=./maqao/sobel_v3_ws c=con
 CMD:  OMP_NUM_THREADS=1   /opt/other/maqao/2.15.5/bin/maqao lprof --include-kernel --sampling-rate=high --xp="/scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v3_ws/tools/lprof_npsu_run_0" --mpi-command=""   -- /scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v3_ws/binaries/sobel in/input.raw sout/output.raw
 CMD:  OMP_NUM_THREADS=2   /opt/other/maqao/2.15.5/bin/maqao lprof --include-kernel --sampling-rate=high --xp="/scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v3_ws/tools/lprof_npsu_run_1" --mpi-command=""   -- /scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v3_ws/binaries/sobel in/input_ws_2.raw sout/output_ws_2.raw
 CMD:  OMP_NUM_THREADS=4   /opt/other/maqao/2.15.5/bin/maqao lprof --include-kernel --sampling-rate=high --xp="/scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v3_ws/tools/lprof_npsu_run_2" --mpi-command=""   -- /scratch/chps/users/user22024/Projet/AOC-Computer-vision/maqao/sobel_v3_ws/binaries/sobel in/input_ws_4.raw sout/output_ws_4.raw
+In run , 2 loops were discarded from static analysis because their coverage
+are lower than object_coverage_threshold value (0.01%).
+That represents 0% of the execution time. To include them, change the value
+in the experiment directory configuration file, then rerun the command with the additionnal parameter
+--force-static-analysis
+
+9 functions were discarded from static analysis because their coverage
+are lower than object_coverage_threshold value (0.01%).
+That represents 0% of the execution time. To include them, change the value
+in the experiment directory configuration file, then rerun the command with the additionnal parameter
+--force-static-analysis
+
 In run , 1 loops were discarded from static analysis because their coverage
 are lower than object_coverage_threshold value (0.01%).
 That represents 0% of the execution time. To include them, change the value
 in the experiment directory configuration file, then rerun the command with the additionnal parameter
 --force-static-analysis
 
-4 functions were discarded from static analysis because their coverage
-are lower than object_coverage_threshold value (0.01%).
-That represents 0% of the execution time. To include them, change the value
-in the experiment directory configuration file, then rerun the command with the additionnal parameter
---force-static-analysis
-
-In run , 1 loops were discarded from static analysis because their coverage
-are lower than object_coverage_threshold value (0.01%).
-That represents 0% of the execution time. To include them, change the value
-in the experiment directory configuration file, then rerun the command with the additionnal parameter
---force-static-analysis
-
-1 functions were discarded from static analysis because their coverage
+2 functions were discarded from static analysis because their coverage
 are lower than object_coverage_threshold value (0.01%).
 That represents 0% of the execution time. To include them, change the value
 in the experiment directory configuration file, then rerun the command with the additionnal parameter
